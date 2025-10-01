@@ -96,10 +96,10 @@ Not to be used to record details related to the overall findings, context or tec
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"73650d4ce624d11c2162057ade39a9f3">
+		["MD5-CAM-1.0.1"] = <"f81bc826787f3298caa56916ac8dbc32">
 		["build_uid"] = <"3677e97d-c5d0-483c-a291-474e45b3b4eb">
-		["revision"] = <"1.1.3">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
+		["revision"] = <"1.1.3">
 	>
 
 definition
@@ -109,7 +109,7 @@ definition
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0.1;at0.1]    -- Heart
+							[local::at0.1]    -- Heart
 						}
 					}
 				}
