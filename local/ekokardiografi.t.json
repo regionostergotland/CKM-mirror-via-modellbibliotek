@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "ca0958bd0c5dd78a14a2d916b62e2d9f",
+      "MD5-CAM-1.0.1" : "63f1701f045b39fceba615c3125d9ceb",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -4921,7 +4921,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Imaging examination result echo",
+            "description" : "The result of an imaging examination performed on an individual, using radiological techniques."
+          }
+        },
         "nb" : { },
         "de" : { },
         "sv" : { },
