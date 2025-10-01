@@ -111,7 +111,7 @@ Not to be used to record details related to the overall findings, context or tec
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"95f817c6887ed433c49f6005fafdefe6">
+		["MD5-CAM-1.0.1"] = <"2a2d12cdca1d6d604411e8ea64bfe216">
 		["build_uid"] = <"c859c01f-6d83-4584-b571-c44413187401">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"1.0.0">
@@ -145,7 +145,7 @@ definition
 			}
 			allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {    -- Additional details
 				include
-					archetype_id/value matches {/openEHR-EHR-CLUSTER\.imaging_exam-lymph_node(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.imaging_exam-lymph_node_group(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.imaging_exam-abnormality(-[a-zA-Z0-9_]+)*\.v0/}
+					archetype_id/value matches {/openEHR-EHR-CLUSTER\.imaging_exam-lymph_node(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.imaging_exam-lymph_node_group(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.imaging_exam-lesion(-[a-zA-Z0-9_]+)*\.v0/}
 			}
 			ELEMENT[at0006] occurrences matches {0..*} matches {    -- Impression
 				value matches {
@@ -498,25 +498,24 @@ ontology
 					text = <"Left ventricular outflow tract systolic velocity-time integral (LVOT VTI)">
 					description = <"">
 				>
-				["at0000"] = <
-					text = <"Imaging examination of a body structure">
-					description = <"Findings on radiological examination of a specified body structure or region.">
-				>
 				["at0001"] = <
 					text = <"Body structure">
 					description = <"Identification of the body structure or region examined.">
-					comment = <"For example: 'Liver', 'Right ankle' or 'Lymph node group'. Coding of the body structure with an appropriate terminology, such as SNOMED CT, is recommended.">
+					comment = <"For example: 'Liver', 'Right ankle' or 'Lymph node group'. Coding of the body structure with an appropriate terminology, such as SNOMED CT, is recommended. If the body structure has been fully identified in this 'Body structure' element, then the 'Body site' data element and 'Structured body site' SLOT become redundant.">
+				>
+				["at0003"] = <
+					text = <"Structured body site">
+					description = <"Structured details about the area of the body under examination.">
+					comment = <"For example: details about a relative anatomical location, such as '2cm distal to the appendix'. If the body site has been fully identified in the 'Body structure' or 'Body site' data elements, then this SLOT becomes redundant.">
+				>
+				["at0000"] = <
+					text = <"Imaging examination of a body structure">
+					description = <"Findings on radiological examination of a specified body structure or region.">
 				>
 				["at0002"] = <
 					text = <"Body site">
 					description = <"Identification of the area of the body under examination.">
 					comment = <"For example: a lymph node group (body structure) which found in the 'Right axilla'. Coding of 'Body site' with a terminology, such as SNOMED CT, is desirable. If the body site has been fully identified in the 'Body structure' data element, this data element becomes redundant.">
-				>
-				["at0003"] = <
-					text = <"Structured body site">
-					description = <"Structured details about the area of the body under examination.">
-					comment = <"For example: details about a relative anatomical location, such as '2cm distal to the appendix'. If the body site has been fully identified in the 'Body structure' or 'Body site' data elements, then this SLOT becomes redundant.
-">
 				>
 				["at0004"] = <
 					text = <"Imaging findings">
@@ -632,14 +631,14 @@ ontology
 					text = <"*Left ventricular outflow tract systolic velocity-time integral (LVOT VTI) (en)">
 					description = <"">
 				>
-				["at0000"] = <
-					text = <"Bildediagnostisk undersøkelse - kroppsstruktur">
-					description = <"Funn eller observasjoner ved radiologisk undersøkelse av et definert organ eller en kroppsdel.">
-				>
 				["at0001"] = <
 					text = <"Kroppsstruktur">
 					description = <"Identifisering av organet eller kroppsdelen som svaret gjelder.">
-					comment = <"For eksempel \"Lever\", \"Høyre ankel\" eller \"Lymfeknutegruppe\". Det er anbefalt å kode kroppsstruktur med en passende terminologi, som SNOMED CT.">
+					comment = <"For eksempel \"Lever\", \"Høyre ankel\" eller \"Lymfeknutegruppe\". Det er anbefalt å kode kroppsstruktur med en passende terminologi, som SNOMED CT. Dersom den aktuelle strukturen i kroppen er fullt ut angitt i dette \"Kroppsstruktur\"-elementet er det ikke nødvendig å bruke \"Anatomisk lokalisasjon\" eller \"Strukturert anatomisk lokalisasjon\".">
+				>
+				["at0000"] = <
+					text = <"Bildediagnostisk undersøkelse - kroppsstruktur">
+					description = <"Funn eller observasjoner ved radiologisk undersøkelse av et definert organ eller en kroppsdel.">
 				>
 				["at0002"] = <
 					text = <"Anatomisk lokalisasjon">
@@ -765,14 +764,14 @@ ontology
 					text = <"*Left ventricular outflow tract systolic velocity-time integral (LVOT VTI) (en)">
 					description = <"">
 				>
-				["at0000"] = <
-					text = <"Bildgebende Untersuchung einer Körperstruktur">
-					description = <"Befunde zur radiologischen Untersuchung einer bestimmten Körperstruktur oder -region.">
-				>
 				["at0001"] = <
 					text = <"Körperstruktur">
 					description = <"Identifizierung der untersuchten Körperstruktur oder Region.">
-					comment = <"Zum Beispiel: „Leber“, „Rechtes Fußgelenk“ oder „Lymphknotengruppe“. Es wird empfohlen, die Körperstruktur mit einer geeigneten Terminologie, wie z. B. SNOMED CT, zu codieren.">
+					comment = <"Zum Beispiel: „Leber“, „Rechter Knöchel“ oder „Lymphknotengruppe“. Es wird empfohlen, die Körperstruktur mit einer geeigneten Terminologie, wie SNOMED CT, zu kodieren. Wenn die Körperstruktur in diesem Element „Körperstruktur“ vollständig identifiziert wurde, dann werden das Datenelement „Körperstelle“ und der SLOT „Strukturierte Körperstelle“ überflüssig.">
+				>
+				["at0000"] = <
+					text = <"Bildgebende Untersuchung einer Körperstruktur">
+					description = <"Befunde zur radiologischen Untersuchung einer bestimmten Körperstruktur oder -region.">
 				>
 				["at0002"] = <
 					text = <"Körperstelle">
@@ -898,25 +897,24 @@ ontology
 					text = <"*Left ventricular outflow tract systolic velocity-time integral (LVOT VTI) (en)">
 					description = <"">
 				>
-				["at0000"] = <
-					text = <"Imaging examination of a body structure">
-					description = <"Findings on radiological examination of a specified body structure or region.">
-				>
 				["at0001"] = <
 					text = <"Body structure">
 					description = <"Identification of the body structure or region examined.">
-					comment = <"For example: 'Liver', 'Right ankle' or 'Lymph node group'. Coding of the body structure with an appropriate terminology, such as SNOMED CT, is recommended.">
+					comment = <"For example: 'Liver', 'Right ankle' or 'Lymph node group'. Coding of the body structure with an appropriate terminology, such as SNOMED CT, is recommended. If the body structure has been fully identified in this 'Body structure' element, then the 'Body site' data element and 'Structured body site' SLOT become redundant.">
+				>
+				["at0003"] = <
+					text = <"Structured body site">
+					description = <"Structured details about the area of the body under examination.">
+					comment = <"For example: details about a relative anatomical location, such as '2cm distal to the appendix'. If the body site has been fully identified in the 'Body structure' or 'Body site' data elements, then this SLOT becomes redundant.">
+				>
+				["at0000"] = <
+					text = <"Imaging examination of a body structure">
+					description = <"Findings on radiological examination of a specified body structure or region.">
 				>
 				["at0002"] = <
 					text = <"Body site">
 					description = <"Identification of the area of the body under examination.">
 					comment = <"For example: a lymph node group (body structure) which found in the 'Right axilla'. Coding of 'Body site' with a terminology, such as SNOMED CT, is desirable. If the body site has been fully identified in the 'Body structure' data element, this data element becomes redundant.">
-				>
-				["at0003"] = <
-					text = <"Structured body site">
-					description = <"Structured details about the area of the body under examination.">
-					comment = <"For example: details about a relative anatomical location, such as '2cm distal to the appendix'. If the body site has been fully identified in the 'Body structure' or 'Body site' data elements, then this SLOT becomes redundant.
-">
 				>
 				["at0004"] = <
 					text = <"Imaging findings">
