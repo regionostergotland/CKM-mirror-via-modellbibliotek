@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "afec9b029e6563a2a83a8624af62de1e",
+      "MD5-CAM-1.0.1" : "57d638a39713b2b14fd5dc9470874ccb",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -952,7 +952,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.1" ],
+                      "constraint" : [ "ac0.42" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -984,12 +984,6 @@
             "text" : "Point in time",
             "description" : "Default, unspecified point in time or interval which may be explicitly defined in a template or at run-time."
           },
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -1018,16 +1012,16 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.40",
+            "description" : ""
+          },
+          "ac0.42" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.42",
             "description" : ""
           }
         },
         "sl" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1056,16 +1050,16 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.40",
+            "description" : ""
+          },
+          "ac0.42" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.42",
             "description" : ""
           }
         },
         "nb" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1094,16 +1088,16 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.40",
+            "description" : ""
+          },
+          "ac0.42" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.42",
             "description" : ""
           }
         },
         "fi" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1132,16 +1126,16 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.40",
+            "description" : ""
+          },
+          "ac0.42" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.42",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -1170,6 +1164,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.40",
+            "description" : ""
+          },
+          "ac0.42" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.42",
             "description" : ""
           }
         }
@@ -1376,6 +1376,16 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.40",
           "members" : [ "at0081", "at0080" ]
+        },
+        "ac0.41" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.41",
+          "members" : [ "at0193", "at0195" ]
+        },
+        "ac0.42" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.42",
+          "members" : [ "at0193" ]
         }
       }
     },
@@ -3923,7 +3933,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.1" ],
+                      "constraint" : [ "ac0.42" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -3948,12 +3958,6 @@
             "code" : "at0000.1",
             "text" : "Spiromety result - Reversibility test (bronchodilator)",
             "description" : "Pulmonary function test results using a spirometer or peak flow meter."
-          },
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
           },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3990,6 +3994,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.40",
             "description" : ""
+          },
+          "ac0.42" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.42",
+            "description" : ""
           }
         },
         "sl" : {
@@ -3998,12 +4008,6 @@
             "code" : "at0000.1",
             "text" : "*Spirometry (en) (2)",
             "description" : "*Pulmonary function test results using a spirometer or peak flow meter. (en)"
-          },
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
           },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
@@ -4033,6 +4037,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.40",
+            "description" : ""
+          },
+          "ac0.42" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.42",
             "description" : ""
           }
         },
@@ -4043,12 +4053,6 @@
             "text" : "Spirometriresultat (2)",
             "description" : "Lungefunksjonstest ved bruk av et spirometer eller en PEF-måler."
           },
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -4077,6 +4081,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.40",
+            "description" : ""
+          },
+          "ac0.42" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.42",
             "description" : ""
           }
         },
@@ -4087,12 +4097,6 @@
             "text" : "*Spirometry (en) (2)",
             "description" : "*Pulmonary function test results using a spirometer or peak flow meter. (en)"
           },
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -4121,6 +4125,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.40",
+            "description" : ""
+          },
+          "ac0.42" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.42",
             "description" : ""
           }
         },
@@ -4131,12 +4141,6 @@
             "text" : "Spirometrie Ergebnis (2)",
             "description" : "Ergebnisse von Lungenfunktionstests mit einem Spirometer oder Peak-Flow-Meter."
           },
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
@@ -4165,6 +4169,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.40",
+            "description" : ""
+          },
+          "ac0.42" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.42",
             "description" : ""
           }
         }
@@ -4371,6 +4381,16 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.40",
           "members" : [ "at0081", "at0080" ]
+        },
+        "ac0.41" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.41",
+          "members" : [ "at0193", "at0195" ]
+        },
+        "ac0.42" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.42",
+          "members" : [ "at0195" ]
         }
       }
     },
