@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.0.0",
+      "sem_ver" : "6.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "378f14ff56688bfcb1b0695962baf213",
+      "MD5-CAM-1.0.1" : "414b5123297f0c86ab194e64ba300ac2",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -692,7 +692,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.50" ],
+                              "constraint" : [ "ac0.86" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -1008,22 +1008,16 @@
             "code" : "ac0.40",
             "description" : ""
           },
-          "at0052.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0052",
-            "text" : "FVC",
-            "description" : "Forced vital capacity (FVC) is the maximal volume of air that can be forcibly exhaled from a position of full inspiration."
-          },
           "ac0.42" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.42",
             "description" : ""
           },
-          "ac0.50" : {
+          "ac0.86" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.50",
+            "code" : "ac0.86",
             "description" : ""
           }
         },
@@ -1052,22 +1046,16 @@
             "code" : "ac0.40",
             "description" : ""
           },
-          "at0052.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0052",
-            "text" : "*FVC (en)",
-            "description" : "*Forced vital capacity (FVC) is the maximal volume of air that can be forcibly exhaled from a position of full inspiration. (en)"
-          },
           "ac0.42" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.42",
             "description" : ""
           },
-          "ac0.50" : {
+          "ac0.86" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.50",
+            "code" : "ac0.86",
             "description" : ""
           }
         },
@@ -1096,22 +1084,16 @@
             "code" : "ac0.40",
             "description" : ""
           },
-          "at0052.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0052",
-            "text" : "FVC",
-            "description" : "Forsert vitalkapasitet (FVC) er det maksimale volumet med luft som kan utåndes ved forsert ekspirasjon etter en maksimal inspirasjon."
-          },
           "ac0.42" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.42",
             "description" : ""
           },
-          "ac0.50" : {
+          "ac0.86" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.50",
+            "code" : "ac0.86",
             "description" : ""
           }
         },
@@ -1140,22 +1122,16 @@
             "code" : "ac0.40",
             "description" : ""
           },
-          "at0052.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0052",
-            "text" : "*FVC (en)",
-            "description" : "*Forced vital capacity (FVC) is the maximal volume of air that can be forcibly exhaled from a position of full inspiration. (en)"
-          },
           "ac0.42" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.42",
             "description" : ""
           },
-          "ac0.50" : {
+          "ac0.86" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.50",
+            "code" : "ac0.86",
             "description" : ""
           }
         },
@@ -1184,22 +1160,16 @@
             "code" : "ac0.40",
             "description" : ""
           },
-          "at0052.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0052",
-            "text" : "FVC",
-            "description" : "Die forcierte Vitalkapazität (FVC) ist das maximale Luftvolumen, das aus einer Position voller Inspiration zwangsweise ausgeatmet werden kann."
-          },
           "ac0.42" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.42",
             "description" : ""
           },
-          "ac0.50" : {
+          "ac0.86" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.50",
+            "code" : "ac0.86",
             "description" : ""
           }
         }
@@ -1456,6 +1426,186 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.50",
           "members" : [ "at0065" ]
+        },
+        "ac0.51" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.51",
+          "members" : [ "at0065", "at0067" ]
+        },
+        "ac0.52" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.52",
+          "members" : [ "at0065", "at0067" ]
+        },
+        "ac0.53" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.53",
+          "members" : [ "at0065" ]
+        },
+        "ac0.54" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.54",
+          "members" : [ "at0065" ]
+        },
+        "ac0.55" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.55",
+          "members" : [ "at0065", "at0076" ]
+        },
+        "ac0.56" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.56",
+          "members" : [ "at0065", "at0076" ]
+        },
+        "ac0.57" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.57",
+          "members" : [ "at0065", "at0064", "at0076" ]
+        },
+        "ac0.58" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.58",
+          "members" : [ "at0065", "at0064", "at0076" ]
+        },
+        "ac0.59" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.59",
+          "members" : [ "at0065", "at0064", "at0172", "at0076" ]
+        },
+        "ac0.60" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.60",
+          "members" : [ "at0065", "at0064", "at0172", "at0076" ]
+        },
+        "ac0.61" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.61",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076" ]
+        },
+        "ac0.62" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.62",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076" ]
+        },
+        "ac0.63" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.63",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145" ]
+        },
+        "ac0.64" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.64",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145" ]
+        },
+        "ac0.65" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.65",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070" ]
+        },
+        "ac0.66" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.66",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070" ]
+        },
+        "ac0.67" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.67",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067" ]
+        },
+        "ac0.68" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.68",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067" ]
+        },
+        "ac0.69" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.69",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146" ]
+        },
+        "ac0.70" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.70",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146" ]
+        },
+        "ac0.71" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.71",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068" ]
+        },
+        "ac0.72" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.72",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068" ]
+        },
+        "ac0.73" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.73",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068", "at0069" ]
+        },
+        "ac0.74" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.74",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068", "at0069" ]
+        },
+        "ac0.75" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.75",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068", "at0069", "at0171" ]
+        },
+        "ac0.76" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.76",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068", "at0069", "at0171" ]
+        },
+        "ac0.77" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.77",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068", "at0069", "at0171", "at0082" ]
+        },
+        "ac0.78" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.78",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068", "at0069", "at0171", "at0082" ]
+        },
+        "ac0.79" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.79",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068", "at0069", "at0171", "at0082", "at0077" ]
+        },
+        "ac0.80" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.80",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068", "at0069", "at0171", "at0082", "at0077" ]
+        },
+        "ac0.81" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.81",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068", "at0069", "at0171", "at0082", "at0077", "at0078" ]
+        },
+        "ac0.82" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.82",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068", "at0069", "at0171", "at0082", "at0077", "at0078" ]
+        },
+        "ac0.83" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.83",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068", "at0069", "at0171", "at0082", "at0077", "at0078", "at0176" ]
+        },
+        "ac0.84" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.84",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068", "at0069", "at0171", "at0082", "at0077", "at0078", "at0176" ]
+        },
+        "ac0.85" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.85",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068", "at0069", "at0171", "at0082", "at0077", "at0078", "at0176" ]
+        },
+        "ac0.86" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.86",
+          "members" : [ "at0065", "at0064", "at0172", "at0174", "at0076", "at0145", "at0070", "at0067", "at0146", "at0068", "at0069", "at0171", "at0082", "at0077", "at0078", "at0176" ]
         }
       }
     },
