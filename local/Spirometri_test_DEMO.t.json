@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.0.0",
+      "sem_ver" : "5.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "57d638a39713b2b14fd5dc9470874ccb",
+      "MD5-CAM-1.0.1" : "378f14ff56688bfcb1b0695962baf213",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -692,7 +692,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.34" ],
+                              "constraint" : [ "ac0.50" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -1002,22 +1002,28 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.34" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.34",
-            "description" : ""
-          },
           "ac0.40" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.40",
             "description" : ""
           },
+          "at0052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0052",
+            "text" : "FVC",
+            "description" : "Forced vital capacity (FVC) is the maximal volume of air that can be forcibly exhaled from a position of full inspiration."
+          },
           "ac0.42" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.42",
+            "description" : ""
+          },
+          "ac0.50" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.50",
             "description" : ""
           }
         },
@@ -1040,22 +1046,28 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.34" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.34",
-            "description" : ""
-          },
           "ac0.40" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.40",
             "description" : ""
           },
+          "at0052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0052",
+            "text" : "*FVC (en)",
+            "description" : "*Forced vital capacity (FVC) is the maximal volume of air that can be forcibly exhaled from a position of full inspiration. (en)"
+          },
           "ac0.42" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.42",
+            "description" : ""
+          },
+          "ac0.50" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.50",
             "description" : ""
           }
         },
@@ -1078,22 +1090,28 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.34" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.34",
-            "description" : ""
-          },
           "ac0.40" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.40",
             "description" : ""
           },
+          "at0052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0052",
+            "text" : "FVC",
+            "description" : "Forsert vitalkapasitet (FVC) er det maksimale volumet med luft som kan utåndes ved forsert ekspirasjon etter en maksimal inspirasjon."
+          },
           "ac0.42" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.42",
+            "description" : ""
+          },
+          "ac0.50" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.50",
             "description" : ""
           }
         },
@@ -1116,22 +1134,28 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.34" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.34",
-            "description" : ""
-          },
           "ac0.40" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.40",
             "description" : ""
           },
+          "at0052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0052",
+            "text" : "*FVC (en)",
+            "description" : "*Forced vital capacity (FVC) is the maximal volume of air that can be forcibly exhaled from a position of full inspiration. (en)"
+          },
           "ac0.42" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.42",
+            "description" : ""
+          },
+          "ac0.50" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.50",
             "description" : ""
           }
         },
@@ -1154,22 +1178,28 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.34" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.34",
-            "description" : ""
-          },
           "ac0.40" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.40",
             "description" : ""
           },
+          "at0052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0052",
+            "text" : "FVC",
+            "description" : "Die forcierte Vitalkapazität (FVC) ist das maximale Luftvolumen, das aus einer Position voller Inspiration zwangsweise ausgeatmet werden kann."
+          },
           "ac0.42" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.42",
+            "description" : ""
+          },
+          "ac0.50" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.50",
             "description" : ""
           }
         }
@@ -1386,6 +1416,46 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.42",
           "members" : [ "at0193" ]
+        },
+        "ac0.43" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.43",
+          "members" : [ "at0065", "at0067", "at0069" ]
+        },
+        "ac0.44" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.44",
+          "members" : [ "at0065", "at0067", "at0069" ]
+        },
+        "ac0.45" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.45",
+          "members" : [ "at0065", "at0069" ]
+        },
+        "ac0.46" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.46",
+          "members" : [ "at0065", "at0069" ]
+        },
+        "ac0.47" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.47",
+          "members" : [ "at0065" ]
+        },
+        "ac0.48" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.48",
+          "members" : [ "at0065" ]
+        },
+        "ac0.49" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.49",
+          "members" : [ "at0065" ]
+        },
+        "ac0.50" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.50",
+          "members" : [ "at0065" ]
         }
       }
     },
