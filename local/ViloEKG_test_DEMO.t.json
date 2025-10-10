@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.1.0",
+      "sem_ver" : "4.2.0",
       "build_uid" : "64fca823-7967-4ee1-99af-b2c09c537cc5",
-      "MD5-CAM-1.0.1" : "4648dab01f0001f1d7be4b5a6ecd1d95",
+      "MD5-CAM-1.0.1" : "a4e92cbd3eff2b214871e72a99509944",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -2886,7 +2886,56 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "QT",
+            "description" : "Interval measurement from the onset of the QRS complex to the end of the T wave aacross the ECG as a whole (multiple leads)."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "EKG tollkningskoder",
+            "description" : "Interpretative comment on this ECG result, originating from a device.",
+            "comment" : "May be multiple. Coding of the interpretation with a terminology is preferred, where possible. For example: normal sinus rhythm; ischaemic ST-T changes in anterior leads; and/or poor R progression in right precordial leads."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "P-axel",
+            "description" : "Average direction of electrical activity during atrial depolarization.",
+            "comment" : "For example: normal axis or left deviation; or number of degrees."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "T-axel",
+            "description" : "Average direction of electrical activity during ventricular repolarization.",
+            "comment" : "For example: normal axis or left deviation; or number of degrees."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "QRS",
+            "description" : "Duration of QRS complex across the ECG as a whole (multiple leads).",
+            "comment" : "The QRS complex is measured from its onset to \r\nthe ST segment onset (J point)."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "PQ",
+            "description" : "PR interval measurement across the ECG as a whole (multiple leads).",
+            "comment" : "The PR interval is measured from onset of P wave to the onset of QRS complex."
+          },
+          "at0021.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021.1",
+            "text" : "R-axel",
+            "description" : "Average direction of electrical activity during ventricular depolarization.",
+            "comment" : "For example: normal axis or left deviation; or number of degrees."
+          }
+        },
         "ar-sy" : { },
         "nb" : { },
         "de" : { }
@@ -5409,7 +5458,20 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0025.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "defaultValue" : {
+                    "value" : "Bazette",
+                    "@type" : "DV_TEXT"
+                  },
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -5430,11 +5492,11 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0025.1" : {
+          "at0008.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025.1",
-            "text" : "QTc algorithm Bazette",
-            "description" : "Algorithm used to correct QT interval."
+            "code" : "at0008.1",
+            "text" : "QTc",
+            "description" : "Correction applied to the 'QT interval global'."
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -8016,7 +8078,20 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0025.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "defaultValue" : {
+                    "value" : "Fridericia",
+                    "@type" : "DV_TEXT"
+                  },
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -8037,11 +8112,11 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0025.1" : {
+          "at0008.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025.1",
-            "text" : "QTc algorithm Fridericia",
-            "description" : "Algorithm used to correct QT interval."
+            "code" : "at0008.1",
+            "text" : "QTc",
+            "description" : "Correction applied to the 'QT interval global'."
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -10662,7 +10737,20 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0025.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "defaultValue" : {
+                    "value" : "Framingham",
+                    "@type" : "DV_TEXT"
+                  },
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -10683,11 +10771,11 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0025.1" : {
+          "at0008.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025.1",
-            "text" : "QTc algorithm Framingham",
-            "description" : "Algorithm used to correct QT interval."
+            "code" : "at0008.1",
+            "text" : "QTc",
+            "description" : "Correction applied to the 'QT interval global'."
           },
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
