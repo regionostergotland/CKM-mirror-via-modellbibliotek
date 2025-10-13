@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.0",
+      "sem_ver" : "0.4.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "fed13e5c603b2223d385cab9b2490d29",
+      "MD5-CAM-1.0.1" : "8a0815e2c8b12bf674b4bfc34b70c547",
       "PARENT:MD5-CAM-1.0.1" : "84FA661FB99D4765126B3A1EB4D9868F"
     },
     "details" : {
@@ -1220,7 +1220,7 @@
                     "value" : "NPU"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "NPU" ],
+                  "selectedTerminologies" : [ "NPU " ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "NPU",
                     "code" : "NPU21571",
@@ -1233,6 +1233,14 @@
                     "terminologyId" : "NPU",
                     "code" : "NPU28393",
                     "value" : "P—PT (INR, Elektrozym TH)"
+                  }, {
+                    "terminologyId" : "NPU",
+                    "code" : "NPU19748",
+                    "value" : "P—CRP"
+                  }, {
+                    "terminologyId" : "NPU",
+                    "code" : "NPU28309",
+                    "value" : "B—Hemoglobin (Hb)"
                   } ]
                 } ]
               } ],
