@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "8.1.2",
+      "sem_ver" : "8.1.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "7691002d5cd8e18e73fed4d2f2334baf",
+      "MD5-CAM-1.0.1" : "1183eb7ae9d2a401745cd232c8905ce5",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -5660,10 +5660,11 @@
                       "occurrences" : "1..1",
                       "constraint" : [ {
                         "lower" : 0,
+                        "upper" : 1,
                         "lowerIncluded" : true,
-                        "upperIncluded" : false,
+                        "upperIncluded" : true,
                         "lowerUnbounded" : false,
-                        "upperUnbounded" : true
+                        "upperUnbounded" : false
                       } ]
                     } ]
                   } ],
