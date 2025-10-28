@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0",
+      "sem_ver" : "4.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c53d173f3e43bb68910f75469595df0e",
+      "MD5-CAM-1.0.1" : "47d46f6c673ed8e7bb3ebae3c5ace213",
       "PARENT:MD5-CAM-1.0.1" : "8F4DBE7C7F8924D18DC5EC1629F0FB68"
     },
     "details" : {
@@ -253,23 +253,57 @@
                               } ]
                             } ],
                             "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.0.1",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 2.0,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
                           } ]
                         } ],
                         "attributeTuples" : [ ]
                       } ]
                     } ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "CLUSTER",
-                    "nodeId" : "at0006.0.5",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "CLUSTER",
-                    "nodeId" : "at0006.0.4",
-                    "attributes" : [ ],
                     "attributeTuples" : [ ]
                   } ]
                 } ],
@@ -299,18 +333,6 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006.0.1",
           "text" : "Nacke",
-          "description" : "Details about body surface area affected at each body site."
-        },
-        "at0006.0.4" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.4",
-          "text" : "Per body site (4)",
-          "description" : "Details about body surface area affected at each body site."
-        },
-        "at0006.0.5" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.5",
-          "text" : "Per body site (5)",
           "description" : "Details about body surface area affected at each body site."
         }
       }
