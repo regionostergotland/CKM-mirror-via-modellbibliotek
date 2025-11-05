@@ -162,30 +162,6 @@ Not to be used to record structured details about medications administered durin
 
 Not to be used to record photographs or videos  within the health record. Use the CLUSTER.media_file archetype for this purpose.">
 		>
-		["es"] = <
-			language = <[ISO_639-1::es]>
-			purpose = <"Registrar los hallazgos de la prueba de imagen de una estructura o región corporal específica y su interpretación, utilizando técnicas radiológicas.">
-			keywords = <"imagen","radiología","modalidad","rayos X","TC","ultrasonido","resonancia","magnética","diagnóstico","exploración","imágenes","biomagnético","densitometría","tomografía","radiografía","resonancia","magnética","mamografía","medicina","nuclear","positrones","PET","angiografía","fluoroscopia">
-			use = <"Se utiliza para registrar los hallazgos en una prueba de imagen de una estructura o región corporal específica y su interpretación mediante técnicas radiológicas.
-
-Este arquetipo se ha diseñado para centrarse en el informe de hallazgos e interpretación asociados con una sola prueba de imagen (equivalente a un solo estudio DICOM). Se incluyen referencias a atributos relacionados con DICOM, pero el enfoque se centra en la representación de un informe clínico de una prueba de imagen y no en la representación de atributos relacionados con DICOM que podrían esperarse dentro de un sistema de información radiológica. Los detalles específicos sobre la serie DICOM se pueden registrar utilizando CLUSTER.imaging_series anidado dentro de la ranura \"Detalles de la serie\".
-
-Los hallazgos detallados observados durante una prueba de imagen y dirigidos a una estructura o región específica se pueden registrar anidando CLUSTER.imaging_exam y/o su familia de arquetipos especializados dentro de la ranura \"Hallazgos de imagen estructurados\" de este arquetipo. Se pretende que, con el tiempo, los detalles específicos de cada especialización se amplíen para incluir hallazgos utilizando todas las modalidades de imagen.
-
-Si una prueba de imagen se realiza como parte de un estudio más complejo En actividades como una intervención quirúrgica guiada por imágenes, los hallazgos de imagen deben registrarse utilizando este arquetipo.
-Los detalles estructurados sobre el procedimiento quirúrgico y los medicamentos o el contraste administrado deben registrarse utilizando los arquetipos ACTION.procedure y/o ACTION.medication, respectivamente. En este caso, se recomienda que todos los arquetipos relacionados se reporten en la misma plantilla.
-
-Este resultado normalmente se reportará al médico solicitante como un componente dentro del contexto de un informe general basado en COMPOSITION.">
-			misuse = <"No debe utilizarse para registrar los resultados de la exploración física. Para ello, utilice CLUSTER.exam y/o su familia de arquetipos especializados.
-
-No debe utilizarse para reproducir la funcionalidad o las especificaciones de un sistema fuente o de información radiológica.
-
-No debe utilizarse para registrar detalles estructurados sobre cualquier procedimiento realizado. Para ello, utilice los arquetipos específicos relacionados con procedimientos, como el arquetipo ACTION.procedure.
-
-No debe utilizarse para registrar detalles estructurados sobre los medicamentos administrados durante la prueba de imagen. Utilice para ello arquetipos específicos relacionados con la medicación, como el arquetipo ACTION.medication.
-
-No debe utilizarse para registrar fotografías o vídeos en la historia clínica. Utilice para ello el arquetipo CLUSTER.media_file.">
-		>
 		["ca"] = <
 			language = <[ISO_639-1::ca]>
 			purpose = <"Registrar les troballes sobre l'examen d'imatges d'una estructura o regió corporal especificada i la seva interpretació, utilitzant tècniques radiològiques.">
@@ -211,6 +187,30 @@ No s'ha d'utilitzar per registrar detalls estructurats sobre els medicaments adm
 No s'ha d'utilitzar per gravar fotografies o vídeos dins del registre de salut. Utilitzar l'arquetip de fitxer CLUSTER.media_file per a aquest propòsit.
 ">
 		>
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"Registrar los hallazgos de la prueba de imagen de una estructura o región corporal específica y su interpretación, utilizando técnicas radiológicas.">
+			keywords = <"imagen","radiología","modalidad","rayos X","TC","ultrasonido","resonancia","magnética","diagnóstico","exploración","imágenes","biomagnético","densitometría","tomografía","radiografía","resonancia","magnética","mamografía","medicina","nuclear","positrones","PET","angiografía","fluoroscopia">
+			use = <"Se utiliza para registrar los hallazgos en una prueba de imagen de una estructura o región corporal específica y su interpretación mediante técnicas radiológicas.
+
+Este arquetipo se ha diseñado para centrarse en el informe de hallazgos e interpretación asociados con una sola prueba de imagen (equivalente a un solo estudio DICOM). Se incluyen referencias a atributos relacionados con DICOM, pero el enfoque se centra en la representación de un informe clínico de una prueba de imagen y no en la representación de atributos relacionados con DICOM que podrían esperarse dentro de un sistema de información radiológica. Los detalles específicos sobre la serie DICOM se pueden registrar utilizando CLUSTER.imaging_series anidado dentro de la ranura \"Detalles de la serie\".
+
+Los hallazgos detallados observados durante una prueba de imagen y dirigidos a una estructura o región específica se pueden registrar anidando CLUSTER.imaging_exam y/o su familia de arquetipos especializados dentro de la ranura \"Hallazgos de imagen estructurados\" de este arquetipo. Se pretende que, con el tiempo, los detalles específicos de cada especialización se amplíen para incluir hallazgos utilizando todas las modalidades de imagen.
+
+Si una prueba de imagen se realiza como parte de un estudio más complejo En actividades como una intervención quirúrgica guiada por imágenes, los hallazgos de imagen deben registrarse utilizando este arquetipo.
+Los detalles estructurados sobre el procedimiento quirúrgico y los medicamentos o el contraste administrado deben registrarse utilizando los arquetipos ACTION.procedure y/o ACTION.medication, respectivamente. En este caso, se recomienda que todos los arquetipos relacionados se reporten en la misma plantilla.
+
+Este resultado normalmente se reportará al médico solicitante como un componente dentro del contexto de un informe general basado en COMPOSITION.">
+			misuse = <"No debe utilizarse para registrar los resultados de la exploración física. Para ello, utilice CLUSTER.exam y/o su familia de arquetipos especializados.
+
+No debe utilizarse para reproducir la funcionalidad o las especificaciones de un sistema fuente o de información radiológica.
+
+No debe utilizarse para registrar detalles estructurados sobre cualquier procedimiento realizado. Para ello, utilice los arquetipos específicos relacionados con procedimientos, como el arquetipo ACTION.procedure.
+
+No debe utilizarse para registrar detalles estructurados sobre los medicamentos administrados durante la prueba de imagen. Utilice para ello arquetipos específicos relacionados con la medicación, como el arquetipo ACTION.medication.
+
+No debe utilizarse para registrar fotografías o vídeos en la historia clínica. Utilice para ello el arquetipo CLUSTER.media_file.">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -232,7 +232,7 @@ RSNA.org: Proposed Standard Radiology Report Headings. Radiological Society of N
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"cb7ae0df6bf1f05195633fb8b47b128b">
+		["MD5-CAM-1.0.1"] = <"048a9fb0a06b8463873b2515ad506b83">
 		["build_uid"] = <"dccb7af8-6c19-4a35-959b-1b4126cdc9a9">
 		["revision"] = <"1.1.2">
 	>
@@ -376,6 +376,14 @@ definition
 									allow_archetype CLUSTER[at0107] occurrences matches {0..*} matches {    -- Stabilising appliance
 										include
 											archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-[a-zA-Z0-9_]+)*\.v1/}
+									}
+									allow_archetype CLUSTER[at0110] occurrences matches {0..*} matches {    -- Exertion
+										include
+											archetype_id/value matches {/.*/}
+									}
+									allow_archetype CLUSTER[at0111] occurrences matches {0..*} matches {    -- Extension
+										include
+											archetype_id/value matches {/.*/}
 									}
 								}
 							}
@@ -849,6 +857,14 @@ ontology
 					description = <"Position of the individual during the imaging examination.">
 					comment = <"For example: standing or lying.">
 				>
+				["at0110"] = <
+					text = <"Exertion">
+					description = <"">
+				>
+				["at0111"] = <
+					text = <"Extension">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -1167,6 +1183,14 @@ Dette dataelementet kan være overflødig hvis modaliteten er tydelig represente
 					description = <"Individets posisjon ved tidspunktet for den radiologiske undersøkelsen.">
 					comment = <"For eksempel stående eller sittende.">
 				>
+				["at0110"] = <
+					text = <"*Exertion (en)">
+					description = <"">
+				>
+				["at0111"] = <
+					text = <"*Extension (en)">
+					description = <"">
+				>
 			>
 		>
 		["de"] = <
@@ -1481,6 +1505,14 @@ Dette dataelementet kan være overflødig hvis modaliteten er tydelig represente
 					text = <"Position">
 					description = <"Position/Lage der Person während der bildgebenden Untersuchung.">
 					comment = <"Beispiel: stehend oder liegend.">
+				>
+				["at0110"] = <
+					text = <"*Exertion (en)">
+					description = <"">
+				>
+				["at0111"] = <
+					text = <"*Extension (en)">
+					description = <"">
 				>
 			>
 		>
@@ -1806,6 +1838,14 @@ Dette dataelementet kan være overflødig hvis modaliteten er tydelig represente
 					description = <"Individens position under den bilddiagnostisk undersökningen.">
 					comment = <"Till exempel: stående eller liggande.">
 				>
+				["at0110"] = <
+					text = <"*Exertion (en)">
+					description = <"">
+				>
+				["at0111"] = <
+					text = <"*Extension (en)">
+					description = <"">
+				>
 			>
 		>
 		["ca"] = <
@@ -2122,6 +2162,14 @@ Dette dataelementet kan være overflødig hvis modaliteten er tydelig represente
 					description = <"Posició del pacient durant l'examen d'imatge.">
 					comment = <"Per exemple: dempeus o estirat.">
 				>
+				["at0110"] = <
+					text = <"*Exertion (en)">
+					description = <"">
+				>
+				["at0111"] = <
+					text = <"*Extension (en)">
+					description = <"">
+				>
 			>
 		>
 		["es"] = <
@@ -2436,6 +2484,14 @@ Dette dataelementet kan være overflødig hvis modaliteten er tydelig represente
 					text = <"Posición">
 					description = <"Posición del individuo durante el estudio de imágenes.">
 					comment = <"Por ejemplo: de pie o acostado.">
+				>
+				["at0110"] = <
+					text = <"*Exertion (en)">
+					description = <"">
+				>
+				["at0111"] = <
+					text = <"*Extension (en)">
+					description = <"">
 				>
 			>
 		>
