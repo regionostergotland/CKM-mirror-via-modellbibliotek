@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "9.1.0",
+      "sem_ver" : "10.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "2ad4e739b66148b260a470ecd3db9e41",
+      "MD5-CAM-1.0.1" : "7c9af76c40eee19dfac8e44bde9cc8ec",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -5733,14 +5733,37 @@
                         "rmAttributeName" : "value",
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_TEXT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
+                            "rmAttributeName" : "defining_code",
                             "children" : [ {
-                              "@type" : "C_STRING",
-                              "rmTypeName" : "STRING",
-                              "constraint" : [ "Diastolic phase", "Systolic phase", "End diastole", "End systole" ]
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "http://snomed.info/sct"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "http://snomed.info/sct",
+                                "code" : "416190007",
+                                "value" : "End diastole"
+                              }, {
+                                "terminologyId" : "http://snomed.info/sct",
+                                "code" : "416430001",
+                                "value" : "End systole"
+                              }, {
+                                "terminologyId" : "http://snomed.info/sct",
+                                "code" : "723229005",
+                                "value" : "Diastolic phase"
+                              }, {
+                                "terminologyId" : "http://snomed.info/sct",
+                                "code" : "723228002",
+                                "value" : "Systolic phase"
+                              } ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
