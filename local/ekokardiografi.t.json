@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "10.1.0",
+      "sem_ver" : "10.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "7c9af76c40eee19dfac8e44bde9cc8ec",
+      "MD5-CAM-1.0.1" : "417c93cb8e9983feab51215d91379677",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -5977,7 +5977,41 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SNOMED-CT"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "399139001",
+                    "value" : "Parasternal long axis view"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "399232001",
+                    "value" : "Apical two chamber view"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "399339008",
+                    "value" : "Apical long axis"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "399214001",
+                    "value" : "Apical four chamber view"
+                  }, {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "398994001",
+                    "value" : "Five chamber view"
+                  } ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
