@@ -232,7 +232,7 @@ RSNA.org: Proposed Standard Radiology Report Headings. Radiological Society of N
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"048a9fb0a06b8463873b2515ad506b83">
+		["MD5-CAM-1.0.1"] = <"2428e4fa92f1fdef095fdd6c9a61170e">
 		["build_uid"] = <"dccb7af8-6c19-4a35-959b-1b4126cdc9a9">
 		["revision"] = <"1.1.2">
 	>
@@ -378,10 +378,6 @@ definition
 											archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-[a-zA-Z0-9_]+)*\.v1/}
 									}
 									allow_archetype CLUSTER[at0110] occurrences matches {0..*} matches {    -- Exertion
-										include
-											archetype_id/value matches {/.*/}
-									}
-									allow_archetype CLUSTER[at0111] occurrences matches {0..*} matches {    -- Extension
 										include
 											archetype_id/value matches {/.*/}
 									}
@@ -861,10 +857,6 @@ ontology
 					text = <"Exertion">
 					description = <"">
 				>
-				["at0111"] = <
-					text = <"Extension">
-					description = <"">
-				>
 			>
 		>
 		["nb"] = <
@@ -1187,10 +1179,6 @@ Dette dataelementet kan være overflødig hvis modaliteten er tydelig represente
 					text = <"*Exertion (en)">
 					description = <"">
 				>
-				["at0111"] = <
-					text = <"*Extension (en)">
-					description = <"">
-				>
 			>
 		>
 		["de"] = <
@@ -1508,10 +1496,6 @@ Dette dataelementet kan være overflødig hvis modaliteten er tydelig represente
 				>
 				["at0110"] = <
 					text = <"*Exertion (en)">
-					description = <"">
-				>
-				["at0111"] = <
-					text = <"*Extension (en)">
 					description = <"">
 				>
 			>
@@ -1842,10 +1826,6 @@ Dette dataelementet kan være overflødig hvis modaliteten er tydelig represente
 					text = <"*Exertion (en)">
 					description = <"">
 				>
-				["at0111"] = <
-					text = <"*Extension (en)">
-					description = <"">
-				>
 			>
 		>
 		["ca"] = <
@@ -2166,10 +2146,6 @@ Dette dataelementet kan være overflødig hvis modaliteten er tydelig represente
 					text = <"*Exertion (en)">
 					description = <"">
 				>
-				["at0111"] = <
-					text = <"*Extension (en)">
-					description = <"">
-				>
 			>
 		>
 		["es"] = <
@@ -2487,10 +2463,6 @@ Dette dataelementet kan være overflødig hvis modaliteten er tydelig represente
 				>
 				["at0110"] = <
 					text = <"*Exertion (en)">
-					description = <"">
-				>
-				["at0111"] = <
-					text = <"*Extension (en)">
 					description = <"">
 				>
 			>
