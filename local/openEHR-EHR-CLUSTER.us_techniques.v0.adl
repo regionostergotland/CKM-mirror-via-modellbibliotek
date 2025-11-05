@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c5b012047e092fe2f9c9e3077121380d">
+		["MD5-CAM-1.0.1"] = <"8ab13b04e3c91924d78c66568fd553bd">
 		["build_uid"] = <"7a03f3a2-1090-31d7-9e3a-761e1a41b447">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- us techniques
+	CLUSTER[at0000] matches {    -- imaging_exam_us-technique
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Mode
 				value matches {
@@ -75,7 +75,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"us techniques">
+					text = <"imaging_exam_us-technique">
 					description = <"us techniques">
 				>
 				["at0001"] = <
