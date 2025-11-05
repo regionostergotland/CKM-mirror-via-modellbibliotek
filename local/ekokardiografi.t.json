@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "8.1.0",
+      "sem_ver" : "9.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "28b901511501fce807606e9c41c8d5c8",
+      "MD5-CAM-1.0.1" : "b29b06ae7535b5c0fab3998c6b2dc9ce",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -5893,7 +5893,99 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "2428e4fa92f1fdef095fdd6c9a61170e"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung der Ergebnisse einer bildgebenden Untersuchung einer bestimmten Körperstruktur oder -region und deren Interpretation mit radiologischen Verfahren.",
+          "keywords" : [ "Bild, Radiologie, Modalität, Röntgen, CT, Ultraschall, MRI, Diagnostik, Scan, Röntgenbild, X-Ray, Bildgebung, biomagnetisch, Densitometrie, Tomographie, Radiographie, magnetisch, Resonanz, Mammographie, Nuklear, Medizin, Positron, PET, Angiographie, Fluoroskopie" ],
+          "use" : "Zur Darstellung der Ergebnisse einer bildgebenden Untersuchung einer bestimmten Körperstruktur oder -region und deren Interpretation mit radiologischen Verfahren.\r\n\r\nDieser Archetyp wurde entwickelt, mit dem Fokus auf die Befundung und Interpretation einer einzelnen bildgebenden Untersuchung (entspricht einer einzelnen DICOM-Studie). Verweise auf DICOM-bezogene Attribute sind enthalten, aber der Schwerpunkt liegt auf der Darstellung eines klinischen Berichts zu einer bildgebenden Untersuchung und nicht auf der Darstellung von DICOM-bezogenen Attributen, die in einem Radiologieinformationssystem (RIS) erwartet werden könnten. Spezifische Angaben über die DICOM-Serie können mithilfe von Archetyp CLUSTER.imaging_series dargestellt werden, der im SLOT „Seriendetails“ verschachtelt ist.\r\n\r\nDetaillierte Befunde, die während einer bildgebenden Untersuchung beobachtet wurden und auf eine bestimmte Körperstruktur oder -region abzielen, können dargestellt werden, indem der Archetyp CLUSTER.imaging_exam und/oder seine Gruppe spezialisierter Archetypen innerhalb des SLOTs „Strukturierte bildgebende Befunde“ in diesem Archetyp verschachtelt werden. Es ist beabsichtigt, dass im Laufe der Zeit die spezifischen Informationen in jeder Spezialisierung erweitert werden, um Befunde mit allen bildgebenden Modalitäten einzubeziehen.\r\n\r\nWird eine bildgebende Untersuchung im Rahmen einer komplexeren Aktivität durchgeführt, wie z. B. eines interventionellen chirurgischen Eingriffs, sollte der bildgebende Befund mit diesem Archetyp erfasst werden.\r\nStrukturierte Angaben über den chirurgischen Eingriff und verabreichte Medikamente oder Kontrastmittel sollten unter Verwendung der ACTION.procedure- bzw. ACTION.medication-Archetypen dargestellt werden. In dieser Situation wird empfohlen, alle verwandten Archetypen innerhalb derselben Templates zu repräsentieren.\r\n\r\nDieses Ergebnis wird dem anfordernden Kliniker normalerweise als eine Komponente im Kontext eines auf COMPOSITION-basierenden Gesamtberichts berichtet.",
+          "misuse" : "Nicht zur Darstellung von Ergebnissen von körperlichen Untersuchung verwenden. Verwenden Sie zu diesem Zweck den Archetyp CLUSTER.exam und/oder seine Gruppe spezialisierter Archetypen.\r\n\r\nDarf nicht verwendet werden, um die Funktionalität oder Spezifikationen eines radiologischen Informations- oder Quellsystems zu replizieren.\r\n\r\nDarf nicht verwendet werden, um strukturierte Angaben zu einem durchgeführten Verfahren darzustellen. Verwenden Sie für diesen Zweck die spezifischen prozedurbezogenen Archetypen, wie z. B. den Archetyp ACTION.procedure.\r\n\r\nNicht zur Darstellung von strukturierten Anaben über Medikamente, die während des radiologischen Untersuchung verabreicht werden. Verwenden Sie für diesen Zweck spezifische medikamentenbezogene Archetypen, wie z. B. den Archetyp ACTION.medication.\r\n\r\nDarf nicht verwendet werden, um Fotos oder Videos in der Gesundheitsakte darzustellen. Verwenden Sie zu diesem Zweck den Archetyp CLUSTER.media_file.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att, med hjälp av radiologiska tekniker, registrera fynden vid bilddiagnostisk undersökning av en specificerad kroppsstruktur eller region och tolka dessa.",
+          "keywords" : [ "bild, radiologi, modalitet, röntgen, CT, ultraljud, MR, MRT, diagnostisk, skanning, bilddiagnostik, biomagnetisk, densitometri, tomografi, radiografi, magnetisk, resonans, mammografi, nukleär, medicin, positron, PET, angiografi, fluoroskopi" ],
+          "use" : "Används för att registrera fynden vid en bilddiagnostisk undersökning av en specificerad kroppsstruktur eller -region och tolka dem med hjälp av radiologiska tekniker.\r\n\r\nDenna arketyp är utformad för att fokusera på rapportering av resultat och tolkning i samband med en enda bilddiagnostisk undersökning (motsvarande en enda DICOM-studie). Referenser till DICOM-relaterade attribut ingår, men fokus ligger på att representera ett kliniskt utlåtande från en bilddiagnostisk undersökning och inte på att representera DICOM-relaterade attribut som kan förväntas i ett radiologiskt informationssystem. Specifika detaljer om DICOM-serien kan registreras med hjälp av CLUSTER.imaging_series som är nästlad i SLOT:en ”Series details”.\r\n\r\nDetaljerade fynd som observeras under en bilddiagnostisk undersökning och som är inriktade på en viss struktur eller region kan registreras genom att nästla CLUSTER.imaging_exam eller dess familj av specialiserade arketyper i SLOT:en ”Structured imaging findings”. Avsikten är att de specifika detaljerna i varje specialisering med tiden ska växa till att omfatta fynd under användning av alla bildmodaliteter.\r\n\r\nOm en bilddiagnostisk undersökning utförs som en del av en mer komplex aktivitet, t.ex. en kirurgisk operation som utförs under bilddiagnostisk vägledning, ska de bilddiagnostiska fynden registreras med hjälp av denna arketyp. \r\nStrukturerade detaljer om det kirurgiska ingreppet och de läkemedel eller kontrastmedel som administrerats ska registreras med hjälp av arketyperna ACTION.procedure eller ACTION.medication. I denna situation rekommenderas att alla relaterade arketyper rapporteras inom samma template.\r\n\r\nResultatet kommer vanligtvis att rapporteras tillbaka till den remitterande läkaren som en komponent inom ramen för en övergripande COMPOSITION-baserad utlåtande.",
+          "misuse" : "Ska inte användas för att registrera fynd vid fysisk undersökning. Använd CLUSTER.exam eller dess familj av specialiserade arketyper för detta ändamål.\r\n\r\nSka inte användas för att replikera funktionaliteten eller specifikationerna av ett radiologiskt informations- eller källsystem.\r\n\r\nSka inte användas för att registrera strukturerade detaljer om en åtgärd som har genomförts. Använd de specifika åtgärdsrelaterade arketyperna, t.ex. arketypen ACTION.procedure, för detta ändamål.\r\n\r\nSka inte användas för att registrera strukturerade detaljer om läkemedel som administreras under bildtagningstestet. Använd specifika läkemedelsrelaterade arketyper, t.ex. arketypen ACTION.medication, för detta ändamål.\r\n\r\nSka inte användas för att registrera fotografier eller videor i patientjournalen. Använd arketypen CLUSTER.media_file för detta ändamål.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere funn på og tolkning av bilder som er gjort ved radiologiske metoder på spesifikke strukturer eller regioner i kroppen.",
+          "keywords" : [ "bilde", "radiologi", "modalitet", "røntgen", "CT", "ultralyd", "MR", "diagnostisk", "biomagnetisk", "densitometri", "tomografi", "radiografi", "nukleær", "positron", "PET", "fluoroskopi", "bildeveiledet", "gjennomlysning", "nukleærmedisinsk", "angiografi" ],
+          "use" : "Brukes for å registrere funn på og tolkning av bilder som er gjort ved radiologiske metoder på spesifikke strukturer eller regioner i kroppen.\r\n\r\nDenne arketypen har blitt laget med fokus på svarrapportering av funn og tolkning en enkelt bildediagnostisk undersøkelse (tilsvarende en enkelt \"DICOM Study\"). Referanser til DICOM-relaterte attributter er inkludert, men fokuset er på representasjonen av en klinisk rapport fra en bildeundersøkelse og ikke på å representere DICOM-relaterte attributter som kan forventes i et radiologiinformasjonssystem (RIS/PACS). Spesifikke detaljer om DICOM-serien kan registreres ved å nøste arketypen CLUSTER.imaging_study_details i SLOT'et \"Detaljer om undersøkelsesserier\".\r\n\r\nDetaljerte funn som er gjort ved en bildediagnostisk undersøkelse som er rettet mot en spesifikk struktur eller region i kroppen, kan registreres ved å nøste CLUSTER.imaging_exam (Bildediagnostisk undersøkelse - kroppsstruktur) eller en av de spesialiserte CLUSTER.imaging_exam arketypene i SLOT'et \"Strukturerte funn\" i denne arketypen. Det er tenkt at det over tid vil det bli utviklet slike spesialiseringer som hver for seg omhandler funn fra alle modaliteter.\r\n\r\nHvis den bildediagnostiske undersøkelsen er en del av en mer kompleks prosedyre, som en kirurgisk operasjon som utføres under bildeveiledning, skal de radiologiske funn og observasjoner bli registrert i denne arketypen. Strukturerte detaljer om den kirurgiske prosedyren og administrasjon av medikasjon eller kontrast bør registreres i henholdsvis ACTION.procedure (Prosedyre) og/eller ACTION.medication (Legemiddelhåndtering). I dette tilfelle anbefales det at alle relaterte arketyper, som detaljer om prosedyren eller administrasjon av medikasjon/kontrast bør samles i det samme templatet.\r\n\r\nSvaret på bildediagnostikken vil normalt sett bli rapportert tilbake til den bestillende kliniker som en komponent innenfor rammen av en samlet COMPOSITION-basert rapport.",
+          "misuse" : "Skal ikke brukes til funn ved fysiske undersøkelser. Bruk CLUSTER.exam (Undersøkelsesfunn) eller dennes gruppe av spesialiserte arketyper for dette formålet.\r\n\r\nSkal ikke brukes til å replikere funksjonaliteten til et radiologi informasjonssystem (RIS/PACS) eller kildesystem.\r\n\r\nSkal ikke brukes til å registrere strukturerte detaljer om en klinisk prosedyre som er gjennomført. Bruk da de spesifikke arketypene for prosedyre-relatert innhold, for eksempel ACTION.procedure (Prosedyre).\r\n\r\nBrukes ikke til å registrere informasjon om legemidlene som administreres under en bildediagnostisk undersøkelse. Bruk da de spesifikke legemiddelrelaterte arketypene, for eksempel ACTION.medication (Legemiddelhåndtering).\r\n\r\nSkal ikke brukes til å lagre fotografier eller video i den elektroniske journalen. Bruk arketypen CLUSTER.media_file (Mediafil) for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the findings on imaging examination of a specified body structure or region and their interpretation, using radiological techniques.",
+          "keywords" : [ "image, radiology, modality, xray, CT, ultrasound, MRI, diagnostic, scan, x-ray, imaging, biomagnetic, densitometry, tomography, radiography, magnetic, resonance, mammography, nuclear, medicine, positron, PET, angiography, fluoroscopy" ],
+          "use" : "Use to record the findings on imaging examination of a specified body structure or region and their interpretation, using radiological techniques.\r\n\r\nThis archetype has been designed to focus on the reporting of findings and interpretation associated with a single imaging examination (equivalent to a single DICOM study). References to DICOM-related attributes are included but the focus is on the representation of a clinical report from an imaging examination and not on representing DICOM-related attributes that might be expected within a radiology information system. Specific details about the DICOM series can be recorded using the CLUSTER.imaging_series nested within the 'Series details' SLOT.\r\n\r\nDetailed findings observed during an imaging examination and targeting a specified structure or region can be recorded by nesting the CLUSTER.imaging_exam and/or its family of specialised archetypes within the 'Structured imaging findings' SLOT in this archetype. It is intended that over time the specific detail in each specialisation will grow to include findings using all imaging modalities.\r\n\r\nIf an imaging examination is carried out as part of a more complex activity, such as a surgical operation carried out under imaging guidance, the imaging findings should be recorded using this archetype. \r\nStructured details about the surgical procedure and medications or contrast administered should be recorded using the ACTION.procedure and/or ACTION.medication archetypes, respectively. In this situation, it is recommended that all related archetypes should be reported within the same template.\r\n\r\nThis result will normally be reported back to the requesting clinician as one component within the context of an overall COMPOSITION-based report.",
+          "misuse" : "Not to be used to record findings on physical examination. Use the CLUSTER.exam and/or its family of specialised archetypes for this purpose.\r\n\r\nNot to be used to replicate the functionality or specifications of a radiology information or source system.\r\n\r\nNot to be used to record structured details about any procedure undertaken. Use the specific procedure-related archetypes, such as ACTION.procedure archetype for this purpose.\r\n\r\nNot to be used to record structured details about medications administered during the imaging test. Use specific medication-related archetypes, such as the ACTION.medication archetype for this purpose.\r\n\r\nNot to be used to record photographs or videos  within the health record. Use the CLUSTER.media_file archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar les troballes sobre l'examen d'imatges d'una estructura o regió corporal especificada i la seva interpretació, utilitzant tècniques radiològiques.",
+          "keywords" : [ "imatge", "radiologia", "modalitat", "radiografia", "TAC", "ultrasons", "ressonància magnètica", "diagnòstic", "escaneig", "radiografia", "biomagnètica", "densitometria", "tomografia", "radiografia", "magnètic", "ressonància", "mamografia", "nuclear", "medicina", "positró", "PET", "angiografia", "fluoroscòpia" ],
+          "use" : "Utilitzar per registrar els resultats sobre l'examen d'imatges d'una estructura o regió corporal especificada i la seva interpretació, utilitzant tècniques radiològiques.\r\n\r\nAquest arquetip ha estat dissenyat per centrar-se en la informació de les troballes i la interpretació associades amb un únic examen d'imatge (equivalent a un sol estudi DICOM). S'inclouen referències als atributs relacionats amb DICOM, però el focus està en la representació d'un informe clínic d'un examen d'imatge i no en la representació d'atributs relacionats amb DICOM que es podrien esperar dins d'un sistema d'informació de radiologia. Els detalls específics sobre la sèrie DICOM es poden registrar utilitzant el CLUSTER.imaging_series niades dins de l'SLOT 'Series details'.\r\n\r\nEls resultats detallats observats durant un examen d'imatge i dirigits a una estructura o regió especificada es poden registrar niant el CLUSTER.imaging_exam i/o la seva família d'arquetips especialitzats dins de l'SLOT 'Structured imaging findings' en aquest arquetip. Es pretén que amb el temps el detall específic de cada especialitat vagi creixent fins a incloure troballes utilitzant totes les modalitats d'imatge.\r\n\r\nSi es realitza un examen d'imatge com a part d'una activitat més complexa, com una operació quirúrgica realitzada sota guiatge d'imatges, les troballes d'imatges s'han de registrar utilitzant aquest arquetip. \r\nEls detalls estructurats sobre el procediment quirúrgic i els medicaments o contrast administrats s'han de registrar mitjançant els arquetips ACTION.procedure i/o ACTION.medication, respectivament. En aquesta situació, es recomana que tots els arquetips relacionats s'informin dins de la mateixa plantilla.\r\n\r\nAquest resultat normalment es comunicarà al clínic sol·licitant com un component dins del context d'un informe global basat en la composició.",
+          "misuse" : "No s'ha d'utilitzar per registrar troballes en l'examen físic. Utilitzar el CLUSTER.exam i/o la seva família d'arquetips especialitzats a aquest efecte.\r\n\r\nNo s'ha d'utilitzar per replicar la funcionalitat o especificacions d'un sistema de radiologia o font.\r\n\r\nNo s'ha d'utilitzar per registrar detalls estructurats sobre qualsevol procediment realitzat. Utilitzar els arquetips específics relacionats amb el procediment, com ara l'arquetip ACTION.procedure per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per registrar detalls estructurats sobre els medicaments administrats durant la prova d'imatge. Utilitzar arquetips específics relacionats amb la medicació, com l'arquetip ACTION.medication per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per gravar fotografies o vídeos dins del registre de salut. Utilitzar l'arquetip de fitxer CLUSTER.media_file per a aquest propòsit.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar los hallazgos de la prueba de imagen de una estructura o región corporal específica y su interpretación, utilizando técnicas radiológicas.",
+          "keywords" : [ "imagen", "radiología", "modalidad", "rayos X", "TC", "ultrasonido", "resonancia", "magnética", "diagnóstico", "exploración", "imágenes", "biomagnético", "densitometría", "tomografía", "radiografía", "resonancia", "magnética", "mamografía", "medicina", "nuclear", "positrones", "PET", "angiografía", "fluoroscopia" ],
+          "use" : "Se utiliza para registrar los hallazgos en una prueba de imagen de una estructura o región corporal específica y su interpretación mediante técnicas radiológicas.\r\n\r\nEste arquetipo se ha diseñado para centrarse en el informe de hallazgos e interpretación asociados con una sola prueba de imagen (equivalente a un solo estudio DICOM). Se incluyen referencias a atributos relacionados con DICOM, pero el enfoque se centra en la representación de un informe clínico de una prueba de imagen y no en la representación de atributos relacionados con DICOM que podrían esperarse dentro de un sistema de información radiológica. Los detalles específicos sobre la serie DICOM se pueden registrar utilizando CLUSTER.imaging_series anidado dentro de la ranura \"Detalles de la serie\".\r\n\r\nLos hallazgos detallados observados durante una prueba de imagen y dirigidos a una estructura o región específica se pueden registrar anidando CLUSTER.imaging_exam y/o su familia de arquetipos especializados dentro de la ranura \"Hallazgos de imagen estructurados\" de este arquetipo. Se pretende que, con el tiempo, los detalles específicos de cada especialización se amplíen para incluir hallazgos utilizando todas las modalidades de imagen.\r\n\r\nSi una prueba de imagen se realiza como parte de un estudio más complejo En actividades como una intervención quirúrgica guiada por imágenes, los hallazgos de imagen deben registrarse utilizando este arquetipo.\r\nLos detalles estructurados sobre el procedimiento quirúrgico y los medicamentos o el contraste administrado deben registrarse utilizando los arquetipos ACTION.procedure y/o ACTION.medication, respectivamente. En este caso, se recomienda que todos los arquetipos relacionados se reporten en la misma plantilla.\r\n\r\nEste resultado normalmente se reportará al médico solicitante como un componente dentro del contexto de un informe general basado en COMPOSITION.",
+          "misuse" : "No debe utilizarse para registrar los resultados de la exploración física. Para ello, utilice CLUSTER.exam y/o su familia de arquetipos especializados.\r\n\r\nNo debe utilizarse para reproducir la funcionalidad o las especificaciones de un sistema fuente o de información radiológica.\r\n\r\nNo debe utilizarse para registrar detalles estructurados sobre cualquier procedimiento realizado. Para ello, utilice los arquetipos específicos relacionados con procedimientos, como el arquetipo ACTION.procedure.\r\n\r\nNo debe utilizarse para registrar detalles estructurados sobre los medicamentos administrados durante la prueba de imagen. Utilice para ello arquetipos específicos relacionados con la medicación, como el arquetipo ACTION.medication.\r\n\r\nNo debe utilizarse para registrar fotografías o vídeos en la historia clínica. Utilice para ello el arquetipo CLUSTER.media_file.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.imaging_exam_result_new.v1",
     "differential" : true,
@@ -5920,6 +6012,29 @@
               "rmTypeName" : "EVENT",
               "nodeId" : "at0002",
               "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0044.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-imaging_exam-heart-001.v1",
+                      "referenceType" : "archetypeOverlay"
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "state",
                 "children" : [ {
@@ -6120,7 +6235,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "c11fdeb8a38ad5de3707f58f12d2ad6d"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.imaging_exam_us_technique.v0",
     "differential" : true,
@@ -6191,7 +6319,56 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "27606DDC8BC11CD99B544D4C7D992C00"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Dokumentation der Anstrengung/Belastung, der der Patient ausgesetzt ist oder ausgesetzt war.",
+          "keywords" : [ "Übung", "Bewegung", "körperliche Anstrengung", "Belastung", "Belastungsgrad", "Belastungsintensität", "Tätigkeit", "Beschäftigung", "Betätigung", "Kraftanstrengung", "Anstrengung", "Ausübung", "Aktivität", "Maßnahme", "Energie", "Tatkraft", "Kraft" ],
+          "use" : "Zur Dokumentation des Belastungsgrads und der Phase der Belastung (Zeitpunkt) - zur Bereitstellung von Status- und Kontextinformationen innerhalb einer OBSERVATION-Klasse wie z.B. Blutdruckmessung.",
+          "misuse" : "Dient nicht der Dokumentation der eigentlichen Übungen/Aktivitäten und Messungen. Diese sollten in der dafür vorgesehenen OBSERVATION-Klasse erfasst werden.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "Record information about the amount of energy expenditure that has been, or is being, experienced by the patient.",
+          "keywords" : [ "exercise", "work", "exertion", "activity", "energy" ],
+          "use" : "Record information about phase and levels of exertion - to provide state/context information within OBSERVATIONS such as Blood Pressure.",
+          "misuse" : "Not to be used to record actual exercise activities and measurements which should be recorded as OBSERVATIONS in their own right.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل معلومات حول كمية إنفاق الطاقة التي مر/ أو يمر بها المريض",
+          "keywords" : [ "التمرين", "العمل", "المجهود", "النشاط", "الطاقة" ],
+          "use" : "لتسجيل معلومات حول طور و مستويات المجهود - للإمداد بمعلومات حول السياق/الحالة في داخل الملاحظات مثل ضغط الدم.",
+          "misuse" : "لا يستخدم لتسجيل نشاطات التمرين الفعلي و القياسات التي ينبغي تسجيلها على هيئة ملاحظات منفردة بذاتها",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.level_of_exertion.v0",
     "differential" : true,
@@ -6254,6 +6431,87 @@
       },
       "author" : {
         "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "c50b2b6b-75f7-4431-8c84-ef8897fc4ca0",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "a4915abef4eea989090bb19e8f18e0fa"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.imaging_exam-heart.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-imaging_exam-heart-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000.1",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "3677e97d-c5d0-483c-a291-474e45b3b4eb",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch, Darin Leonhardt",
+        "organisation" : "Medizinische Hochschule Hannover, PLRI für medizinische Informatik/ Medizinische Hochschule",
+        "email" : "Strauch.Natalia@mh-hannover.de, leonhardt.darin@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjørn Arntzen",
+        "organisation" : "Oslo University Hospital",
+        "email" : "varntzen@ous-hf.no"
       },
       "otherDetails" : { }
     } ]
