@@ -1,94 +1,155 @@
-Modellbiblioteket's fork of the international openEHR.org CKM mirror, plus some "local" Swedish templates and archetypes
-===========================================================================================================
-The intention of this experimental "fork" is to make it simple to work with archetype and template tools to create and share local Swedish content based on international archetypes. You can download a zip (or maintain a GIT-clone/fork/link) of this repository in order to access the combination of international and local archetypes and templates in your tools.
+# 🫀 Attributes Describing an Echocardiography Examination (Updated: 2025-11-11)
 
-Archetypes of international value and Swedish translations of international archetypes should be uploaded to the CKM tool (not here) and will then be semi-automatically be copied here upon next update/sync.
+<img width="1389" height="1145" alt="image" src="https://github.com/user-attachments/assets/3a196272-7b0e-48f7-8915-87ecabf05cc4" />
 
-Please note that _operational_ templates (.opt-files) and other downstream openEHR-related artifacts should be maintained elsewhere, not here. (To see an example of how e.g. Region Östergötland plans to do this, look at the https://github.com/regionostergotland/openehr_definitions/ repository.)
+## Body Structure
+The structures that are measured are the larger ones such as the left and right ventricles, left and right atria, but also other parts like the aorta, aortic valve, among others. Specific parts of certain structures are also measured, for example, Left ventricle posterior wall.  
 
-Also note the shared ad-hoc work area at https://github.com/modellbibliotek/Arbetsyta-openEHR that can be used when you do not want the entire CKM-mirror content to potentially interfere with your work.
+At the Physiological Clinic, there is no standard procedure for how an examination is conducted; it varies between different BMAs. During analysis and report writing, however, one usually works with one structure at a time.
 
+Body structure can be handled in different ways, either as a part of the element for the measurement value or on the level of the archetype, or on an specific element for structure/laterality in the archetype.
 
-New 2022
---------
-* Since Archetype Designer now suports Github branches, we have started using them extensively for different swedish projects, try switching branch in the drop-down button menu. Examples:
-    * The branch `sv-translation-lookahead` is intended for previews of Swedish translations from individual's branches in the CKM that have not yet been merged into the international CKM-mirror
-    * The branch `lekstuga` is a sandbox for collaborative experimentation with tools, versioning, updating etc. Do not preform serious work there.
-    * ...
-* Experiments regarding sharing of derived artifacts like OPT (operational templates) and Web Templates have started in a separate repository: https://github.com/modellbibliotek/openehr-definitions (that has a dev and main branch)
-* Updating a branch to include the latest changes from the international CKM has now been made easier by a new built in Github button, so the section "Update policy & instructions" below needs to be updated...
+## Laterality
+The number of parameters listed by the Physiological Clinic differs significantly between the right and left ventricles. This is due to several reasons: historically, the left ventricle was considered more important than the right ventricle and therefore received more focus. But nowadays, the thinking is somewhat different. Furthermore, the right ventricle has a special shape, like a pyramid with a "banana-shaped" base. This means that Simpson's method cannot be used as it assumes a more "bullet-shaped" form. It is simply easier to perform calculations on the left ventricle.  
+This circumstance is unique to echocardiography; when it comes to MRI, volumes can be calculated in the same way for both ventricles.
 
-Directory names and content
----------------------------
-Warning: the directory names are a bit confusing due to conventions and tools used "upstream"
+Laterality can be handled in different ways, either as a part of the element for the measurement value or on a specific element for structure/laterality.
 
-* `/local`  currently may often contain many locally created archetypes and templates, all in the same directory, no matter what openEHR class they are based on. (This seems to be the default directory for saving new files created in Marand's ADL-designer). Needs regular manual cleanup by moving to suitable subdirectories.
-* `/local/archetypes`, `/local/templates` and `/local/templates` contain directories copied straight from openEHR's international online CKM tool http://ckm.openehr.org via https://github.com/openEHR/CKM-mirror
-* `/local/pdl/` a manually created subdirectory intended for files related to PDL (Swedish patient data law). Note that the tools do not save here by default.
-* Potential example: `/local/standin/` a manually created subdirectory intended for (semi-regularly) manually organizing files from the project Standin3. Note that the tools do not save here by default.
-* Potential example: `/local/regionostergotland/` example of a manually created subdirectory intended for (semi-regularly) manually organizing Region Östergötland's files. Note that the tools do not save here by default. Further project/topic-specific subdirectories could be created, e.g. `/local/regionostergotland/surgery` - the subdirectories under `/local` seem to be read by several tools.
-* `/remote/` contains subdirectories like `no.nasjonalikt/archetypes` that have been copied from "national/regional" CKMs like http://arketyper.no/ckm/ into openEHR's international online CKM tool http://ckm.openehr.org they are thus "remote" with respect to the international CKM as opposed to the `/local/archetypes` considered local with respect to the international CKM. 
-* `/` The root directory, containing this readme file and som other files cloned from the ckm-mirror. (It also seems to be where the ADL-designer tool stores archetypes that you "import" (rather than create) using the tool. Needs regular manual cleanup by moving to suitable subdirectories.
+**openEHR**: body structure + physical quantity will be handled under `Items` in the cluster archetype.
 
-Thus, part of the content under `/local` and it's subdirectories is truly local to specific swedish projects/organisations and other content (e.g. `/local/archetypes`) comes from the international space...
+## Mode
+Describes the technique used to produce the image.
 
-Tools, tool settings and behavoiurs
--------------
-List of available modelling tools: https://www.openehr.org/downloads/modellingtools
+**openEHR**: Since this describes a circumstance around the measurement, it should be expressed under `Protocol` in the observation archetype.
 
-### The online Archetype-designer
-Please note the somewhat odd directory choices used for saving new and imported assets described above. Template files created in the tool are by default saved with a ".t.json"-file ending. They can also be exported to several formats.
+**SNOMED CT**: selection of modes: https://browser.ihtsdotools.org/?perspective=full&conceptId1=278292003&edition=MAIN/SNOMEDCT-SE/2025-05-31&release=&languages=sv,en
 
-If you are using openEHRs online Archetype-designer https://tools.openehr.org/designer/#/ and login with a persoonal Github-account (or a group/organization-account) that is new in the tool, then this setting should work to add this repo:
+- **M-mode**  
+  Motion-mode, a graph that shows a one-dimensional line representing the heart's movement and structure over time. Mainly used for diameter, thickness, and distance.
 
-Repositories (top menu bar) --> New repository (button) --> Repository type: GitHub
-```
-  Repository name: Region/Company Nnnns fork of Modellbibliotek's CKM-mirror (or whatever you want to call it)  
-  Owner: modellbibliotek
-  Repository: CKM-mirror
-  Branch: master (or, if you want to work in a branch, the name of the branch instead of "master" )
-```
+- **2D**  
+  A two-dimensional image with width and depth relative to the probe.
 
-Important: If you want to save files (and avoid some GitHub rate-limiting-related related "403" errors) you need to be logged in to github with a user account that has write permission to this repository, ideally before opening the ADL designer.
+  In addition to viewing one plane of the heart, multiple views (Views) can be used to calculate volumes or ejection fractions.
 
-### Local-file-based tools
-If you are using Ocean's Template designer or other local-file-based tools it should be possible to either 
-* download and unpack the zip-file of this repository, found under the green "Clone or download" button on the https://github.com/modellbibliotek/CKM-mirror page or
-* set up GIT client to keep in sync (this has a bit of learning curve...)
+  **Single plane**: Measurement is based on one view.
 
-Update policy & instructions
-----------------------------
-We do occasional manual one-way updates from https://github.com/openEHR/CKM-mirror (that most often update the content of the '/local/archetypes' subdirectory tree). The direction is always _from_ the international CKM tool (automatically) to https://github.com/openEHR/CKM-mirror and from there (manually) to this fork https://github.com/modellbibliotek/CKM-mirror.
+  **Biplane**: Measurement is based on two views.
 
-If we find an error or want to contribute new content to the international repository, then the web-based tools at http://ckm.openehr.org should be used for submitting such content. Files in this fork will _not_ be synced back automatically to the international repository.
+  **Triplane**: Measurement is based on three views.
 
-Howto-instructions for Modellebibliotek-repo admins to update this repository to get the latest content from the international one: 
-* With command-line tools https://help.github.com/articles/syncing-a-fork/ or
-* Using the web: https://www.sitepoint.com/quick-tip-sync-your-fork-with-the-original-without-the-cli/
+- **3D**  
+  Measurement is based on a three-dimensional image. The advantage is that the image is not based on the assumptions required for biplane or triplane.
 
-Howto-instructions for Modellebibliotek-repo admins regarding how to move a file uding GitHub's web tools: https://help.github.com/articles/moving-a-file-to-a-new-location/
+- **Doppler**  
+  A two-dimensional image supplemented with a color-coded layer representing blood flows (Spectral Doppler) and tissue velocities (Tissue Doppler) based on frequency changes.
 
-Local/regional setup?
-----------------------
-If there is interest, then the chain can be: openEHR --> "modellbibliotek" (maybe later run by SKL or EHM?) --> Your local region (e.g. Region Östergötland) 
+- **Speckle tracking**  
+  [text]
 
-If you want a stable local (regional?) repository where you can control when updates should happen, then make a fork of this repository and use that fork in your tools instead of using this shared Swedish repository in your tools. Working with branches is another way to maintain  stability in a project when the "master" often gets updated from the international "upstream" CKM-mirror.
+- **Estimation**  
+  [text]
 
-Using or forking this repository will give you access to both international assets and a copy of some Swedish local/regional/project-directories, possibly including work in progress (because you want to see what others are working on...).
+## View
+Views or projections, i.e., different angles from which the heart can be seen.
 
---------------
+**openEHR**: Since this describes a circumstance around the measurement, it should be expressed under `Protocol` in the observation archetype. Our suggestion is that this should be included in a new archetype describing the technique of image analysis/ultrasound/echocardiographic measurement.
 
-Below you find the original readme content from...
+**SNOMED CT**: selection of views: https://browser.ihtsdotools.org/?perspective=full&conceptId1=399043000&edition=MAIN/SNOMEDCT-SE/2025-05-31&release=&languages=sv,en
 
-openEHR Foundation International CKM Mirror 
-===========================================
+- **PLAX**  
+  Parasternal long axis, a view that shows the heart from the left side and visualizes the left atrium, mitral valve, left ventricle, aortic valve, and ascending aorta.
 
-This is a mirror of the not-for-profit international openEHR.org Clinical Knowledge Manager (CKM) clinical models repository at www.openehr.org/ckm
+- **2 chamber**  
+  Apical 2-chamber view (A2C) visualizes the left atrium (LA) and left ventricle (LV) in a longitudinal section, specifically the anterior and inferior walls of the left ventricle.
 
-It contains archetypes, templates and termsets on the CKM Authoring TRUNK, and will include both published assets and unpublished/unstable assets undergoing active development and review.
+- **3 chamber**  
+  Apical long axis view. It visualizes the left ventricle, left atrium, and aortic root (including the aortic valve).
 
-All of these assets are licenced under a Creative Commons Attribution-ShareAlike 3.0 licence ![CC-BY-SA License](https://i.creativecommons.org/l/by-sa/3.0/88x31.png) and can be used freely within open source or commercial applications.
+- **4 chamber**  
+  Visualizes the left atrium, right atrium, left ventricle, and right ventricle.
 
-This mirror auto-updates whenever the CKM TRUNK changes.
+- **5 chamber**  
+  Shows the four chambers plus the aorta.
 
-If you would like to contribute to development or review of the models, please register at www.openehr.org/ckm
+## Cardiac Cycle Phase
+The measurement is taken during or in a specific part of the heart's cycle.
+
+**openEHR**: Since this describes a condition of the patient, it should be expressed under `State` in the observation archetype.
+
+- **End systole**  
+  The phase in the heart cycle when the ventricles have contracted maximally and emptied of blood, just before they begin to relax.
+
+- **End diastole**  
+  The end of the heart cycle's relaxation and filling phase, just before the heart muscle begins to contract (systole).
+
+- **Systole**  
+  The phase in the heart cycle when the heart contracts to pump out the blood.
+
+- **Diastole**  
+  The phase in the heart cycle when the heart muscle relaxes and the heart chambers fill with blood.
+
+## Physical Quantity
+Quantity measured on a certain body structure. The measurement can be "indexed," meaning the value is divided by body surface area.
+
+**openEHR**: Quantity + structure will become attributes under `Items` in the cluster archetype.
+
+- **Volume**  
+  Volume in a cavity in the heart, e.g., ventricle or atrium.  
+  **How it's measured**: Calculated for the left ventricle either with Simpson's method/biplane method of discs or measured in 3D-mode for both left and right ventricles. Also from 2D single plane — how?
+
+- **Ejection fraction**  
+  The heart's pumping ability, i.e., how much of the heart's diastolic volume is pumped out with each heartbeat.  
+  **How it's measured**: Calculated and based on volume either from biplane-mode or measured in 3D-mode (also M-mode [Wikipedia link]).
+
+- **Diameter**  
+  Thickness of a structure.  
+  **How it's measured**: Measured in M-mode or 2D. Can be indexed.
+
+- **Thickness**  
+  Thickness of a structure.  
+  **How it's measured**: Measured in M-mode or 2D.
+
+- **Mass**  
+  Weight of a structure in the heart.  
+  **How it's measured**: Calculation (Devereux method) based on a measurement in 2D-mode of the structure's diameter.
+
+- **Area**  
+  Area of a structure in a certain view.  
+  **How it's measured**: Measured by tracing the surface.
+
+- **Velocity**  
+  Speed at which blood flows or a muscle moves.  
+  **How it's measured**: Blood is measured with spectral Doppler and muscle with tissue Doppler.
+
+- **Pressure**  
+  [Text]
+
+## Exertion
+Degree of exertion. There is a cycle machine that the patient can lie in during the examination.
+
+**openEHR**: Since this describes a condition of the patient, it should be expressed under `State` in the observation archetype. There is an archetype, `CLUSTER.level_of_exertion.v0`, that could be used.
+
+## Calculation
+
+- **Indexed**  
+  The measurement can be "indexed," meaning the value is divided by body surface area.  
+  **Question**: Should this be part of the archetype or should the archetype only hold the measurement values and the template hold the body surface area (+formula), and this then be calculated during display?
+
+- **Simpson's method / biplane method of discs (volume)**  
+  For calculation of left ventricular volume and also used for calculating ejection fraction.
+
+- **Teichholz method (volume)**
+
+- **Devereux method (mass)**
+
+- **Linear Cube formula (mass/relative wall thickness)**
+
+- **Continuity equation of VTI (area)**
+
+## Draft openEHR
+
+<img width="1592" height="1201" alt="image" src="https://github.com/user-attachments/assets/549f8f50-4fd0-4fec-bd52-96ef2b6bfe3a" />
+
+## Estimation
+[Text]
