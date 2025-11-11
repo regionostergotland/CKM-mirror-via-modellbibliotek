@@ -147,9 +147,9 @@ Degree of exertion. There is a cycle machine that the patient can lie in during 
 
 - **Continuity equation of VTI (area)**
 
+## Estimation
+[Text]
+
 ## Draft openEHR
 
 <img width="1592" height="1201" alt="image" src="https://github.com/user-attachments/assets/549f8f50-4fd0-4fec-bd52-96ef2b6bfe3a" />
-
-## Estimation
-[Text]
