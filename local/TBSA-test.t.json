@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "7d9f9b3875642823722167f9d6b10068",
+      "MD5-CAM-1.0.1" : "baaeb836df939ba69077ad74cd8dbcfc",
       "PARENT:MD5-CAM-1.0.1" : "8F4DBE7C7F8924D18DC5EC1629F0FB68"
     },
     "details" : {
@@ -186,6 +186,22 @@
                           } ]
                         } ],
                         "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "CLUSTER",
+                        "nodeId" : "at0011",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "items",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0012.0.1",
+                            "attributes" : [ ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
                       } ]
                     } ],
                     "attributeTuples" : [ ]
@@ -309,6 +325,13 @@
           "text" : "Brännskadegrad",
           "description" : "The degree of severity of the condition.",
           "comment" : "For example: mild, moderate or severe for a rash; or first degree, second degree or third degree for a burn. Coding of the severity with an external terminology is preferred, where possible. It is expected that the severity values will be identical as the values used in the 'Per severity' cluster."
+        },
+        "at0012.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0012.0.1",
+          "text" : "Brännskadegrad",
+          "description" : "The degree of severity of the condition at the identified site.",
+          "comment" : "For example: mild, moderate or severe for a rash; or first degree, second degree or third degree for a burn. Coding of the severity with an external terminology is preferred, where possible. It is expected that the severity values will be identical as the values used in the 'Affected body surface area per severity' cluster."
         }
       }
     },
