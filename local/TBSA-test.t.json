@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "1.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c5b1097ba054c1546e5961dea555395a",
+      "MD5-CAM-1.0.1" : "7d9f9b3875642823722167f9d6b10068",
       "PARENT:MD5-CAM-1.0.1" : "8F4DBE7C7F8924D18DC5EC1629F0FB68"
     },
     "details" : {
@@ -79,6 +79,179 @@
                     "nodeId" : "at0006.0.1",
                     "attributes" : [ ],
                     "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "CLUSTER",
+                    "nodeId" : "at0006.0.2",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "items",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.0.1",
+                        "attributes" : [ ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0008.0.1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "Real",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 100.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "Integer",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0010.0.1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "Real",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 100.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "Integer",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "CLUSTER",
+                    "nodeId" : "at0015",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "items",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0016.0.1",
+                        "attributes" : [ ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0017.0.1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "Real",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 100.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "Integer",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
@@ -102,6 +275,40 @@
           "code" : "at0000.1.1",
           "text" : "TBSA-test",
           "description" : "Estimation of the proportion of body surface area affected by a burn."
+        },
+        "at0006.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006.0.2",
+          "text" : "Per body site (2)",
+          "description" : "Details about body surface area affected at each body site."
+        },
+        "at0007.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0007.0.1",
+          "text" : "Huvud",
+          "description" : "The name of the body site assessed.",
+          "comment" : "Coding of the body site name with an external terminology is preferred, where possible. "
+        },
+        "at0008.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0008.0.1",
+          "text" : "Huvudets ytarea",
+          "description" : "The estimated percentage of total body surface area apportioned for the entire identified body site.",
+          "comment" : "For example: when using the 'Rule of nines' method of estimation, 9% is apportioned for each arm, 18% for the back of the torso, and 1% for the genitalia."
+        },
+        "at0010.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0010.0.1",
+          "text" : "Bränd ytarea",
+          "description" : "The estimated extent of total body surface area affected at the identified body site.",
+          "comment" : "For example: when using the 'Rule of nines' method, if half of an arm is affected, the affected site surface area value is 4.5%; or if a third of the back is affected, the value is 6%."
+        },
+        "at0016.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Brännskadegrad",
+          "description" : "The degree of severity of the condition.",
+          "comment" : "For example: mild, moderate or severe for a rash; or first degree, second degree or third degree for a burn. Coding of the severity with an external terminology is preferred, where possible. It is expected that the severity values will be identical as the values used in the 'Per severity' cluster."
         }
       }
     },
