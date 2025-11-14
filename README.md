@@ -1,4 +1,4 @@
-# 🫀 Attributes Describing an Echocardiography Examination (Updated: 2025-11-14)
+# 🫀 Imaging Examination of the Heart (Updated: 2025-11-14)
 
 <img width="1389" height="1145" alt="image" src="https://github.com/user-attachments/assets/3a196272-7b0e-48f7-8915-87ecabf05cc4" />
 
