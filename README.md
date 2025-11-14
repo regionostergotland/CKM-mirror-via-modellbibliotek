@@ -1,6 +1,11 @@
 # 🫀 Imaging Examination of the Heart (Updated: 2025-11-14)
 
+Echocardiography model (draft)
 <img width="1389" height="1145" alt="image" src="https://github.com/user-attachments/assets/3a196272-7b0e-48f7-8915-87ecabf05cc4" />
+
+MRI model (predraft)
+<img width="1269" height="788" alt="image" src="https://github.com/user-attachments/assets/b3f4059f-d4b8-40d4-8734-bfff24b61675" />
+
 
 ## Body Structure
 The structures that are measured are the larger ones such as the left and right ventricles, left and right atria, but also other parts like the aorta, aortic valve, among others. Specific parts of certain structures are also measured, for example, Left ventricle posterior wall.  
