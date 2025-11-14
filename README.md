@@ -1,4 +1,4 @@
-# 🫀 Attributes Describing an Echocardiography Examination (Updated: 2025-11-11)
+# 🫀 Attributes Describing an Echocardiography Examination (Updated: 2025-11-14)
 
 <img width="1389" height="1145" alt="image" src="https://github.com/user-attachments/assets/3a196272-7b0e-48f7-8915-87ecabf05cc4" />
 
@@ -153,3 +153,24 @@ Degree of exertion. There is a cycle machine that the patient can lie in during 
 ## Draft openEHR
 
 <img width="1592" height="1201" alt="image" src="https://github.com/user-attachments/assets/549f8f50-4fd0-4fec-bd52-96ef2b6bfe3a" />
+
+**OBSERVATION.imaging_exam_result.v1**
+
+State
+
+In the observation archetype, State consists of three attributes: Confounding factors, Position, and Stabilising appliance. We want to be able to specify both the phase of the cardiac cycle and exertion. These could individually be recorded under Confounding factors, but since both are relevant simultaneously, we need to find a solution.
+Our proposal is to add a slot for Exertion in the observation archetype and to use Confounding factor for the cardiac cycle phase. However, the question remains whether the cardiac cycle phase should instead be part of the data value attribute.
+The patient's position is not something that the Department of Physiology documents during an echocardiography examination.
+
+**CLUSTER.imaging_exam_heart.v0**
+
+The archetype that holds the measurement values. The question is if we would rather have several archetypes for each specific heart structure (ventricle, atrium etc.)
+
+**CLUSTER.imaging_exam_us_technique.v0**
+
+This archetype is intended to capture information about the technical conditions of the measurement.
+It is still unclear whether it should be designed for all imaging analysis techniques, all ultrasound examinations, or exclusively for echocardiography.
+It will include attributes for View, Method, Mode, Volume algorithm, Mass algorithm, and Area algorithm.
+The question is which of these attributes are specific to echocardiography. The selection of values for the View attribute is, in any case, unique to echocardiography.
+
+
