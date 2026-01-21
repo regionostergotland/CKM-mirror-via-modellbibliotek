@@ -96,7 +96,7 @@ Not to be used to record details related to the overall findings, context or tec
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"97e235f714902703e8ee1c47e4507290">
+		["MD5-CAM-1.0.1"] = <"4ef16a8523709007b51b681c062e4df4">
 		["build_uid"] = <"3677e97d-c5d0-483c-a291-474e45b3b4eb">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"1.1.3">
@@ -364,7 +364,7 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.22] occurrences matches {0..1} matches {    -- Left ventricular volume
+			ELEMENT[at0.22] occurrences matches {0..1} matches {    -- Left ventricular end diastolic volume
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::129]>
@@ -376,7 +376,7 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.23] occurrences matches {0..1} matches {    -- Left ventricular volume indexed
+			ELEMENT[at0.23] occurrences matches {0..1} matches {    -- Left ventricular end diastolic volume indexed
 				value matches {
 					C_DV_QUANTITY <
 						
@@ -386,6 +386,11 @@ definition
 							>
 						>
 					>
+				}
+			}
+			ELEMENT[at0.39] occurrences matches {0..1} matches {    -- Left ventricular end systolic volume
+				value matches {
+					DV_QUANTITY matches {*}
 				}
 			}
 			ELEMENT[at0.24] occurrences matches {0..1} matches {    -- Mitral valve A-wave peak velocity
@@ -652,11 +657,11 @@ ontology
 					description = <"">
 				>
 				["at0.22"] = <
-					text = <"Left ventricular volume">
+					text = <"Left ventricular end diastolic volume">
 					description = <"">
 				>
 				["at0.23"] = <
-					text = <"Left ventricular volume indexed">
+					text = <"Left ventricular end diastolic volume indexed">
 					description = <"">
 				>
 				["at0.24"] = <
@@ -756,6 +761,10 @@ ontology
 					text = <"Comment">
 					description = <"Additional narrative about the imaging findings of the body structure, not captured in other fields.">
 				>
+				["at0.39"] = <
+					text = <"Left ventricular end systolic volume">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -849,11 +858,11 @@ ontology
 					description = <"">
 				>
 				["at0.22"] = <
-					text = <"*Left ventricular volume (en)">
+					text = <"*Left ventricular end diastolic volume (en)">
 					description = <"">
 				>
 				["at0.23"] = <
-					text = <"*Left ventricular volume indexed (en)">
+					text = <"*Left ventricular end diastolic volume indexed (en)">
 					description = <"">
 				>
 				["at0.24"] = <
@@ -953,6 +962,10 @@ ontology
 					text = <"Kommentar">
 					description = <"Ytterligere fritekst om funn eller observasjoner på bilder av kroppsstrukturen og som ikke er fanget i andre felt.">
 				>
+				["at0.39"] = <
+					text = <"*Left ventricular end systolic volume (en)">
+					description = <"">
+				>
 			>
 		>
 		["de"] = <
@@ -1046,11 +1059,11 @@ ontology
 					description = <"">
 				>
 				["at0.22"] = <
-					text = <"*Left ventricular volume (en)">
+					text = <"*Left ventricular end diastolic volume (en)">
 					description = <"">
 				>
 				["at0.23"] = <
-					text = <"*Left ventricular volume indexed (en)">
+					text = <"*Left ventricular end diastolic volume indexed (en)">
 					description = <"">
 				>
 				["at0.24"] = <
@@ -1149,6 +1162,10 @@ ontology
 				["at0007"] = <
 					text = <"Kommentar">
 					description = <"Zusätzlicher Text über die bildgebenden Befunde der Körperstruktur, der in anderen Bereichen nicht erfasst wurde.">
+				>
+				["at0.39"] = <
+					text = <"*Left ventricular end systolic volume (en)">
+					description = <"">
 				>
 			>
 		>
