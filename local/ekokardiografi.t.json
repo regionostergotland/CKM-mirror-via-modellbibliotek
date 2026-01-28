@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "13.0.0",
+      "sem_ver" : "13.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c950f7e893ebf85cc6981f3a7fe4d794",
+      "MD5-CAM-1.0.1" : "512a4f518c8a97200179b2ba379854f8",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -6010,6 +6010,7 @@
                               "@type" : "C_DURATION",
                               "rmTypeName" : "DURATION",
                               "occurrences" : "1..1",
+                              "patternedConstraint" : "PY",
                               "constraint" : [ {
                                 "lower" : "PT0S",
                                 "lowerIncluded" : true,
@@ -6028,17 +6029,22 @@
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "magnitude",
+                              "rmAttributeName" : "units",
                               "children" : [ ]
                             }, {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "units",
+                              "rmAttributeName" : "magnitude",
                               "children" : [ ]
                             } ],
                             "tuples" : [ {
                               "@type" : "C_PRIMITIVE_TUPLE",
                               "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "a" ]
+                              }, {
                                 "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
                                 "constraint" : [ {
                                   "lower" : 0.0,
                                   "upper" : 200.0,
@@ -6047,14 +6053,16 @@
                                   "lowerUnbounded" : false,
                                   "upperUnbounded" : false
                                 } ]
-                              }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "a" ]
                               } ]
                             }, {
                               "@type" : "C_PRIMITIVE_TUPLE",
                               "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "a_j" ]
+                              }, {
                                 "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
                                 "constraint" : [ {
                                   "lower" : 0.0,
                                   "upper" : 200.0,
@@ -6063,9 +6071,6 @@
                                   "lowerUnbounded" : false,
                                   "upperUnbounded" : false
                                 } ]
-                              }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "a_j" ]
                               } ]
                             } ]
                           } ]
