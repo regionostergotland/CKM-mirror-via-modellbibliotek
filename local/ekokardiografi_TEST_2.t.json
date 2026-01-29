@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "0.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "84d7a50b4ce2e5d7eb4b9e0a1e447e6b",
+      "MD5-CAM-1.0.1" : "d7feb85818b5082fcdf3a87dba82f99d",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -245,7 +245,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "ekokardiografi_TEST",
+          "text" : "ekokardiografi_TEST_2",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         }
       },
