@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"17d8b061b243c903252aa32eb315a78c">
+		["MD5-CAM-1.0.1"] = <"6702c9990fb96151890fc334e807874c">
 		["build_uid"] = <"56fbbb18-759f-304f-8627-d8b33e165779">
 	>
 
@@ -41,6 +41,29 @@ definition
 											1|[local::at0008],
 											2|[local::at0009],
 											3|[local::at0010]
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {    -- Ventilation
+										value matches {
+											1|[local::at0013],
+											2|[local::at0014],
+											3|[local::at0015],
+											4|[local::at0016]
+										}
+									}
+									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Circulation
+										value matches {
+											1|[local::at0018],
+											2|[local::at0019],
+											3|[local::at0020],
+											4|[local::at0021]
+										}
+									}
+									ELEMENT[at0022] occurrences matches {0..1} matches {    -- Wound care
+										value matches {
+											1|[local::at0023],
+											2|[local::at0024],
+											3|[local::at0025]
 										}
 									}
 								}
@@ -87,6 +110,62 @@ ontology
 				["at0010"] = <
 					text = <"Continuous monitoring">
 					description = <"Continuous monitoring: ECG, HR, SaO2, MAP. Every hour: urine output, temperature or metabolic monitoring.">
+				>
+				["at0012"] = <
+					text = <"Ventilation">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Post operative surveillance">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Post operative spontaneous breathing, oxygen support, physiotherapy, inhalation of drugs">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Uncomplicated ventilator treatment. Settings changed less than five times/24h">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Complicated ventilator treatment ( settings changed more than four times/ 24 hours). Weaning from ventilator">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Circulation">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Surveillance - no treatment">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Treated with inotropic support within 48 hours. Risk for circulatory faliure, bleeding or arythmias.">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Circulatory faliure 1 vasoactive drug">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Circulatory faliure >1 vasoactive drug">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Wound care">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Minor change of dressing">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Wound revision (<1 hour) under nurse administrated analgesia or patient controlled analgesia">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Wound revision (> 1 hour) under nurse administrated analgesia or patient administrated patient controlled analgesia">
+					description = <"">
 				>
 			>
 		>
