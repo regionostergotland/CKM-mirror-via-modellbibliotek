@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c0f1c90840ba9852c6e80ba923da42ea",
+      "MD5-CAM-1.0.1" : "bbf6a0aca3176b0424e30bacea190d71",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -2922,6 +2922,7 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0008.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -2939,7 +2940,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.1" ],
+                              "constraint" : [ "ac0.2" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -3720,138 +3721,138 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "ja" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "zh-cn" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "nl" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "ru" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "fa" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "ar-sy" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "es-ar" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "pt-br" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "ko" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "es" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "nb" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "sv" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "fi" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "ca" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         },
         "el" : {
-          "ac0.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.2",
             "description" : ""
           }
         }
@@ -3871,6 +3872,11 @@
         "ac0.1" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.1",
+          "members" : [ "at1000", "at1001", "at1002", "at1003", "at1014" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
           "members" : [ "at1000", "at1001", "at1002", "at1003", "at1014" ]
         }
       }
@@ -4881,7 +4887,49 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0001.1.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "SNOMED-CT",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "80891009",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Heart",
+                "@type" : "DV_CODED_TEXT"
+              },
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "SNOMED-CT"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SNOMED-CT",
+                    "code" : "80891009",
+                    "value" : "Heart",
+                    "translations" : {
+                      "en" : "Heart"
+                    }
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -5021,7 +5069,145 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "A08AF127279C26B62E56446624888406"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung des Geschlechts einer Person.",
+          "keywords" : [ "Geschlecht", "männlich", "weiblich", "divers", "androgyn", "Junge", "Mädchen", "Mann", "Frau", "Transsexuelle", "Bigender", "geschlechtslos", "agender", "transgeschlechtlich", "Transgender", "Transfrau", "Transmann" ],
+          "use" : "Der Archetyp wird verwendet, um Details über das Geschlecht der Person darzustellen, einschließlich des administrativen, rechtlichen und bei der Geburt zugewiesenen Geschlechts, zusätzlich der Geschlechtsidentität, des Ausdrucks des Geschlechts und des bevorzugten Pronomen.\r\n\r\nDas Ziel dieses Archetyps ist es, Details, die mit dem Geschlecht einer Person verbunden sind, zu erfassen. Aufgrund des modernen Gender-Denkens sowie neuer Erkenntnisse über psychologische, biologische und soziale Manifestationen von Geschlecht ergibt sich ein breiteres Spektrum an Beschreibungen.\r\n\r\nDieser Archetyp ermöglicht auch die Erfassung und Unterscheidung von rechtlichem und administrativem Geschlecht.\r\n\r\nIn den meisten Anwendungsfällen wird das „Administrative Geschlecht“ als Äquivalent zur traditionellen Definition von „Geschlecht“ in aktuellen oder älteren Systemen verwendet.",
+          "misuse" : "Nicht zur Darstellung von Informationen über die sexuelle Orientierung oder Ausübung einer Person verwenden.\r\n\r\nNicht für die Darstellung des genetischen oder chromosomalen Geschlechts verwenden. Derzeit wird dies in der Regel als Laborergebnis erfasst. Die formale Darstellung des „Genetischen Geschlechts“ ist noch nicht genau definiert und kann die Kombination von Informationsachsen umfassen, einschließlich Chromosomen- und Rezeptordaten, Mosaikvarianten und Diagnosen.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-pt"
+          },
+          "purpose" : "Para registar detalhes sobre o género de um indivíduo.",
+          "keywords" : [ "sexo", "macho", "fêmea", "masculino", "feminino", "andrógino", "rapaz", "rapariga", "homem", "mulher", "transexual", "bigénero", "agente", "transgénero", "homem trans", "mulher trans" ],
+          "use" : "Use para registar detalhes sobre o género do indivíduo, incluindo o género administrativo, género legal e o sexo atribuído à nascença, além da identidade de género, expressão e pronome preferido.\r\n\r\nA intenção deste arquétipo é registar uma vasta gama de detalhes ligados ao género de um indivíduo, devido ao pensamento moderno de género, bem como aos novos conhecimentos das manifestações psicológicas, biológicas e sociais de género.\r\n\r\nEste arquétipo permite ainda o registo e a diferenciação entre género jurídico e administrativo.\r\n\r\nNa maioria dos casos de utilização comuns, será utilizado o 'género administrativo', como equivalente à definição tradicional de \"sexo\" nos sistemas atuais ou legados.",
+          "misuse" : "Não deve ser utilizado para registar informações relacionadas com a orientação sexual ou a atividade sexual de um indivíduo.\r\n\r\nNão deve ser utilizado para registar sexo genético ou cromossómico. Atualmente, este é geralmente registado como resultado de um teste laboratorial. A representação formal do “sexo genético” ainda não está bem definida e pode envolver a combinação de eixos de informação, incluindo dados cromossómicos e de recetores, variantes em mosaico e diagnósticos.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera information om en individs kön.",
+          "keywords" : [ "kön", "manligt", "kvinnligt", "androgyn", "pojke", "flicka", "man", "kvinna", "transsexuell", "bigender", "agender", "transpersoner", "transman", "transkvinna" ],
+          "use" : "*Use to record details about the individual's gender, including administrative and legal gender and assigned sex at birth, in addition to gender identity, expression and preferred pronoun.\r\n\r\nThe intent of this archetype is to record a broad range of details connected to the gender of an individual, due to modern thinking of gender as well as new knowledge of psychological, biological and social manifestations of gender.\r\n\r\nThis archetype also allows the recording of, and differentiation between, legal and administrative gender.\r\n\r\nIn most common use cases 'Administrative gender' will be used, as equivalent of the traditional definition of \"Sex\" in current or legacy systems. (en)",
+          "misuse" : "Ska inte användas för att registrera information som berör en individs sexuella läggning eller sexuella aktivitet.\r\n\r\nSka inte användas för registrering av genetiskt eller kromosomalt kön. För närvarande registreras detta vanligtvis via ett laboratorietest. Formell representation av \"genetiskt kön\" är inte definierat och kan involvera en kombination av flera olika parametrar inklusive data från receptorer, kromosomer, mosaicism och diagnoser.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere individets kjønn.",
+          "keywords" : [ "kjønn", "mann", "kvinne", "androgyn", "gutt", "jente", "pike", "trans", "transmann", "transkvinne", "transseksuell" ],
+          "use" : "Brukes for å angi individets kjønn, inkludert administrativt, juridisk, og anatomisk kjønn. I tillegg kjønnsidentitet, fremtoning og foretrukne pronomen.\r\n\r\nAmbisjonen til denne arketypen er å gjøre det mulig å registrere et bredere spekter av detaljer som er knyttet til kjønnet til et individ, som gjenspeiler moderne tenkning om kjønn så vel som ny kunnskap om hvordan kjønn manifesterer seg psykologisk, biologisk og sosialt.\r\n\r\nI Norge er det niende sifferet i fødselsnummeret en markering på kjønn. De fleste systemer i Norge benytter dette til å utlede individets kjønn. Med denne arketypen kan man skille mellom det juridiske kjønnet, slik det fremkommer i fødselsnummeret og det kjønnet man administrativt vil tilordne et individ, for eksempel for praktiske formål som å planlegge hvilket rom et individ skal legges på. Det er opp til leverandørene og implementasjon om man som utgangspunkt skal benytte \"Administrativt kjønn\" eller \"Juridisk kjønn\", eller om man vil sette verdien i disse to elementene likt og åpne for å kunne endre manuelt i de tilfellene man trenger det. Eksempel på dette siste er om juridisk kjønn ikke er oppdatert i henhold til hvordan et individ fremstår.\r\n\r\nDenne arketypen kan på et senere utvides til å inneholde informasjon om kjønn som ennå ikke er vanlig brukt, eller dette kan legges inn i SLOT'et \"Ytterligere detaljer\".",
+          "misuse" : "Skal ikke brukes til å registrere informasjon relatert til seksuell orientering eller adferd.\r\n\r\nSkal ikke brukes til å registrere genetisk kjønn. Per i dag registeres dette som regel som en diagnose eller et laboratoriesvar. Verdisett for et dataelement som \"Genetisk kjønn\" er heller ennå ikke godt definert, og kan bestå av kombinasjoner av forskjellige akser, inkludert data knyttet til kromosomer og reseptorkjønn, mosaikktilstander og diagnoser.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about the gender of an individual.",
+          "keywords" : [ "sex", "male", "female", "androgynous", "boy", "girl", "man", "woman", "transsexual", "bigender", "agender", "transgender", "transman", "transwoman" ],
+          "use" : "Use to record details about the individual's gender, including administrative and legal gender and assigned sex at birth, in addition to gender identity, expression and preferred pronoun.\r\n\r\nThe intent of this archetype is to record a broad range of details connected to the gender of an individual, due to modern thinking of gender as well as new knowledge of psychological, biological and social manifestations of gender.\r\n\r\nThis archetype also allows the recording of, and differentiation between, legal and administrative gender.\r\n\r\nIn most common use cases 'Administrative gender' will be used, as equivalent of the traditional definition of \"Sex\" in current or legacy systems.",
+          "misuse" : "Not to be used for recording information relating to the sexual orientation or sexual activity of an individual.\r\n\r\nNot to be used for recording genetic or chromosomal sex. Currently this is usually recorded as a laboratory test result. Formal representation of 'Genetic sex' is not yet well defined and may involve the combination of information axes, including chromosomal and receptor data, mosaic variants and diagnoses.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Enregistrer des informations sur le sexe d'une personne.",
+          "keywords" : [ "sexe", "masculin", "féminin", "androgyne", "garçon", "fille", "homme", "femme", "transsexuel", "bigender", "agender", "transgenre", "transman", "transfemme" ],
+          "use" : "Sert à enregistrer des détails sur le genre de la personne, y compris le genre administratif et légal et le sexe assigné à la naissance, en plus de l'identité de genre, de l'expression et du pronom préféré.\r\n\r\nL'objectif de cet archétype est d'enregistrer un large éventail de détails liés au genre d'un individu, en raison de la conception moderne du genre et des nouvelles connaissances sur les manifestations psychologiques, biologiques et sociales du genre.\r\n\r\nCet archétype permet également d'enregistrer et de différencier le sexe légal et le sexe administratif.\r\n\r\nDans les cas d'utilisation les plus courants, le \"sexe administratif\" sera utilisé comme équivalent de la définition traditionnelle du \"sexe\" dans les systèmes actuels ou anciens.",
+          "misuse" : "Ne pas utiliser pour enregistrer des informations relatives à l'orientation sexuelle ou à l'activité sexuelle d'une personne.\r\n\r\nNe pas utiliser pour enregistrer le sexe génétique ou chromosomique. À l'heure actuelle, cette information est généralement enregistrée sous la forme d'un résultat de test de laboratoire. La représentation formelle du \"sexe génétique\" n'est pas encore bien définie et peut impliquer la combinaison d'axes d'information, y compris des données chromosomiques et réceptrices, des variantes mosaïques et des diagnostics.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "旨在记录关于个人性别的详情。",
+          "keywords" : [ "性别", "性", "男性", "男", "女性", "女", "双性同体", "雌雄同体", "兼具两性", "男孩", "男童", "少年", "男生", "男青年", "小子", "小伙", "女孩", "女童", "少女", "女生", "女青年", "姑娘", "男人", "男子", "女人", "妇女", "易性癖者", "变性人", "双性人", "双性", "间性人", "间性", "无性别者", "无性别", "跨性别者", "跨性别", "跨性别男性", "跨性别女性" ],
+          "use" : "用于记录关于个人性别的详情，包括管理类/行政管理类性别（administrative gender）、法定性别（legal gender）、出生性别（出生时指定的性别）以及性别认同（gender identity）、性别表达（gender expression）和首选代词（preferred pronoun）。\r\n\r\n鉴于现代性别思维以及新的关于性别的心理、生物学和社会表现的知识，本原始型的目的在于记录广泛多样的关于个人性别的详情。\r\n\r\n同时，还允许将本原始型用于记录和区分法定性别与管理类性别。\r\n\r\n在大多数的常见用例当中，使用的将是“管理类性别”，相当于现有或历史遗留系统之中关于“性别”（Sex）的传统定义。",
+          "misuse" : "并非旨在用于记录那些与个人的性取向或性活动相关的信息。\r\n\r\n并非旨在用于记录遗传/基因性别（genetic sex）或染色体性别（chromosomal sex）。目前，通常会将此类性别信息记录为实验室检验结果。当前，“遗传性别”的正式表达形式尚未获得明确的规定，并且还可能涉及若干信息轴的组合，包括种种的染色体和受体数据、嵌合变异（mosaic variant）和诊断。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar detalls sobre el gènere d'una persona.",
+          "keywords" : [ "sexe", "home", "dona", "androgin", "noi", "noia", "home", "dona", "transsexual", "bigènere", "no-binari", "transgènere", "home trans", "dona trans" ],
+          "use" : "Utilitzar per registrar detalls sobre el gènere de la persona, incloent-hi el gènere administratiu i legal i el sexe assignat al naixement, a més de la identitat de gènere, l'expressió i el pronom preferit.\r\n\r\nLa intenció d'aquest arquetip és registrar una àmplia gamma de detalls relacionats amb el gènere d'una persona, a causa del pensament modern de gènere, així com nous coneixements de manifestacions psicològiques, biològiques i socials de gènere.\r\n\r\nAquest arquetip també permet el registre i la diferenciació entre gènere legal i administratiu.\r\n\r\nEn els casos d'ús més comuns s'utilitzarà 'gènere administratiu', com a equivalent a la definició tradicional de \"\"sexe\"\" en els sistemes actuals o heretats.",
+          "misuse" : "No s'ha d'utilitzar per registrar informació relacionada amb l'orientació sexual o l'activitat sexual d'una persona.\r\n\r\nNo s'ha d'utilitzar per registrar sexe genètic o cromosòmic. Actualment això sol registrar-se com a resultat d'una prova de laboratori. La representació formal del 'sexe genètic' encara no està ben definida i pot implicar la combinació d'eixos d'informació, incloent dades cromosòmiques i de receptors, variants de mosaic i diagnòstics.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Para registrar datos sobre el género de una persona.",
+          "keywords" : [ "sexo", "masculino", "femenino", "andrógino", "niño", "niña", "hombre", "mujer", "transexual", "bigénero", "agénero", "transgénero", "hombre transgénero", "mujer transgénero" ],
+          "use" : "Se utiliza para registrar detalles sobre el género del individuo, incluido el género administrativo y legal y el sexo asignado al nacer, además de la identidad de género, la expresión y el pronombre preferido.\r\n\r\nLa intención de este arquetipo es registrar una amplia gama de detalles relacionados con el género de un individuo, debido a la concepción moderna del género, así como a los nuevos conocimientos sobre las manifestaciones psicológicas, biológicas y sociales del género.\r\n\r\nEste arquetipo también permite registrar y diferenciar el género legal del administrativo.\r\n\r\nEn la mayoría de los casos de uso comunes se utilizará «Género administrativo», como equivalente de la definición tradicional de «Sexo» en los sistemas actuales o heredados.",
+          "misuse" : "No debe utilizarse para registrar información relativa a la orientación sexual o la actividad sexual de una persona.\r\n\r\nNo debe utilizarse para registrar el sexo genético o cromosómico. En la actualidad, suele registrarse como resultado de una prueba de laboratorio. La representación formal del «sexo genético» aún no está bien definida y puede implicar la combinación de ejes de información, incluidos datos cromosómicos y receptores, variantes de mosaico y diagnósticos.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.gender.v1",
     "differential" : true,
@@ -5091,6 +5277,36 @@
               "occurrences" : "0..0",
               "nodeId" : "at0014.1",
               "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0003",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0004.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -5257,7 +5473,99 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "60CDC878F9DB9810B55BD0207645BD40"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Aufzeichnung einer Aussage über das Alter einer Person zu einem bestimmten Zeitpunkt als klinischer Kontext für weitere Informationen in derselben COMPOSITION.",
+          "keywords" : [ "chronologisch", "korrigiert", "angepasst", "Alter" ],
+          "use" : "Zur Aufzeichnung einer Aussage über das Alter einer Person zu einem bestimmten Zeitpunkt als klinischer Kontext für weitere Informationen in derselben COMPOSITION.\r\n\r\nDieser Archetyp ist so strukturiert, dass entweder das chronologische oder das angepasste Alter unabhängig voneinander aufgezeichnet werden können, aber auch beide gleichzeitig zu Vergleichszwecken erfasst werden können. \r\n\r\nSowohl das chronologische Alter als auch das bereinigte Alter werden auf der Grundlage des tatsächlichen oder geschätzten Geburtsdatums und/oder des Geburtstermins berechnet. Die EVENT-Struktur aus dem Referenzmodell kann verwendet werden, um anzugeben, ob sich die Altersangabe auf einen aktuellen oder einen historischen Zeitpunkt bezieht. \r\n\r\nZu den Anwendungsfällen gehören unter anderem:\r\n- gleichzeitige Aufzeichnung des chronologischen Alters und des angepassten Alters zusammen mit den Wachstumsparametern des Kindes;\r\n- Aufzeichnung des Alters einer Person zum Zeitpunkt der Aufzeichnung als Kontext für andere Inhalte in einem Dokument, wie z. B. das Alter eines Kindes zum Zeitpunkt der Überweisung;\r\n- das Alter der Mutter (die auf der ENTRY-Ebene als Pflegeperson bezeichnet wird) zum Zeitpunkt der Aufnahme in die Akte eines Neugeborenen zu erfassen; oder\r\n- das Alter einer Person zum Zeitpunkt des Ausfüllens eines Fragebogens zur Gesundheitsbewertung.\r\n- die Grundlage für die Berechnung von Referenzwerten für physiologische Messungen. Zum Beispiel im Archetyp CHA₂DS₂-VASc-Score.",
+          "misuse" : "Nicht zur Darstellung des aktuellen Alters einer Person in der Benutzeroberfläche einer elektronischen Patientenakte zu verwenden. Verwenden Sie zu diesem Zweck ein formales Patientenregister oder Archetypen, die auf dem openEHR-Modell für demografische Informationen basieren.\r\n\r\nNicht für die Erfassung des Skelettalters zu verwenden, verwenden Sie zu diesem Zweck OBSERVATION.skeletal_age.\r\n\r\nNicht zur Erfassung des geschätzten oder bekannten Zeitraums oder der Dauer der Schwangerschaft oder des Schwangerschaftsalters des Fötus oder des Neugeborenen zu verwenden, verwenden Sie zu diesem Zweck OBSERVATION.gestational_age_assertion.\r\n\r\nNicht zu verwenden für die Erfassung des biologischen Alters, das sich auf den Zustand der Körpersysteme einer Person bezieht und angibt, wie gut oder schlecht der Körper im Vergleich zur erwarteten Norm für das chronologische Alter funktioniert - verwenden Sie zu diesem Zweck entsprechende Archetypen.\r\n\r\nNicht zu verwenden für die Aufzeichnung einer Bewertung des mentalen, kognitiven oder Entwicklungsalters oder ähnlicher Einschätzungen, die sich auf das Alter beziehen, das die Funktionen und Fähigkeiten einer Person widerspiegelt. Verwenden Sie für diesen Zweck einen geeigneten Archetyp.\r\n\r\nNicht zur Aufzeichnung eines geschätzten Alters in einem forensischen Bericht oder für eine bewusstlose Person zu verwenden - verwenden Sie für diesen Zweck einen geeigneten Archetyp.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere et utsagn om alderen til et individ på et tidspunkt, for å gi klinisk kontekst til den øvrige informasjonen i samme COMPOSITION.",
+          "keywords" : [ "kronologisk", "justert", "alder" ],
+          "use" : "Brukes for å registrere et utsagn om alderen til et individ på et tidspunkt, for å gi klinisk kontekst til den øvrige informasjonen i samme COMPOSITION.\r\n\r\nDenne arketypen er utformet for å støtte registrering av enten kronologisk eller justert alder, samtidig som den også gir muligheten til å registrere begge for sammenligningsformål.\r\n\r\nBåde kronologisk alder og justert alder beregnes basert på faktisk eller antatt fødselsdato og/eller dato for termin. EVENT strukturen fra referansemodellen kan brukes til å spesifisere om aldersutsagnet gjelder et nåværende tidspunkt eller et historisk tidspunkt.\r\n\r\nEksempler på bruksområder for arketypen:\r\n- samtidig registrering av kronologisk alder og justert alder sammen med informasjon om vekst hos barn\r\n- å registrere et individs alder på registreringstidspunktet, som kontekst for det andre innholdet i et dokument, for eksempel et barns alder på henvisningstidspunktet\r\n- å registrere mors alder på registreringstidspunktet i barnets journal (mor kan her registreres som \"subject of care\" ved hjelp av referansemodell-elementer)\r\n- et individs alder på tidspunktet for utfylling av et spørreskjema for helsevurdering.\r\n- grunnlaget for beregnede referanseverdier for fysiologiske målinger. For eksempel i arketypen CHA₂DS₂-VASc score.",
+          "misuse" : "Skal ikke brukes til å vise individets nåværende alder i brukergrensesnittet i et elektronisk journalsystem. Bruk et formelt pasientregister eller arketyper basert på openEHR demografisk informasjonsmodell til dette formålet.\r\n\r\nSkal ikke brukes til å registrere skjelettalder, bruk OBSERVATION.skeletal_age (Skjelettalder) til dette formålet.\r\n\r\nSkal ikke brukes til å registrere et anslag eller den kjente varigheten av et svangerskap, eller svangerskapsalderen til fosteret eller et nyfødt barn, bruk OBSERVATION.gestational_age_assertion for dette formålet.\r\n\r\nSkal ikke brukes til å registrere biologisk alder, som refererer til tilstanden til en persons kroppssystemer og indikerer hvor godt eller dårlig kroppen fungerer i forhold til det forventede for deres kronologiske alder. Bruk passende arketyper for dette formålet.\r\n\r\nSkal ikke brukes til å registere en vurdering av et individs mentale, kognitive eller utviklingsmessige alder, eller lignende som uttrykk for individets funksjon eller ferdigheter. Bruk en passende arketype for dette formålet.\r\n\r\nSkal ikke brukes til å registrere estimert alder i en rettsmedisinsk rapport eller for en bevisstløs person. Bruk en passende arketype for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a statement about the age of an individual at a point in time, as clinical context for the other information in the same COMPOSITION.",
+          "keywords" : [ "chronological", "corrected", "adjusted", "age" ],
+          "use" : "Use to record a statement about the age of an individual at a point in time, as clinical context for the other information in the same COMPOSITION.\r\n\r\nThis archetype is structured to support the recording of either chronological or adjusted age independently, while also providing the capability to record both simultaneously for comparison purposes. \r\n\r\nBoth the Chronological age and Adjusted age are calculated based on actual or estimated dates of birth and/or due date. The EVENT structure from the reference model can be used to specify whether the age assertion relates to a current point in time or a historical point in time. \r\n\r\nUse cases include, but are not limited to:\r\n- simultaneously record the chronological age and adjusted age alongside child growth parameters;\r\n- record the age of an individual at the time of recording as context for the other content in a document, such as the age of a child at the time of referral;\r\n- record the age of the mother (designated as the subject of care at ENTRY level) at the time of recording within a newborn's record; or\r\n- the age of an individual at the time of filling out a health assessment questionnaire.\r\n- the basis for calculated reference values for physiological measurements. For example in the CHA₂DS₂-VASc score archetype.",
+          "misuse" : "Not to be used to display the individual's current age in the user interface of an electronic health record. Use a formal patient registry or archetypes based on the openEHR demographic information model for this purpose.\r\n\r\nNot to be used to record skeletal age, use OBSERVATION.skeletal_age for this purpose.\r\n\r\nNot to be used to record the estimate or known period or duration of the pregnancy or gestational age of the foetus or new born, use OBSERVATION.gestational_age_assertion for this purpose.\r\n\r\nNot to be used to record the Biological age, which refers to the condition of an individual's body systems, indicating how well or poorly the body is functioning relative to the expected norm for their chronological age - use approriate archetypes for this purpose.\r\n\r\nNot to be used to record an assessment of the mental, cognitive or developmental age, or similar assements, which refers to the age that reflects an individual's functions and abilities. Use an appropriate archetype for this purpose.\r\n\r\nNot to be used to record an estimated age in a forensic report or for an unconscious inidividual - use an approriate archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "*To record a statement about the age of an individual at a point in time, as clinical context for the other information in the same COMPOSITION. (en)",
+          "keywords" : [ "chronologique", "corrigé", "âge" ],
+          "use" : "*Use to record a statement about the age of an individual at a point in time, as clinical context for the other information in the same COMPOSITION.\r\n\r\nThis archetype is structured to support the recording of either chronological or adjusted age independently, while also providing the capability to record both simultaneously for comparison purposes.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the age assertion relates to a current point in time or a historical point in time. \r\n\r\nUse cases include, but are not limited to;\r\n- to simultaneously record the chronological age and adjusted age alongside child growth parameters;\r\n- to record the age of an individual at the time of recording as context for the other content in a document, such as the age of a child at the time of referral;\r\n- to record the age of the mother (designated as the subject of care at ENTRY level) at the time of recording within a newborn's record; or\r\n- the age of an individual at the time of filling out a health assessment questionnaire.\r\n- as basis for calculated reference values for physiologic measurements. For example in the CHA₂DS₂-VASc score archetype. (en)",
+          "misuse" : "*Not to be used to display the individual's current age in the user interface of an electronic health record. Use a formal patient registry or archetypes based on the openEHR demographic information model for this purpose.\r\n\r\nNot to be used to record skeletal age, use OBSERVATION.skeletal_age for this purpose.\r\n\r\nNot to be used to record the estimate or known period or duration of the pregnancy or gestational age of the foetus or new born, use OBSERVATION.gestational_age_assertion for this purpose.\r\n\r\nNot to be used to record the Biological age, which refers to the condition of an individual's body systems, indicating how well or poorly the body is functioning relative to the expected norm for their chronological age - use approriate archetypes for this purpose.\r\n\r\nNot to be used to record the Mental age or Cognitive age, which refers to the age that reflects an individual's mental functions and abilities. Use an appropriate archetype for this purpose.\r\n\r\nNot to be used to record an estimated age in a forensic report or for an unconscious inidividual - use an approriate archetype for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar una declaració sobre l'edat d'un pacient en un moment donat, com a context clínic per a la resta d'informació de la mateixa COMPOSITION.",
+          "keywords" : [ "cronològic", "corregit", "ajustat", "edat" ],
+          "use" : "Utilitzar per a registrar una declaració sobre l'edat d'un pacient en un moment donat, com a context clínic per a la resta d'informació de la mateixa COMPOSITION.\r\n\r\nAquest arquetip s'estructura per a donar suport a l'enregistrament de l'edat cronològica o ajustada de manera independent, alhora que proporciona la capacitat de registrar tots dos simultàniament amb finalitats comparatives.\r\n\r\nTant l'edat Cronològica com l'edat Ajustada es calculen en funció de les dates reals o estimades de naixement o del part. L'estructura de EVENT del model de referència es pot utilitzar per a especificar si la declaració d'edat es relaciona amb un moment actual en el temps o un moment històric en el temps.\r\n\r\nEls casos d'ús inclouen, però no es limiten als següents:\r\n- registrar simultàniament l'edat cronològica i l'edat ajustada amb els paràmetres de creixement de l’infant;\r\n- registrar l'edat d'un pacient en el moment de l’enregistrament com a context per a l'altre contingut d'un document, com ara l'edat d'un infant en el moment de la derivació;\r\n- registrar l'edat de la mare (designada com a pacient a nivell ENTRY) en el moment d’enregistrament dins d'un registre d'un nadó; o\r\n- l'edat d'un pacient en el moment d'emplenar un qüestionari d'avaluació de la salut.\r\n- la base dels valors de referència calculats per a les mesures fisiològiques. Per exemple en l'arquetip de puntuació CHA₂DS₂-VASc.",
+          "misuse" : "No utilitzar per a mostrar l'edat actual del pacient a la interfície d'usuari d'un registre de salut electrònic. Utilitzar un registre formal de pacients o arquetips basats en el model d'informació demogràfica openEHR per aquesta finalitat.\r\n\r\nNo utilitzar per a registrar l'edat òssia, utilitzar OBSERVATION.skeletal.age per aquesta finalitat.\r\n\r\nNo utilitzar per a registrar la durada o el període estimats o coneguts de l'embaràs o l'edat gestacional del fetus o del nadó, utilitzar OBSERVATION.gestational_age_assertion per aquesta finalitat.\r\n\r\nNo utilitzar per a registrar l'edat Biològica, la qual es refereix a la condició dels sistemes corporals d'un pacient, indicant com de bé o malament el cos està funcionant en relació amb la norma esperada per a la seva edat cronològica - utilitzar arquetips adequats per aquesta finalitat.\r\n\r\nNo utilitzar per a registrar una avaluació de l'edat mental, cognitiva o del desenvolupament, o avaluacions similars, que es refereix a l'edat que reflecteixen les funcions i habilitats d'un pacient. Utilitzar un arquetip adequat per aquesta finalitat.\r\n\r\nNo utilitzar per a registrar una edat estimada en un informe forense o per a un pacient inconscient - utilitzar un arquetip apropiat per aquesta finalitat.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar una declaración sobre la edad de un paciente en un momento dado, como un contexto clínico para el resto de información de la misma COMPOSITION.",
+          "keywords" : [ "cronológico", "corregido", "ajustado", "edad" ],
+          "use" : "Usar para registrar una declaración sobre la edad de un paciente en un momento determinado, como contexto clínico para el resto de la información contenida en la misma COMPOSITION.\r\n\r\nEste arquetipo está estructurado para permitir el registro de la edad cronológica o ajustada de forma independiente, y también proporciona la posibilidad de registrar ambas simultáneamente con fines comparativos.\r\n\r\nTanto la edad cronológica como la edad ajustada se calculan en función de fechas reales o estimadas de nacimiento o de parto. La estructura EVENT del modelo de referencia puede utilizarse para especificar si la declaración de edad se refiere a un momento actual o a un momento histórico en el tiempo.\r\n\r\nLos casos de uso incluyen, pero no se limitan a:\r\n\r\n- Registrar simultáneamente la edad cronológica y la edad ajustada junto con los parámetros de crecimiento del niño;\r\n- Registrar la edad del paciente en el momento del registro como contexto para otros contenidos de un documento, como por ejemplo, la edad de un niño en el momento de una derivación;\r\n- Registrar la edad de la madre (designada como paciente a nivel de ENTRY) en el momento del registro dentro de una ficha clínica del recién nacido;\r\n- Registrar la edad del paciente en el momento de completar un cuestionario de evaluación de salud;\r\n- Servir como base para los valores de referencia calculados en mediciones fisiológicas, por ejemplo, en el arquetipo de puntuación CHA₂DS₂-VASc.",
+          "misuse" : "No debe utilizarse para mostrar la edad actual del individuo en la interfaz de usuario de una historia clínica electrónica. Para este propósito, utilice un registro formal de pacientes o arquetipos basados en el modelo de información demográfica de openEHR.\r\n\r\nNo debe utilizarse para registrar la edad ósea, utilice OBSERVATION.skeletal_age para este propósito.\r\n\r\nNo debe utilizarse para registrar el período estimado o conocido del embarazo o la edad gestacional del feto o del recién nacido, utilice OBSERVATION.gestational_age_assertion para este propósito.\r\n\r\nNo debe utilizarse para registrar la edad biológica, que se refiere al estado de los sistemas corporales de un individuo, indicando qué tan bien o mal funciona el cuerpo en comparación con la norma esperada para su edad cronológica. Utilice arquetipos apropiados para este propósito.\r\n\r\nNo debe utilizarse para registrar una evaluación de la edad mental, cognitiva o del desarrollo, o evaluaciones similares, que se refieren a la edad que refleja las funciones y capacidades de un individuo. Utilice un arquetipo adecuado para este propósito.\r\n\r\nNo debe utilizarse para registrar una edad estimada en un informe forense o para un individuo inconsciente, utilice un arquetipo apropiado para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.age_assertion.v1",
     "differential" : true,
