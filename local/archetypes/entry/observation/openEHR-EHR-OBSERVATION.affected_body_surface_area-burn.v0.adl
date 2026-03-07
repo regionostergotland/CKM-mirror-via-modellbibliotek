@@ -1,35 +1,37 @@
-﻿archetype (adl_version=1.4; uid=b188108d-128e-4221-9cc8-1b459d31690b)
+archetype (adl_version=1.4; uid=b188108d-128e-4221-9cc8-1b459d31690b)
 	openEHR-EHR-OBSERVATION.affected_body_surface_area-burn.v0
-specialise
+specialize
 	openEHR-EHR-OBSERVATION.affected_body_surface_area.v0
 
 concept
-	[at0000.1]	-- Burn-affected body surface area
+	[at0000.1]
+
 language
 	original_language = <[ISO_639-1::en]>
+
 description
 	original_author = <
+		["date"] = <"2020-10-06">
 		["name"] = <"Heather Leslie">
 		["organisation"] = <"Atomica Informatics">
 		["email"] = <"heather.leslie@atomicainformatics.com">
-		["date"] = <"2020-10-06">
 	>
+	lifecycle_state = <"in_development">
+	other_contributors = <"Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Åsa Skagerhult, Region Östergötland, Sweden (openEHR Editor)","Erik Sundvall, Region Östergötland + Linköping University, Sweden (openEHR Editor)">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record details about the estimated proportion of body surface area affected by a burn injury.">
+			keywords = <"TBSA","BSA","burn","surface","area","burns","assessment","Lund-Browder","skin","rule","nines","palmar","method","TBSA%">
+			copyright = <"© openEHR Foundation">
 			use = <"Use to record details about the estimated proportion of body surface area affected by a burn injury, including the total body surface area affected, the body surface area affected per body site and the body surface area affected per severity.
 
 This archetype has been designed as a component of a templated full burn assessment which may comprise a range of ENTRY archetypes and nested CLUSTERs, describing the history, physical examination findings, and other measurements.">
-			keywords = <"TBSA", "BSA", "burn", "surface", "area", "burns", "assessment", "Lund-Browder", "skin", "rule", "nines", "palmar", "method", "TBSA%">
 			misuse = <"Not to be used to record the measured or calculated body surface area of an individual - use the OBSERVATION.body_surface_area for this purpose.
 
 Not to be used to record the estimated proportion of body surface area affected by other conditions of the skin - use the parent archetype OBSERVATION.affected_body_surface_area for this purpose.">
-			copyright = <"© openEHR Foundation">
 		>
 	>
-	lifecycle_state = <"in_development">
-	other_contributors = <"Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Åsa Skagerhult, Region Östergötland, Sweden (openEHR Editor)", "Erik Sundvall, Region Östergötland + Linköping University, Sweden (openEHR Editor)">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -52,7 +54,7 @@ Wikipedia [Internet]. Wikimedia Foundation, Inc. Total body surface area; [updat
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8F4DBE7C7F8924D18DC5EC1629F0FB68">
+		["MD5-CAM-1.0.1"] = <"1b66cdcead3d620a5f8f81abc00dd632">
 		["build_uid"] = <"25bb1107-42ed-48f8-aaa2-37f79d99df85">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -184,7 +186,6 @@ definition
 		}
 	}
 
-
 ontology
 	term_definitions = <
 		["en"] = <
@@ -205,7 +206,7 @@ ontology
 				["at0.2"] = <
 					text = <"Cause of burn">
 					description = <"The aetiology of the burn.">
-					comment = <"For example: thermal; cold; radiation; chemical; or electrical.">
+					comment = <"For example: thermals; cold; radiation; chemical; or electrical.">
 				>
 				["at0000"] = <
 					text = <"Affected body surface area">
