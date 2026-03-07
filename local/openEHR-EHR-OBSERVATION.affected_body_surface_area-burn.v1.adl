@@ -1,0 +1,590 @@
+archetype (adl_version=1.4; uid=a803d2bd-c501-370a-8247-3bfd61f2b983)
+	openEHR-EHR-OBSERVATION.affected_body_surface_area-burn.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[iso_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"Auto-generated">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["en"] = <
+			language = <[iso_639-1::en]>
+			purpose = <"Recording TBSA burn distribution using Lund Browder chart">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"9df3423b537f8afb35009ff9b878d1d9">
+		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Burn affected body surface area (Lund Browder)
+		data matches {
+			HISTORY[at0001] matches {    -- Any event
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] matches {    -- Point in time
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {1..*; unordered} matches {
+									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Total TBSA
+										value matches {
+											DV_PROPORTION matches {
+												numerator matches {|0..100|}
+												type matches {2}
+											}
+										}
+									}
+									CLUSTER[at1001] matches {    -- Head anterior
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|3.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1002] matches {    -- Head posterior
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|3.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1003] matches {    -- Neck anterior
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|1|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1004] matches {    -- Neck posterior
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|1|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1005] matches {    -- Chest
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|9|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1006] matches {    -- Abdomen
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|9|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1007] matches {    -- Upper back
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|9|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1008] matches {    -- Lower back / buttocks
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|9|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1009] matches {    -- Right upper arm
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|4|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1010] matches {    -- Left upper arm
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|4|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1011] matches {    -- Right forearm
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|3|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1012] matches {    -- Left forearm
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|3|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1013] matches {    -- Right hand
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|2.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1014] matches {    -- Left hand
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|2.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1015] matches {    -- Right thigh
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|9.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1016] matches {    -- Left thigh
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|9.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1017] matches {    -- Right lower leg
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|7|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1018] matches {    -- Left lower leg
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|7|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1019] matches {    -- Right foot
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|3.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1020] matches {    -- Left foot
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|3.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at1021] matches {    -- Genitalia / perineum
+										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|1|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Burn affected body surface area (Lund Browder)">
+					description = <"">
+				>
+				["at0001"] = <
+					text = <"Any event">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Point in time">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Reference percentage">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Observed percentage">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Total TBSA">
+					description = <"">
+				>
+				["at1001"] = <
+					text = <"Head anterior">
+					description = <"">
+				>
+				["at1002"] = <
+					text = <"Head posterior">
+					description = <"">
+				>
+				["at1003"] = <
+					text = <"Neck anterior">
+					description = <"">
+				>
+				["at1004"] = <
+					text = <"Neck posterior">
+					description = <"">
+				>
+				["at1005"] = <
+					text = <"Chest">
+					description = <"">
+				>
+				["at1006"] = <
+					text = <"Abdomen">
+					description = <"">
+				>
+				["at1007"] = <
+					text = <"Upper back">
+					description = <"">
+				>
+				["at1008"] = <
+					text = <"Lower back / buttocks">
+					description = <"">
+				>
+				["at1009"] = <
+					text = <"Right upper arm">
+					description = <"">
+				>
+				["at1010"] = <
+					text = <"Left upper arm">
+					description = <"">
+				>
+				["at1011"] = <
+					text = <"Right forearm">
+					description = <"">
+				>
+				["at1012"] = <
+					text = <"Left forearm">
+					description = <"">
+				>
+				["at1013"] = <
+					text = <"Right hand">
+					description = <"">
+				>
+				["at1014"] = <
+					text = <"Left hand">
+					description = <"">
+				>
+				["at1015"] = <
+					text = <"Right thigh">
+					description = <"">
+				>
+				["at1016"] = <
+					text = <"Left thigh">
+					description = <"">
+				>
+				["at1017"] = <
+					text = <"Right lower leg">
+					description = <"">
+				>
+				["at1018"] = <
+					text = <"Left lower leg">
+					description = <"">
+				>
+				["at1019"] = <
+					text = <"Right foot">
+					description = <"">
+				>
+				["at1020"] = <
+					text = <"Left foot">
+					description = <"">
+				>
+				["at1021"] = <
+					text = <"Genitalia / perineum">
+					description = <"">
+				>
+			>
+		>
+	>
