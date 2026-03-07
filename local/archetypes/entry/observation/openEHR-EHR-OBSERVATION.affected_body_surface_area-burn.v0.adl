@@ -54,7 +54,7 @@ Wikipedia [Internet]. Wikimedia Foundation, Inc. Total body surface area; [updat
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e65252c3599f5a01cbd62d9f25d2bfa7">
+		["MD5-CAM-1.0.1"] = <"9535e590924c0d93d55fd1486fbc4b21">
 		["build_uid"] = <"25bb1107-42ed-48f8-aaa2-37f79d99df85">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -92,7 +92,7 @@ definition
 									}
 									CLUSTER[at0006] occurrences matches {0..*} matches {    -- Per body site
 										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at0007.1] matches {    -- Body site name
+											ELEMENT[at0007.1] matches {    -- Head
 												value matches {
 													DV_TEXT matches {*}
 												}
@@ -214,7 +214,7 @@ ontology
 					comment = <"For example: when using the 'Rule of nines' method of estimation, 9% is apportioned for each arm, 18% for the back of the torso, and 1% for the genitalia.">
 				>
 				["at0007.1"] = <
-					text = <"Body site name">
+					text = <"Head">
 					description = <"The name of the body site assessed.">
 					comment = <"Coding of the body site name with an external terminology is preferred, where possible. ">
 				>
