@@ -54,7 +54,7 @@ Wikipedia [Internet]. Wikimedia Foundation, Inc. Total body surface area; [updat
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"00ce60e5989e1085e88b5b3ca1887b2d">
+		["MD5-CAM-1.0.1"] = <"e65252c3599f5a01cbd62d9f25d2bfa7">
 		["build_uid"] = <"25bb1107-42ed-48f8-aaa2-37f79d99df85">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -208,6 +208,16 @@ ontology
 					description = <"The aetiology of the burn.">
 					comment = <"For example: thermal; cold; radiation; chemical; or electrical.">
 				>
+				["at0008.1"] = <
+					text = <"Site surface area">
+					description = <"The estimated percentage of total body surface area apportioned for the entire identified body site.">
+					comment = <"For example: when using the 'Rule of nines' method of estimation, 9% is apportioned for each arm, 18% for the back of the torso, and 1% for the genitalia.">
+				>
+				["at0007.1"] = <
+					text = <"Body site name">
+					description = <"The name of the body site assessed.">
+					comment = <"Coding of the body site name with an external terminology is preferred, where possible. ">
+				>
 				["at0000"] = <
 					text = <"Affected body surface area">
 					description = <"Estimation of the proportion of body surface area affected by a skin injury or disease.">
@@ -305,16 +315,6 @@ ontology
 					text = <"Extension">
 					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
 					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
-				>
-				["at0008.1"] = <
-					text = <"Site surface area">
-					description = <"The estimated percentage of total body surface area apportioned for the entire identified body site.">
-					comment = <"For example: when using the 'Rule of nines' method of estimation, 9% is apportioned for each arm, 18% for the back of the torso, and 1% for the genitalia.">
-				>
-				["at0007.1"] = <
-					text = <"Body site name">
-					description = <"The name of the body site assessed.">
-					comment = <"Coding of the body site name with an external terminology is preferred, where possible. ">
 				>
 			>
 		>
