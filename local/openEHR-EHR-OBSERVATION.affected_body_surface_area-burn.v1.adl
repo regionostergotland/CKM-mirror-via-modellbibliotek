@@ -1,0 +1,787 @@
+archetype (adl_version=1.4; uid=a803d2bd-c501-370a-8247-3bfd61f2b983)
+	openEHR-EHR-OBSERVATION.affected_body_surface_area-burn.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[iso_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"Auto-generated">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["en"] = <
+			language = <[iso_639-1::en]>
+			purpose = <"Recording TBSA burn distribution using Lund Browder chart">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"361db9e899e1f253203487bd4dd48515">
+		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- OBSERVATION
+		data matches {
+			HISTORY[at0001] matches {    -- HISTORY
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] matches {    -- EVENT
+						data matches {
+							ITEM_TREE[at0003] matches {    -- ITEM_TREE
+								items cardinality matches {1..*; unordered} matches {
+									ELEMENT[at0014] occurrences matches {0..1} matches {    -- ELEMENT
+										value matches {
+											DV_PROPORTION matches {
+												numerator matches {|0..100|}
+												type matches {2}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1001]    -- Head anterior
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|3.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1002]    -- Head posterior
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|3.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1003]    -- Neck anterior
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|1|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1004]    -- Neck posterior
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|1|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1005]    -- Chest
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|9|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1006]    -- Abdomen
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|9|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1007]    -- Upper back
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|9|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1008]    -- Lower back / buttocks
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|9|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1009]    -- Right upper arm
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|4|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1010]    -- Left upper arm
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|4|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1011]    -- Right forearm
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|3|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1012]    -- Left forearm
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|3|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1013]    -- Right hand
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|2.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1014]    -- Left hand
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|2.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1015]    -- Right thigh
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|9.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1016]    -- Left thigh
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|9.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1017]    -- Right lower leg
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|7|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1018]    -- Left lower leg
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|7|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1019]    -- Right foot
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|3.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1020]    -- Left foot
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|3.5|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0006] matches {    -- CLUSTER
+										items cardinality matches {3..3; unordered} matches {
+											ELEMENT[at0007] matches {    -- ELEMENT
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::at1021]    -- Genitalia / perineum
+														}
+													}
+												}
+											}
+											ELEMENT[at0008] matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|1|}
+														type matches {2}
+													}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- ELEMENT
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|0..100|}
+														type matches {2}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at1001"] = <
+					text = <"Head anterior">
+					description = <"">
+				>
+				["at1002"] = <
+					text = <"Head posterior">
+					description = <"">
+				>
+				["at1003"] = <
+					text = <"Neck anterior">
+					description = <"">
+				>
+				["at1004"] = <
+					text = <"Neck posterior">
+					description = <"">
+				>
+				["at1005"] = <
+					text = <"Chest">
+					description = <"">
+				>
+				["at1006"] = <
+					text = <"Abdomen">
+					description = <"">
+				>
+				["at1007"] = <
+					text = <"Upper back">
+					description = <"">
+				>
+				["at1008"] = <
+					text = <"Lower back / buttocks">
+					description = <"">
+				>
+				["at1009"] = <
+					text = <"Right upper arm">
+					description = <"">
+				>
+				["at1010"] = <
+					text = <"Left upper arm">
+					description = <"">
+				>
+				["at1011"] = <
+					text = <"Right forearm">
+					description = <"">
+				>
+				["at1012"] = <
+					text = <"Left forearm">
+					description = <"">
+				>
+				["at1013"] = <
+					text = <"Right hand">
+					description = <"">
+				>
+				["at1014"] = <
+					text = <"Left hand">
+					description = <"">
+				>
+				["at1015"] = <
+					text = <"Right thigh">
+					description = <"">
+				>
+				["at1016"] = <
+					text = <"Left thigh">
+					description = <"">
+				>
+				["at1017"] = <
+					text = <"Right lower leg">
+					description = <"">
+				>
+				["at1018"] = <
+					text = <"Left lower leg">
+					description = <"">
+				>
+				["at1019"] = <
+					text = <"Right foot">
+					description = <"">
+				>
+				["at1020"] = <
+					text = <"Left foot">
+					description = <"">
+				>
+				["at1021"] = <
+					text = <"Genitalia / perineum">
+					description = <"">
+				>
+				["at0000"] = <
+					text = <"OBSERVATION">
+					description = <"*">
+				>
+				["at0001"] = <
+					text = <"HISTORY">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"EVENT">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"ITEM_TREE">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"ELEMENT">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"CLUSTER">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"ELEMENT">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"ELEMENT">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"ELEMENT">
+					description = <"*">
+				>
+			>
+		>
+	>
