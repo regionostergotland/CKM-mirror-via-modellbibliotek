@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"ebb57d2deb26285cc6f68685cd8ec6eb">
+		["MD5-CAM-1.0.1"] = <"634e777d41028245e98d33e9e520bb2d">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -447,7 +447,7 @@ definition
 											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
 												value matches {
 													DV_PROPORTION matches {
-														numerator matches {|0..100|}
+														numerator matches {|0.0..100.0|}
 														type matches {2}
 													}
 												}
@@ -471,6 +471,14 @@ definition
 														type matches {2}
 													}
 												}
+											}
+										}
+									}
+									ELEMENT[at1031] occurrences matches {0..1} matches {    -- Affected surface area
+										value matches {
+											DV_PROPORTION matches {
+												numerator matches {|0.0..100.0|}
+												type matches {2}
 											}
 										}
 									}
@@ -509,7 +517,8 @@ ontology
 				>
 				["at0010"] = <
 					text = <"Observed percentage">
-					description = <"">
+					description = <"The estimated extent of total body surface area affected by the degree of identified severity, at the identified body site.">
+					comment = <"For example: when using the 'Rule of nines' method, if half of an arm is affected, the affected site surface area value is 4.5%; or if a third of the back is affected, the value is 6%.">
 				>
 				["at0014"] = <
 					text = <"Total TBSA">
@@ -619,6 +628,11 @@ ontology
 				["at1027"] = <
 					text = <"Burn Severity">
 					description = <"">
+				>
+				["at1031"] = <
+					text = <"Affected surface area">
+					description = <"The estimated extent of total body surface area affected by the degree of identified severity, at the identified body site.">
+					comment = <"For example: when using the 'Rule of nines' method, if half of an arm is affected, the affected site surface area value is 4.5%; or if a third of the back is affected, the value is 6%.">
 				>
 			>
 		>
