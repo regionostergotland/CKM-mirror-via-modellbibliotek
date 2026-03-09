@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"9df3423b537f8afb35009ff9b878d1d9">
+		["MD5-CAM-1.0.1"] = <"4493dc6c546118b21478d2b03928a4c4">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -35,7 +35,7 @@ definition
 									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Total TBSA
 										value matches {
 											DV_PROPORTION matches {
-												numerator matches {|0..100|}
+												numerator matches {|0.0..100.0|}
 												type matches {2}
 											}
 										}
@@ -58,6 +58,9 @@ definition
 													}
 												}
 											}
+										}
+										name matches {
+											DV_CODED_TEXT matches {*}
 										}
 									}
 									CLUSTER[at1002] matches {    -- Head posterior
@@ -358,6 +361,14 @@ definition
 													}
 												}
 											}
+											ELEMENT[at0008] matches {    -- Reference percentage
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|3.5|}
+														type matches {2}
+													}
+												}
+											}
 										}
 									}
 									CLUSTER[at1017] matches {    -- Right lower leg
@@ -422,14 +433,6 @@ definition
 									}
 									CLUSTER[at1020] matches {    -- Left foot
 										items cardinality matches {2..2; unordered} matches {
-											ELEMENT[at0008] matches {    -- Reference percentage
-												value matches {
-													DV_PROPORTION matches {
-														numerator matches {|3.5|}
-														type matches {2}
-													}
-												}
-											}
 											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Observed percentage
 												value matches {
 													DV_PROPORTION matches {
@@ -499,7 +502,8 @@ ontology
 				>
 				["at0014"] = <
 					text = <"Total TBSA">
-					description = <"">
+					description = <"The total sum of affected surface area across all body sites.">
+					comment = <"For example: if 4.5% of an arm and 6% of the back is affected, then the TBSA is 10%.">
 				>
 				["at1001"] = <
 					text = <"Head anterior">
