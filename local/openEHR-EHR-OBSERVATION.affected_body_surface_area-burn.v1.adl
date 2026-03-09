@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"6b25404df679460d6a1842240339f4a6">
+		["MD5-CAM-1.0.1"] = <"f7238a68bf8d23e7aac24a327280dcb1">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -65,7 +65,9 @@ definition
 									}
 									ELEMENT[at1023] occurrences matches {0..1} matches {    -- Burn severity
 										value matches {
-											DV_ORDINAL matches {*}
+											1|[local::at1024],
+											2|[local::at1025],
+											3|[local::at1026]
 										}
 									}
 									CLUSTER[at1002] matches {    -- Head posterior
@@ -597,6 +599,18 @@ ontology
 				["at1023"] = <
 					text = <"Burn severity">
 					description = <"Observation of degree of burn. For example, First degree, second degree and third degree burn.">
+				>
+				["at1024"] = <
+					text = <"First degree burn">
+					description = <"Often referred to as superficial burns.">
+				>
+				["at1025"] = <
+					text = <"Second degree burn">
+					description = <"Often referred to as Partial thickness burns.">
+				>
+				["at1026"] = <
+					text = <"Third degree burn">
+					description = <"Full thickness burns, involves injury to the deepest levels of tissues.">
 				>
 			>
 		>
