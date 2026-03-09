@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"634e777d41028245e98d33e9e520bb2d">
+		["MD5-CAM-1.0.1"] = <"fc71c57eb2920d9ce7c191caf44cceec">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -58,20 +58,28 @@ definition
 													}
 												}
 											}
+											CLUSTER[at1027] occurrences matches {0..1} matches {    -- Burn Severity
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at1023] occurrences matches {0..1} matches {    -- Burn degree
+														value matches {
+															1|[local::at1024],
+															2|[local::at1025],
+															3|[local::at1026]
+														}
+													}
+													ELEMENT[at1031] occurrences matches {0..1} matches {    -- Affected surface area
+														value matches {
+															DV_PROPORTION matches {
+																numerator matches {|0.0..100.0|}
+																type matches {2}
+															}
+														}
+													}
+												}
+											}
 										}
 										name matches {
 											DV_CODED_TEXT matches {*}
-										}
-									}
-									CLUSTER[at1027] occurrences matches {0..1} matches {    -- Burn Severity
-										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at1023] occurrences matches {0..1} matches {    -- Burn degree
-												value matches {
-													1|[local::at1024],
-													2|[local::at1025],
-													3|[local::at1026]
-												}
-											}
 										}
 									}
 									CLUSTER[at1002] matches {    -- Head posterior
@@ -471,14 +479,6 @@ definition
 														type matches {2}
 													}
 												}
-											}
-										}
-									}
-									ELEMENT[at1031] occurrences matches {0..1} matches {    -- Affected surface area
-										value matches {
-											DV_PROPORTION matches {
-												numerator matches {|0.0..100.0|}
-												type matches {2}
 											}
 										}
 									}
