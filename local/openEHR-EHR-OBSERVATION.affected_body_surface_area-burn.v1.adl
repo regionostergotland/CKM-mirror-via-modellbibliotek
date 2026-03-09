@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"fc71c57eb2920d9ce7c191caf44cceec">
+		["MD5-CAM-1.0.1"] = <"6bbf2a1fcf43a7f9c1c410290304c919">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -65,14 +65,6 @@ definition
 															1|[local::at1024],
 															2|[local::at1025],
 															3|[local::at1026]
-														}
-													}
-													ELEMENT[at1031] occurrences matches {0..1} matches {    -- Affected surface area
-														value matches {
-															DV_PROPORTION matches {
-																numerator matches {|0.0..100.0|}
-																type matches {2}
-															}
 														}
 													}
 												}
@@ -628,11 +620,6 @@ ontology
 				["at1027"] = <
 					text = <"Burn Severity">
 					description = <"">
-				>
-				["at1031"] = <
-					text = <"Affected surface area">
-					description = <"The estimated extent of total body surface area affected by the degree of identified severity, at the identified body site.">
-					comment = <"For example: when using the 'Rule of nines' method, if half of an arm is affected, the affected site surface area value is 4.5%; or if a third of the back is affected, the value is 6%.">
 				>
 			>
 		>
