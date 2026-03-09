@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"f7238a68bf8d23e7aac24a327280dcb1">
+		["MD5-CAM-1.0.1"] = <"ebb57d2deb26285cc6f68685cd8ec6eb">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -63,11 +63,15 @@ definition
 											DV_CODED_TEXT matches {*}
 										}
 									}
-									ELEMENT[at1023] occurrences matches {0..1} matches {    -- Burn severity
-										value matches {
-											1|[local::at1024],
-											2|[local::at1025],
-											3|[local::at1026]
+									CLUSTER[at1027] occurrences matches {0..1} matches {    -- Burn Severity
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at1023] occurrences matches {0..1} matches {    -- Burn degree
+												value matches {
+													1|[local::at1024],
+													2|[local::at1025],
+													3|[local::at1026]
+												}
+											}
 										}
 									}
 									CLUSTER[at1002] matches {    -- Head posterior
@@ -597,7 +601,7 @@ ontology
 					description = <"">
 				>
 				["at1023"] = <
-					text = <"Burn severity">
+					text = <"Burn degree">
 					description = <"Observation of degree of burn. For example, First degree, second degree and third degree burn.">
 				>
 				["at1024"] = <
@@ -611,6 +615,10 @@ ontology
 				["at1026"] = <
 					text = <"Third degree burn">
 					description = <"Full thickness burns, involves injury to the deepest levels of tissues.">
+				>
+				["at1027"] = <
+					text = <"Burn Severity">
+					description = <"">
 				>
 			>
 		>
