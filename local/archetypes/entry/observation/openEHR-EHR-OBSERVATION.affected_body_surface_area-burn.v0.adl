@@ -54,7 +54,7 @@ Wikipedia [Internet]. Wikimedia Foundation, Inc. Total body surface area; [updat
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"40200ce8a2d1de0d8226bceed3214d37">
+		["MD5-CAM-1.0.1"] = <"f2ee979973b23b3d5a9efa782e3a6f9c">
 		["build_uid"] = <"25bb1107-42ed-48f8-aaa2-37f79d99df85">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -95,7 +95,13 @@ definition
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0007.1] matches {    -- Body site name
 												value matches {
-													DV_CODED_TEXT matches {*}
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0.9,    -- Head (Child 0-1 year)
+															at0.10]    -- Head (Child 1-4 years)
+														}
+													}
 												}
 											}
 											ELEMENT[at0008.1] occurrences matches {0..1} matches {    -- Site surface area
@@ -350,6 +356,14 @@ ontology
 				>
 				["at0.8"] = <
 					text = <"Open fire">
+					description = <"">
+				>
+				["at0.9"] = <
+					text = <"Head (Child 0-1 year)">
+					description = <"">
+				>
+				["at0.10"] = <
+					text = <"Head (Child 1-4 years)">
 					description = <"">
 				>
 			>
