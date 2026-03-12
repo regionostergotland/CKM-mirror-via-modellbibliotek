@@ -54,7 +54,7 @@ Wikipedia [Internet]. Wikimedia Foundation, Inc. Total body surface area; [updat
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1eec72977a8ed0a6fbd492e38ab7fbfe">
+		["MD5-CAM-1.0.1"] = <"1ddef3112d22e6cf5dfc6ea3318178e9">
 		["build_uid"] = <"25bb1107-42ed-48f8-aaa2-37f79d99df85">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -167,7 +167,11 @@ definition
 									}
 									ELEMENT[at0.2] occurrences matches {0..1} matches {    -- Cause of burn
 										value matches {
-											DV_TEXT matches {*}
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::at0.8]    -- Open fire
+												}
+											}
 										}
 									}
 								}
@@ -343,6 +347,10 @@ ontology
 				["at0011.1"] = <
 					text = <"Severity">
 					description = <"Details about each severity of findings at the identified body site.">
+				>
+				["at0.8"] = <
+					text = <"Open fire">
+					description = <"">
 				>
 			>
 		>
