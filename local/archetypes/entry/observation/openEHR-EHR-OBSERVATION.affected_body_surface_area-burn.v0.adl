@@ -54,7 +54,7 @@ Wikipedia [Internet]. Wikimedia Foundation, Inc. Total body surface area; [updat
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8b359587d4a944479189f610bbea8928">
+		["MD5-CAM-1.0.1"] = <"1eec72977a8ed0a6fbd492e38ab7fbfe">
 		["build_uid"] = <"25bb1107-42ed-48f8-aaa2-37f79d99df85">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -114,9 +114,9 @@ definition
 													}
 												}
 											}
-											CLUSTER[at0011] occurrences matches {0..1} matches {    -- Per severity
+											CLUSTER[at0011.1] occurrences matches {0..1} matches {    -- Severity
 												items cardinality matches {1..*; unordered} matches {
-													ELEMENT[at0012.1] matches {    -- Severity
+													ELEMENT[at0012.1] matches {    -- Burn degree
 														value matches {
 															1|[local::at0.3],
 															2|[local::at0.4],
@@ -324,7 +324,7 @@ ontology
 					description = <"Details about body surface area affected at each body site.">
 				>
 				["at0012.1"] = <
-					text = <"Severity">
+					text = <"Burn degree">
 					description = <"The degree of severity of the condition at the identified site.">
 					comment = <"For example: mild, moderate or severe for a rash; or first degree, second degree or third degree for a burn. Coding of the severity with an external terminology is preferred, where possible. It is expected that the severity values will be identical as the values used in the 'Affected body surface area per severity' cluster.">
 				>
@@ -339,6 +339,10 @@ ontology
 				["at0.5"] = <
 					text = <"Third degree burn">
 					description = <"Full thickness burns, involves injury to the deepest levels of tissues.">
+				>
+				["at0011.1"] = <
+					text = <"Severity">
+					description = <"Details about each severity of findings at the identified body site.">
 				>
 			>
 		>
