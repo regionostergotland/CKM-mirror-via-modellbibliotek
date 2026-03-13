@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "70720f67874eda0ba3e28e7e2c867939",
+      "MD5-CAM-1.0.1" : "d6e73b6dcf93e31cb261ef18709f7084",
       "PARENT:MD5-CAM-1.0.1" : "428863af10641c6ead144d0ff87b2819"
     },
     "details" : {
@@ -105,36 +105,45 @@
                             "@type" : "C_COMPLEX_OBJECT",
                             "rmTypeName" : "ELEMENT",
                             "nodeId" : "at0012.1.1",
-                            "attributes" : [ {
-                              "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "value",
-                              "children" : [ {
-                                "@type" : "C_COMPLEX_OBJECT",
-                                "rmTypeName" : "DV_CODED_TEXT",
-                                "occurrences" : "1..1",
-                                "attributes" : [ {
-                                  "@type" : "C_ATTRIBUTE",
-                                  "rmAttributeName" : "defining_code",
-                                  "children" : [ {
-                                    "@type" : "C_TERMINOLOGY_CODE",
-                                    "rmTypeName" : "TERMINOLOGY_CODE",
-                                    "occurrences" : "0..1",
-                                    "terminologyId" : {
-                                      "value" : "local_terms"
-                                    },
-                                    "constraint" : [ ],
-                                    "selectedTerminologies" : [ "local_terms" ],
-                                    "includedExternalTerminologyCodes" : [ {
-                                      "terminologyId" : "local_terms",
-                                      "code" : "77140003",
-                                      "value" : "First degree burn injury"
-                                    } ]
-                                  } ]
-                                } ],
-                                "attributeTuples" : [ ]
-                              } ]
-                            } ],
+                            "attributes" : [ ],
                             "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "nodeId" : "at0.2.1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "rmTypeName" : "TERMINOLOGY_CODE",
+                            "occurrences" : "1..1",
+                            "terminologyId" : {
+                              "value" : "local_terms"
+                            },
+                            "constraint" : [ ],
+                            "selectedTerminologies" : [ "local_terms" ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "local_terms",
+                              "code" : "77140003",
+                              "value" : "Fire"
+                            }, {
+                              "terminologyId" : "local_terms",
+                              "code" : "441900009",
+                              "value" : "Chemical"
+                            } ]
                           } ]
                         } ],
                         "attributeTuples" : [ ]
