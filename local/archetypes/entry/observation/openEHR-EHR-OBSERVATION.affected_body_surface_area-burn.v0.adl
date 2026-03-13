@@ -54,7 +54,7 @@ Wikipedia [Internet]. Wikimedia Foundation, Inc. Total body surface area; [updat
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"428863af10641c6ead144d0ff87b2819">
+		["MD5-CAM-1.0.1"] = <"40f9f2a80ceeb68147e72d8ac548c120">
 		["build_uid"] = <"25bb1107-42ed-48f8-aaa2-37f79d99df85">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -288,104 +288,6 @@ ontology
 					text = <"Open fire">
 					description = <"">
 				>
-				["at0000"] = <
-					text = <"Affected body surface area">
-					description = <"Estimation of the proportion of body surface area affected by a skin injury or disease.">
-				>
-				["at0001"] = <
-					text = <"History">
-					description = <"@ internal @">
-				>
-				["at0002"] = <
-					text = <"Any event">
-					description = <"Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.">
-				>
-				["at0003"] = <
-					text = <"Tree">
-					description = <"@ internal @">
-				>
-				["at0004"] = <
-					text = <"Condition name">
-					description = <"The name of the injury or disease affected the skin.">
-					comment = <"For example: burn; or psoriasis. Coding of the condition name with an external terminology is preferred, where possible. ">
-				>
-				["at0005"] = <
-					text = <"Description">
-					description = <"Narrative description about the affected body surface area assessment.">
-				>
-				["at0006"] = <
-					text = <"Per body site">
-					description = <"Details about body surface area affected at each body site.">
-				>
-				["at0007"] = <
-					text = <"Body site name">
-					description = <"The name of the body site assessed.">
-					comment = <"Coding of the body site name with an external terminology is preferred, where possible. ">
-				>
-				["at0008"] = <
-					text = <"Site surface area">
-					description = <"The estimated percentage of total body surface area apportioned for the entire identified body site.">
-					comment = <"For example: when using the 'Rule of nines' method of estimation, 9% is apportioned for each arm, 18% for the back of the torso, and 1% for the genitalia.">
-				>
-				["at0009"] = <
-					text = <"Item tree">
-					description = <"@ internal @">
-				>
-				["at0010"] = <
-					text = <"Affected site surface area">
-					description = <"The estimated extent of total body surface area affected at the identified body site.">
-					comment = <"For example: when using the 'Rule of nines' method, if half of an arm is affected, the affected site surface area value is 4.5%; or if a third of the back is affected, the value is 6%.">
-				>
-				["at0011"] = <
-					text = <"Per severity">
-					description = <"Details about each severity of findings at the identified body site.">
-				>
-				["at0012"] = <
-					text = <"Severity">
-					description = <"The degree of severity of the condition at the identified site.">
-					comment = <"For example: mild, moderate or severe for a rash; or first degree, second degree or third degree for a burn. Coding of the severity with an external terminology is preferred, where possible. It is expected that the severity values will be identical as the values used in the 'Affected body surface area per severity' cluster.">
-				>
-				["at0013"] = <
-					text = <"Affected site surface area">
-					description = <"The estimated extent of total body surface area affected by the degree of identified severity, at the identified body site.">
-					comment = <"For example: when using the 'Rule of nines' method, if half of an arm is affected, the affected site surface area value is 4.5%; or if a third of the back is affected, the value is 6%.">
-				>
-				["at0014"] = <
-					text = <"Total body surface area (TBSA) affected">
-					description = <"The total sum of affected surface area across all body sites.">
-					comment = <"For example: if 4.5% of an arm and 6% of the back is affected, then the TBSA is 10%.">
-				>
-				["at0015"] = <
-					text = <"Total body surface area per severity">
-					description = <"Details about the total sum of surface area affected per severity, across all body sites.">
-				>
-				["at0016"] = <
-					text = <"Severity">
-					description = <"The degree of severity of the condition.">
-					comment = <"For example: mild, moderate or severe for a rash; or first degree, second degree or third degree for a burn. Coding of the severity with an external terminology is preferred, where possible. It is expected that the severity values will be identical as the values used in the 'Per severity' cluster.">
-				>
-				["at0017"] = <
-					text = <"Total body surface area affected">
-					description = <"The total sum of body surface area affected by the degree of the identified severity, across all body sites.">
-					comment = <"For example: when using the 'Rule of nines' method, if half of an arm is affected, the affected site surface area value is 4.5 %; or if a third of the back is affected, the value is 6 %.">
-				>
-				["at0018"] = <
-					text = <"Additional detail">
-					description = <"Additional details about the estimation of affected body surface area.">
-				>
-				["at0019"] = <
-					text = <"Image representation">
-					description = <"Digital image, video or diagram representing the affected body surface area findings.">
-				>
-				["at0020"] = <
-					text = <"Comment">
-					description = <"Additional narrative about the estimation of affected body surface area, not captured in other fields.">
-				>
-				["at0021"] = <
-					text = <"Extension">
-					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
-					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
-				>
 				["at0.12"] = <
 					text = <"Head (0-1 year)">
 					description = <"">
@@ -561,6 +463,104 @@ ontology
 				["at0.55"] = <
 					text = <"Left foot">
 					description = <"">
+				>
+				["at0000"] = <
+					text = <"Affected body surface area">
+					description = <"Estimation of the proportion of body surface area affected by a skin injury or disease.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Condition name">
+					description = <"The name of the injury or disease affected the skin.">
+					comment = <"For example: burn; or psoriasis. Coding of the condition name with an external terminology is preferred, where possible. ">
+				>
+				["at0005"] = <
+					text = <"Description">
+					description = <"Narrative description about the affected body surface area assessment.">
+				>
+				["at0006"] = <
+					text = <"Per body site">
+					description = <"Details about body surface area affected at each body site.">
+				>
+				["at0007"] = <
+					text = <"Body site name">
+					description = <"The name of the body site assessed.">
+					comment = <"Coding of the body site name with an external terminology is preferred, where possible. ">
+				>
+				["at0008"] = <
+					text = <"Site surface area">
+					description = <"The estimated percentage of total body surface area apportioned for the entire identified body site.">
+					comment = <"For example: when using the 'Rule of nines' method of estimation, 9% is apportioned for each arm, 18% for the back of the torso, and 1% for the genitalia.">
+				>
+				["at0009"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0010"] = <
+					text = <"Affected site surface area">
+					description = <"The estimated extent of total body surface area affected at the identified body site.">
+					comment = <"For example: when using the 'Rule of nines' method, if half of an arm is affected, the affected site surface area value is 4.5%; or if a third of the back is affected, the value is 6%.">
+				>
+				["at0011"] = <
+					text = <"Per severity">
+					description = <"Details about each severity of findings at the identified body site.">
+				>
+				["at0012"] = <
+					text = <"Severity">
+					description = <"The degree of severity of the condition at the identified site.">
+					comment = <"For example: mild, moderate or severe for a rash; or first degree, second degree or third degree for a burn. Coding of the severity with an external terminology is preferred, where possible. It is expected that the severity values will be identical as the values used in the 'Affected body surface area per severity' cluster.">
+				>
+				["at0013"] = <
+					text = <"Affected site surface area">
+					description = <"The estimated extent of total body surface area affected by the degree of identified severity, at the identified body site.">
+					comment = <"For example: when using the 'Rule of nines' method, if half of an arm is affected, the affected site surface area value is 4.5%; or if a third of the back is affected, the value is 6%.">
+				>
+				["at0014"] = <
+					text = <"Total body surface area (TBSA) affected">
+					description = <"The total sum of affected surface area across all body sites.">
+					comment = <"For example: if 4.5% of an arm and 6% of the back is affected, then the TBSA is 10%.">
+				>
+				["at0015"] = <
+					text = <"Total body surface area per severity">
+					description = <"Details about the total sum of surface area affected per severity, across all body sites.">
+				>
+				["at0016"] = <
+					text = <"Severity">
+					description = <"The degree of severity of the condition.">
+					comment = <"For example: mild, moderate or severe for a rash; or first degree, second degree or third degree for a burn. Coding of the severity with an external terminology is preferred, where possible. It is expected that the severity values will be identical as the values used in the 'Per severity' cluster.">
+				>
+				["at0017"] = <
+					text = <"Total body surface area affected">
+					description = <"The total sum of body surface area affected by the degree of the identified severity, across all body sites.">
+					comment = <"For example: when using the 'Rule of nines' method, if half of an arm is affected, the affected site surface area value is 4.5 %; or if a third of the back is affected, the value is 6 %.">
+				>
+				["at0018"] = <
+					text = <"Additional detail">
+					description = <"Additional details about the estimation of affected body surface area.">
+				>
+				["at0019"] = <
+					text = <"Image representation">
+					description = <"Digital image, video or diagram representing the affected body surface area findings.">
+				>
+				["at0020"] = <
+					text = <"Comment">
+					description = <"Additional narrative about the estimation of affected body surface area, not captured in other fields.">
+				>
+				["at0021"] = <
+					text = <"Extension">
+					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
 				>
 			>
 		>
