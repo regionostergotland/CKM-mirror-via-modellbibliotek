@@ -54,7 +54,7 @@ Wikipedia [Internet]. Wikimedia Foundation, Inc. Total body surface area; [updat
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ed94f54ca8a149615641bdfd7681aef8">
+		["MD5-CAM-1.0.1"] = <"ea9cf65ecd507dbc88150e6be9a6fb34">
 		["build_uid"] = <"25bb1107-42ed-48f8-aaa2-37f79d99df85">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -98,9 +98,50 @@ definition
 													DV_CODED_TEXT matches {
 														defining_code matches {
 															[local::
-															at0.9,    -- Head (Child 0-1 year)
-															at0.10,    -- Head (Child 1-4 years)
-															at0.11]    -- genitalia
+															at0.12,    -- Head (0-1 year)
+															at0.13,    -- Head (1-4 years)
+															at0.14,    -- Head (5-9 years)
+															at0.15,    -- Head (10-15)
+															at0.16,    -- Head (15)
+															at0.17,    -- Head (Adult)
+															at0.18,    -- Neck
+															at0.19,    -- Anterior trunk
+															at0.20,    -- Posterior trunk
+															at0.21,    -- Right buttock
+															at0.22,    -- Left buttock
+															at0.23,    -- Genitalia
+															at0.24,    -- Right upper arm
+															at0.25,    -- Left upper arm
+															at0.26,    -- Right lower arm
+															at0.27,    -- Left lower arm
+															at0.28,    -- Right hand
+															at0.29,    -- Left hand
+															at0.30,    -- Right thigh (0-1)
+															at0.31,    -- Right thigh (1-4)
+															at0.32,    -- Right thigh (5-9)
+															at0.33,    -- Right thigh (10-14)
+															at0.34,    -- Right thigh (15)
+															at0.35,    -- Right thigh (Adult)
+															at0.36,    -- Left thigh (0-1)
+															at0.37,    -- Left thigh (1-4)
+															at0.38,    -- Left thigh (5-9)
+															at0.39,    -- Left thigh (10-14)
+															at0.40,    -- Left thigh (15)
+															at0.41,    -- Left thigh (Adult)
+															at0.42,    -- Right lower leg (0-1)
+															at0.43,    -- Right lower leg (1-4)
+															at0.44,    -- Right lower leg (5-9)
+															at0.45,    -- Right lower leg (10-14)
+															at0.46,    -- Right lower leg (15)
+															at0.47,    -- Right lower leg (Adult)
+															at0.48,    -- Left lower leg (0-1)
+															at0.49,    -- Left lower leg (1-4)
+															at0.50,    -- Left lower leg (5-9)
+															at0.51,    -- Left lower leg (10-14)
+															at0.52,    -- Left lower leg (15)
+															at0.53,    -- Left lower leg (Adult)
+															at0.54,    -- Right foot
+															at0.55]    -- Left foot
 														}
 													}
 												}
@@ -247,14 +288,6 @@ ontology
 					text = <"Open fire">
 					description = <"">
 				>
-				["at0.9"] = <
-					text = <"Head (Child 0-1 year)">
-					description = <"">
-				>
-				["at0.10"] = <
-					text = <"Head (Child 1-4 years)">
-					description = <"">
-				>
 				["at0000"] = <
 					text = <"Affected body surface area">
 					description = <"Estimation of the proportion of body surface area affected by a skin injury or disease.">
@@ -353,8 +386,180 @@ ontology
 					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
 					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
 				>
-				["at0.11"] = <
-					text = <"genitalia">
+				["at0.12"] = <
+					text = <"Head (0-1 year)">
+					description = <"">
+				>
+				["at0.13"] = <
+					text = <"Head (1-4 years)">
+					description = <"">
+				>
+				["at0.14"] = <
+					text = <"Head (5-9 years)">
+					description = <"">
+				>
+				["at0.15"] = <
+					text = <"Head (10-15)">
+					description = <"">
+				>
+				["at0.16"] = <
+					text = <"Head (15)">
+					description = <"">
+				>
+				["at0.17"] = <
+					text = <"Head (Adult)">
+					description = <"">
+				>
+				["at0.18"] = <
+					text = <"Neck">
+					description = <"">
+				>
+				["at0.19"] = <
+					text = <"Anterior trunk">
+					description = <"">
+				>
+				["at0.20"] = <
+					text = <"Posterior trunk">
+					description = <"">
+				>
+				["at0.21"] = <
+					text = <"Right buttock">
+					description = <"">
+				>
+				["at0.22"] = <
+					text = <"Left buttock">
+					description = <"">
+				>
+				["at0.23"] = <
+					text = <"Genitalia">
+					description = <"">
+				>
+				["at0.24"] = <
+					text = <"Right upper arm">
+					description = <"">
+				>
+				["at0.25"] = <
+					text = <"Left upper arm">
+					description = <"">
+				>
+				["at0.26"] = <
+					text = <"Right lower arm">
+					description = <"">
+				>
+				["at0.27"] = <
+					text = <"Left lower arm">
+					description = <"">
+				>
+				["at0.28"] = <
+					text = <"Right hand">
+					description = <"">
+				>
+				["at0.29"] = <
+					text = <"Left hand">
+					description = <"">
+				>
+				["at0.30"] = <
+					text = <"Right thigh (0-1)">
+					description = <"">
+				>
+				["at0.31"] = <
+					text = <"Right thigh (1-4)">
+					description = <"">
+				>
+				["at0.32"] = <
+					text = <"Right thigh (5-9)">
+					description = <"">
+				>
+				["at0.33"] = <
+					text = <"Right thigh (10-14)">
+					description = <"">
+				>
+				["at0.34"] = <
+					text = <"Right thigh (15)">
+					description = <"">
+				>
+				["at0.35"] = <
+					text = <"Right thigh (Adult)">
+					description = <"">
+				>
+				["at0.36"] = <
+					text = <"Left thigh (0-1)">
+					description = <"">
+				>
+				["at0.37"] = <
+					text = <"Left thigh (1-4)">
+					description = <"">
+				>
+				["at0.38"] = <
+					text = <"Left thigh (5-9)">
+					description = <"">
+				>
+				["at0.39"] = <
+					text = <"Left thigh (10-14)">
+					description = <"">
+				>
+				["at0.40"] = <
+					text = <"Left thigh (15)">
+					description = <"">
+				>
+				["at0.41"] = <
+					text = <"Left thigh (Adult)">
+					description = <"">
+				>
+				["at0.42"] = <
+					text = <"Right lower leg (0-1)">
+					description = <"">
+				>
+				["at0.43"] = <
+					text = <"Right lower leg (1-4)">
+					description = <"">
+				>
+				["at0.44"] = <
+					text = <"Right lower leg (5-9)">
+					description = <"">
+				>
+				["at0.45"] = <
+					text = <"Right lower leg (10-14)">
+					description = <"">
+				>
+				["at0.46"] = <
+					text = <"Right lower leg (15)">
+					description = <"">
+				>
+				["at0.47"] = <
+					text = <"Right lower leg (Adult)">
+					description = <"">
+				>
+				["at0.48"] = <
+					text = <"Left lower leg (0-1)">
+					description = <"">
+				>
+				["at0.49"] = <
+					text = <"Left lower leg (1-4)">
+					description = <"">
+				>
+				["at0.50"] = <
+					text = <"Left lower leg (5-9)">
+					description = <"">
+				>
+				["at0.51"] = <
+					text = <"Left lower leg (10-14)">
+					description = <"">
+				>
+				["at0.52"] = <
+					text = <"Left lower leg (15)">
+					description = <"">
+				>
+				["at0.53"] = <
+					text = <"Left lower leg (Adult)">
+					description = <"">
+				>
+				["at0.54"] = <
+					text = <"Right foot">
+					description = <"">
+				>
+				["at0.55"] = <
+					text = <"Left foot">
 					description = <"">
 				>
 			>
