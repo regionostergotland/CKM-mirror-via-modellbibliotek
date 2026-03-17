@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"4523884c9b70c134681336f2be60ac7d">
+		["MD5-CAM-1.0.1"] = <"53b21a999e041ff7d2fc3ae68d81d0a2">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -372,14 +372,6 @@ definition
 													}
 												}
 											}
-											ELEMENT[at0008] matches {    -- Site surface area
-												value matches {
-													DV_PROPORTION matches {
-														numerator matches {|3.5|}
-														type matches {2}
-													}
-												}
-											}
 										}
 									}
 									CLUSTER[at1017] matches {    -- Right lower leg
@@ -444,6 +436,14 @@ definition
 									}
 									CLUSTER[at1020] matches {    -- Left foot
 										items cardinality matches {2..2; unordered} matches {
+											ELEMENT[at0008] matches {    -- Site surface area
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|3.5|}
+														type matches {2}
+													}
+												}
+											}
 											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Affected site surface area
 												value matches {
 													DV_PROPORTION matches {
@@ -480,6 +480,9 @@ definition
 					}
 				}
 			}
+		}
+		protocol matches {
+			ITEM_TREE[at1028] matches {*}    -- Item tree
 		}
 	}
 
@@ -620,6 +623,10 @@ ontology
 				["at1027"] = <
 					text = <"Burn Severity">
 					description = <"">
+				>
+				["at1028"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
 				>
 			>
 		>
