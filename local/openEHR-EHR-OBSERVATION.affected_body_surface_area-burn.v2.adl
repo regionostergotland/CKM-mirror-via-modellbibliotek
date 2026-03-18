@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"7ce9d822626f8d187fc81c43eef7b19e">
+		["MD5-CAM-1.0.1"] = <"8e0aa50e2cdadb46af23a8f8f22d647d">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -176,7 +176,7 @@ definition
 													}
 												}
 											}
-											CLUSTER[at1007] matches {    -- Upper back
+											CLUSTER[at1007] matches {    -- Right buttock
 												items cardinality matches {2..2; unordered} matches {
 													ELEMENT[at0008] matches {    -- Site surface area
 														value matches {
@@ -196,7 +196,7 @@ definition
 													}
 												}
 											}
-											CLUSTER[at1008] matches {    -- Lower back / buttocks
+											CLUSTER[at1008] matches {    -- Left buttock
 												items cardinality matches {2..2; unordered} matches {
 													ELEMENT[at0008] matches {    -- Site surface area
 														value matches {
@@ -549,11 +549,11 @@ ontology
 					description = <"">
 				>
 				["at1007"] = <
-					text = <"Upper back">
+					text = <"Right buttock">
 					description = <"">
 				>
 				["at1008"] = <
-					text = <"Lower back / buttocks">
+					text = <"Left buttock">
 					description = <"">
 				>
 				["at1009"] = <
