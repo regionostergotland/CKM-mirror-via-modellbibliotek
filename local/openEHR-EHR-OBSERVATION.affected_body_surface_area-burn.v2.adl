@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"480b415cbb0b1c9416d18812b0336387">
+		["MD5-CAM-1.0.1"] = <"592be6cfa133542b5bc52ce655fc6dac">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -673,7 +673,8 @@ ontology
 				>
 				["at1033"] = <
 					text = <"Cause of burn">
-					description = <"">
+					description = <"The aetiology of the burn.">
+					comment = <"For example: thermal; cold; radiation; chemical; or electrical.">
 				>
 				["at1035"] = <
 					text = <"Open fire">
