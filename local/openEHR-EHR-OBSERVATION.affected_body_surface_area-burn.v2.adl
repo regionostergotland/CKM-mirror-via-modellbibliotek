@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"8e0aa50e2cdadb46af23a8f8f22d647d">
+		["MD5-CAM-1.0.1"] = <"fa7c1f8153c4b0b8474aad0b6773837a">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -216,6 +216,26 @@ definition
 													}
 												}
 											}
+											CLUSTER[at1021] matches {    -- Genitalia / perineum
+												items cardinality matches {2..2; unordered} matches {
+													ELEMENT[at0008] matches {    -- Site surface area
+														value matches {
+															DV_PROPORTION matches {
+																numerator matches {|1|}
+																type matches {2}
+															}
+														}
+													}
+													ELEMENT[at0010] occurrences matches {0..1} matches {    -- Affected site surface area
+														value matches {
+															DV_PROPORTION matches {
+																numerator matches {|0..100|}
+																type matches {2}
+															}
+														}
+													}
+												}
+											}
 											CLUSTER[at1009] matches {    -- Right upper arm
 												items cardinality matches {2..2; unordered} matches {
 													ELEMENT[at0008] matches {    -- Site surface area
@@ -256,7 +276,7 @@ definition
 													}
 												}
 											}
-											CLUSTER[at1011] matches {    -- Right forearm
+											CLUSTER[at1011] matches {    -- Right lower arm
 												items cardinality matches {2..2; unordered} matches {
 													ELEMENT[at0008] matches {    -- Site surface area
 														value matches {
@@ -276,7 +296,7 @@ definition
 													}
 												}
 											}
-											CLUSTER[at1012] matches {    -- Left forearm
+											CLUSTER[at1012] matches {    -- Left lower arm
 												items cardinality matches {2..2; unordered} matches {
 													ELEMENT[at0008] matches {    -- Site surface area
 														value matches {
@@ -456,26 +476,6 @@ definition
 													}
 												}
 											}
-											CLUSTER[at1021] matches {    -- Genitalia / perineum
-												items cardinality matches {2..2; unordered} matches {
-													ELEMENT[at0008] matches {    -- Site surface area
-														value matches {
-															DV_PROPORTION matches {
-																numerator matches {|1|}
-																type matches {2}
-															}
-														}
-													}
-													ELEMENT[at0010] occurrences matches {0..1} matches {    -- Affected site surface area
-														value matches {
-															DV_PROPORTION matches {
-																numerator matches {|0..100|}
-																type matches {2}
-															}
-														}
-													}
-												}
-											}
 										}
 									}
 								}
@@ -565,11 +565,11 @@ ontology
 					description = <"">
 				>
 				["at1011"] = <
-					text = <"Right forearm">
+					text = <"Right lower arm">
 					description = <"">
 				>
 				["at1012"] = <
-					text = <"Left forearm">
+					text = <"Left lower arm">
 					description = <"">
 				>
 				["at1013"] = <
