@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"592be6cfa133542b5bc52ce655fc6dac">
+		["MD5-CAM-1.0.1"] = <"fc3179e2e783ae01a518195bccd9c947">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -46,9 +46,13 @@ definition
 											DV_CODED_TEXT matches {
 												defining_code matches {
 													[local::
-													at1035,    -- Open fire
-													at1036,    -- Chemical
-													at1037]    -- Electric
+													at1038,    -- Scalding
+													at1039,    -- Hot objects
+													at1040,    -- Open flame
+													at1041,    -- Chemicals
+													at1042,    -- Skin disease
+													at1043,    -- Electricity
+													at1044]    -- High voltage electricity
 												}
 											}
 										}
@@ -676,16 +680,32 @@ ontology
 					description = <"The aetiology of the burn.">
 					comment = <"For example: thermal; cold; radiation; chemical; or electrical.">
 				>
-				["at1035"] = <
-					text = <"Open fire">
+				["at1038"] = <
+					text = <"Scalding">
 					description = <"">
 				>
-				["at1036"] = <
-					text = <"Chemical">
+				["at1039"] = <
+					text = <"Hot objects">
 					description = <"">
 				>
-				["at1037"] = <
-					text = <"Electric">
+				["at1040"] = <
+					text = <"Open flame">
+					description = <"">
+				>
+				["at1041"] = <
+					text = <"Chemicals">
+					description = <"">
+				>
+				["at1042"] = <
+					text = <"Skin disease">
+					description = <"">
+				>
+				["at1043"] = <
+					text = <"Electricity">
+					description = <"">
+				>
+				["at1044"] = <
+					text = <"High voltage electricity">
 					description = <"">
 				>
 			>
