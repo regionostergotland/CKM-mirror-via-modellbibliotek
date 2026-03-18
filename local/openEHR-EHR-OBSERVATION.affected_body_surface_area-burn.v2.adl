@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"607857f424c23560aee274c7ceb16b27">
+		["MD5-CAM-1.0.1"] = <"7186bea2404e24d6e9b95e3c1597d106">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -487,6 +487,7 @@ definition
 											}
 										}
 									}
+									CLUSTER[at1032] occurrences matches {0..1} matches {*}    -- Total body surface area per severity
 								}
 							}
 						}
@@ -653,6 +654,10 @@ ontology
 				["at1031"] = <
 					text = <"Burn">
 					description = <"The condition is a burn.">
+				>
+				["at1032"] = <
+					text = <"Total body surface area per severity">
+					description = <"">
 				>
 			>
 		>
