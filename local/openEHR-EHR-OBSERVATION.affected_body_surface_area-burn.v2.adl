@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"c2155cb16c8eace77ff17923f39fbf03">
+		["MD5-CAM-1.0.1"] = <"607857f424c23560aee274c7ceb16b27">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -652,7 +652,7 @@ ontology
 				>
 				["at1031"] = <
 					text = <"Burn">
-					description = <"">
+					description = <"The condition is a burn.">
 				>
 			>
 		>
