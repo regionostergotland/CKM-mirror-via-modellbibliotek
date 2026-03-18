@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"262cfaa85bb9fa1d2f00ce9a9bc9ccf5">
+		["MD5-CAM-1.0.1"] = <"5e7673010f7570b8d24eaaf290720640">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -61,14 +61,6 @@ definition
 															}
 														}
 													}
-													ELEMENT[at0010] occurrences matches {0..1} matches {    -- Affected site surface area
-														value matches {
-															DV_PROPORTION matches {
-																numerator matches {|0..100|}
-																type matches {2}
-															}
-														}
-													}
 												}
 												name matches {
 													DV_CODED_TEXT matches {*}
@@ -81,6 +73,14 @@ definition
 															1|[local::at1024],
 															2|[local::at1025],
 															3|[local::at1026]
+														}
+													}
+													ELEMENT[at0010] occurrences matches {0..1} matches {    -- Affected site surface area
+														value matches {
+															DV_PROPORTION matches {
+																numerator matches {|0..100|}
+																type matches {2}
+															}
 														}
 													}
 												}
