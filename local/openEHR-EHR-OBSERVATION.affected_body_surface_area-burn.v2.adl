@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"53b21a999e041ff7d2fc3ae68d81d0a2">
+		["MD5-CAM-1.0.1"] = <"8f7c3e48f3181b0dd0f051ed74b07f2a">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -28,7 +28,7 @@ definition
 		data matches {
 			HISTORY[at0001] matches {    -- Any event
 				events cardinality matches {1..*; unordered} matches {
-					EVENT[at0002] matches {    -- Point in time
+					EVENT[at0002] matches {    -- Event
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {1..*; unordered} matches {
@@ -499,7 +499,7 @@ ontology
 					description = <"">
 				>
 				["at0002"] = <
-					text = <"Point in time">
+					text = <"Event">
 					description = <"">
 				>
 				["at0003"] = <
