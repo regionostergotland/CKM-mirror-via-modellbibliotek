@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"af06ee7731211923a83903d389484332">
+		["MD5-CAM-1.0.1"] = <"960976b1f101a1b7d2345e28a8ee60c1">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -32,6 +32,15 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {1..*; unordered} matches {
+									ELEMENT[at1030] occurrences matches {0..1} matches {    -- Condition name
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::at1031]    -- Burn
+												}
+											}
+										}
+									}
 									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Total TBSA
 										value matches {
 											DV_PROPORTION matches {
@@ -634,6 +643,14 @@ ontology
 				>
 				["at1029"] = <
 					text = <"Per body site">
+					description = <"">
+				>
+				["at1030"] = <
+					text = <"Condition name">
+					description = <"">
+				>
+				["at1031"] = <
+					text = <"Burn">
 					description = <"">
 				>
 			>
