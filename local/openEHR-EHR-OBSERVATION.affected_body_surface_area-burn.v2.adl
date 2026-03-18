@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"79e89cbd8624d35061a61b7a19ba00cd">
+		["MD5-CAM-1.0.1"] = <"7ce9d822626f8d187fc81c43eef7b19e">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -136,7 +136,7 @@ definition
 													}
 												}
 											}
-											CLUSTER[at1005] matches {    -- Chest
+											CLUSTER[at1005] matches {    -- Anterior trunk
 												items cardinality matches {2..2; unordered} matches {
 													ELEMENT[at0008] matches {    -- Site surface area
 														value matches {
@@ -156,7 +156,7 @@ definition
 													}
 												}
 											}
-											CLUSTER[at1006] matches {    -- Abdomen
+											CLUSTER[at1006] matches {    -- Posterior trunk
 												items cardinality matches {2..2; unordered} matches {
 													ELEMENT[at0008] matches {    -- Site surface area
 														value matches {
@@ -541,11 +541,11 @@ ontology
 					description = <"">
 				>
 				["at1005"] = <
-					text = <"Chest">
+					text = <"Anterior trunk">
 					description = <"">
 				>
 				["at1006"] = <
-					text = <"Abdomen">
+					text = <"Posterior trunk">
 					description = <"">
 				>
 				["at1007"] = <
