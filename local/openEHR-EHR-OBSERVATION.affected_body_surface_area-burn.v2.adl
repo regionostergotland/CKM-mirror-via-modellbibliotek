@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"960976b1f101a1b7d2345e28a8ee60c1">
+		["MD5-CAM-1.0.1"] = <"c2155cb16c8eace77ff17923f39fbf03">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -647,7 +647,8 @@ ontology
 				>
 				["at1030"] = <
 					text = <"Condition name">
-					description = <"">
+					description = <"The name of the injury or disease affected the skin.">
+					comment = <"For example: burn; or psoriasis. Coding of the condition name with an external terminology is preferred, where possible. ">
 				>
 				["at1031"] = <
 					text = <"Burn">
