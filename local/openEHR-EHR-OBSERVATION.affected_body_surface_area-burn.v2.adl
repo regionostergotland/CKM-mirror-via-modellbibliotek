@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"0d02bf17ab1df1de9aefc3e3d998e12b">
+		["MD5-CAM-1.0.1"] = <"480b415cbb0b1c9416d18812b0336387">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -43,7 +43,14 @@ definition
 									}
 									ELEMENT[at1033] occurrences matches {0..1} matches {    -- Cause of burn
 										value matches {
-											DV_PROPORTION matches {*}
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at1035,    -- Open fire
+													at1036,    -- Chemical
+													at1037]    -- Electric
+												}
+											}
 										}
 									}
 									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Total TBSA
@@ -666,6 +673,18 @@ ontology
 				>
 				["at1033"] = <
 					text = <"Cause of burn">
+					description = <"">
+				>
+				["at1035"] = <
+					text = <"Open fire">
+					description = <"">
+				>
+				["at1036"] = <
+					text = <"Chemical">
+					description = <"">
+				>
+				["at1037"] = <
+					text = <"Electric">
 					description = <"">
 				>
 			>
