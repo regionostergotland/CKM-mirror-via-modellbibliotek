@@ -54,7 +54,7 @@ Wikipedia [Internet]. Wikimedia Foundation, Inc. Total body surface area; [updat
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"300223240233ae60d690a2774f00033a">
+		["MD5-CAM-1.0.1"] = <"f8f9d35cb536a9622a6a7053202df5f9">
 		["build_uid"] = <"25bb1107-42ed-48f8-aaa2-37f79d99df85">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -402,6 +402,7 @@ ontology
 			items = <
 				["at0.1"] = <[SNOMED-CT::404684003]>
 				["at0.59"] = <[SNOMED-CT::54635001]>
+				["at0.60"] = <[SNOMED-CT::55658008]>
 			>
 		>
 	>
