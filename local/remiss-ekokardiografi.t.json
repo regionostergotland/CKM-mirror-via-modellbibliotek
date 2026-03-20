@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "1.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f56efbd4323134bb1ec76857009ae619",
+      "MD5-CAM-1.0.1" : "50ce240cfb3edd3f405d02b2b45a4b8c",
       "PARENT:MD5-CAM-1.0.1" : "B8AD0C7EB492491CE6F7968C1AFFB40C"
     },
     "details" : {
@@ -479,7 +479,7 @@
               "nodeId" : "at0141.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-person-001.v1",
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-organisation-001.v1",
               "referenceType" : "archetypeOverlay"
             } ]
           } ],
@@ -603,7 +603,7 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "36db712d-61ce-45c3-ad5b-dd973ebe7bf0",
+    "uid" : "ed78ddd0-76ca-4848-ad9f-c8ef7a3e63f4",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -612,53 +612,21 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "10166B307F40817B5B3E2D3720F6AC03"
+        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
       },
       "details" : { }
     },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.person.v1",
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.organisation.v1",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-person-001.v1"
+      "value" : "openEHR-EHR-CLUSTER.ovl-organisation-001.v1"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0001.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0011.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0004.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0010.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
+      "attributes" : [ ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -668,17 +636,14 @@
         "en" : { },
         "nb" : { },
         "de" : { },
-        "zh" : { },
-        "sv" : { },
-        "es" : { },
-        "pt-pt" : { }
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
     "adlVersion" : "1.4",
-    "buildUid" : "2141be0e-4975-4e33-8d15-0cd1086f2280",
+    "buildUid" : "8543bf4b-0e15-4990-8a02-c7d082df8617",
     "rmName" : "openehr",
     "rmRelease" : "1.1.0",
     "generated" : true,
@@ -698,28 +663,11 @@
         "codeString" : "de"
       },
       "author" : {
-        "name" : "Natalia Strauch, Alina Rehberg",
+        "name" : "Sarah Ballout, Natalia Strauch",
         "organisation" : "Medizinische Hochschule Hannover",
-        "email" : "Strauch.Natalia@mh-hannover.de, rehberg.alina@mh-hannover.de"
+        "email" : "ballout.sarah@mh-hannover.de, Strauch.Natalia@mh-hannover.de"
       },
       "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "pt-pt"
-      },
-      "author" : {
-        "name" : "Beatriz Soares",
-        "organisation" : "Promptly Health",
-        "email" : "beatriz.soares@promptlyhealth.com"
-      },
-      "accreditation" : "Beatriz Soares, Promptly Health, Portugal",
-      "otherDetails" : {
-        "other_contributors" : "Alex Anguelov, Promptly Health, Portugal\r\nDiogo Neto, Promptly Health, Portugal"
-      }
     }, {
       "@type" : "TRANSLATION_DETAILS",
       "language" : {
@@ -729,9 +677,9 @@
         "codeString" : "sv"
       },
       "author" : {
-        "name" : "Elham Gholami, Erik Sundvall",
-        "organisation" : "Region Stockholm",
-        "email" : "erik.sundvall@regionstockholm.se"
+        "name" : "Therese Lindberg, Erik Sundvall",
+        "organisation" : "Cambio CDS, Karolinska Institutet + Karolinska University Hospital, Region Stockholm + Linköping University",
+        "email" : "therese.lindberg@cambio.se, erik.sundvall@regionstockholm.se"
       },
       "otherDetails" : { }
     }, {
@@ -747,35 +695,6 @@
         "organisation" : "​Oslo University Hospital, Norway, Helse Bergen, Helse Vest IKT",
         "email" : "liv.laugen@ous-hf.no, john.tore.valand@helse-bergen.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no, kanika.kuwelker@helse-vest-ikt.no"
       },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "zh"
-      },
-      "author" : {
-        "name" : "Yexuan Cheng",
-        "organisation" : "浙江大学",
-        "email" : "3160100913@zju.edu.cn"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "es"
-      },
-      "author" : {
-        "name" : "Diego Bosca",
-        "organisation" : "VeraTech for Health",
-        "email" : "yampeku@veratech.es"
-      },
-      "accreditation" : "Native speaker. First Certificate in English",
       "otherDetails" : { }
     } ]
   } ],
