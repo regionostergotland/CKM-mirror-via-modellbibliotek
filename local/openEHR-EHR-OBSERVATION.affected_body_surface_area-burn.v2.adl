@@ -19,7 +19,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"fc3179e2e783ae01a518195bccd9c947">
+		["MD5-CAM-1.0.1"] = <"0c2bb494817dcf2a748e93d5f24d0463">
 		["build_uid"] = <"93f5be1e-418a-3445-b6c6-03f118339a40">
 	>
 
@@ -43,18 +43,7 @@ definition
 									}
 									ELEMENT[at1033] occurrences matches {0..1} matches {    -- Cause of burn
 										value matches {
-											DV_CODED_TEXT matches {
-												defining_code matches {
-													[local::
-													at1038,    -- Scalding
-													at1039,    -- Hot objects
-													at1040,    -- Open flame
-													at1041,    -- Chemicals
-													at1042,    -- Skin disease
-													at1043,    -- Electricity
-													at1044]    -- High voltage electricity
-												}
-											}
+											DV_CODED_TEXT matches {*}
 										}
 									}
 									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Total TBSA
@@ -679,34 +668,6 @@ ontology
 					text = <"Cause of burn">
 					description = <"The aetiology of the burn.">
 					comment = <"For example: thermal; cold; radiation; chemical; or electrical.">
-				>
-				["at1038"] = <
-					text = <"Scalding">
-					description = <"">
-				>
-				["at1039"] = <
-					text = <"Hot objects">
-					description = <"">
-				>
-				["at1040"] = <
-					text = <"Open flame">
-					description = <"">
-				>
-				["at1041"] = <
-					text = <"Chemicals">
-					description = <"">
-				>
-				["at1042"] = <
-					text = <"Skin disease">
-					description = <"">
-				>
-				["at1043"] = <
-					text = <"Electricity">
-					description = <"">
-				>
-				["at1044"] = <
-					text = <"High voltage electricity">
-					description = <"">
 				>
 			>
 		>
