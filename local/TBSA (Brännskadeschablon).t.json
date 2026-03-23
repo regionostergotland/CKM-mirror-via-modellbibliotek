@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "23.0.0",
+      "sem_ver" : "24.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5ed9034abbdf99cc9bf0afec97627b18",
+      "MD5-CAM-1.0.1" : "bced49164a4d7c06b4bbc5e189824436",
       "PARENT:MD5-CAM-1.0.1" : "B8AD0C7EB492491CE6F7968C1AFFB40C"
     },
     "details" : {
@@ -1728,6 +1728,38 @@
                                     "terminologyId" : "local_terms_4",
                                     "code" : "368208006",
                                     "value" : "Left upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "64262003",
+                                    "value" : "Right forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "66480008",
+                                    "value" : "Left forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "78791008",
+                                    "value" : "Right hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "85151006",
+                                    "value" : "Left hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "11207009",
+                                    "value" : "Right thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "61396006",
+                                    "value" : "Left thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "32696007",
+                                    "value" : "Right lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "48979004",
+                                    "value" : "Left lower leg"
                                   } ]
                                 } ]
                               } ],
