@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "8.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "6eda5e7e66d7edabd0cbcca40858b72c",
+      "MD5-CAM-1.0.1" : "31042f6adbc5fc3144804aee2bcb41c7",
       "PARENT:MD5-CAM-1.0.1" : "B8AD0C7EB492491CE6F7968C1AFFB40C"
     },
     "details" : {
@@ -1498,7 +1498,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "f023a4d99af2514012542d775ff5a9e0"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about the estimated proportion of body surface area affected by a burn injury.",
+          "keywords" : [ "TBSA", "BSA", "burn", "surface", "area", "burns", "assessment", "Lund-Browder", "skin", "rule", "nines", "palmar", "method", "TBSA%" ],
+          "use" : "Use to record details about the estimated proportion of body surface area affected by a burn injury, including the total body surface area affected, the body surface area affected per body site and the body surface area affected per severity.\n\nThis archetype has been designed as a component of a templated full burn assessment which may comprise a range of ENTRY archetypes and nested CLUSTERs, describing the history, physical examination findings, and other measurements.",
+          "misuse" : "Not to be used to record the measured or calculated body surface area of an individual - use the OBSERVATION.body_surface_area for this purpose.\n\nNot to be used to record the estimated proportion of body surface area affected by other conditions of the skin - use the parent archetype OBSERVATION.affected_body_surface_area for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.affected_body_surface_area-burn.v0",
     "differential" : true,
@@ -1535,6 +1552,51 @@
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "items",
                     "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0004.1.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "defaultValue" : {
+                            "defining_code" : {
+                              "terminology_id" : {
+                                "value" : "local_terms",
+                                "@type" : "TERMINOLOGY_ID"
+                              },
+                              "code_string" : "125666000",
+                              "@type" : "CODE_PHRASE"
+                            },
+                            "value" : "Burn",
+                            "@type" : "DV_CODED_TEXT"
+                          },
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local_terms"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "local_terms" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "local_terms",
+                                "code" : "125666000",
+                                "value" : "Burn"
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
