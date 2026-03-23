@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "14.0.0",
+      "sem_ver" : "15.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "cdfd1cdc5f18f840fc37ca3fe7873763",
+      "MD5-CAM-1.0.1" : "694960b0e72dabb22db50b5be5453317",
       "PARENT:MD5-CAM-1.0.1" : "B8AD0C7EB492491CE6F7968C1AFFB40C"
     },
     "details" : {
@@ -1766,6 +1766,10 @@
                                 "terminologyId" : "local_terms_2",
                                 "code" : "55658008",
                                 "value" : "Hot object"
+                              }, {
+                                "terminologyId" : "local_terms_2",
+                                "code" : "423123007",
+                                "value" : "Burn caused by flames"
                               } ]
                             } ]
                           } ],
