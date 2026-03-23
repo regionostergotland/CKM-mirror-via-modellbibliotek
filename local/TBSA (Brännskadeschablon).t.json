@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "17.0.0",
+      "sem_ver" : "18.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "77baa6b8aa90d33f350b9c7a8433ecaf",
+      "MD5-CAM-1.0.1" : "5fef1aee441775e7a624e0781b7a3fca",
       "PARENT:MD5-CAM-1.0.1" : "B8AD0C7EB492491CE6F7968C1AFFB40C"
     },
     "details" : {
@@ -1778,6 +1778,10 @@
                                 "terminologyId" : "local_terms_2",
                                 "code" : "95320005",
                                 "value" : "Skin disease"
+                              }, {
+                                "terminologyId" : "local_terms_2",
+                                "code" : "18213006",
+                                "value" : "Electricity"
                               } ]
                             } ]
                           } ],
