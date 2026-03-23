@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "24.0.0",
+      "sem_ver" : "25.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "bced49164a4d7c06b4bbc5e189824436",
+      "MD5-CAM-1.0.1" : "538c5827a1487ed45949dcec591b730a",
       "PARENT:MD5-CAM-1.0.1" : "B8AD0C7EB492491CE6F7968C1AFFB40C"
     },
     "details" : {
@@ -1760,6 +1760,14 @@
                                     "terminologyId" : "local_terms_4",
                                     "code" : "48979004",
                                     "value" : "Left lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "7769000",
+                                    "value" : "Right foot"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "22335008",
+                                    "value" : "Left foot"
                                   } ]
                                 } ]
                               } ],
