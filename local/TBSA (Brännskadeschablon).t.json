@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "26.0.0",
+      "sem_ver" : "26.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b601f5b72e8ae5178c6c38a5c345c096",
+      "MD5-CAM-1.0.1" : "06a748084dfa4bf5905cb4be92efa003",
       "PARENT:MD5-CAM-1.0.1" : "B8AD0C7EB492491CE6F7968C1AFFB40C"
     },
     "details" : {
@@ -1847,7 +1847,33 @@
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_CODED_TEXT",
                               "occurrences" : "1..1",
-                              "attributes" : [ ],
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_6"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_6" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "77140003",
+                                    "value" : "First degree burn injury"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "403191005",
+                                    "value" : "Second degree burn"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "403192003",
+                                    "value" : "Third degree burn"
+                                  } ]
+                                } ]
+                              } ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
