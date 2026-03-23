@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "22.2.0",
+      "sem_ver" : "23.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "650d7730112657f2e281320130395084",
+      "MD5-CAM-1.0.1" : "5ed9034abbdf99cc9bf0afec97627b18",
       "PARENT:MD5-CAM-1.0.1" : "B8AD0C7EB492491CE6F7968C1AFFB40C"
     },
     "details" : {
@@ -1704,6 +1704,30 @@
                                     "terminologyId" : "local_terms_4",
                                     "code" : "45048000",
                                     "value" : "Neck"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "22943007",
+                                    "value" : "Trunk"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "723980000",
+                                    "value" : "Right buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "723979003",
+                                    "value" : "Left buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "71934003",
+                                    "value" : "Genitalia"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "368209003",
+                                    "value" : "Right upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_4",
+                                    "code" : "368208006",
+                                    "value" : "Left upper arm"
                                   } ]
                                 } ]
                               } ],
