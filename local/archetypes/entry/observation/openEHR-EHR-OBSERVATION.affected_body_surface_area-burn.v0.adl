@@ -54,7 +54,7 @@ Wikipedia [Internet]. Wikimedia Foundation, Inc. Total body surface area; [updat
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"637165473e68a34cbda99050a29604ce">
+		["MD5-CAM-1.0.1"] = <"56f106eb7edca2fadb7dcabf972975b9">
 		["build_uid"] = <"25bb1107-42ed-48f8-aaa2-37f79d99df85">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -118,14 +118,7 @@ definition
 												items cardinality matches {1..*; unordered} matches {
 													ELEMENT[at0012.1] matches {    -- Severity
 														value matches {
-															DV_CODED_TEXT matches {
-																defining_code matches {
-																	[local::
-																	at0.56,    -- 1
-																	at0.57,    -- 2
-																	at0.58]    -- 3
-																}
-															}
+															DV_CODED_TEXT matches {*}
 														}
 													}
 													ELEMENT[at0013] matches {    -- Affected site surface area
@@ -172,18 +165,7 @@ definition
 									}
 									ELEMENT[at0.2] occurrences matches {0..1} matches {    -- Cause of burn
 										value matches {
-											DV_CODED_TEXT matches {
-												defining_code matches {
-													[local::
-													at0.59,    -- Scalding
-													at0.60,    -- Hot object
-													at0.61,    -- Open fire
-													at0.62,    -- Chemical
-													at0.63,    -- Skin disease
-													at0.64,    -- Electricity
-													at0.65]    -- High voltage electricity
-												}
-											}
+											DV_CODED_TEXT matches {*}
 										}
 									}
 								}
@@ -228,11 +210,6 @@ ontology
 					description = <"The aetiology of the burn.">
 					comment = <"For example: thermal; cold; radiation; chemical; or electrical.">
 				>
-				["at0008.1"] = <
-					text = <"Site surface area">
-					description = <"The estimated percentage of total body surface area apportioned for the entire identified body site.">
-					comment = <"For example: when using the 'Rule of nines' method of estimation, 9% is apportioned for each arm, 18% for the back of the torso, and 1% for the genitalia.">
-				>
 				["at0007.1"] = <
 					text = <"Body site name">
 					description = <"The name of the body site assessed.">
@@ -251,50 +228,10 @@ ontology
 					text = <"Per severity">
 					description = <"Details about each severity of findings at the identified body site.">
 				>
-				["at0.56"] = <
-					text = <"1">
-					description = <"">
-				>
-				["at0.57"] = <
-					text = <"2">
-					description = <"">
-				>
-				["at0.58"] = <
-					text = <"3">
-					description = <"">
-				>
 				["at0010.1"] = <
 					text = <"Affected site surface area (total)">
 					description = <"The estimated extent of total body surface area affected at the identified body site.">
 					comment = <"For example: when using the 'Rule of nines' method, if half of an arm is affected, the affected site surface area value is 4.5%; or if a third of the back is affected, the value is 6%.">
-				>
-				["at0.59"] = <
-					text = <"Scalding">
-					description = <"">
-				>
-				["at0.60"] = <
-					text = <"Hot object">
-					description = <"">
-				>
-				["at0.61"] = <
-					text = <"Open fire">
-					description = <"">
-				>
-				["at0.62"] = <
-					text = <"Chemical">
-					description = <"">
-				>
-				["at0.63"] = <
-					text = <"Skin disease">
-					description = <"">
-				>
-				["at0.64"] = <
-					text = <"Electricity">
-					description = <"">
-				>
-				["at0.65"] = <
-					text = <"High voltage electricity">
-					description = <"">
 				>
 				["at0000"] = <
 					text = <"Affected body surface area">
@@ -394,6 +331,11 @@ ontology
 					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
 					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
 				>
+				["at0008.1"] = <
+					text = <"Site surface area">
+					description = <"The estimated percentage of total body surface area apportioned for the entire identified body site.">
+					comment = <"For example: when using the 'Rule of nines' method of estimation, 9% is apportioned for each arm, 18% for the back of the torso, and 1% for the genitalia.">
+				>
 			>
 		>
 	>
@@ -401,13 +343,6 @@ ontology
 		["SNOMED-CT"] = <
 			items = <
 				["at0.1"] = <[SNOMED-CT::404684003]>
-				["at0.59"] = <[SNOMED-CT::54635001]>
-				["at0.60"] = <[SNOMED-CT::55658008]>
-				["at0.61"] = <[SNOMED-CT::423123007]>
-				["at0.62"] = <[SNOMED-CT::441900009]>
-				["at0.63"] = <[SNOMED-CT::2095320005]>
-				["at0.64"] = <[SNOMED-CT::18213006]>
-				["at0.65"] = <[SNOMED-CT::13912007]>
 			>
 		>
 	>
