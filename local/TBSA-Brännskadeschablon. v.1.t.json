@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "6.0.0",
+      "sem_ver" : "7.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5efdd6fe49e7fc81ee32acee821e3651",
+      "MD5-CAM-1.0.1" : "7b2ebe1c4215bf80c9368dd817c7ccef",
       "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
     },
     "details" : {
@@ -1011,6 +1011,63 @@
                         } ]
                       } ],
                       "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0.2.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local_terms_5"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "local_terms_5" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "local_terms_5",
+                                "code" : "54635001",
+                                "value" : "Scalding injury"
+                              }, {
+                                "terminologyId" : "local_terms_5",
+                                "code" : "55658008",
+                                "value" : "Hot object"
+                              }, {
+                                "terminologyId" : "local_terms_5",
+                                "code" : "423123007",
+                                "value" : "Burn caused by flames"
+                              }, {
+                                "terminologyId" : "local_terms_5",
+                                "code" : "441900009",
+                                "value" : "Chemical"
+                              }, {
+                                "terminologyId" : "local_terms_5",
+                                "code" : "95320005",
+                                "value" : "Skin disease"
+                              }, {
+                                "terminologyId" : "local_terms_5",
+                                "code" : "18213006",
+                                "value" : "Electricity"
+                              }, {
+                                "terminologyId" : "local_terms_5",
+                                "code" : "13912007",
+                                "value" : "High voltage electricity"
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1046,6 +1103,21 @@
         "ac0.0.5" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.0.5",
+          "members" : [ ]
+        },
+        "ac0.0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.0.7",
+          "members" : [ "at0.59", "at0.60", "at0.61", "at0.62", "at0.63", "at0.64", "at0.65" ]
+        },
+        "ac0.0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.0.8",
+          "members" : [ ]
+        },
+        "ac0.0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.0.9",
           "members" : [ ]
         }
       }
