@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0",
+      "sem_ver" : "4.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e59b5303de8447f293ae56621629dbf7",
+      "MD5-CAM-1.0.1" : "5c75edaab923e8ea92c646496eacbd34",
       "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
     },
     "details" : {
@@ -792,6 +792,116 @@
                                 "lowerUnbounded" : false,
                                 "upperUnbounded" : false
                               } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0006.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.1.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_2"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_2" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "69536005",
+                                    "value" : "Head"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "45048000",
+                                    "value" : "Neck"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "22943007",
+                                    "value" : "Trunk"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "723980000",
+                                    "value" : "Right buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "723979003",
+                                    "value" : "Left buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "71934003",
+                                    "value" : "Genitalia"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "368209003",
+                                    "value" : "Right upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "368208006",
+                                    "value" : "Left upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "64262003",
+                                    "value" : "Right forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "66480008",
+                                    "value" : "Left forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "78791008",
+                                    "value" : "Right hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "85151006",
+                                    "value" : "Left hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "11207009",
+                                    "value" : "Right thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "61396006",
+                                    "value" : "Left thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "32696007",
+                                    "value" : "Right lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "48979004",
+                                    "value" : "Left lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "7769000",
+                                    "value" : "Right foot"
+                                  }, {
+                                    "terminologyId" : "local_terms_2",
+                                    "code" : "22335008",
+                                    "value" : "Left foot"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
