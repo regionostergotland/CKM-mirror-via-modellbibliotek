@@ -54,7 +54,7 @@ Wikipedia [Internet]. Wikimedia Foundation, Inc. Total body surface area; [updat
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"290356f5d8bde72388d51ad3b0be9377">
+		["MD5-CAM-1.0.1"] = <"d9ac3e9ab213e3eb90d9febc913a59d8">
 		["build_uid"] = <"25bb1107-42ed-48f8-aaa2-37f79d99df85">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -102,7 +102,7 @@ definition
 												value matches {
 													DV_PROPORTION matches {
 														numerator matches {|0.0..100.0|}
-														type matches {1}
+														type matches {2}
 													}
 												}
 											}
@@ -245,11 +245,6 @@ ontology
 					description = <"The estimated extent of total body surface area affected at the identified body site.">
 					comment = <"For example: when using the 'Rule of nines' method, if half of an arm is affected, the affected site surface area value is 4.5%; or if a third of the back is affected, the value is 6%.">
 				>
-				["at0008.1"] = <
-					text = <"Site surface area">
-					description = <"The estimated percentage of total body surface area apportioned for the entire identified body site.">
-					comment = <"For example: when using the 'Rule of nines' method of estimation, 9% is apportioned for each arm, 18% for the back of the torso, and 1% for the genitalia.">
-				>
 				["at0000"] = <
 					text = <"Affected body surface area">
 					description = <"Estimation of the proportion of body surface area affected by a skin injury or disease.">
@@ -351,6 +346,11 @@ ontology
 				["at0.3"] = <
 					text = <"Site surface area">
 					description = <"">
+				>
+				["at0008.1"] = <
+					text = <"Site surface area">
+					description = <"The estimated percentage of total body surface area apportioned for the entire identified body site.">
+					comment = <"For example: when using the 'Rule of nines' method of estimation, 9% is apportioned for each arm, 18% for the back of the torso, and 1% for the genitalia.">
 				>
 			>
 		>
