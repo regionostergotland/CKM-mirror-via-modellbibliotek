@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "349d433b207b70d35e19e150deadcd35",
+      "MD5-CAM-1.0.1" : "e6217f86a9f211aa38efc2d7d5057f4d",
       "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
     },
     "details" : {
@@ -441,7 +441,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "ed6880436dd4e277dc96c06bc2599e9a"
+        "PARENT:MD5-CAM-1.0.1" : "8df68a5675c07e9250205af69aeecf10"
       },
       "details" : { }
     },
@@ -600,7 +600,20 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000.1",
       "termDefinitions" : {
-        "en" : { }
+        "en" : {
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "Site surface area",
+            "description" : ""
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "Affected site surface area",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
