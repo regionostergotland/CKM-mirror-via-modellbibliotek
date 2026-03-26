@@ -1,12 +1,971 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-    <meta charset="utf-8"/>
-    <script type="text/javascript">window.encodedConfig= "eyJqc1ZlcnNpb24iIDogIjEuMTYuMjY2bkFFQkV2ZmFmOTg4OGIxNjI4ZDk5MTQ2NjZhM2IwNDg3ODU4YTMiLCAibm9uQXZhaWxhYmxlQXBwbGljYXRpb25TZXJ2ZXJzIjogW10sICJub25BdmFpbGFibGVGYWlsb3ZlckFwcGxpY2F0aW9uU2VydmVycyI6IFtdLCAiYXBwbGljYXRpb25TZXJ2ZXJzIjogWyJzZy1pbnRlZ3JhdGlvbjItZXVyb3BlLXdlc3QzLnByb2QuZmlyZS5nbGFzcyIsInNnLWludGVncmF0aW9uMS1ldXJvcGUtd2VzdDMucHJvZC5maXJlLmdsYXNzIiwic2ctaW50ZWdyYXRpb24zLWV1cm9wZS13ZXN0My5wcm9kLmZpcmUuZ2xhc3MiLCJzZy1pbnRlZ3JhdGlvbjYtZXVyb3BlLXdlc3QzLnByb2QuZmlyZS5nbGFzcyIsInNnLWludGVncmF0aW9uNC1ldXJvcGUtd2VzdDMucHJvZC5maXJlLmdsYXNzIiwic2ctaW50ZWdyYXRpb241LWV1cm9wZS13ZXN0My5wcm9kLmZpcmUuZ2xhc3MiXSwgImZhaWxvdmVyQXBwbGljYXRpb25TZXJ2ZXJzIjogW10sICJhcHBsaWNhdGlvblBvcnRzIjogWzQ0M10sICJzZXJ2ZXJzUHJvcGVydGllcyI6IHsgInNnLWludGVncmF0aW9uLW1nbXQucHJvZC5maXJlLmdsYXNzIjogeyJ1c2VUYWJJZCI6dHJ1ZSwidGltZXpvbmVPZmZzZXQiOiIyNDAiIH0sInNnLWludGVncmF0aW9uMi11cy1lYXN0NC5wcm9kLmZpcmUuZ2xhc3MiOiB7InVzZVRhYklkIjp0cnVlLCJ0aW1lem9uZU9mZnNldCI6IjI0MCIgfSwic2ctaW50ZWdyYXRpb24yLWV1cm9wZS13ZXN0Mi5wcm9kLmZpcmUuZ2xhc3MiOiB7InVzZVRhYklkIjp0cnVlLCJ0aW1lem9uZU9mZnNldCI6IjI0MCIgfSwic2ctaW50ZWdyYXRpb24xLWV1cm9wZS13ZXN0MS5wcm9kLmZpcmUuZ2xhc3MiOiB7InVzZVRhYklkIjp0cnVlLCJ0aW1lem9uZU9mZnNldCI6IjI0MCIgfSwic2ctaW50ZWdyYXRpb24xLXVzLXdlc3QxLnByb2QuZmlyZS5nbGFzcyI6IHsidXNlVGFiSWQiOnRydWUsInRpbWV6b25lT2Zmc2V0IjoiMjQwIiB9LCJzZy1pbnRlZ3JhdGlvbjEtYXNpYS1ub3J0aGVhc3QxLnByb2QuZmlyZS5nbGFzcyI6IHsidXNlVGFiSWQiOnRydWUsInRpbWV6b25lT2Zmc2V0IjoiMjQwIiB9LCJzZy1pbnRlZ3JhdGlvbjEtc291dGhhbWVyaWNhLWVhc3QxLnByb2QuZmlyZS5nbGFzcyI6IHsidXNlVGFiSWQiOnRydWUsInRpbWV6b25lT2Zmc2V0IjoiMjQwIiB9LCJzZy1pbnRlZ3JhdGlvbjItc291dGhhbWVyaWNhLWVhc3QxLnByb2QuZmlyZS5nbGFzcyI6IHsidXNlVGFiSWQiOnRydWUsInRpbWV6b25lT2Zmc2V0IjoiMjQwIiB9LCJzZy1pbnRlZ3JhdGlvbjEtZXVyb3BlLXdlc3QyLnByb2QuZmlyZS5nbGFzcyI6IHsidXNlVGFiSWQiOnRydWUsInRpbWV6b25lT2Zmc2V0IjoiMjQwIiB9LCJzZy1pbnRlZ3JhdGlvbjEtYXVzdHJhbGlhLXNvdXRoZWFzdDEucHJvZC5maXJlLmdsYXNzIjogeyJ1c2VUYWJJZCI6dHJ1ZSwidGltZXpvbmVPZmZzZXQiOiIyNDAiIH0sInNnLWludGVncmF0aW9uMS1hc2lhLXNvdXRoMS5wcm9kLmZpcmUuZ2xhc3MiOiB7InVzZVRhYklkIjp0cnVlLCJ0aW1lem9uZU9mZnNldCI6IjI0MCIgfSwic2ctaW50ZWdyYXRpb24yLWFzaWEtc291dGhlYXN0MS5wcm9kLmZpcmUuZ2xhc3MiOiB7InVzZVRhYklkIjp0cnVlLCJ0aW1lem9uZU9mZnNldCI6IjI0MCIgfSwic2ctaW50ZWdyYXRpb24yLXVzLXdlc3QxLnByb2QuZmlyZS5nbGFzcyI6IHsidXNlVGFiSWQiOnRydWUsInRpbWV6b25lT2Zmc2V0IjoiMjQwIiB9LCJzZy1pbnRlZ3JhdGlvbjItYXVzdHJhbGlhLXNvdXRoZWFzdDEucHJvZC5maXJlLmdsYXNzIjogeyJ1c2VUYWJJZCI6dHJ1ZSwidGltZXpvbmVPZmZzZXQiOiIyNDAiIH0sInNnLWludGVncmF0aW9uMi1hc2lhLXNvdXRoMS5wcm9kLmZpcmUuZ2xhc3MiOiB7InVzZVRhYklkIjp0cnVlLCJ0aW1lem9uZU9mZnNldCI6IjI0MCIgfSwic2ctaW50ZWdyYXRpb24yLWFzaWEtbm9ydGhlYXN0MS5wcm9kLmZpcmUuZ2xhc3MiOiB7InVzZVRhYklkIjp0cnVlLCJ0aW1lem9uZU9mZnNldCI6IjI0MCIgfSwic2ctaW50ZWdyYXRpb24xLXVzLWVhc3Q0LnByb2QuZmlyZS5nbGFzcyI6IHsidXNlVGFiSWQiOnRydWUsInRpbWV6b25lT2Zmc2V0IjoiMjQwIiB9LCJzZy1pbnRlZ3JhdGlvbjItZXVyb3BlLXdlc3QxLnByb2QuZmlyZS5nbGFzcyI6IHsidXNlVGFiSWQiOnRydWUsInRpbWV6b25lT2Zmc2V0IjoiMjQwIiB9LCJzZy1pbnRlZ3JhdGlvbjEtYXNpYS1zb3V0aGVhc3QxLnByb2QuZmlyZS5nbGFzcyI6IHsidXNlVGFiSWQiOnRydWUsInRpbWV6b25lT2Zmc2V0IjoiMjQwIiB9LCJzZy1pbnRlZ3JhdGlvbjItZXVyb3BlLXdlc3QzLnByb2QuZmlyZS5nbGFzcyI6IHsidXNlVGFiSWQiOnRydWUsInRpbWV6b25lT2Zmc2V0IjoiMjQwIiB9LCJzZy1pbnRlZ3JhdGlvbjEtZXVyb3BlLXdlc3QzLnByb2QuZmlyZS5nbGFzcyI6IHsidXNlVGFiSWQiOnRydWUsInRpbWV6b25lT2Zmc2V0IjoiMjQwIiB9LCJzZy1pbnRlZ3JhdGlvbjItbWUtd2VzdDEucHJvZC5maXJlLmdsYXNzIjogeyJ1c2VUYWJJZCI6dHJ1ZSwidGltZXpvbmVPZmZzZXQiOiIyNDAiIH0sInNnLWludGVncmF0aW9uMS1tZS13ZXN0MS5wcm9kLmZpcmUuZ2xhc3MiOiB7InVzZVRhYklkIjp0cnVlLCJ0aW1lem9uZU9mZnNldCI6IjI0MCIgfSwic2ctaW50ZWdyYXRpb24zLWV1cm9wZS13ZXN0My5wcm9kLmZpcmUuZ2xhc3MiOiB7InVzZVRhYklkIjp0cnVlLCJ0aW1lem9uZU9mZnNldCI6IjI0MCIgfSwic2ctaW50ZWdyYXRpb242LWV1cm9wZS13ZXN0My5wcm9kLmZpcmUuZ2xhc3MiOiB7InVzZVRhYklkIjp0cnVlLCJ0aW1lem9uZU9mZnNldCI6IjI0MCIgfSwic2ctaW50ZWdyYXRpb240LWFzaWEtbm9ydGhlYXN0MS5wcm9kLmZpcmUuZ2xhc3MiOiB7InVzZVRhYklkIjp0cnVlLCJ0aW1lem9uZU9mZnNldCI6IjI0MCIgfSwic2ctaW50ZWdyYXRpb24zLWFzaWEtbm9ydGhlYXN0MS5wcm9kLmZpcmUuZ2xhc3MiOiB7InVzZVRhYklkIjp0cnVlLCJ0aW1lem9uZU9mZnNldCI6IjI0MCIgfSwic2ctaW50ZWdyYXRpb240LWV1cm9wZS13ZXN0My5wcm9kLmZpcmUuZ2xhc3MiOiB7InVzZVRhYklkIjp0cnVlLCJ0aW1lem9uZU9mZnNldCI6IjI0MCIgfSwic2ctaW50ZWdyYXRpb241LWV1cm9wZS13ZXN0My5wcm9kLmZpcmUuZ2xhc3MiOiB7InVzZVRhYklkIjp0cnVlLCJ0aW1lem9uZU9mZnNldCI6IjI0MCIgfSB9LCAicmVzb3VyY2VTZXJ2ZXIiOiJzZy1pbnRlZ3JhdGlvbi5wcm9kLmZpcmUuZ2xhc3MiLCAic2h1ZmZsZUFwcGxpY2F0aW9uU2VydmVycyI6IHRydWUsICJjbGllbnRVc2VyQWdlbnQiOiAiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzE0NS4wLjAuMCBTYWZhcmkvNTM3LjM2IEVkZy8xNDUuMC4wLjAiLCAiZGlhZ25vc3RpY3NTaGFyZWREb21haW5Ib3N0c1RvVGVzdCI6IHsiYXV0aCI6ICJnbG9iYWwtc2hhcmVkLmZpcmUuZ2xhc3MiLCAibm9BdXRoIjogImdsb2JhbC1ub2F1dGgtc2hhcmVkLmZpcmUuZ2xhc3MiIH0sInNoYXJlZERvbWFpbkhvc3QiOiAiZ2xvYmFsLW5vYXV0aC1zaGFyZWQuZmlyZS5nbGFzcyIsICJsZWdhY3lNaWdyYXRpb25TaGFyZWREb21haW5Ib3N0IjogIm5vYXV0aC5zaGFyZWQuZmlyZWdsYXNzIiwgInNoYXJlZERvbWFpbk1pZ3JhdGlvblJlcXVpcmVkIjogZmFsc2UsICJhY2NlcHRMYW5ndWFnZSI6ICJlbi1VUyxlbjtxPTAuOSIsICJsb2NhbGl6YXRpb25WZXJzaW9uIjogImY2YzczNmU3NWYzY2VkMTE4YjNiODk1MDEwYmMzZDRmIiwgImV4dHJhTG9nRGF0YSI6ICIiLCAidGVuYW50SWQiOiAiIiwgImV4dGVybmFsUG9saWN5S2V5IjogIiIsICJkb05vdFRyYWNrIjogImZhbHNlIiwgInVzZXJOYW1lSGFzaCI6ICI3OWI2ZmVlMjIxNDI2ZTQyNjNjOTRmYTViMTViOTc4ZCIsICJ3c3NQb2xpY3lEYXRhIjogIiIsICJlYXJSZXBvcnRpbmdGYWNpbGl0eSI6ICIiLCAiaHR0cE9ubHkiOiBmYWxzZSwgImdhdGV3YXlJZCI6IDI4LCAid2ViU29ja2V0VHJhbnNwb3J0IjogIndlYnNvY2tldCIsICJob3N0ZWRGcmFtZUFjdGlvbiI6ICIiLCAiZnJhbWVSZXZlcmRpY3QiOiB7ImFjdGlvbiI6IkJ5cGFzcyIsImRpZ2VzdCI6ImMzZjlkMDFjNDAwZDY3ZjgxMTllMjQ0OTFjM2M1OWNkZWNkYTcwOTRjNzU2OTI5ZjU3ZjZkNmVmNGFmYjZhMmUxNzc0NTE2ODYzMjIyIn0sICJyZW5kZXJpbmdNb2RlIjogIkxheW91dFRyZWUiLCAiaHR0cE1ldGhvZCI6ICJHRVQiLCAiaHR0cFBheWxvYWQiOiAiIiwgImh0dHBDb250ZW50VHlwZSI6ICJ0ZXh0L3BsYWluOyBjaGFyc2V0PXV0Zi04IiwgImRpYWdub3N0aWNzIjogInRydWUiLCAiaXNvbGF0aW9uU2Vzc2lvbklkIjogIiIsICJtYXhGcmFtZVJhdGUiOiAzMCwgInZpZGVvc1F1YWxpdHkiOiB7Im1heFdpZHRoIjogMS43OTc2OTMxMzQ4NjIzMTU3ZSszMDgsICJtYXhIZWlnaHQiOiAxLjc5NzY5MzEzNDg2MjMxNTdlKzMwOCB9LCJpc29sYXRpb25JbmRpY2F0aW9uIjogeyJlbmFibGVkIjogdHJ1ZSwgImNvbG9yIjogIiNGNDQzMzYiIH0sImNsaWVudExvZ0xldmVsIjogMCwgImNsaWVudEV2ZW50UmVjb3JkZXJFbmFibGVkIjogZmFsc2UsICJpc0RldiI6IGZhbHNlLCAiYWRkRXh0cmFTcGVsbENoZWNrRGljdGlvbmFyaWVzIjogdHJ1ZSwgInNlcmlhbE51bWJlciI6ICJmYWY5ODg4YjE2MjhkOTkxNDY2NmEzYjA0ODc4NThhMyIsICJsb2FkQmFsYW5jaW5nVUlEIjogIiIsImxvY2FsU3RvcmFnZUVuYWJsZWQiOiB0cnVlLCJhZGJsb2NrRGV0ZWN0aW9uRW5hYmxlZCI6IGZhbHNlLCJpc0FkYmxvY2tTdHJpY3RXZWJzaXRlIjogZmFsc2UsImlzRmxhc2hFbmFibGVkIjogZmFsc2UsImZpbGVWaWV3ZXJVUkwiOiAiaHR0cHM6Ly9kb2MtaXNvbGF0aW9uLXByb2QtZXUucHJvZC5maXJlLmdsYXNzLyIsImZpbGVWaWV3ZXJTYW5pdHlDaGVja3NVUkwiOiAiaHR0cHM6Ly9kb2MtaXNvbGF0aW9uLWV1LXNhbml0eS1jaGVja3MucHJvZC5maXJlLmdsYXNzLyIsImVuY29kZWRSZXF1ZXN0ZWRVUkwiOiAiaHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGcmVnaW9ub3N0ZXJnb3RsYW5kJTJGQ0tNLW1pcnJvciUyRnJlZnMlMkZoZWFkcyUyRm1hc3RlciUyRmxvY2FsJTJGQnVybiUyNTIwZXhhbXBsZSUyNTIwMS50Lmpzb24iLCJmb3J3YXJkZWREYXRhIjogIm1sVmtkVmhTb2ZDeDRiZElkUitUNXorRlZ0bkgxemFpTkZuSGJvU2JDRlFCdGxZZEpCMnRVakk1K3ZnR0xxRkxKRXBZRlk3WE5PZUR1UEh5ajBUT3pwN2JpZ2oyUmRrUElmZE9TaHpRZlBPR0N0Y2JlTGU3UnNoeWJ3S0QycDhQbUtHU2xxSTdsT0FScUg5ZlUvbE8xS0ljMjh2MjNaUnVFaytjcmhLRDRMblBPVEpMSUQyL3h3bWdyNGVUVmwybml6MDVqbGNWdXVjSUJFR3N3R3MvR2tCYTVUbHdUUkYxMVZDMDY0L3RENXNxQTlzamtTQzY2RkVtbUtGVElLL3NPbUh5ZE54MUFHK2plUlBLL0tuWmdYU3BrejVWSDNvdnJiNklDZWhqQ25MNGZDNzZVbjBuajAwSmRtdTVhanJlWWpVek0rdUlhb2JFL1dnRXB6OGtFaiszdFFuKzJDMHlwcEgreWl4K1NZbGsrQ3ZzdkY2WW9rTDBuQ0VzUlNBV1RQbHRYSXg1MEExaVlLSXdGVm5OQU95bWdML3BCWHJuOTY0SGd2cjRpbm9aTm9HOWV0elZJMnFuNGthdit2Z3pzRE9qdHIxTEFKNHJmbEpEUkhmMDFVRjNDVU5neGZrVTlJbWw3R3hMdk1WdVgwTjNjdmRGMXJKR1JEMzJHWTVxQWR6NEcvSFpLM0JueHpvM3RnOTNCbG1QVmZuOVFsT2JKY3FVU1pQbCtlbnd6U3NBK3AzTEdFL2ZBTm1Jb1BXcXNScklOc1YzRy8rM0pHdjhZRzlVdUczbzQ3SmxyMXRUMFRmN3lDVkJiR2pUbEVXWm52MUpDZTM5VjQyMDdvbXh5alV1aklVQlpOOFp0WXB4WnQrS3AwcXlEemZXOXI3aHJ3WGMwd28rcUhtM0I2Wmttby8xeW9wanFQa3oxRzFaIiwidXJsVG9rZW4iOiAiNzdiM2Q4YjM2NzJlY2ZkZjliMDZjMzE3ZDg2NTg5ZDBkMWM4Y2NlZTQxYzFkMzIxODUyN2UzN2ZmOWM5MGEzODE3NzQ2MDI5NjMyMjQiLCJzYWNTZXNzaW9uVG9rZW5OYW1lIjogIiIsInNhY1Nlc3Npb25Ub2tlblZhbHVlIjogIiIsInNhY1Byb2ZpbGVzIjogIiIsInNhY1Byb2ZpbGVzU2lnbmF0dXJlIjogIiIsInN1YmZyYW1lSW5kZXhIdG1sIjogIlJFOURWRmxRUlY5UVRFRkRSVWhQVEVSRlVqeG9kRzFzSUhodGJHNXpQU0pvZEhSd09pOHZkM2QzTG5jekxtOXlaeTh4T1RrNUwzaG9kRzFzSWo0OGFHVmhaRDRnSUNBZ1BHMWxkR0VnYUhSMGNDMWxjWFZwZGowaVdDMVZRUzFEYjIxd1lYUnBZbXhsSWlCamIyNTBaVzUwUFNKSlJUMWxaR2RsSWo0Z0lDQWdQR3hwYm1zZ2NtVnNQU0p6YUc5eWRHTjFkQ0JwWTI5dUlpQm9jbVZtUFNKa1lYUmhPbWx0WVdkbEwzZ3RhV052Ympzc0lpQjBlWEJsUFNKcGJXRm5aUzk0TFdsamIyNGlQaUFnSUNBOGJXVjBZU0JqYUdGeWMyVjBQU0oxZEdZdE9DSXZQaUFnSUNBOGMyTnlhWEIwSUhSNWNHVTlJblJsZUhRdmFtRjJZWE5qY21sd2RDSStkMmx1Wkc5M0xtVnVZMjlrWldSRGIyNW1hV2M5SUNKbGVVcHhZekZhYkdOdVRuQmlNalJwU1VSdlowbHFSWFZOVkZsMVRXcFpNbUpyUmtaUmExWXlXbTFHYlU5VVp6UlBSMGw0VG1wSk5GcEVhelZOVkZFeVRtcGFhRTB5U1hkT1JHY3pUMFJWTkZsVVRXbE1RMEZwWW0wNWRWRllXbWhoVjNob1dXMTRiRkZZUW5kaVIyeHFXVmhTY0dJeU5WUmFXRW95V2xoS2VrbHFiMmRYTVRCelNVTktkV0l5TlVKa2JVWndZa2RHYVdKSFZrZFpWMnh6WWpOYWJHTnJSbmRqUjNod1dUSkdNR0ZYT1hWVk1sWjVaRzFXZVdONVNUWkpSblJrVEVOQmFWbFlRbmRpUjJ4cVdWaFNjR0l5TlZSYVdFb3lXbGhLZWtscWIyZFhlVXA2V25reGNHSnVVbXhhTTBwb1pFZHNkbUpxU1hSYVdGWjVZak5DYkV4WVpHeGpNMUY2VEc1Q2VXSXlVWFZhYld4NVdsTTFibUpIUm5wamVVbHpTVzVPYmt4WGJIVmtSMVp1WTIxR01HRlhPWFZOVXpGc1pGaEtkbU5IVlhSa01sWjZaRVJOZFdOSVNuWmFRelZ0WVZoS2JFeHRaSE5aV0U1NlNXbDNhV015WTNSaFZ6VXdXbGRrZVZsWVVuQmlNalI2VEZkV01XTnRPWGRhVXpFeldsaE9NRTE1TlhkamJUbHJURzFhY0dOdFZYVmFNbmhvWXpOTmFVeERTbnBhZVRGd1ltNVNiRm96U21oa1IyeDJZbXBaZEZwWVZubGlNMEpzVEZoa2JHTXpVWHBNYmtKNVlqSlJkVnB0YkhsYVV6VnVZa2RHZW1ONVNYTkpiazV1VEZkc2RXUkhWbTVqYlVZd1lWYzVkVTVETVd4a1dFcDJZMGRWZEdReVZucGtSRTExWTBoS2RscEROVzFoV0Vwc1RHMWtjMWxZVG5wSmFYZHBZekpqZEdGWE5UQmFWMlI1V1ZoU2NHSXlOREZNVjFZeFkyMDVkMXBUTVROYVdFNHdUWGsxZDJOdE9XdE1iVnB3WTIxVmRWb3llR2hqTTAxcFdGTjNaMGx0V21oaFYzaDJaRzFXZVZGWVFuZGlSMnhxV1ZoU2NHSXlOVlJhV0VveVdsaEtla2xxYjJkWE1UQnpTVU5LYUdOSVFuTmhWMDVvWkVkc2RtSnNRblpqYmxKNlNXcHZaMWQ2VVRCTk1UQnpTVU5LZWxwWVNqSmFXRXA2VlVoS2RtTkhWbmxrUjJ4c1kzbEpOa2xJYzJkSmJrNXVURmRzZFdSSFZtNWpiVVl3WVZjNWRVeFhNVzVpV0ZGMVkwaEtkbHBETlcxaFdFcHNURzFrYzFsWVRucEphbTluWlhsS01XTXlWbFZaVjBwS1drTkpObVJJU2pGYVUzZHBaRWRzZEZwWWNIWmliVlpRV20xYWVscFlVV2xQYVVsNVRrUkJhVWxJTUhOSmJrNXVURmRzZFdSSFZtNWpiVVl3WVZjNWRVMXBNVEZqZVRGc1dWaE9NRTVETlhkamJUbHJURzFhY0dOdFZYVmFNbmhvWXpOTmFVOXBRamRKYmxaNldsWlNhRmxyYkd0SmFuQXdZMjVXYkV4RFNqQmhWekZzWlcwNWRWcFZPVzFhYms1c1pFTkpOa2xxU1RCTlEwbG5abE4zYVdNeVkzUmhWelV3V2xka2VWbFlVbkJpTWpSNVRGZFdNV050T1hkYVV6RXpXbGhPTUUxcE5YZGpiVGxyVEcxYWNHTnRWWFZhTW5ob1l6Tk5hVTlwUWpkSmJsWjZXbFpTYUZscmJHdEphbkF3WTI1V2JFeERTakJoVnpGc1pXMDVkVnBWT1cxYWJrNXNaRU5KTmtscVNUQk5RMGxuWmxOM2FXTXlZM1JoVnpVd1dsZGtlVmxZVW5CaU1qUjRURmRXTVdOdE9YZGFVekV6V2xoT01FMVROWGRqYlRsclRHMWFjR050VlhWYU1uaG9Zek5OYVU5cFFqZEpibFo2V2xaU2FGbHJiR3RKYW5Bd1kyNVdiRXhEU2pCaFZ6RnNaVzA1ZFZwVk9XMWFiazVzWkVOSk5rbHFTVEJOUTBsblpsTjNhV015WTNSaFZ6VXdXbGRrZVZsWVVuQmlNalI0VEZoV2VreFlaR3hqTTFGNFRHNUNlV0l5VVhWYWJXeDVXbE0xYm1KSFJucGplVWsyU1VoemFXUllUbXhXUjBacFUxZFJhVTl1VW5sa1YxVnpTVzVTY0dKWFZqWmlNalZzVkRKYWJXTXlWakJKYW05cFRXcFJkMGxwUWpsTVEwcDZXbmt4Y0dKdVVteGFNMHBvWkVkc2RtSnFSWFJaV0U1d1dWTXhkV0l6U2pCaFIxWm9Zek5SZUV4dVFubGlNbEYxV20xc2VWcFROVzVpUjBaNlkzbEpOa2xJYzJsa1dFNXNWa2RHYVZOWFVXbFBibEo1WkZkVmMwbHVVbkJpVjFZMllqSTFiRlF5V20xak1sWXdTV3B2YVUxcVVYZEphVUk1VEVOS2VscDVNWEJpYmxKc1dqTkthR1JIYkhaaWFrVjBZekk1TVdSSGFHaGlWMVo1WVZkT2FFeFhWbWhqTTFGNFRHNUNlV0l5VVhWYWJXeDVXbE0xYm1KSFJucGplVWsyU1VoemFXUllUbXhXUjBacFUxZFJhVTl1VW5sa1YxVnpTVzVTY0dKWFZqWmlNalZzVkRKYWJXTXlWakJKYW05cFRXcFJkMGxwUWpsTVEwcDZXbmt4Y0dKdVVteGFNMHBvWkVkc2RtSnFTWFJqTWpreFpFZG9hR0pYVm5saFYwNW9URmRXYUdNelVYaE1ia0o1WWpKUmRWcHRiSGxhVXpWdVlrZEdlbU41U1RaSlNITnBaRmhPYkZaSFJtbFRWMUZwVDI1U2VXUlhWWE5KYmxKd1lsZFdObUl5Tld4VU1scHRZekpXTUVscWIybE5hbEYzU1dsQ09VeERTbnBhZVRGd1ltNVNiRm96U21oa1IyeDJZbXBGZEZwWVZubGlNMEpzVEZoa2JHTXpVWGxNYmtKNVlqSlJkVnB0YkhsYVV6VnVZa2RHZW1ONVNUWkpTSE5wWkZoT2JGWkhSbWxUVjFGcFQyNVNlV1JYVlhOSmJsSndZbGRXTm1JeU5XeFVNbHB0WXpKV01FbHFiMmxOYWxGM1NXbENPVXhEU25wYWVURndZbTVTYkZvelNtaGtSMngyWW1wRmRGbFlWbnBrU0Vwb1lrZHNhRXhZVG5aa1dGSnZXbGRHZW1SRVJYVmpTRXAyV2tNMWJXRllTbXhNYldSeldWaE9la2xxYjJkbGVVb3hZekpXVlZsWFNrcGFRMGsyWkVoS01WcFRkMmxrUjJ4MFdsaHdkbUp0VmxCYWJWcDZXbGhSYVU5cFNYbE9SRUZwU1Vnd2MwbHVUbTVNVjJ4MVpFZFdibU50UmpCaFZ6bDFUVk14YUdNeWJHaE1XRTUyWkZoU2IwMVROWGRqYlRsclRHMWFjR050VlhWYU1uaG9Zek5OYVU5cFFqZEpibFo2V2xaU2FGbHJiR3RKYW5Bd1kyNVdiRXhEU2pCaFZ6RnNaVzA1ZFZwVk9XMWFiazVzWkVOSk5rbHFTVEJOUTBsblpsTjNhV015WTNSaFZ6VXdXbGRrZVZsWVVuQmlNalI1VEZkR2VtRlhSWFJqTWpreFpFZG9iRmxZVGpCTlV6VjNZMjA1YTB4dFduQmpiVlYxV2pKNGFHTXpUV2xQYVVJM1NXNVdlbHBXVW1oWmEyeHJTV3B3TUdOdVZteE1RMG93WVZjeGJHVnRPWFZhVlRsdFdtNU9iR1JEU1RaSmFra3dUVU5KWjJaVGQybGpNbU4wWVZjMU1GcFhaSGxaV0ZKd1lqSTBlVXhZVm5wTVdHUnNZek5SZUV4dVFubGlNbEYxV20xc2VWcFROVzVpUjBaNlkzbEpOa2xJYzJsa1dFNXNWa2RHYVZOWFVXbFBibEo1WkZkVmMwbHVVbkJpVjFZMllqSTFiRlF5V20xak1sWXdTV3B2YVUxcVVYZEphVUk1VEVOS2VscDVNWEJpYmxKc1dqTkthR1JIYkhaaWFrbDBXVmhXZW1SSVNtaGlSMnhvVEZoT2RtUllVbTlhVjBaNlpFUkZkV05JU25aYVF6VnRZVmhLYkV4dFpITlpXRTU2U1dwdloyVjVTakZqTWxaVldWZEtTbHBEU1Raa1NFb3hXbE4zYVdSSGJIUmFXSEIyWW0xV1VGcHRXbnBhV0ZGcFQybEplVTVFUVdsSlNEQnpTVzVPYmt4WGJIVmtSMVp1WTIxR01HRlhPWFZOYVRGb1l6SnNhRXhZVG5aa1dGSnZUVk0xZDJOdE9XdE1iVnB3WTIxVmRWb3llR2hqTTAxcFQybENOMGx1Vm5wYVZsSm9XV3RzYTBscWNEQmpibFpzVEVOS01HRlhNV3hsYlRsMVdsVTViVnB1VG14a1EwazJTV3BKTUUxRFNXZG1VM2RwWXpKamRHRlhOVEJhVjJSNVdWaFNjR0l5TkhsTVYwWjZZVmRGZEdKdE9YbGtSMmhzV1ZoT01FMVROWGRqYlRsclRHMWFjR050VlhWYU1uaG9Zek5OYVU5cFFqZEpibFo2V2xaU2FGbHJiR3RKYW5Bd1kyNVdiRXhEU2pCaFZ6RnNaVzA1ZFZwVk9XMWFiazVzWkVOSk5rbHFTVEJOUTBsblpsTjNhV015WTNSaFZ6VXdXbGRrZVZsWVVuQmlNalI0VEZoV2VreFhWbWhqTTFFd1RHNUNlV0l5VVhWYWJXeDVXbE0xYm1KSFJucGplVWsyU1VoemFXUllUbXhXUjBacFUxZFJhVTl1VW5sa1YxVnpTVzVTY0dKWFZqWmlNalZzVkRKYWJXTXlWakJKYW05cFRXcFJkMGxwUWpsTVEwcDZXbmt4Y0dKdVVteGFNMHBvWkVkc2RtSnFTWFJhV0ZaNVlqTkNiRXhZWkd4ak0xRjRURzVDZVdJeVVYVmFiV3g1V2xNMWJtSkhSbnBqZVVrMlNVaHphV1JZVG14V1IwWnBVMWRSYVU5dVVubGtWMVZ6U1c1U2NHSlhWalppTWpWc1ZESmFiV015VmpCSmFtOXBUV3BSZDBscFFqbE1RMHA2V25reGNHSnVVbXhhTTBwb1pFZHNkbUpxUlhSWldFNXdXVk14ZW1JelZqQmhSMVpvWXpOUmVFeHVRbmxpTWxGMVdtMXNlVnBUTlc1aVIwWjZZM2xKTmtsSWMybGtXRTVzVmtkR2FWTlhVV2xQYmxKNVpGZFZjMGx1VW5CaVYxWTJZakkxYkZReVdtMWpNbFl3U1dwdmFVMXFVWGRKYVVJNVRFTktlbHA1TVhCaWJsSnNXak5LYUdSSGJIWmlha2wwV2xoV2VXSXpRbXhNV0dSc1l6TlJla3h1UW5saU1sRjFXbTFzZVZwVE5XNWlSMFo2WTNsSk5rbEljMmxrV0U1c1ZrZEdhVk5YVVdsUGJsSjVaRmRWYzBsdVVuQmlWMVkyWWpJMWJGUXlXbTFqTWxZd1NXcHZhVTFxVVhkSmFVSTVURU5LZWxwNU1YQmlibEpzV2pOS2FHUkhiSFppYWtWMFdsaFdlV0l6UW14TVdHUnNZek5SZWt4dVFubGlNbEYxV20xc2VWcFROVzVpUjBaNlkzbEpOa2xJYzJsa1dFNXNWa2RHYVZOWFVXbFBibEo1WkZkVmMwbHVVbkJpVjFZMllqSTFiRlF5V20xak1sWXdTV3B2YVUxcVVYZEphVUk1VEVOS2VscDVNWEJpYmxKc1dqTkthR1JIYkhaaWFrbDBZbGRWZEdReVZucGtSRVYxWTBoS2RscEROVzFoV0Vwc1RHMWtjMWxZVG5wSmFtOW5aWGxLTVdNeVZsVlpWMHBLV2tOSk5tUklTakZhVTNkcFpFZHNkRnBZY0haaWJWWlFXbTFhZWxwWVVXbFBhVWw1VGtSQmFVbElNSE5KYms1dVRGZHNkV1JIVm01amJVWXdZVmM1ZFUxVE1YUmFVekV6V2xoT01FMVROWGRqYlRsclRHMWFjR050VlhWYU1uaG9Zek5OYVU5cFFqZEpibFo2V2xaU2FGbHJiR3RKYW5Bd1kyNVdiRXhEU2pCaFZ6RnNaVzA1ZFZwVk9XMWFiazVzWkVOSk5rbHFTVEJOUTBsblpsTjNhV015WTNSaFZ6VXdXbGRrZVZsWVVuQmlNalI2VEZkV01XTnRPWGRhVXpFeldsaE9NRTE1TlhkamJUbHJURzFhY0dOdFZYVmFNbmhvWXpOTmFVOXBRamRKYmxaNldsWlNhRmxyYkd0SmFuQXdZMjVXYkV4RFNqQmhWekZzWlcwNWRWcFZPVzFhYms1c1pFTkpOa2xxU1RCTlEwbG5abE4zYVdNeVkzUmhWelV3V2xka2VWbFlVbkJpTWpReVRGZFdNV050T1hkYVV6RXpXbGhPTUUxNU5YZGpiVGxyVEcxYWNHTnRWWFZhTW5ob1l6Tk5hVTlwUWpkSmJsWjZXbFpTYUZscmJHdEphbkF3WTI1V2JFeERTakJoVnpGc1pXMDVkVnBWT1cxYWJrNXNaRU5KTmtscVNUQk5RMGxuWmxOM2FXTXlZM1JoVnpVd1dsZGtlVmxZVW5CaU1qUXdURmRHZW1GWFJYUmliVGw1WkVkb2JGbFlUakJOVXpWM1kyMDVhMHh0V25CamJWVjFXako0YUdNelRXbFBhVUkzU1c1V2VscFdVbWhaYTJ4clNXcHdNR051Vm14TVEwb3dZVmN4YkdWdE9YVmFWVGx0V201T2JHUkRTVFpKYWtrd1RVTkpaMlpUZDJsak1tTjBZVmMxTUZwWFpIbFpXRkp3WWpJMGVreFhSbnBoVjBWMFltMDVlV1JIYUd4WldFNHdUVk0xZDJOdE9XdE1iVnB3WTIxVmRWb3llR2hqTTAxcFQybENOMGx1Vm5wYVZsSm9XV3RzYTBscWNEQmpibFpzVEVOS01HRlhNV3hsYlRsMVdsVTViVnB1VG14a1EwazJTV3BKTUUxRFNXZG1VM2RwWXpKamRHRlhOVEJhVjJSNVdWaFNjR0l5TkRCTVYxWXhZMjA1ZDFwVE1UTmFXRTR3VFhrMWQyTnRPV3RNYlZwd1kyMVZkVm95ZUdoak0wMXBUMmxDTjBsdVZucGFWbEpvV1d0c2EwbHFjREJqYmxac1RFTktNR0ZYTVd4bGJUbDFXbFU1YlZwdVRteGtRMGsyU1dwSk1FMURTV2RtVTNkcFl6SmpkR0ZYTlRCYVYyUjVXVmhTY0dJeU5ERk1WMVl4WTIwNWQxcFRNVE5hV0U0d1RYazFkMk50T1d0TWJWcHdZMjFWZFZveWVHaGpNMDFwVDJsQ04wbHVWbnBhVmxKb1dXdHNhMGxxY0RCamJsWnNURU5LTUdGWE1XeGxiVGwxV2xVNWJWcHVUbXhrUTBrMlNXcEpNRTFEU1dkbVUwSTVURU5CYVdOdFZucGlNMVo1V1RKV1ZGcFlTakphV0VscFQybEtlbHA1TVhCaWJsSnNXak5LYUdSSGJIWmlhVFYzWTIwNWEweHRXbkJqYlZWMVdqSjRhR016VFdsTVEwRnBZekpvTVZwdFduTmFWVVozWTBkNGNGa3lSakJoVnpsMVZUSldlV1J0Vm5samVVazJTVWhTZVdSWFZYTkpRMHBxWWtkc2JHSnVVbFpqTWxaNVVWZGtiR0p1VVdsUGFVRnBWRmM1Tm1GWGVITlpVemd4VEdwQlowdEdaSEJpYlZKMlpETk5aMVJzVVdkTlZFRjFUVVJ6WjFZeWJIVk9hbEUzU1Vobk1rNURhMmRSV0VKM1lrZFdXRnBYU2t4aFdGRjJUbFJOTTB4cVRUSkpRMmhNVTBaU1RsUkRkMmRpUjJ4eVdsTkNTRnBYVG5KaWVXdG5VVEpvZVdJeU1XeE1la1V3VGxNMGQweHFRWFZOUTBKVVdWZGFhR050YTNaT1ZFMHpUR3BOTWtsRlZtdGFlVGg0VGtSVmRVMUROSGRNYWtGcFRFTkJhVnBIYkdoYU1qVjJZek5TY0ZrelRsUmhSMFo1V2xkU1JXSXlNV2hoVnpWSllqTk9NR014VW5aV1IxWjZaRU5KTmtsSWMybFpXRll3WVVOSk5rbERTbTVpUnpscFdWZDNkR015YUdoamJWWnJURzFhY0dOdFZYVmFNbmhvWXpOTmFVeERRV2xpYlRsQ1pGaFNiMGxxYjJkSmJXUnpZakpLYUdKRE1YVmlNa1l4WkVkbmRHTXlhR2hqYlZaclRHMWFjR050VlhWYU1uaG9Zek5OYVVsSU1ITkpiazV2V1ZoS2JGcEZVblppVjBad1ltdG9kbU16VVdsUGFVRnBXako0ZGxsdFJuTk1WelYyV1ZoV01HRkRNWHBoUjBaNVdsZFJkVnB0YkhsYVV6VnVZa2RHZW1ONVNYTkpRMHB6V2xka2FGa3piRTVoVjJSNVdWaFNjR0l5TlZSaFIwWjVXbGRTUldJeU1XaGhWelZKWWpOT01FbHFiMmRKYlRWMldWaFdNR0ZETlhwaFIwWjVXbGRSZFZwdGJIbGFWMlJ6V1ZoT2VrbHBkMmRKYms1dldWaEtiRnBGVW5aaVYwWndZbXN4Y0ZvelNtaGtSMngyWW14S2JHTllWbkJqYlZaclNXcHZaMXB0Um5Oak1sVnpTVU5LYUZreVRteGpTRkpOV1ZjMWJtUlhSbTVhVTBrMlNVTktiR0pwTVZaVmVYaHNZbXAwZUZCVVFYVlBVMGx6U1VOS2MySXlUbWhpUjJ3MldWaFNjR0l5TlZkYVdFcDZZVmM1ZFVscWIyZEpiVmt5V1hwamVrNXRWVE5PVjFsNldUSldhMDFVUlRSWmFrNXBUMFJyTVUxRVJYZFpiVTE2V2tSU2JVbHBkMmRKYlZZMFpFaEthRlJIT1c1U1IwWXdXVk5KTmtsRFNXbE1RMEZwWkVkV2RWbFhOVEJUVjFGcFQybEJhVWxwZDJkSmJWWTBaRWRXZVdKdFJuTlZSemx6WVZkT05WTXlWalZKYW05blNXbEpjMGxEU210aU1EVjJaRVpTZVZsWFRuSkphbTluU1cxYWFHSklUbXhKYVhkblNXNVdlbHBZU2s5WlZ6RnNVMGRHZW1GRFNUWkpRMGt6VDFkSk1scHRWbXhOYWtsNFRrUkpNbHBVVVhsT2FrNXFUMVJTYlZsVVZtbE5WRlpwVDFSak5GcERTWE5KUTBvell6Tk9VV0l5ZUhCWk0yeEZXVmhTYUVscWIyZEphVWx6U1VOS2JGbFlTbE5hV0VKMlkyNVNjR0p0WkVkWlYwNXdZa2RzTUdWVFNUWkpRMGxwVEVOQmFXRklVakJqUlRsMVlraHJhVTlwUW0xWlYzaDZXbE4zWjBsdFpHaGtSMVl6V1Zoc1NscERTVFpKUkVrMFRFTkJhV1F5Vm1sVk1qbHFZVEpXTUZaSVNtaGliazUzWWpOS01FbHFiMmRKYm1Sc1dXNU9kbGt5ZEd4a1EwbHpTVU5LYjJJelRqQmFWMUpIWTIxR2RGcFZSbXBrUjJ4MlltbEpOa2xEU1dsTVEwRnBXbTVLYUdKWFZsTmFXRnBzWTIxU2NGa3pVV2xQYVVJM1NXMUdhbVJIYkhaaWFVazJTV3RLTldOSFJucGplVWx6U1cxU2NGb3lWbnBrUTBrMlNXcG5OVTVVU21wWmJVVXlUMFJaTlU1SFVUQk9iVlY0VFVSb2EwNUViR2xhVkdodFdrUnJORTE2Vm10YVYwbDNUVlJqTVUxRVRtMU5WMXByV1ZSU2JGcEhSVFJaYW1NeVRsUldiVTlYVG1wT2VtTTBXVmRSZUU1Nll6Qk9WRVV5VDBSWmVrMXFTVEZKYmpCelNVTktlVnBYTld0YVdFcHdZbTFrVG1JeVVteEphbTluU1d0NGFHVlhPVEZrUmxKNVdsZFZhVXhEUVdsaFNGSXdZMFV4YkdSSGFIWmFRMGsyU1VOS1NGSldVV2xNUTBGcFlVaFNNR05HUW1obFYzaDJXVmRSYVU5cFFXbEphWGRuU1cxb01HUklRa1JpTWpVd1dsYzFNRlpJYkhkYVUwazJTVU5LTUZwWWFEQk1NMEp6V1Zkc2RVOTVRbXBoUjBaNVl6SldNRkJZVmpCYWFUQTBTV2wzWjBsdFVuQlpWMlIxWWpOT01HRlhUbnBKYW05blNXbEpjMGxEU25Cak1qbHpXVmhTY0dJeU5WUmFXRTU2WVZjNWRWTlhVV2xQYVVGcFNXbDNaMGx0TVdobFJWcDVXVmN4YkZWdFJqQmFVMGsyU1VSTmQweERRV2xrYld4cldsYzVlbFZZVm1oaVIyd3daVk5KTmtsSWMybGlWMFkwVmpKc2EyUkhaMmxQYVVGNFRHcGpOVTU2V1RWTmVrVjZUa1JuTWsxcVRYaE9WR1JzUzNwTmQwOURkMmRKYlRGb1pVVm9iR0ZYWkc5a1EwazJTVVJGZFU1NmF6Tk9hbXQ2VFZSTk1FOUVXWGxOZWtVeFRqSlZjazE2UVRSSlNEQnpTVzFzZW1JeWVHaGtSMngyWW10c2RWcEhiR3BaV0ZKd1lqSTBhVTlwUWpkSmJWWjFXVmRLYzFwWFVXbFBhVUl3WTI1V2JFeERRV2xaTWpsellqTkphVTlwUVdsSk1Ga3dUa1JOZWs1cFNXZG1VM2RwV1RKNGNGcFhOVEJVUnpsdVZFZFdNbHBYZDJsUGFVRjNURU5CYVZreWVIQmFWelV3VWxoYWJHSnVVbE5hVjA1MlkyMVNiR05yVm5WWlYwcHpXbGRSYVU5cFFtMVpWM2g2V2xOM1owbHRiSHBTUjFZeVNXcHZaMXB0Um5Oak1sVnpTVU5LYUZwSFVrWmxTRko1V1ZaT2QxcFhlSE5STW1oc1dUSjBSV0ZYVGpCaFZ6bDFXVmhLY0ZwWVRXbFBhVUl3WTI1V2JFeERRV2xqTWxaNVlWZEdjMVJ1Vm5SWmJWWjVTV3B2WjBsdFdtaGFhbXMwVDBSb2FVMVVXWGxQUjFFMVQxUkZNRTVxV1RKWlZFNXBUVVJSTkU1Nlp6RlBSMFY2U1dsM1owbHRlSFpaVjFKRFdWZDRhR0p0VG5CaWJXUldVMVZSYVU5cFFXbEphWGRwWWtjNWFsbFhlRlJrUnpsNVdWZGtiRkpYTldoWmJYaHNXa05KTmtsSVVubGtWMVZ6U1cxR2ExbHRlSFpaTW5SRldsaFNiRmt6VW5CaU1qVkdZbTFHYVdKSFZtdEphbTluV20xR2MyTXlWWE5KYld4NlVWZFNhV0pIT1dwaE1VNHdZMjFzYW1SR1pHeFpiazV3WkVkVmFVOXBRbTFaVjNoNldsTjNhV0ZZVGtkaVIwWjZZVVZXZFZsWFNuTmFWMUZwVDJsQ2JWbFhlSHBhVTNkcFdtMXNjMXBXV25CYVdHUnNZMnhXVTFSRFNUWkpRMHB2WkVoU2QyTjZiM1pNTWxKMldYa3hjR015T1hOWldGSndZakkwZEdOSVNuWmFRekZzWkZNMWQyTnRPV3RNYlZwd1kyMVZkVm95ZUdoak0wMTJTV2wzYVZwdGJITmFWbHB3V2xoa2JHTnNUbWhpYld3d1pWVk9iMXBYVG5Kak1WWlRWRU5KTmtsRFNtOWtTRkozWTNwdmRrd3lVblpaZVRGd1l6STVjMWxZVW5CaU1qUjBXbGhWZEdNeVJuVmhXRkkxVEZkT2IxcFhUbkpqZVRWM1kyMDVhMHh0V25CamJWVjFXako0YUdNelRYWkphWGRwV2xjMWFtSXlVbXhhUmtwc1kxaFdiR016VW14YVJsWlRWRU5KTmtsRFNtOWtTRkozWTNsVmVsRlRWWGxTYVZWNVVtNUthR1I1Tlc1aFdGSnZaRmRLTVdNeVZubFpNamwxWkVkV2RXUkROV3BpTWpCc1RXdGFlVnBYWkhCaU1qVjJZek5TYkdOdFpIWmtSM2hvWW0xUmJFMXJXa1JUTURCMFlsZHNlV050T1hsS1ZFcEhZMjFXYldONVZYbFNiV2hzV1ZkU2VrcFVTa2RpVjBaNlpFZFdlVXBVU2tkaVJ6bHFXVmQzYkUxcldrTmtXRXAxU2xSSk1VMXFRbXhsUjBaMFkwZDRiRXBVU1RGTmFrRjRURzVSZFdGdVRuWmlhVWx6U1cxYWRtTnVaR2hqYlZKc1drVlNhR1JIUldsUGFVRnBWa1JXTWxwdVp6SlVNMUUwVkZkNGFWSXlSbWxOTVc5eVZUSlJNazlGY0RKWFZsSlJZa2hvUlUxRk9WcE5NSEJPVkd4T2FGbHNhRlJhYmxab1pGWm9kVkp1VFhsTWVUbEVVakprZFZwc1JrWlpNamxWVjFkd1dGZElaekphV0U0MlRWZFdhRk50Y0d4TlJrWlJZa2hHU2xGWGJIbExlbFpHVlVWTk1GWnBkRzVsUlVaWFlVaGFWR0pyVVRKU1JVcFJZME00ZDFvd1JtRlJibXd5VVRKNFFsTlhhSFJpUlRVd1lVZHdObU5yT0RCaGVsRTFXa1ZzYWs0d2RIWlpiVTE0VkRCS2JsRXlkRFZPVjFreVRVZFpOV0Z1UW5kVGJWSkxVbFJTZFZOVlpFVlNNM0JPVTBob2NWSldSbEZSVlZwTlQwZEdVVk14YkRSV1YzaFJWVmh3U1Zsc1FrbFhWazU1VjFoRmVFNXNVa0pOV0ZaQ1QwVlNjbHBFU1RCaVYzUnNaRE5STUZFeU9UVlRNRnB5WkVSa1ZsSnRVak5aYTJSd1lrZDRWbHBYVG0xalJGcFZUak5TUW1KRVVtdGlha0p2WkRCemVGWlZVa1pYUkdSb1UycHNRMlZyYUZKUFJrSlNZak5HU0ZsVlZrcFRNa1V6WVVWU1MyTlVTWGRrTTBVelZqQnNUVTlFU2tWTE1IaDRWV3M1YlZwNWRFZGhSMDVYWVVWTk5GVkdVa1ZqTVdSVVVWVlNObEV4YUdwVU1rWlJUREZDV0ZGNlJtdGFSbVJWV2pKbk0wc3dUVEZsYlZKdVVWZEZOV0ZHV21sbFZrNUxZVlJHTVZKc1NtbFZWbWhGWWxaYWFHVkdUVEZTZVRrMVZGaEdlR0p0V1RCWGFtUnBVMjFLUzFsdVZrTlJibWhxVkRCc01WRlVSVFJWV0Zwd1dqRk9NbEpZVmpSaU1rWnJZVlpDVUUxWGNITmhSV2hZWkd4d1dXSXhZekpaTWxwdFYyNXdNRmRGYUVaYWJXUkRVak5vV2sxVE9WRlVSVTUyVDBoV1drMXNSbTFXTWxaSlpEQldRbUZIT1ZoVlZFWlpWbXRKZVZsc1FuRlZNRlp2V1ROT1VscFlSazVUYW14R1RURm5NbFJGZEd4a2EzUk5UWHBTVjFSVVNURmlSRnB0VTJwT2RGUklRakpSYWtrMFRXMVNSV0l4U1hoVlJFWXdVV3BDUTFSNlRubFpiWGN4WVZWR2RFMUVUbkZhYld4dlZXMHhWRTB4U2pKVU1ERldUMWRqTldSclVURlJWMDB3WW1zMU5GSnJOVVJoVmtaTFQwZHdXR1F5ZUVoVE1VVjNWMFpOTUdGWFkzaGpXRVpUVjJ0T1YwMXNSbTlOVlU1T1lrUlNTbFZUZEU1bGFYTXlVMVpHU2xGc1JrVkxNR2g2VFZaamVWSnJZM2hoVjJjelZHMDBNbHBJY0VKaVYyaEpZak5PUzAxc1NuWmFia0pIVmtoU1UyTkdaRWRoVlhSRFQxZFdOVTE2VmtKVlJFMHdWWGx6TWxJeVVrbFhiVFZUVGxkb2ExbDZXbEJQV0VwSFYwZFNOV0l6U1hsaVJUUjNZMVJzZFZNeWFGUmtTRkpzVEROa1NGZFZkR2hhYmtwdVZFZHNSVmRGU1RSYVIwWldWakEwYVV4RFNqRmpiWGhWWWpKMGJHSnBTVFpKUTBsNFRtcFJNbGxxYTNsWmVsazBXVzFSZDFwRVJUVk9NbEUxV21wbk1GcHFXVFZhVjBac1RXMVpNVTlVVFRSYVIxVXlUbnBKTVU1NmF6TmFiVXBxVG1wcmQwMUhWbTFhUkZwcVQwZEdiRTFFV1hsT1YxcHJUVlJqTTA1RVdYZE5hbXN5VFhwSmVVOURTWE5KYms1b1dURk9iR016VG5CaU1qVlZZakowYkdKck5XaGlWMVZwVDJsQmFVbHBkMmxqTWtacVZUSldlbU15YkhaaWJGSjJZVEpXZFZadFJuTmtWMVZwVDJsQmFVbHBkMmxqTWtacVZVaEtkbHB0YkhOYVdFMXBUMmxCYVVscGQybGpNa1pxVlVoS2RscHRiSE5hV0U1VVlWZGtkVmxZVWpGamJWVnBUMmxCYVVscGQybGpNMVpwV201S2FHSlhWa3BpYlZKc1pVVm9NR0pYZDJsUGFVRnBTV2wzYVZsWVFuZGlSMnhxV1ZoU2NHSXlOVlJhV0VveVdsaEtVVnBZU25waFdFNHdXbGMxYW1WVlZuVlpWMHB6V2xkUmFVOXBRakJqYmxac1RFTkthRnBIVW5sYVdFNTZVVzFHZVZSWE9XdGhWMXB3V2xoSmFVOXBRamRKUTBGblNVTkJhV0ZZVGtaaWJVWnBZa2RXYTBscWIyZGFiVVp6WXpKVmMwbERRV2RKUTBwb1drZFNlVnBZVG5wUmJVWjVWVWRHZVZsWE1VOVpWekZzU1dwdlowbHVWbmxpUTBselNVTkJaMGxEU21oYVIxSjVXbGhPZWxGdFJubFZSMFl3WVVVMWFHSlhWV2xQYVVGcFRESldkRmx0Vm10YVIxWnJaRmhLYzBscFFXZG1VM2RwWXpKV2VXUnRiR3BhVm1SMlkyMTBiR05yVG5OYVYwWjFXbGhLUm1KdFJtbGlSMVpyU1dwdloxcHRSbk5qTWxWelNXNU9iR051V25CWk1sWllZak5LY2xwWVNrUmlSMVpvWW0xV2VWSkhPWFJaVjJ4MVkzbEpOa2xEU2pOYVYwbDFaREpvYUdSSVRtaGpTRUYxV1RJNWRFbHBkMmxqTWxaNVpHMXNhbHBXWkhaamJYUnNZMnRPYzFwWFJuVmFXRXBLWW01U2JHTnVXbWhpUld4MVZUSldhbUl5Tld0amVVazJTVU5KZUU5RVFYZEphWGRwWXpKb2RtUXhTbXhaTWpsMVltMVdhbVJIYkhaaWF6RnNZek5PYUZveVZXbFBhVUl3WTI1V2JFeERTbnBoUnpreFlrZFNVV050Vm0xaFdHaFlXbGRLZW1JeVRuSmFXRkpFWWpJMWRWcFhUakJoVnpsMVl6RmtjR1JIYUVKaGJVWTBWa2RXZW1SRFNUWkpSMXBvWWtoT2JFeERTbmRpTTBvd1dWZDNhVTlwUWpkSlEwRm5TVU5CYVdGWVRrWmliVVpwWWtkV2EwbHFiMmRhYlVaell6SlZjMGxEUVdkSlEwcHZZakl4YkZWSFJtNWFVMGsyU1VOS2IyUklVbmRqZW05MlRETmtNMlI1TlhwbFZ6Rm9ZbTVTYkZsNU5XcGlNakIyU1dsM1owbERRV2RKYms1dllqTmtTbUp0Tld4amEwWnJXa2hLYkdNelRrTlpXRWxwVDJsQ01HTnVWbXhNUTBGblNVTkJhVmxYVW10amJWWjZZekJLYUdOc1FtaGpiVVowVkcxR2RGcFRTVFpKUTBveFkyMTNhVXhEUVdkSlEwRnBXbGMxYUZsdGVHeFZNbXh1WW0wNU1XUkRTVFpKUjFwb1lraE9iRXhEUVdkSlEwRnBXbTA1ZVZreVZsWmpiWGhTWkZkV2VXVldRbWhqYlVaMFZtMUdjMlJYVldsUGFVRnBTV2xCWjJaVGQybGpNbWgyWkRCa2EyTklTazVhV0U1NldWZGtiRWxxYjJkYWJVWnpZekpWYzBsdFduQmlSMVpGWWpOa2RXSkhPV2hhUmtKNVdsZGFjR1ZEU1RaSlEwbHBURU5LYldGWGVHeFdXRUp6WWpKR2ExVklTbXhhYld3MFNXcHZaMGxwU1hOSmJUbDVXakpHZFdGWWNHaGtSMngyWW10c2EwbHFiMmRKYmxaMVdWaFdNR0ZETUhkTlJFRjNUVVJCYVV4RFNteGliVVpwWWtkV1JHSXlNWFJrVnpWd1dUSkdNR0ZYT1hWV01td3dZVVZzYldOdFJuUmFVMGsyU1VoU2VXUlhWWE5KYlZaMVdWZEtjMXBXUW1oak0wNVlZVmMxYTJJelpFOVpWekZzVmtjNVNtTXlPWE5aV0ZKc1drVnNiV050Um5SYVUwazJTVWhTZVdSWFZYTkpiVGw1V2pKR2RXRlljR2hrUjJ4MlltczFhR0pYVldsUGFVRnBWbGMxYUdSWVVtOWFWelV3WVZkT2FHUkhWbXRKYVhkcFkyMVdkVnBIVm5sVVYxWjZZekpHYmxwWVRrSmpNR2d3WWxkM2FVOXBRbTFaVjNoNldsTjNhV05YUms1aU1sSnNVbGMxYUZsdGVHeGFRMGsyU1VkYWFHSklUbXhNUTBwcVlVYzVkbU15VmtoWldGSnNaREpHTlZGdWJGVmhWekZzWlcwNWRWcFRTVFpKUjFwb1lraE9iRXhEU25waFJ6a3hZa2RTVm1NeVZrUmlSMnhzWW01U1ZHRlhVbXhSTWpsM1pWTkpOa2xIV21oaVNFNXNURU5LTVdNeWJIVmFNVTR3WVZkT2NtVlZlSFpaVjFKRFdWZDRhR0p0VG14amFVazJTVWRhYUdKSVRteE1RMHB3WXpCU2FHTXlhRmhoV0ZKdlVUSTVkbUV5Ykd4ak1GWjFXVmRLYzFwWFVXbFBhVUp0V1ZkNGVscFRkMmxaTWxadFZtMVdlV015YkhaaWFVazJTVU5KZUUxcVVXbE1RMG93WVZjeGJHSXpWakJqTUVwd1dWaE9RMWxZVG14SmFtOW5UVU4zYVdOSVNteFJNamwxWW0xV2FtUkhiSFppYkdSdllWaFNiRlV5VG5sYVYxWjFVa2RXTUZwWFRqQmlNMHBVV2xoS01tRlhUbXhTVnpWb1dXMTRiRnBEU1RaSlIxcG9Za2hPYkV4RFNuZGpiVlpFWWpJMWRWcFhUakJoVnpsMVZqSm9jR1JIVmxSWk0wcHNXbGMxUlZwWVVteFpNMUoyWTJ4T2JHTnVXbkJaTWxaRFdWaE9iRlpIYkhSYVZ6a3haRU5KTmtsRVRYZE5SRUYzVEVOS2ExbFlVbWhqUjBZd1lVWlNlVmxYTlhwWlYwNHdZVmM1ZFZOWFVXbFBhVUZwU1dsM2FWcEhPWFJaVjJ4MVVXMUdlbHBYVWxOaU0xWXdZVmMxYmxKWE5XaFpiWGhzV2tOSk5rbEhXbWhpU0U1c1RFTkthMkl5TVdoaFZ6VkRXVmhPYkZwR1NuWmtXRkp3WW0xa1JXSXlNV2hoVnpWTllWaE9NRWxxYjJkWE1UQnpTVzVPTUdGWFRuSmxWVFZvWkcxc2JsbFlVbkJpTWpWRllqSXhhR0ZYTlUxaFdFNHdTV3B2WjFjeE1Ua2lPeUFnSUNCM2FXNWtiM2N1Ykc5aFpGUnBiV1U5Ym1WM0lFUmhkR1VvS1M1blpYUlVhVzFsS0NrN0lDQWdJRHd2YzJOeWFYQjBQaUFnSUNBOGMyTnlhWEIwSUdOc1lYTnpQU0ppWVhObFNYTnZiR0YwYVc5dVUyTnlhWEIwSWlCa1lYUmhMVzFoYVc0OUltaDBkSEJ6T2k4dmMyY3RhVzUwWldkeVlYUnBiMjR1Y0hKdlpDNW1hWEpsTG1kc1lYTnpMMlpuVlVsQmNIQXVhbk0vZG1WeVBURXVNVFl1TWpZMmJrRkZRa1YyWm1GbU9UZzRPR0l4TmpJNFpEazVNVFEyTmpaaE0ySXdORGczT0RVNFlUTWlJSE55WXowaWFIUjBjSE02THk5elp5MXBiblJsWjNKaGRHbHZiaTV3Y205a0xtWnBjbVV1WjJ4aGMzTXZZbUZ6WlMxcGMyOXNZWFJwYjI0dWFuTS9kbVZ5UFRFdU1UWXVNalkyYmtGRlFrVjJabUZtT1RnNE9HSXhOakk0WkRrNU1UUTJOalpoTTJJd05EZzNPRFU0WVRNaUlENDhMM05qY21sd2RENDhMMmhsWVdRK1BDOW9kRzFzUGc9PSIsImFwcGxpY2F0aW9uU2VydmVyUGVyc2lzdGVuY3lFbmFibGVkIjogdHJ1ZSwiYWRkcmVzc0Jhck1vZGlmaWVyIjogeyAgICAgImlzRW5hYmxlZCI6IGZhbHNlLCAgICAiYWRkcmVzc0JhclBhcmFtTmFtZSI6ICJ1cmwiLCAgICAiYWRkcmVzc0JhclBhdGhOYW1lIjogIi9lbWJlZGRlZHVybCIgIH0sInNlcnZpY2VXb3JrZXJDbGVhbmVyRW5hYmxlZCI6IGZhbHNlLCJzZXJ2aWNlV29ya2VyQ2xlYW5lckRvbWFpbnMiOiAid2ViLndoYXRzYXBwLmNvbSIsInNlcnZpY2VXb3JrZXJDbGVhbmVySW50ZXJ2YWxJblNlY29uZHMiOiAiMTgwMCIsInNob3dSZWNvbm5lY3Rpb25NZXNzYWdlIjogdHJ1ZSwic2hvdWxkUHJlZml4V2Vic29ja2V0Q29ubmVjdGlvbnNXaXRoQWpheFRlc3QiOiBmYWxzZSwicG9ydGFsIjogeyAgICAgImlzRW5hYmxlZCI6IGZhbHNlLCAgICAiaG9tZVBhZ2UiOiAiaHR0cHM6Ly93d3cuc3ltYW50ZWMuY29tLyIsICAgICJzaG93SW5uZXJBZGRyZXNzQmFyIjogdHJ1ZSwgICAgImFkZHJlc3NCYXJQYXJhbU5hbWUiOiAidXJsIiwgICAgImVuYWJsZVNpZ25vdXQiOiBmYWxzZSwgICAgImZvcmNlVXJsUXVlcnlQYXJhbVZhbHVlIjogIiIgIH0sInNob3dHZHByTWVzc2FnZSI6IGZhbHNlLCJmaWxlRG93bmxvYWRQcmVmaXgiOiAiIiwiZmlsZVVwbG9hZFByZWZpeCI6ICIiLCJvcmdhbml6YXRpb25JZCI6ICJ1bmF1dGgtMDAwMDAwIiwiZW5hYmxlQ29tbXVuaWNhdGlvbldpdGhJZnJhbWUiOiB0cnVlLCJlbmFibGVQYXNzV2luZG93TmFtZVRvSXNvbGF0ZWRJZnJhbWUiOiB0cnVlLCJvcmdhbml6YXRpb25OYW1lIjogIlVuYXV0aGVudGljYXRlZCIsInJlbmRlck1lc3NhZ2VzQXNIdG1sIjogZmFsc2UsInFhTW9kZUVuYWJsZWQiOiBmYWxzZSwiY2hvb3NlR2F0ZXdheUJ5VGltZXpvbmUiOiBmYWxzZSwic2hvdWxkVXNlQ2xpZW50U2lkZUNvcHkiOiBmYWxzZSwidXNpbmdTdGlja3lMb2FkQmFsYW5jZXIiOiBmYWxzZSwiaXNEYXNoV2l0aENvb2tpZXNFbmFibGVkIjogZmFsc2UsImNlZlZlcnNpb24iOiAiMTI0IiwidGltZW91dHNCaWFzQmFzZSI6IDAsInByZUNvbm5lY3Rpb25XaGl0ZVNjcmVlbkRldGVjdG9yU2VydmljZUVuYWJsZWQiOiBmYWxzZSwicHJlQ29ubmVjdGlvbldoaXRlU2NyZWVuRGV0ZWN0b3JTZXJ2aWNlQmFzZVRpbWVvdXQiOiAzMDAwMCwiZGF0YXBhdGhUcmFuc2FjdGlvbklkIjogIiIsImRvbWFpbkJhc2VkUm91dGluZ0VuYWJsZWQiOiBmYWxzZSwiZG9tYWluQmFzZWRSb3V0aW5nRG9tYWluTGlzdCI6IFtdLCJzdGlja3lOYXZpZ2F0aW9uRG9tYWluTGlzdCI6IFtdfQ==";  function e(){location.search?location.search+="&fireglass_adblock_error_page=true&fireglass_error_reason=index_html":location.search="?fireglass_adblock_error_page=true&fireglass_error_reason=index_html"}function o(e){var o=document.createElement("script");o.src=e,o.async=!0,document.head.appendChild(o)}function i(){var e=window.config.addressBarModifier.addressBarParamName,o=new URLSearchParams(location.search),i=o.get(e),r=n(i);o.set(e,r);var t=document.createElement("a");return t.href=location.href,t.search=o.toString(),t.href}function n(e){var o=document.createElement("a");o.href=e;const i="?fireglass_diagnostics.js=true&ver=1.16.266";return-1!==o.search.indexOf("?")?o.search=o.search.replace("?",i+"&"):o.search=i,o.href}window.encodedConfig&&(window.config=JSON.parse(window.atob(window.encodedConfig)),window.encodedConfig=null);const r=1e4,t=Number(window.config.timeoutsBiasBase)*r;-1!==location.href.indexOf("is_in_fg_diag=true")&&(window.parent.postMessage(JSON.stringify({type:"DiagnosticsEvent",topic:"IndexHtmlRequest",fg_internal:!0,data:{resourceServer:window.config.resourceServer}}),"*"),window.parent.postMessage(JSON.stringify({type:"DiagnosticsData",topic:"ResourceServer",fg_internal:!0,data:window.config.resourceServer}),"*"),window.parent.postMessage(JSON.stringify({type:"DiagnosticsData",topic:"AdblockDetectionEnabled",fg_internal:!0,data:window.config.adblockDetectionEnabled}),"*")),-1!==location.protocol.indexOf("https")&&setTimeout(function(){window.require||(location.protocol=location.protocol.replace("https","http"))},5e3+t);var a=[],s=-1!==location.protocol.indexOf("https")?"https://":"http://",c=[window.config.resourceServer],d=null;window.config.applicationServers&&window.config.applicationServers.length>0&&c&&0===c.length&&(d=window.config.applicationServers[Math.floor(Math.random()*window.config.applicationServers.length)]),d&&0===d.length&&c&&0===c.length&&(d=window.config.failoverApplicationServers[Math.floor(Math.random()*window.config.failoverApplicationServers.length)]),d&&c.push(d);for(var l=0;l<c.length;l++)a.push(s+c[l]+"/thirdparty/diagnostics/diagnostics.js?ver=1.16.266");if(-1===location.protocol.indexOf("https"))for(var l=0;l<c.length;l++)a.push("https://"+c[l]+"/thirdparty/diagnostics/diagnostics.js?ver=1.16.266");setTimeout(function(){!window.config.isAdblockStrictWebsite||window.require||window.diagnosticWasLoaded||e()},5e3+t);const f=window.config.addressBarModifier&&window.config.addressBarModifier.isEnabled,g=f?i():n(location.href);a.push(g);for(var w=[],l=0;l<a.length;l++)-1===w.indexOf(a[l])&&w.push(a[l]);for(var l=0;l<w.length;l++)o(w[l]);  window.loadTime=new Date().getTime();
-    </script>
-    <script class="baseIsolationScript" data-main="https://sg-integration.prod.fire.glass/fg.js?ver=1.16.266nAEBEvfaf9888b1628d9914666a3b0487858a3" src="https://sg-integration.prod.fire.glass/base-isolation.js?ver=1.16.266nAEBEvfaf9888b1628d9914666a3b0487858a3" ></script>
-
-</head>
-</html>
+{
+  "@type" : "TEMPLATE",
+  "uid" : "e3e53598-08a9-4e42-844f-b1bc8d1fc050",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2020-07-31"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "MD5-CAM-1.0.1" : "b5f478d6519c3be2d577570c4535d513",
+      "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
+    },
+    "details" : {
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ko" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ko"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ar-sy" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ar-sy"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.encounter.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_encounter.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "cardinality" : {
+        "@type" : "CARDINALITY",
+        "interval" : "0..*",
+        "ordered" : false,
+        "unique" : false
+      },
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.2",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-problem_diagnosis-001.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.4",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-exam-001.v1",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "ar-sy" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Burn example 1",
+          "description" : "*Interaction, contact or care event between a subject of care and healthcare provider(s).(en)"
+        }
+      },
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Burn example 1",
+          "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
+        }
+      },
+      "es-ar" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Burn example 1",
+          "description" : "Interacción, contacto o evento de cuidados entre un sujeto de cuidados y uno o más proveedores de cuidados de la salud."
+        }
+      },
+      "ko" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Burn example 1",
+          "description" : "*Interaction, contact or care event between a subject of care and healthcare provider(s).(en)"
+        }
+      },
+      "pt-br" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Burn example 1",
+          "description" : "Interação, contato ou cuidado entre o sujeito do cuidado e profissional(is) de saúde."
+        }
+      },
+      "es" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Burn example 1",
+          "description" : "Interacción, contacto o evento de cuidado entre un paciente y un proveedor de salud."
+        }
+      },
+      "nl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Burn example 1",
+          "description" : "Interactie, contact of zorggebeurtenis tussen een onderwerp van zorg en zorgverlener(s)."
+        }
+      },
+      "sv" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Burn example 1",
+          "description" : "Interaktion, kontakt eller vårdhändelse mellan vårdtagare och vårdgivare inom hälso- och sjukvården."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "ed2cc0eb-c508-3e66-a7bc-0e3f3e3f196f",
+  "rmName" : "openehr",
+  "rmRelease" : "1.0.3",
+  "generated" : true,
+  "templateId" : "Burn example 1",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "8e232c4a-8e8c-4def-b408-a2be535d5f9c",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "E3A8F38126B720CBCBCA085F2190A241"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Dokumentation eines Problems, eines Zustandes oder eines Sachverhalts mit anhaltender Bedeutung für die Gesundheit der Person",
+          "keywords" : [ "Sachverhalt", "Zustand" ],
+          "use" : "Zur Dokumentation eines ehemaligen oder aktuellen Problems - also zur Dokumentation ehemaliger Entwicklungen, sowie derzeitiger Probleme.  Mit wechselndem 'Subjekt der Daten' zur Dokumentation von Problemen Verwandter, und somit für die Familienanamnese.",
+          "misuse" : "Spezialisierungen 'openEHR-EHR-EVALUATION.problem-diagnosis' für medizinische Diagnosen und 'openEHR-EHR-EVALUATION.problem-diagnosis-histological' für histologische Diagnosen benutzen.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att dokumentera ett enskilt identifierat hälsoproblem eller diagnos. Spännvidden av ett hälsoproblem har avsiktligt gjorts bred, för att kunna fånga upp eventuella verkliga eller upplevda *oroskänslor* som kan inverka negativt på en individs välbefinnande. Ett hälsoproblem kan identifieras av individen, en vårdgivare eller en sjukvårdspersonal. En diagnos definieras däremot baserat på objektiva kliniska kriterier, oftast fastställd endast av sjukvårdspersonal.",
+          "keywords" : [ "*fråga", "tillstånd", "problem", "diagnos", "oro", "skada", "klinisk tolkning" ],
+          "use" : "Används för att beskriva ett enskilt identifierat hälsoproblem eller diagnos.\r\nTydliga definitioner som möjliggör en differentiering mellan ett \"problem\" och en \"diagnos\" är nästan omöjliga i praktiken. Vi kan inte på ett tillförlitligt sätt säga när ett problem bör betraktas som en diagnos. När diagnostiska eller klassificeringskriterier är uppfyllda kan vi tryggt kalla tillståndet en formell diagnos. \r\n\r\nOm det finns stödjande bevis tillgängligt, kan det ändå vara giltigt att använda termen \"diagnos\" trots att dessa villkor ännu inte uppfyllts. Det är inte lätt att definiera mängden stödjande bevis som krävs för diagnosmärkning och i verkligheten varierar det från fall till fall. Många standardkommittéer har brottats med denna definitionsgåta i åratal utan tydlig upplösning.\r\n\r\nVid tillämpning av klinisk dokumentation med denna arketyp betraktas problem och diagnoser som ett kontinuum med utrymme för fler detaljer och stödjande bevis som vanligtvis ger stöd för märkningen \"diagnos\". I denna arketyp är det inte nödvändigt att klassificera tillståndet som ett \"problem\" eller \"diagnos\". Kraven för att stödja dokumentation av vardera är identiska, innehållande extra datastruktur som krävs för att stödja inmatning av bevis om och när den blir tillgänglig.\r\nExempel på problem är: individens uttryckliga önskan att gå ner i vikt, men utan en formell diagnos av fetma eller ett relationsproblem med en familjemedlem. Exempel på formella diagnoser skulle omfatta cancer som stöds av anamnes, undersökningsfynd, histopatologiska fynd, radiologiska fynd samt möter alla kända kriteriekrav för diagnostik. \r\n\r\nI praktiken befinner sig de flesta problem eller diagnoser inte i någon ände av problemet-diagnos spektrumet, utan någonstans däremellan. \r\nDenna arketyp kan användas i flera kontexter, exempelvis för dokumentation av ett problem eller en klinisk diagnos under en klinisk konsultation, ifyllnad av en fast problemlista eller för en redogörande sammanfattning i ett utskrivningsdokument.\r\n\r\nI praktiken använder kliniker många kontext-specifika bestämningar som exempelvis tidigare och nuvarande, primär och sekundär, aktiv och inaktiv, inskrivning och utskrivning etc. Kontexterna kan vara plats-, specialitet-, episod-eller arbetsflödes-specifika. Dessa kan orsaka förvirring eller t.o.m. vara potentiella säkerhetsproblem om de förevigas i problemlistor eller delas i dokument som är utanför den ursprungliga kontexten.\r\nDessa bestämningar kan vara separata i arketyperna och ingår i \"status\"-fältet, eftersom deras användning varierar i olika inställningar. \r\nDet förväntas att de huvudsakligen används i en lämplig kontext och inte sprids utanför kontexten utan tydlig förståelse för potentiella konsekvenser.\r\nExempelvis kan en diagnos vara primär för en kliniker och sekundär för en annan specialist, ett aktivt problem kan bli inaktivt (eller vice versa) och detta kan påverka den säkra användningen av kliniskt beslutsstöd.\r\n\r\nI allmänhet bör dessa bestämningar tillämpas lokalt inom ramen för det kliniska systemet, och i praktiken bör dessa tillstånd ordnas manuellt av kliniker för att säkerställa att listor över nuvarande och tidigare, aktiv och inaktiv eller primärt och sekundärt problem är kliniskt korrekta.\r\nDenna arketyp kommer att användas som en komponent inom den problemorienterade patientjournalen som beskrivs av Larry Weed. Ytterligare arketyper, som presenterar kliniska begrepp som villkor som en övergripande organisatör för diagnoser etc. kommer att behöva utvecklas för att stödja denna strategi.\r\n\r\nI vissa situationer, kan identifiering av en diagnos vara lämplig enbart inom läkarnas expertis, men det är inte avsikten med denna arketyp. Diagnoser kan dokumenteras med hjälp av denna arketyp av vilken som helst sjukvårdspersonal.\r\n",
+          "misuse" : "Ska inte användas för att dokumentera symtom som beskrivs av individen. Använd CLUSTER. symptom arketypen vanligtvis inom OBSERVATION.story-arketypen för det ändamålet.\r\n\r\nSka inte användas för att dokumentera undersökningsfynd. Använda då istället arketyper från den undersökningsrelaterade gruppen CLUSTER- som oftast är inkapslad i Observation Exam-arketypen.\r\n\r\nSka inte användas för att dokumentera testresultat från laboratoriet eller till relaterade diagnoser, exempelvis patologiska diagnoser. Använd då istället en lämplig arketyp från laboratoriegruppen OBSERVATION.\r\n\r\nSka inte användas för att dokumentera undersökningsfynd genom bildmedia eller bilddiagnostik. Använd då istället en lämplig arketyp från bildmediegruppen OBSERVATION arketyper.\r\n\r\nSka inte användas för att dokumentera \"differentialdiagnostik\". Använd då istället EVALUATION.differential_diagnosis-arketypen.\r\n\r\nSka inte användas för att dokumentera \"Anledning till Vårdtillfälle\" eller \"Huvudsakligt besvär\". Använd EVALUATION.reason_for_encounter-arketypen till dessa ändamål.\r\n\r\nSka inte användas för att dokumentera åtgärder. Använd då istället ACTION.procedure-arketypen.\r\n\r\nSka inte användas för att dokumentera uppgifter om graviditet. Använd EVALUATION.pregnancy_bf_status och EVALUATION.pregnancy och relaterade arketyper till dessa ändamål.\r\n\r\nSka inte användas för att dokumentera bedömningar om hälsorisker eller potentiella problem. Använd då istället EVALUATION.health_risk-arketypen.\r\n\r\nSka inte användas för att dokumentera redogörelser om biverkningar, allergier eller intoleranser. Använd EVALUATION.adverse_reaction-arketyp för dessa ändamål.\r\n\r\nSka inte användas för särskild dokumentering av frånvaro (eller negativ närvaro) av ett problem eller en diagnos, exempelvis \"inga kända problem eller diagnoser\" eller \"Ingen känd diabetes\". Använd EVALUATION.exclusion-problem_arketypen för att uttrycka ett positivt utlåtande om uteslutning av ett problem eller diagnos. \r\n\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Para el registro de detalles acerca de un único problema de salud o diagnóstico.\r\nEl alcance previsto del problema de salud se mantiene deliberadamente poco definido en el contexto de la documentación clínica, de modo tal que pueda representarse cualquier problema, real o percibido, que pueda afectar al bienestar de un individuo en cualquier grado. Un problema de salud puede ser identificado por un individuo, un cuidador, o un profesional de la salud. Para la definición de un diagnóstico se require además de criterios clínicos objetivos, habitualmente determinados por un profesional de la salud.",
+          "keywords" : [ "asunto", "condición", "problema", "diagnóstico", "preocupación", "lesión", "impresión clínica" ],
+          "use" : "Utilícese para registrar detalles acerca de un único problema de salud o diagnóstico.\r\n\r\nUna definición clara que permita diferenciar un \"problema\" de un \"diagnóstico\" es casi imposible en la práctica - no podemos determinar en forma confiable cuando un problema debería ser considerado un diagnóstico. Cuando se cumplen con éxito determinados criterios diagnósticos o de clasificación es posible denominar una condición como un diagnóstico formal, pero previo al cumplimiento de dichos criterios y en tanto exista evidencia clínica que lo sustente, también puede ser válido el uso del término \"diagnóstico\". La cantidad de evidencia de apoyo varía de caso en caso. Muchos comités de estándares han lidiado con este problema por años sin lograr una resolución clara.\r\n\r\nA los fines de la documentación clínica mediante este arquetipo, problema y diagnóstico son considerados como un continuo, donde el incremento de los niveles de detalle y sustento en la evidencia inclinan la balanza hacia la etiqueta de \"diagnóstico\". Los requerimientos de datos que sustentan la documentación de ambos son idénticos, siendo necesarias estructuras de datos adicionales para sustentar la inclusión de la evidencia cuando esta exista y se encuentre disponible. Los ejemplos de problemas incluyen: la expresión del deseo de bajar de peso por parte de un individuo sin la existencia de un diagnóstico formal de obesidad, o un problema de relación con un familiar. Los ejemplos de diagnósticos formales incluyen un cáncer fundamentado en información histórica, los hallazgos de un examen, los hallazgos histopatológicos, los hallazgos radiológicos, y que cumplen todos los criterios diagnósticos. En la práctica, la mayoría de los problemas o diagnósticos no se encuentran en los extremos del espectro problema-diagnóstico sino que se ubican en alguna posición intermedia.\r\n\r\nEste arquetipo puede ser utilizado en diversos contextos. Por ejemplo, para registrar un problema o diagnóstico clínico durante una consulta clínica, para la elaboración de una Lista de Problemas persistente, o para proveer una afirmación sumaria dentro de un documento de Resumen de Alta.\r\n\r\nEn la práctica, los clínicos utilizan muchos calificadores dependientes del contexto, tales como pasado/actual, primario/secundario, activo/inactivo, admisión/egreso, etc. Estos contextos pueden ser relativos a la localización, la especialización, el episodio, o a un instancia de un proceso, pudiendo entonces generar confusión o riesgos potenciales de seguridad para el paciente si son incluidos en Listas de Problemas o documentos compartidos que carecen del contexto original. Estos contextos pueden ser arquetipados en forma separada e incluidos en el slot de \"Estado\", dado que su uso varía en diferentes escenarios. Su uso mayormente pretendido debe darse en el contexto apropiado y no debería ser compartido fuera de dicho contexto sin una clara comprensión de sus consecuencias potenciales. Por ejemplo: un diagnóstico primario podría ser un diagnóstico secundario para otro especialista; un problema activo puede tornarse inactivo (o viceversa) e impactar en la seguridad de una decisión clínica. En general, estos calificadores deberían aplicarse localmente dentro del contexto del sistema clínico y en la práctica estos estados deberían ser manualmente mantenidos por clínicos a fin de asegurar que las listas de problemas, actuales o pasados, activos o inactivos o primarios y secundarios, sean clínicamente exactos.\r\n\r\nEste arquetipo será utilizado como un componente del Registro Médico Orientado al Problema descripto por Larry Weed. Se requerirá del desarrollo de arquetipos adicionales para la representación de conceptos clínicos tales como una condición para un organizador general de diagnósticos, etc.\r\n\r\nEn algunas situaciones puede asumirse que la identificación de un diagnóstico solo se ajusta a la experticia del médico, pero no es el propósito de este arquetipo. Los diagnósticos pueden ser registrados mediante este arquetipo por parte de cualquier profesional.\r\n",
+          "misuse" : "No debe ser utilizado para registrar síntomas tal cual fueron descriptos por el individuo; para ello se debe utilizar el arquetipo CLUSTER.symptom, habitualmente dentro del contexto del arquetipo OBSERVATION.story.\r\n\r\nNo debe ser utilizado para registrar hallazgo de exámenes, para ello se debe utilizar la familia de arquetipos relacionados a exámenes, habitualmente contenidos dentro del arquetipo OBSERVATION.exam.\r\n\r\nNo debe ser utilizado para registrar hallazgos de pruebas de laboratorio o diagnósticos relacionados (como por ejemplo diagnósticos patológicos); para ello se debe utilizar un arquetipo apropiado de la familia de arquetipos del tipo OBSERVATION.\r\n\r\nNo debe ser utilizado para registrar resultados de exámenes por imágenes o diagnósticos imagenológicos; para ello se debe utilizar un arquetipo apropiado de la familia de arquetipos del tipo OBSERVATION.\r\n\r\nNo debe ser utilizado para registrar diagnósticos diferenciales; para ello se debe utilizar el arquetipo EVALUATION.differential_diagnosis.\r\n\r\nNo debe ser utilizado para registrar \"Motivos de Consulta\"; para ello se debe utilizar el arquetipo EVALUATION.reason_for_encounter.\r\n\r\nNo debe ser utilizado para registrar procedimientos; para ello se debe utilizar el arquetipo ACTION.procedure.\r\n\r\nNo debe ser utilizado para registrar detalles acerca del embarazo; para ello se debe utilizar los arquetipos EVALUATION.pregnancy_bf_status, EVALUATION.pregnancy y los arquetipos relacionados.\r\n\r\nNo debe ser utilizado para registrar aseveraciones acerca de riesgos para la salud o problemas potenciales; para ello se debe utilizar el arquetipo EVALUATION.health_risk.\r\n\r\nNo debe ser utilizado para registrar aseveraciones acerca de reacciones adversas, alergias o intolerancias; para ello se debe utilizar el arquetipo EVALUATION.adverse_reaction.\r\n\r\n\r\nNo debe ser utilizado para registrar la ausencia explícita (o presencia negativa) de un problema o diagnóstico (como por ejemplo \"sin diagnósticos o problemas conocidos\" o \"sin diabetes conocida\"); para expresar una aseveración positiva acerca de la exclusión de un problema o diagnóstico se debe utilizar el arquetipo EVALUATION.exclusion-problem_diagnosis.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om ett identifisert helseproblem eller en diagnose.\r\n\r\nOmfanget for et helseproblem er med vilje løst definert, for å kunne registrere en reell eller selvoppfattet bekymring som i større eller mindre grad kan påvirke et individs velvære negativt. Et helseproblem kan identifiseres av individet selv, en omsorgsperson eller av helsepersonell. En diagnose er derimot definert basert på objektive kliniske kriterier, og stilles som regel bare av helsepersonell.",
+          "keywords" : [ "emne", "problem", "tilstand", "hindring", "diagnose", "helseproblem", "bekymring", "funn", "helsetilstand", "konflikt", "utfordring", "klinisk bilde" ],
+          "use" : "Brukes til å registrere detaljer om ett identifisert helseproblem eller en diagnose. \r\n\r\nÅ klart definere skillet mellom et \"problem\" og en \"diagnose\" er i praksis nesten umulig, og vi kan ikke på en pålitelig måte si når et problem skal ses på som en diagnose. Når diagnostiske- eller klassifikasjonskriterier er innfridd kan vi trygt kalle tilstanden en formell diagnose, men før disse kriteriene er møtt kan det dersom det finnes støttende funn også være riktig å kalle den en diagnose. Mengden støttende funn som kreves for å sette merkelappen \"diagnose\" er ikke lett å definere, og varierer sannsynligvis i praksis fra tilstand til tilstand. Mange standardiseringskomiteer har arbeidet med dette definisjonsproblemet i årevis uten å komme til noen klar konklusjon.\r\n\r\nNår det gjelder klinisk dokumentasjon med denne arketypen må problemer og diagnoser ses på som deler av et spektrum der økende detaljgrad og mengde støttende funn som regel gir vekt mot merkelappen \"diagnose\". I denne arketypen er det ikke nødvendig å klassifisere tilstanden som enten et problem eller en diagnose. Datastrukturen for å dokumentere dem er identisk, med tilleggsstrukturer som støtter inklusjon av nye funn når eller hvis de blir tilgjengelige. Eksempler på problemer kan være et individs uttrykte ønske om å gå ned i vekt uten en formell diagnose av fedme, eller problemer i forholdet til et familiemedlem. Eksempler på formelle diagnoser kan være en kreftsvulst der diagnosen er støttet av historisk informasjon, undersøkelsesfunn, histologiske funn, radiologiske funn, og som møter alle diagnosekriterier. I praksis er de fleste problemer eller diagnoser ikke i hver sin ende av problem/diagnose-spektrumet, men et sted mellom.\r\n\r\nDenne arketypen kan brukes i mange sammenhenger. Eksempler kan være å registrere et problem eller en klinisk diagnose under en klinisk konsultasjon, fylle en persistent problemliste, eller for å gi oppsummerende informasjon i en epikrise.\r\n\r\nI praksis bruker klinikere mange kvalifikatorer som nåværende/tidligere, hoved/bidiagnose, aktiv/inaktiv, innleggelse/utskriving, etc. Sammenhengene kan være steds-, spesialiserings-, episode- eller arbeidsflytspesifikke, og disse kan forårsake forvirring eller til og med mulige sikkerhetsrisikoer dersom de videreføres i problemlister eller deles i dokumenter utenfor sin opprinnelige sammenheng. Disse kvalifikatorene kan arketypes separat og inkluderes i \"Status\"-SLOTet, fordi bruken varierer i ulike settinger. Disse vil sannsynligvis hovedsakelig brukes i passende sammenhenger, og ikke deles utenfor sammenhengen uten en klar forståelse av mulige konsekvenser. For eksempel kan en hoveddiagnose for en kliniker være en bidiagnose for en annen spesialist, et aktivt problem kan bli inaktivt (og omvendt), og dette kan ha innvirkning på sikkerhet og beslutningsstøtte. Generelt burde disse kvalifikatorene brukes lokalt og innenfor kontekst i det kliniske systemet, og i praksis bør de manuelt administreres av klinikere for å sikre at lister over nåværende/tidligere, aktiv/inaktiv eller hoved/bidiagnoser er klinisk presise.\r\n\r\nDenne arketypen vil bli brukt som en komponent i den problemorienterte journalen som beskrevet av Larry Weed. Tilleggsarketyper som representerer kliniske konsepter som f.eks. \"tilstand\" som en overbygning for diagnoser etc, vil måtte utvikles for å støtte dette.\r\n\r\nI noen situasjoner antas det at å stille en diagnose ligger fullstendig innenfor legers domene, men dette er ikke hensikten med denne arketypen. Diagnoser kan registreres av alt helsepersonell ved hjelp av denne arketypen.",
+          "misuse" : "Brukes ikke til å registrere symptomer slik de beskrives av individet. Til dette brukes CLUSTER.symptom-arketypen, som regel innenfor OBSERVATION.story-arketypen.\r\n\r\nBrukes ikke til å registrere funn ved klinisk undersøkelse. Til dette brukes gruppen av undersøkelsesrelaterte CLUSTER-arketyper, som regel innenfor OBSERVATION.exam-arketypen.\r\n\r\nBrukes ikke til å registrere laboratoriesvar eller relaterte diagnoser for eksempel patologiske diagnoser. Til dette brukes en passende arketype fra laboratoriefamilien av OBSERVATION-arketyper.\r\n\r\nBrukes ikke til å registrere billeddiagnostiske svar eller diagnoser. Til dette brukes en passende arketype fra billeddiagnostikkfamilien av OBSERVATION-arketyper.\r\n\r\nBrukes ikke til å registrere differensialdiagnoser. Til dette brukes EVALUATION.differential_diagnosis-arketypen.\r\n\r\nBrukes ikke til å registrere kontaktårsak eller klinisk problemstilling ved kontakt. Til dette brukes EVALUATION.reason_for_encounter-arketypen.\r\n\r\nBrukes ikke til å registrere prosedyrer, til dette brukes ACTION.procedure-arketypen.\r\n\r\nBrukes ikke til å registrere detaljer om graviditet utover diagnoser. Til dette brukes EVALUATION.pregnancy_bf_status og EVALUATION.pregnancy, samt relaterte arketyper.\r\n\r\nBrukes ikke til å registrere vurderinger av potensiale og sannsynlighet for fremtidige problemer, diagnoser eller andre uønskede helseeffekter, til dette brukes EVALUATION.health_risk-arketypen.\r\n\r\nBrukes ikke til å registrere utsagn om uønskede reaksjoner, allergier eller intoleranser - bruk EVALUATION.adverse_reaction-arketypen.\r\n\r\nBrukes ikke til å registrere et eksplisitt fravær (eller negativ tilstedeværelse) av et problem eller en diagnose, f.eks. \"ingen kjente problemer eller diagnoser\" eller \"ingen kjent diabetes\". Bruk EVALUATION.exclusion-problem_diagnosis for å uttrykke fravær av et problem eller en diagnose.\r\n\r\nBrukes ikke til å registrere pasientens tilgjengelige ressurser for egenomsorg - bruk egne EVALUATION-arketyper for dette formålet.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar detalhes sobre um único problema de saúde ou diagnóstico identificado.\r\n\r\nO escopo pretendido de um problema de saúde é deliberadamente mantido livre no contexto da documentação clínica, de forma a captar quaisquer preocupações reais ou percebidas que podem afetar adversamente, em qualquer grau, o bem-estar de um indivíduo. Um problema de saúde pode ser identificado pela o indivíduo, um prestador de cuidados ou de um profissional de saúde. No entanto, o diagnóstico é adicionalmente definido com base em critérios clínicos objetivos, e, geralmente, determinado apenas por um profissional de saúde.",
+          "keywords" : [ "caso", "condição", "problema", "diagnóstico", "preocupação", "prejuízo", "impressão clínica" ],
+          "use" : "Para gravar detalhes sobre um único problema de saúde ou diagnóstico identificado.\r\n\r\nDefinições claras que permitem a diferenciação entre um \"problema\" e um \"diagnóstico\" são quase impossíveis na prática - não podemos dizer de forma segura quando um problema deve ser considerado como um diagnóstico. Quando o diagnóstico ou os critérios de classificação são cumpridos com sucesso, então com confiança podemos chamar a condição de um diagnóstico formal, mas antes que essas condições sejam cumpridas e enquanto houver evidências para tanto, também pode ser válido usar o termo \"diagnóstico\". A quantidade de evidências de apoio requerida para a indicação de diagnóstico não é fácil de ser definida e na realidade, provavelmente varia de condição para condição. Muitos comitês de padrões têm, por anos, se confrontado com esse dilema de definição sem resolução clara. \r\n\r\nEste arquétipo pode ser utilizado em muitos contextos. Por exemplo, na gravação de um problema ou um diagnóstico durante uma consulta clínica; preencher uma lista de problema persistente; ou para fornecer uma declaração de resumo de um documento Sumário de Alta.\r\n\r\nNa prática, os clínicos usam muitos qualificadores de contexto específico, como passado / presente, primário / secundário, ativo / inativo, admissão / alta, etc. Os contextos podem ser: localização, especialização, episódio ou específicos de fluxo de trabalho, e estes podem causar confusão ou até mesmo potenciais problemas de segurança se persistido nas listas de problemas ou compartilhados em documentos que estão fora do contexto original. Estes qualificadores podem ser arquetipados separadamente e incluídos no slot 'Estado', porque seu uso varia em diferentes contextos. Espera-se que estes serão utilizados em sua maioria dentro do contexto apropriado e não compartilhados fora desse contexto, sem compreensão clara das consequências potenciais. Por exemplo, um diagnóstico primário para um clínico pode ser um secundário para outro especialista; um problema ativo pode se tornar inativo (ou vice-versa) e isso pode impactar no uso seguro do apoio à decisão clínica. Em geral, estes qualificadores devem ser aplicados localmente dentro do contexto do sistema clínico e na prática, esses estados devem ser criados manualmente pelos clínicos para assegurar que as listas de problemas: Presente / Passado, ativo / inativo ou primário / secundário são clinicamente precisas.\r\n\r\nEste arquétipo será usado como um componente dentro do Registro Clínico Orientado à Problemas, tal como descrito por Larry Weed. Arquétipos adicionais, que representam conceitos clínicos, tais como: condição como um organizador abrangente para diagnósticos etc, terão de ser desenvolvidos para apoiar esta abordagem.\r\n\r\nEm algumas situações, pode ser assumido que a identificação de um diagnóstico só se encaixa dentro da expertise do médico, mas esta não é a intenção para este arquétipo. Os diagnósticos podem ser gravados utilizando esse arquétipo por qualquer profissional de saúde.",
+          "misuse" : "Não deve ser usado para registrar os sintomas descritos pelo indivíduo, para isso, use o arquétipo CLUSTER.symptom, geralmente dentro do arquétipo OBSERVATION.story.\r\n\r\nNão deve ser usado para registrar achados do exame, use o CLUSTER da família de arquétipos relacionadas ao exame, geralmente aninhados dentro do arquétipo OBSERVATION.exam.\r\n\r\nNão deve ser usado para registrar os resultados dos testes de laboratório ou diagnósticos relacionados, por exemplo, em diagnósticos patológicos use um arquétipo apropriado da família de laboratório dos arquétipos OBSERVATION.\r\n\r\nNão deve ser usado para registrar os resultados dos exames de imagem ou de diagnóstico por imagem, use um arquétipo apropriado a partir da família de imagem dos arquétipos OBSERVATION.\r\n\r\nNão deve ser usado para gravar 'diagnósticos diferenciais', use o arquétipo EVALUATION.differential_diagnosis.\r\n\r\nNão deve ser usado para gravar 'Motivo do Encontro \"ou\" queixa apresentada', use o arquétipo EVALUATION.reason_for_encounter.\r\n\r\nNão deve ser usado para gravar procedimentos, use o arquétipo ACTION.procedure.\r\n\r\nNão deve ser usado para registrar detalhes sobre a gravidez, use o EVALUATION.pregnancy_bf_status e EVALUATION.pregnancy e os arquétipos relacionados.\r\n\r\nNão deve ser usado para gravar o estadiamento sobre o risco ou os problemas de saúde potenciais, use o arquétipo risco EVALUATION.health.\r\n\r\nNão deve ser usado para gravar declarações sobre reações adversas, alergias ou intolerâncias, use o arquétipo EVALUATION.adverse_reaction.\r\n\r\nNão deve ser usado para a gravação de uma ausência explícita (ou presença negativa) de um problema ou diagnóstico, por exemplo: \"sem problema ou diagnósticos conhecido\" ou \"diabetes não conhecido\". Use o arquétipo EVALUATION.exclusion-problem_diagnosis para expressar uma declaração positiva sobre a exclusão de um problema ou diagnóstico.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل تفاصيل حول قضية أو عقبة تؤثر على السلامة البدنية, العقلية و/أو الاجتماعية لشخص ما",
+          "keywords" : [ "القضية", "الظرف الصحي", "المشكلة", "العقبة" ],
+          "use" : "يستخدم لتسجيل المعلومات العامة حول المشكلات المتعلقة بالصحة.\r\nيحتوي النموذج على معلومات متعددة,و يمكن استخدامه في تسجيل المشكلات الحاضرة و السابقة.\r\nو يمكن تحديد المشكلة بواسطة المريض نفسه أو من يقوم بتقديم الرعاية الصحية.\r\nبعض الأمثلة تتضمن ما يلي:\r\n- بعض الأعراض التي لا تزال تحت الملاحظة و لكنها تمثل تشخيصات مبدأية\r\n- الرغبة لفقد الوزن دون تشخيص مؤكد بالسمنة\r\n- الرغبة بالإقلاع عن التدخين بواسطة الشخص\r\n- مشكلة في العلاقة مع أحد أفراد العائلة",
+          "misuse" : "لا يستخدم لتسجيل التشخيصات المؤكدة. استخدم بدلا من ذلك النموذج المخصص من هذا النموذج, تقييم.المشكلة - التشخيص",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For recording details about a single, identified health problem or diagnosis. \r\n\r\nThe intended scope of a health problem is deliberately kept loose in the context of clinical documentation, so as to capture any real or perceived concerns that may adversely affect an individual's wellbeing to any degree. A health problem may be identified by the individual, a carer or a healthcare professional. However, a diagnosis is additionally defined based on objective clinical criteria, and usually determined only by a healthcare professional.",
+          "keywords" : [ "issue", "condition", "problem", "diagnosis", "concern", "injury", "clinical impression" ],
+          "use" : "Use for recording details about a single, identified health problem or diagnosis. \r\n\r\nClear definitions that enable differentiation between a 'problem' and a 'diagnosis' are almost impossible in practice - we cannot reliably tell when a problem should be regarded as a diagnosis. When diagnostic or classification criteria are successfully met, then we can confidently call the condition a formal diagnosis, but prior to these conditions being met and while there is supportive evidence available, it can also be valid to use the term 'diagnosis'. The amount of supportive evidence required for the label of diagnosis is not easy to define and in reality probably varies from condition to condition. Many standards committees have grappled with this definitional conundrum for years without clear resolution.\r\n\r\nFor the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'. In this archetype it is not neccessary to classify the condition as a 'problem' or 'diagnosis'. The data requirements to support documentation of either are identical, with additional data structure required to support inclusion of the evidence if and when it becomes available. Examples of problems include: the individual's expressed desire to lose weight, but without a formal diagnosis of Obesity; or a relationship problem with a family member. Examples of formal diagnoses would include a cancer that is supported by historical information, examination findings, histopathological findings, radiological findings and meets all requirements for known diagnostic criteria. In practice, most problems or diagnoses do not sit at either end of the problem-diagnosis spectrum, but somewhere in between.\r\n\r\nThis archetype can be used within many contexts. For example, recording a problem or a clinical diagnosis during a clinical consultation; populating a persistent Problem List; or to provide a summary statement within a Discharge Summary document.\r\n\r\nIn practice, clinicians use many context-specific qualifiers such as past/present, primary/secondary, active/inactive, admission/discharge etc. The contexts can be location-, specialisation-, episode- or workflow-specific, and these can cause confusion or even potential safety issues if perpetuated in Problem Lists or shared in documents that are outside of the original context. These qualifiers can be archetyped separately and included in the ‘Status’ slot, because their use varies in different settings. It is expected that these will be used mostly within the appropriate context and not shared out of that context without clear understanding of potential consequences. For example, a primary diagnosis to one clinician may be a secondary one to another specialist; an active problem can become inactive (or vice versa) and this can impact the safe use of clinical decision support. In general these qualifiers should be applied locally within the context of the clinical system, and in practice these statuses should be manually curated by clinicians to ensure that lists of Current/Past, Active/Inactive or Primary/Secondary Problems are clinically accurate. \r\n\r\nThis archetype will be used as a component within the Problem Oriented Medical Record as described by Larry Weed. Additional archetypes, representing clinical concepts such as condition as an overarching organiser for diagnoses etc, will need to be developed to support this approach.\r\n\r\nIn some situations, it may be assumed that identification of a diagnosis fits only within the expertise of physicians, but this is not the intent for this archetype. Diagnoses can be recorded using this archetype by any healthcare professional.",
+          "misuse" : "Not to be used to record symptoms as described by the individual - use the CLUSTER.symptom archetype, usually within the OBSERVATION.story archetype.\r\n\r\nNot to be used to record examination findings - use the family of examination-related CLUSTER archetypes, usually nested within the OBSERVATION.exam archetype.\r\n\r\nNot to be used to record laboratory test results or related diagnoses, for example pathological diagnoses - use an appropriate archetype from the laboratory family of OBSERVATION archetypes.\r\n\r\nNot to be used to record imaging examination results or imaging diagnoses - use an appropriate archetype from the imaging family of OBSERVATION archetypes.\r\n\r\nNot to be used to record 'Differential Diagnoses' - use the EVALUATION.differential_diagnosis archetype.\r\n\r\nNot to be used to record 'Reason for Encounter' or 'Presenting Complaint' - use the EVALUATION.reason_for_encounter archetype.\r\n\r\nNot to be used to record procedures - use the ACTION.procedure archetype.\r\n\r\nNot to be used to record details about pregnancy - use the EVALUATION.pregnancy_bf_status and EVALUATION.pregnancy and related archetypes.\r\n\r\nNot to be used to record statements about health risk or potential problems - use the EVALUATION.health_risk archetype.\r\n\r\nNot to be used to record statements about adverse reactions, allergies or intolerances - use the EVALUATION.adverse_reaction archetype.\r\n\r\nNot to be used for the explicit recording of an absence (or negative presence) of a problem or diagnosis, for example ‘No known problem or diagnoses’ or ‘No known diabetes’. Use the EVALUATION.exclusion-problem_diagnosis archetype to express a positive statement about exclusion of a problem or diagnosis.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Este arquetipo se utilizará para registrar un único problema de salud o diagnóstico identificado para el paciente.\r\n\r\nEl alcance del arquetipo se dejó deliberadamente abierto, para poder capturar cualquier inquietud real o percibida que afecte en cualquier grado la salud de un paciente. Independientemente de quién detecte el problema, el diagnóstico debe ser definido basado en criterios clínicos objetivos, determinados por un profesional clínico.",
+          "keywords" : [ "problema", "diagnóstico", "preocupación", "condición", "enfermedad" ],
+          "use" : "Este arquetipo se utilizará para registrar un único problema de salud o diagnóstico identificado para el paciente.",
+          "misuse" : "No se debe utilizar para registrar síntomas descritos por el paciente, para eso utilizar el arquetipo CLUSTER.symtom.\r\n\r\nNo se debe utilizar para registrar hallazgos, para eso utilizar arquetipos relacionados con la examinación, usualmente relacionados con el arquetipo OBSERVATION.exam\r\n\r\nNo se debe utilizar para registrar diagnósticos realizados sobre resultados de estudios diagnósticos como laboratorio o imagenología.\r\n\r\nNo se debe utilizar para registrar el motivo de consulta o problema presentado por el paciente, para eso utilizar el arquetipo EVALUATION.reason_for_encounter\r\n\r\nNo se debe utilizar para registrar riesgos o problemas potenciales, para eso utilizar el arquetipo EVALUATION.health_risk\r\n\r\nNo se debe utilizar para registrar la ausencia de un problema, para eso utilizar el arquetipo EVALUATION.exclusion-problem_diagnosis",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.problem_diagnosis.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-problem_diagnosis-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0003.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0032",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0070.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "es" : { },
+        "es-ar" : { },
+        "de" : { },
+        "en" : { },
+        "ar-sy" : { },
+        "pt-br" : { },
+        "nb" : { },
+        "sv" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "897edb86-2611-406a-b54b-acc5efc1687b",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Jasmin Buck, Sebastian Garde",
+        "organisation" : "University of Heidelberg, Central Queensland University"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Kirsi Poikela",
+        "organisation" : "Tieto Sweden AB",
+        "email" : "ext.kirsi.poikela@tieto.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina",
+        "email" : "alandmarch@gmail.com"
+      },
+      "accreditation" : "-",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke, John Tore Valand",
+        "organisation" : "Helse Bergen HF"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Adriana Kitajima, Gabriela Alves, Maria Angela Scatena, Marivan Abrahäo",
+        "organisation" : "Core Consulting",
+        "email" : "contato@coreconsulting.com.br"
+      },
+      "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Pablo Pazos",
+        "organisation" : "CaboLabs"
+      },
+      "accreditation" : "Computer Engineer",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "837c6460-6827-4618-9d40-ee61207235b1",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "42A758CADEF3767E390EB8187F98AFF5"
+      },
+      "details" : {
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Para registrar una descripcion narrativa e interpretacion clinica de los hallazgos observados durante el examen fisico completo de una persona, y proveer un marco de referencia para anidar CLUSTER de arquetipos detallados, cada uno de los cuales posibilita registrar en detalle aspectos especificos del examen fisico",
+          "keywords" : [ "examen", "fisico", "examen", "hallazgos", "clinicos" ],
+          "use" : "Utilizar para registrar una descripcion narrativa de los hallazgos observados durante el examen fisico general de una persona.\r\n\r\nUtilizar para incorporar la descripcion narrativa de hallazgos clinicos dentro de sistemas clinicos actuales o legados a un formato de arquetipos, utilizando el elemento de data \"Descripcion Clinica\". \r\n\r\nUtilizar como un arquetipo contenedor - para proveer un arquetipo ENTRY consultable en el cual, puedan ser anidados arquetipos CLUSTER especificos de examenes, incluidos aquellos que detallan la inspeccion, palpacion, asucultacion, percusion y movimiento de los sistemas o estructuras anatomicas del cuerpo",
+          "misuse" : "No debe ser utilizado para registrar observaciones de la toma de historia -utilizar arquetipos especificos de OBSERVACION y CLUSTER. Por ejemplo OBSERVACION.historia y CLUSTER.sintoma.\r\n\r\nNo debe ser utilizado para registrar observaciones clinicas autonomas - utilizar arquetipos especificos OBSERVATION. Por ejemplo OBSERVATION.presion_arterial, OBSERVATION.peso_corporal, u OBSERVATION.altura. ",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For registrering av funn ved fysisk undersøkelse av en helsetjenestemottaker.",
+          "keywords" : [ "klinisk undersøkelse", "fysisk undersøkelse", "undersøkelse", "funn", "klinisk", "legeundersøkelse", "observasjon", "kroppsundersøkelse" ],
+          "use" : "Benyttes ved registrering av detaljer om fysiske funn observert ved klinisk undersøkelse av et individ. Dette kan inkludere en tekstlig beskrivelse av funn og kliniske fortolkninger av funn. Tekstlige beskrivelser av kliniske funn innhentet fra eksisterende kliniske systemer kan fanges opp ved å benytte dataelementet \"Description\". \r\n\r\nArketypen kan også benyttes som et rammeverk for innsetting av detaljer ved hjelp av CLUSTER.exam-arketyper. Eksempler på detaljer som kan beskrives ved hjelp av innsatte CLUSTER-arketyper er inspeksjon, palpasjon, auskultasjon, perkusjon og bevegelser i kroppsystemer eller anatomiske strukturer (feks CLUSTER.exam_pupils).\r\n\r\nNoen ganger vil klinikere ønske å registrere et sammendrag, f.eks. \"kronisk otitis media\", som en fortolkning av funn ved klinisk undersøkelse. I denne konteksten - arketypen 'Funn ved klinisk undersøkelse' - bør dette forståes som 'funn forenlig med kronisk otitis media', og ikke en fastsatt diagnose. Skulle sammendraget synes å representere en diagnose, vil sikker og konsistent dataspørring kreve en diagnose som registreres i EVALUATION.problem_diagnosis-arketypen, selv om sammendraget/frasen og diagnosen er identiske.",
+          "misuse" : "Skal ikke anvendes for å registrere observasjoner gjort under anamneseopptak - bruk spesifikke OBSERVATION og CLUSTER-arketyper, for eksempel OBSERVATION.story eller CLUSTER.symptom.\r\n\r\nSkal ikke anvendes for å registrere frittstående observasjoner - bruk spesifikke OBSERVATION-arketyper, for eksempel OBSERVATION.body_weight eller OBSERVATION.height.\r\n\r\nSkal ikke anvendes til å registrere satte diagnoser, til dette brukes EVALUATION.problem_diagnosis.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registro de detalhes sobre os resultados no exame físico do sujeito do cuidado.",
+          "keywords" : [ "exame", "físico", "achados", "clínico" ],
+          "use" : "Use para registrar detalhes sobre achados no exame físico do sujeito do cuidado. Pode incluir uma descrição narrativa dos achados, uma estrutura em que aninhar detalhados arquétipos do exame do CLUSTER, e uma interpretação clínica dos achados.\r\n\r\nExemplos de arquétipos detalhados de exame CLUSTER incluem aqueles que descrevem inspeção, palpação, ausculta, percussão e movimento de sistemas corporais ou estruturas anatômicas, como CLUSTER.exam_pupils.\r\n\r\nAs descrições narrativas dos achados dos sistemas clínicos existentes podem ser capturadas utilizando o elemento de dados \"Descrição\".\r\n\r\nOs médicos às vezes podem querer gravar uma frase resumida, como \"otite média crônica\", como Interpretação do exame físico. No contexto do arquétipo do exame físico, isso só deve ser entendido como \"os sinais físicos são consistentes com a otite média crônica\". Embora a expressão resumida possa parecer representar um diagnóstico, a consulta segura e consistente requer que um diagnóstico seja registrado usando o arquétipo EVALUATION.problem_diagnosis, mesmo que as frases sejam idênticas.",
+          "misuse" : "Não deve ser utilizado para gravação de anamnese observações - usar arquétipos específicos OBSERVATION e CLUSTER. Por exemplo, OBSERVATION.story e CLUSTER .symptom.\r\n\r\nNão deve ser utilizado pra gravar observações clínicas isoladas - use arquétipos específicos OBSERVATION. Por exemplo: OBSERVATION.blood_pressure, OBSERVATION.body_weight, ou OBSERVATION.height.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "Za beleženje znakov izmerjenih v okviru fizikalnega pregleda",
+          "keywords" : [ "pregled", "fizikalni" ],
+          "use" : "\"Container\" za gnezdenje \"cluster\"-jev, ki podrobno opisujejo posamezne elemente fizikalnega pregleda vključujoč pregled, tipanje, avskultacijo (osluškovanje) in udarjanje (skupine vključno z njihovimi specializacijami).\r\n\r\ncluster - skupina, grozd",
+          "misuse" : "*Not to be used for recording history-taking observations - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom.\r\n\r\nNot to be used to record stand-alone clinical observations - use specific OBSERVATION archetypes. For example OBSERVATION.blood_pressure, OBSERVATION.body_weight, or OBSERVATION.height.(en)",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For recording details about findings on physical examination of the subject of care.",
+          "keywords" : [ "examination", "physical", "exam", "findings", "clinical" ],
+          "use" : "Use to record details about findings on physical examination of the subject of care. This may include a narrative description of the findings, a framework in which to nest detailed CLUSTER examination archetypes, and a clinical interpretation of the findings.\r\n\r\nExamples of detailed CLUSTER examination archetypes include those that describe inspection, palpation, auscultation, percussion and movement of body systems or anatomical structures, such as CLUSTER.exam_pupils.\r\n\r\nNarrative descriptions of clinical findings from existing clinical systems may be captured using the 'Description' data element.\r\n\r\nClinicians may sometimes want to record a summative phrase such as 'chronic otitis media' as an Interpretation of the physical examination. In the context of the physical examination archetype this should only be understood as 'physical signs are consistent with chronic otitis media'. While the summative phrase may appear to represent a diagnosis, safe and consistent querying requires a diagnosis to be recorded using the EVALUATION.problem_diagnosis archetype, even if the phrases are identical.",
+          "misuse" : "Not to be used for recording history-taking observations - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom.\r\n\r\nNot to be used to record stand-alone clinical observations - use specific OBSERVATION archetypes. For example OBSERVATION.blood_pressure, OBSERVATION.body_weight, or OBSERVATION.height.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل الموجودات التي تم العثور عليها عند الفحص البدني",
+          "keywords" : [ "الفحص", "البدني" ],
+          "use" : "تم تصميم النموذج ليحتوي على عناقيد مفصلة متعلقة بالفحص بما في ذلك الاكتشاف, الجس, التسمع و القرع بما في هذه العناقيد من تخصيصات.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "用于记录关于对于特定主体对象体格检查发现的详情。",
+          "keywords" : [ "临床", "体格检查", "检查", "发现", "所见", "查体" ],
+          "use" : "用于记录关于对于特定主体对象体格检查发现的详情。其中，可包括关于这些发现的叙述型描述、一种用于嵌套若干详细的群簇（CLUSTER）型原始型的框架以及关于这些发现的临床解释。\r\n\r\n关于群簇（CLUSTER）型检查原始型的例子包括那些用于详细描述望诊、触诊、听诊、叩诊以及身体系统运动或者解剖结构的原始型，如瞳孔检查原始型CLUSTER.exam_pupils。\r\n\r\n对于现有临床系统之中临床发现的叙述型描述，可以采用名为“Description”（描述）的数据元进行采集。\r\n\r\n临床医生有时可能希望采用“慢性中耳炎”之类的概括性短语来记录对于体格检查的解释。在当前体格检查原始型的语境下，仅仅应当将其理解为“体征与慢性中耳炎相符或者说相一致”。尽管这种概括性短语可能看似用来表示某种诊断，但就安全一致的查询来说，依然需要采用问题诊断原始型EVALUATION.problem_diagnosis来记录诊断，即使是二者所采用的短语完全相同。",
+          "misuse" : "并非旨在用于记录病史采集类观察项目——此时请采用具体的观察（OBSERVATION）型和群簇（CLUSTER）型原始型。例如，纪事原始型OBSERVATION.story和症状原始型CLUSTER.symptom。\r\n\r\n并非旨在用于记录单独的临床观察项目——此时请采用具体的观察（OBSERVATION）型原始型。例如，血压原始型OBSERVATION.blood_pressure、体重原始型OBSERVATION.body_weight，或者身高原始型OBSERVATION.height。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Este arquetipo será utilizado para registrar detalles sobre los hallazgos en el examen físico del paciente",
+          "keywords" : [ "examinación", "palpación", "auscultación", "percusión", "hallazgos clínicos", "examen físico" ],
+          "use" : "Este arquetipo será utilizado para registrar detalles sobre los hallazgos en el examen físico del paciente.\r\n\r\nPuede utilizarse junto a otros arquetipos para incluir detalles de los hallazgos clínicos, para describir examinación por inspección, palpación, auscultación, percusión y movimiento de los sistemas o estructuras anatómicas. Por ejemplo se podrá utilizar el arquetipo CLUSTER.exam_pupils.\r\n\r\nLa información registrada mediante este arquetipo debe estar relacionada con la examinación física y sus hallazgos. Algunas interpretaciones de los hallazgos pueden registrarse usando este arquetipo aunque parezcan diagnósticos, pero solo si están directamente relacionadas con el hallazgo. Para registrar un diagnóstico utilizar el arquetipo EVALUATION.problem_diagnosis, aunque el texto de la interpretación del hallazgo sea igual al diagnóstico.",
+          "misuse" : "No se debe utilizar para registrar información histórica del paciente, para eso utilizar el arquetipo OBSERVATION.story\r\n\r\nNo se debe utilizar para registrar observaciones independientes y signos, para eso utilizar arquetipos específicos como OBSERVATION.blood_pressure, OBSERVATION.body_weight, OBSERVATION.height, etc.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.exam.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-exam-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : { },
+        "sl" : { },
+        "es-ar" : { },
+        "en" : { },
+        "nb" : { },
+        "es" : { },
+        "pt-br" : { },
+        "zh-cn" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "6d17b7cf-9bd3-406b-86e7-017f572fd0e7",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Lars Bitsch-Larsen and Einar Fosse",
+        "organisation" : "Haukeland University Hospital Bergen, Norway; UNN HF Centre for Integrated Care and Telemedicine",
+        "email" : "lbla@helse-bergen.no; Einar.Fosse@unn.no"
+      },
+      "accreditation" : "MD, DEAA, MBA, specialist in tropical medic",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Edgardo Vazquez",
+        "organisation" : "VinculoMedico"
+      },
+      "accreditation" : "Medical Doctor",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Osmeire Chamelette Sanzovo",
+        "organisation" : "Hospital Sírio Libanês - SP",
+        "email" : "osmeire.acsanzovo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "Uroš Rajkovič, Biljana Prinčič",
+        "organisation" : "Slovenia"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "BIPH",
+        "email" : "linforest@163.com"
+      },
+      "accreditation" : "?",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Pablo Pazos",
+        "organisation" : "CaboLabs"
+      },
+      "accreditation" : "Computer Engineer",
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ko"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ar-sy"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
