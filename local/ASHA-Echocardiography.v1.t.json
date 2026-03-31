@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "5.1.0",
-      "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b248f64b0455b72522ff60f83efa16a9",
+      "sem_ver" : "1.0.0-alpha.1",
+      "build_uid" : "ef68d5c8-89d2-4543-aeaf-ced66ac1f6ab",
+      "MD5-CAM-1.0.1" : "d5f4c97eb685540cc1405e7da9df5fa5",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -319,7 +319,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "ASHA_EKO_test",
+          "text" : "Echocardiography",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         }
       },
