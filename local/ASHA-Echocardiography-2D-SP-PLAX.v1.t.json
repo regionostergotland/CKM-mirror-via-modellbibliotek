@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.3",
+      "sem_ver" : "1.0.0-alpha.4",
       "build_uid" : "521c9be1-ab43-43ea-80ab-e085dc8de838",
-      "MD5-CAM-1.0.1" : "dd184c63fc3ab04dde064eca4e4c045a",
+      "MD5-CAM-1.0.1" : "ad0c2d3405c7289d13e436c793ee1307",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -134,6 +134,52 @@
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "items",
                   "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "nodeId" : "at0004.1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "occurrences" : "1..1",
+                        "defaultValue" : {
+                          "defining_code" : {
+                            "terminology_id" : {
+                              "value" : "SNOMED-CT",
+                              "@type" : "TERMINOLOGY_ID"
+                            },
+                            "code_string" : "40701008",
+                            "@type" : "CODE_PHRASE"
+                          },
+                          "value" : "Echocardiography",
+                          "@type" : "DV_CODED_TEXT"
+                        },
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "rmTypeName" : "TERMINOLOGY_CODE",
+                            "occurrences" : "0..1",
+                            "terminologyId" : {
+                              "value" : "SNOMED-CT"
+                            },
+                            "constraint" : [ ],
+                            "selectedTerminologies" : [ "SNOMED-CT" ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "SNOMED-CT",
+                              "code" : "40701008",
+                              "value" : "Echocardiography"
+                            } ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "ELEMENT",
                     "occurrences" : "0..0",
