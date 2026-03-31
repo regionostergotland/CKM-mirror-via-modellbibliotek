@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.2",
+      "sem_ver" : "1.0.0-alpha.1",
       "build_uid" : "48895e88-a3cc-4071-b0a2-1b7d26fac626",
-      "MD5-CAM-1.0.1" : "68cf1e101d96eeca33034eafe6d56ab0",
+      "MD5-CAM-1.0.1" : "3e408008e4f4bf4767526e70fdb28293",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -298,6 +298,24 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "ASHA-Echocardiography-2D-SP-PLAX.v1",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.38",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "ASHA-Echocardiography-2D-SP-4CH.v1",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.40",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "ASHA-Echocardiography-2D-BP-2+4CH.v1",
         "referenceType" : "templateId"
       } ]
     } ],
