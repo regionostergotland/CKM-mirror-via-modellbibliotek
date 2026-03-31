@@ -96,7 +96,7 @@ Not to be used to record details related to the overall findings, context or tec
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"35365ef2198455cc0d89ecd502f00360">
+		["MD5-CAM-1.0.1"] = <"4a868f7f4906652e52d03e7500a7434d">
 		["build_uid"] = <"3677e97d-c5d0-483c-a291-474e45b3b4eb">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"1.1.3">
@@ -138,7 +138,7 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0.1] occurrences matches {0..1} matches {    -- Aortic root diameter at sinuses of Valsalva level
+			ELEMENT[at0.1] occurrences matches {0..1} matches {    -- Aortic root end diastolic diameter at sinuses of Valsalva level
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::122]>
@@ -150,7 +150,7 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.6] occurrences matches {0..1} matches {    -- Aortic valve velocity time integral
+			ELEMENT[at0.3] occurrences matches {0..1} matches {    -- Aortic valve systolic area
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::335]>
@@ -162,19 +162,7 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.3] occurrences matches {0..1} matches {    -- Aortic valve area
-				value matches {
-					C_DV_QUANTITY <
-						property = <[openehr::335]>
-						list = <
-							["1"] = <
-								units = <"cm2">
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0.4] occurrences matches {0..1} matches {    -- Aortic valve mean pressure gradient
+			ELEMENT[at0.4] occurrences matches {0..1} matches {    -- Aortic valve systolic mean pressure gradient
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::125]>
@@ -186,7 +174,7 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.5] occurrences matches {0..1} matches {    -- Aortic valve peak velocity
+			ELEMENT[at0.5] occurrences matches {0..1} matches {    -- Aortic valve systolic peak velocity
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::338]>
@@ -198,7 +186,19 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.2] occurrences matches {0..1} matches {    -- Ascending aorta diameter
+			ELEMENT[at0.6] occurrences matches {0..1} matches {    -- Aortic valve systolic velocity time integral
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::335]>
+						list = <
+							["1"] = <
+								units = <"cm2">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.2] occurrences matches {0..1} matches {    -- Ascending aorta end diastolic diameter
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::122]>
@@ -210,19 +210,7 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.7] occurrences matches {0..1} matches {    -- E/e'
-				value matches {
-					C_DV_QUANTITY <
-						property = <[openehr::380]>
-						list = <
-							["1"] = <
-								units = <"1">
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0.8] occurrences matches {0..1} matches {    -- Interventricular septum thickness
+			ELEMENT[at0.8] occurrences matches {0..1} matches {    -- Interventricular septum end diastolic thickness
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::122]>
@@ -234,19 +222,7 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.9] occurrences matches {0..1} matches {    -- Lateral annulus E-prime wave peak velocity
-				value matches {
-					C_DV_QUANTITY <
-						property = <[openehr::338]>
-						list = <
-							["1"] = <
-								units = <"cm/s">
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0.10] occurrences matches {0..1} matches {    -- Left atrium volume
+			ELEMENT[at0.10] occurrences matches {0..1} matches {    -- Left atrial end systolic volume
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::129]>
@@ -258,7 +234,7 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.11] occurrences matches {0..1} matches {    -- Left atrium volume indexed
+			ELEMENT[at0.11] occurrences matches {0..1} matches {    -- Left atrial end systolic volume indexed
 				value matches {
 					C_DV_QUANTITY <
 						
@@ -282,36 +258,12 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.13] occurrences matches {0..1} matches {    -- Left ventricular global longitudinal strain
-				value matches {
-					C_DV_QUANTITY <
-						property = <[openehr::507]>
-						list = <
-							["1"] = <
-								units = <"%">
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0.14] occurrences matches {0..1} matches {    -- Left ventricular internal diameter
-				value matches {
-					C_DV_QUANTITY <
-						property = <[openehr::122]>
-						list = <
-							["1"] = <
-								units = <"mm">
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0.15] occurrences matches {0..1} matches {    -- Left ventricular internal diameter indexed
+			ELEMENT[at0.15] occurrences matches {0..1} matches {    -- Left ventricular end diastolic internal diameter indexed
 				value matches {
 					DV_QUANTITY matches {*}
 				}
 			}
-			ELEMENT[at0.16] occurrences matches {0..1} matches {    -- Left ventricular mass
+			ELEMENT[at0.16] occurrences matches {0..1} matches {    -- Left ventricular end diastolic mass
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::124]>
@@ -323,61 +275,13 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.17] occurrences matches {0..1} matches {    -- Left ventricular mass indexed
+			ELEMENT[at0.17] occurrences matches {0..1} matches {    -- Left ventricular end diastolic mass indexed
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::349]>
 						list = <
 							["1"] = <
 								units = <"g/m2">
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0.18] occurrences matches {0..1} matches {    -- Left ventricular outflow tract diameter
-				value matches {
-					C_DV_QUANTITY <
-						property = <[openehr::122]>
-						list = <
-							["1"] = <
-								units = <"mm">
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0.19] occurrences matches {0..1} matches {    -- Left ventricular outflow tract stroke volume
-				value matches {
-					C_DV_QUANTITY <
-						property = <[openehr::129]>
-						list = <
-							["1"] = <
-								units = <"mL">
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0.20] occurrences matches {0..1} matches {    -- Left ventricular outflow tract velocity time integral
-				value matches {
-					C_DV_QUANTITY <
-						property = <[openehr::122]>
-						list = <
-							["1"] = <
-								units = <"cm">
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0.21] occurrences matches {0..1} matches {    -- Left ventricular posterior wall diastolic thickness
-				value matches {
-					C_DV_QUANTITY <
-						property = <[openehr::122]>
-						list = <
-							["1"] = <
-								units = <"mm">
 							>
 						>
 					>
@@ -419,79 +323,19 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.24] occurrences matches {0..1} matches {    -- Mitral valve A-wave peak velocity
+			ELEMENT[at0.18] occurrences matches {0..1} matches {    -- Left ventricular outflow tract systolic diameter
 				value matches {
 					C_DV_QUANTITY <
-						property = <[openehr::338]>
+						property = <[openehr::122]>
 						list = <
 							["1"] = <
-								units = <"m/s">
+								units = <"mm">
 							>
 						>
 					>
 				}
 			}
-			ELEMENT[at0.25] occurrences matches {0..1} matches {    -- Mitral valve E-wave peak velocity
-				value matches {
-					C_DV_QUANTITY <
-						property = <[openehr::338]>
-						list = <
-							["1"] = <
-								units = <"m/s">
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0.27] occurrences matches {0..1} matches {    -- Mitral valve E/A-ratio
-				value matches {
-					C_DV_QUANTITY <
-						property = <[openehr::380]>
-						list = <
-							["1"] = <
-								units = <"1">
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0.28] occurrences matches {0..1} matches {    -- Pulmonary artery pressure
-				value matches {
-					C_DV_QUANTITY <
-						property = <[openehr::125]>
-						list = <
-							["1"] = <
-								units = <"mm[Hg]">
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0.29] occurrences matches {0..1} matches {    -- Right atrium area
-				value matches {
-					C_DV_QUANTITY <
-						property = <[openehr::335]>
-						list = <
-							["1"] = <
-								units = <"cm2">
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0.30] occurrences matches {0..1} matches {    -- Right atrium pressure
-				value matches {
-					C_DV_QUANTITY <
-						property = <[openehr::125]>
-						list = <
-							["1"] = <
-								units = <"mm[Hg]">
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0.31] occurrences matches {0..1} matches {    -- Right atrium volume
+			ELEMENT[at0.19] occurrences matches {0..1} matches {    -- Left ventricular outflow tract systolic stroke volume
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::129]>
@@ -503,19 +347,19 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.32] occurrences matches {0..1} matches {    -- Right atrium volume indexed
+			ELEMENT[at0.20] occurrences matches {0..1} matches {    -- Left ventricular outflow tract systolic velocity time integral
 				value matches {
 					C_DV_QUANTITY <
-						
+						property = <[openehr::122]>
 						list = <
 							["1"] = <
-								units = <"mL/m2">
+								units = <"cm">
 							>
 						>
 					>
 				}
 			}
-			ELEMENT[at0.33] occurrences matches {0..1} matches {    -- Right ventricular basal diameter
+			ELEMENT[at0.21] occurrences matches {0..1} matches {    -- Left ventricular posterior wall end diastolic thickness
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::122]>
@@ -527,7 +371,43 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.34] occurrences matches {0..1} matches {    -- Right ventricular basal diameter indexed
+			ELEMENT[at0.13] occurrences matches {0..1} matches {    -- Left ventricular systolic global longitudinal strain
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::507]>
+						list = <
+							["1"] = <
+								units = <"%">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.14] occurrences matches {0..1} matches {    -- Left ventricular end diastolic internal diameter
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"mm">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.24] occurrences matches {0..1} matches {    -- Mitral valve diastolic A-wave peak velocity
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::338]>
+						list = <
+							["1"] = <
+								units = <"m/s">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.27] occurrences matches {0..1} matches {    -- Mitral valve diastolic E/A-ratio
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::380]>
@@ -539,19 +419,31 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.35] occurrences matches {0..1} matches {    -- Right ventricular outflow tract proximal diameter
+			ELEMENT[at0.7] occurrences matches {0..1} matches {    -- Mitral valve diastolic E/e'-ratio
 				value matches {
 					C_DV_QUANTITY <
-						property = <[openehr::122]>
+						property = <[openehr::380]>
 						list = <
 							["1"] = <
-								units = <"mm">
+								units = <"1">
 							>
 						>
 					>
 				}
 			}
-			ELEMENT[at0.36] occurrences matches {0..1} matches {    -- Septal annulus E-prime wave peak velocity
+			ELEMENT[at0.25] occurrences matches {0..1} matches {    -- Mitral valve diastolic E-wave peak velocity
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::338]>
+						list = <
+							["1"] = <
+								units = <"m/s">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.9] occurrences matches {0..1} matches {    -- Mitral valve lateral annulus diastolic E-prime wave peak velocity
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::338]>
@@ -563,7 +455,79 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.37] occurrences matches {0..1} matches {    -- Tricuspid annular plane excursion
+			ELEMENT[at0.36] occurrences matches {0..1} matches {    -- Mitral valve septal annulus diastolic E-prime wave peak velocity
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::338]>
+						list = <
+							["1"] = <
+								units = <"cm/s">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.28] occurrences matches {0..1} matches {    -- Pulmonary artery systolic pressure
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::125]>
+						list = <
+							["1"] = <
+								units = <"mm[Hg]">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.31] occurrences matches {0..1} matches {    -- Right atrial end systolic volume
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::129]>
+						list = <
+							["1"] = <
+								units = <"mL">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.32] occurrences matches {0..1} matches {    -- Right atrial end systolic volume indexed
+				value matches {
+					C_DV_QUANTITY <
+						
+						list = <
+							["1"] = <
+								units = <"mL/m2">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.30] occurrences matches {0..1} matches {    -- Right atrial estimated pressure
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::125]>
+						list = <
+							["1"] = <
+								units = <"mm[Hg]">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.29] occurrences matches {0..1} matches {    -- Right atrial systolic area
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::335]>
+						list = <
+							["1"] = <
+								units = <"cm2">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.33] occurrences matches {0..1} matches {    -- Right ventricular basal end diastolic diameter
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::122]>
@@ -575,7 +539,43 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.38] occurrences matches {0..1} matches {    -- Tricuspid valve regurgitant peak velocity
+			ELEMENT[at0.34] occurrences matches {0..1} matches {    -- Right ventricular basal end diastolic diameter indexed
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::380]>
+						list = <
+							["1"] = <
+								units = <"1">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.35] occurrences matches {0..1} matches {    -- Right ventricular proximal outflow tract end diastolic diameter
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"mm">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.37] occurrences matches {0..1} matches {    -- Tricuspid annular plane systolic excursion
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"mm">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.38] occurrences matches {0..1} matches {    -- Tricuspid valve systolic regurgitant peak velocity
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::338]>
@@ -599,47 +599,47 @@ ontology
 					description = <"Findings on radiological examination of a specified body structure or region.">
 				>
 				["at0.1"] = <
-					text = <"Aortic root diameter at sinuses of Valsalva level">
+					text = <"Aortic root end diastolic diameter at sinuses of Valsalva level">
 					description = <"">
 				>
 				["at0.2"] = <
-					text = <"Ascending aorta diameter">
+					text = <"Ascending aorta end diastolic diameter">
 					description = <"">
 				>
 				["at0.3"] = <
-					text = <"Aortic valve area">
+					text = <"Aortic valve systolic area">
 					description = <"">
 				>
 				["at0.4"] = <
-					text = <"Aortic valve mean pressure gradient">
+					text = <"Aortic valve systolic mean pressure gradient">
 					description = <"">
 				>
 				["at0.5"] = <
-					text = <"Aortic valve peak velocity">
+					text = <"Aortic valve systolic peak velocity">
 					description = <"">
 				>
 				["at0.6"] = <
-					text = <"Aortic valve velocity time integral">
+					text = <"Aortic valve systolic velocity time integral">
 					description = <"">
 				>
 				["at0.7"] = <
-					text = <"E/e'">
+					text = <"Mitral valve diastolic E/e'-ratio">
 					description = <"">
 				>
 				["at0.8"] = <
-					text = <"Interventricular septum thickness">
+					text = <"Interventricular septum end diastolic thickness">
 					description = <"">
 				>
 				["at0.9"] = <
-					text = <"Lateral annulus E-prime wave peak velocity">
+					text = <"Mitral valve lateral annulus diastolic E-prime wave peak velocity">
 					description = <"">
 				>
 				["at0.10"] = <
-					text = <"Left atrium volume">
+					text = <"Left atrial end systolic volume">
 					description = <"">
 				>
 				["at0.11"] = <
-					text = <"Left atrium volume indexed">
+					text = <"Left atrial end systolic volume indexed">
 					description = <"">
 				>
 				["at0.12"] = <
@@ -647,39 +647,39 @@ ontology
 					description = <"">
 				>
 				["at0.13"] = <
-					text = <"Left ventricular global longitudinal strain">
+					text = <"Left ventricular systolic global longitudinal strain">
 					description = <"">
 				>
 				["at0.14"] = <
-					text = <"Left ventricular internal diameter">
+					text = <"Left ventricular end diastolic internal diameter">
 					description = <"">
 				>
 				["at0.15"] = <
-					text = <"Left ventricular internal diameter indexed">
+					text = <"Left ventricular end diastolic internal diameter indexed">
 					description = <"">
 				>
 				["at0.16"] = <
-					text = <"Left ventricular mass">
+					text = <"Left ventricular end diastolic mass">
 					description = <"">
 				>
 				["at0.17"] = <
-					text = <"Left ventricular mass indexed">
+					text = <"Left ventricular end diastolic mass indexed">
 					description = <"">
 				>
 				["at0.18"] = <
-					text = <"Left ventricular outflow tract diameter">
+					text = <"Left ventricular outflow tract systolic diameter">
 					description = <"">
 				>
 				["at0.19"] = <
-					text = <"Left ventricular outflow tract stroke volume">
+					text = <"Left ventricular outflow tract systolic stroke volume">
 					description = <"">
 				>
 				["at0.20"] = <
-					text = <"Left ventricular outflow tract velocity time integral">
+					text = <"Left ventricular outflow tract systolic velocity time integral">
 					description = <"">
 				>
 				["at0.21"] = <
-					text = <"Left ventricular posterior wall diastolic thickness">
+					text = <"Left ventricular posterior wall end diastolic thickness">
 					description = <"">
 				>
 				["at0.22"] = <
@@ -691,59 +691,59 @@ ontology
 					description = <"">
 				>
 				["at0.24"] = <
-					text = <"Mitral valve A-wave peak velocity">
+					text = <"Mitral valve diastolic A-wave peak velocity">
 					description = <"">
 				>
 				["at0.25"] = <
-					text = <"Mitral valve E-wave peak velocity">
+					text = <"Mitral valve diastolic E-wave peak velocity">
 					description = <"">
 				>
 				["at0.27"] = <
-					text = <"Mitral valve E/A-ratio">
+					text = <"Mitral valve diastolic E/A-ratio">
 					description = <"">
 				>
 				["at0.28"] = <
-					text = <"Pulmonary artery pressure">
+					text = <"Pulmonary artery systolic pressure">
 					description = <"">
 				>
 				["at0.29"] = <
-					text = <"Right atrium area">
+					text = <"Right atrial systolic area">
 					description = <"">
 				>
 				["at0.30"] = <
-					text = <"Right atrium pressure">
+					text = <"Right atrial estimated pressure">
 					description = <"">
 				>
 				["at0.31"] = <
-					text = <"Right atrium volume">
+					text = <"Right atrial end systolic volume">
 					description = <"">
 				>
 				["at0.32"] = <
-					text = <"Right atrium volume indexed">
+					text = <"Right atrial end systolic volume indexed">
 					description = <"">
 				>
 				["at0.33"] = <
-					text = <"Right ventricular basal diameter">
+					text = <"Right ventricular basal end diastolic diameter">
 					description = <"">
 				>
 				["at0.34"] = <
-					text = <"Right ventricular basal diameter indexed">
+					text = <"Right ventricular basal end diastolic diameter indexed">
 					description = <"">
 				>
 				["at0.35"] = <
-					text = <"Right ventricular outflow tract proximal diameter">
+					text = <"Right ventricular proximal outflow tract end diastolic diameter">
 					description = <"">
 				>
 				["at0.36"] = <
-					text = <"Septal annulus E-prime wave peak velocity">
+					text = <"Mitral valve septal annulus diastolic E-prime wave peak velocity">
 					description = <"">
 				>
 				["at0.37"] = <
-					text = <"Tricuspid annular plane excursion">
+					text = <"Tricuspid annular plane systolic excursion">
 					description = <"">
 				>
 				["at0.38"] = <
-					text = <"Tricuspid valve regurgitant peak velocity">
+					text = <"Tricuspid valve systolic regurgitant peak velocity">
 					description = <"">
 				>
 				["at0001.1"] = <
@@ -800,47 +800,47 @@ ontology
 					description = <"Funn eller observasjoner ved radiologisk undersøkelse av et definert organ eller en kroppsdel.">
 				>
 				["at0.1"] = <
-					text = <"*Aortic root diameter at sinuses of Valsalva level (en)">
+					text = <"*Aortic root end diastolic diameter at sinuses of Valsalva level (en)">
 					description = <"">
 				>
 				["at0.2"] = <
-					text = <"*Ascending aorta diameter (en)">
+					text = <"*Ascending aorta end diastolic diameter (en)">
 					description = <"">
 				>
 				["at0.3"] = <
-					text = <"*Aortic valve area (en)">
+					text = <"*Aortic valve systolic area (en)">
 					description = <"">
 				>
 				["at0.4"] = <
-					text = <"*Aortic valve mean pressure gradient (en)">
+					text = <"*Aortic valve systolic mean pressure gradient (en)">
 					description = <"">
 				>
 				["at0.5"] = <
-					text = <"*Aortic valve peak velocity (en)">
+					text = <"*Aortic valve systolic peak velocity (en)">
 					description = <"">
 				>
 				["at0.6"] = <
-					text = <"*Aortic valve velocity time integral (en)">
+					text = <"*Aortic valve systolic velocity time integral (en)">
 					description = <"">
 				>
 				["at0.7"] = <
-					text = <"*E/e' (en)">
+					text = <"*Mitral valve diastolic E/e'-ratio (en)">
 					description = <"">
 				>
 				["at0.8"] = <
-					text = <"*Interventricular septum thickness (en)">
+					text = <"*Interventricular septum end diastolic thickness (en)">
 					description = <"">
 				>
 				["at0.9"] = <
-					text = <"*Lateral annulus E-prime wave peak velocity (en)">
+					text = <"*Mitral valve lateral annulus diastolic E-prime wave peak velocity (en)">
 					description = <"">
 				>
 				["at0.10"] = <
-					text = <"*Left atrium volume (en)">
+					text = <"*Left atrial end systolic volume (en)">
 					description = <"">
 				>
 				["at0.11"] = <
-					text = <"*Left atrium volume indexed (en)">
+					text = <"*Left atrial end systolic volume indexed (en)">
 					description = <"">
 				>
 				["at0.12"] = <
@@ -848,39 +848,39 @@ ontology
 					description = <"">
 				>
 				["at0.13"] = <
-					text = <"*Left ventricular global longitudinal strain (en)">
+					text = <"*Left ventricular systolic global longitudinal strain (en)">
 					description = <"">
 				>
 				["at0.14"] = <
-					text = <"*Left ventricular internal diameter (en)">
+					text = <"*Left ventricular end diastolic internal diameter (en)">
 					description = <"">
 				>
 				["at0.15"] = <
-					text = <"*Left ventricular internal diameter indexed (en)">
+					text = <"*Left ventricular end diastolic internal diameter indexed (en)">
 					description = <"">
 				>
 				["at0.16"] = <
-					text = <"*Left ventricular mass (en)">
+					text = <"*Left ventricular end diastolic mass (en)">
 					description = <"">
 				>
 				["at0.17"] = <
-					text = <"*Left ventricular mass indexed (en)">
+					text = <"*Left ventricular end diastolic mass indexed (en)">
 					description = <"">
 				>
 				["at0.18"] = <
-					text = <"*Left ventricular outflow tract diameter (en)">
+					text = <"*Left ventricular outflow tract systolic diameter (en)">
 					description = <"">
 				>
 				["at0.19"] = <
-					text = <"*Left ventricular outflow tract stroke volume (en)">
+					text = <"*Left ventricular outflow tract systolic stroke volume (en)">
 					description = <"">
 				>
 				["at0.20"] = <
-					text = <"*Left ventricular outflow tract velocity time integral (en)">
+					text = <"*Left ventricular outflow tract systolic velocity time integral (en)">
 					description = <"">
 				>
 				["at0.21"] = <
-					text = <"*Left ventricular posterior wall diastolic thickness (en)">
+					text = <"*Left ventricular posterior wall end diastolic thickness (en)">
 					description = <"">
 				>
 				["at0.22"] = <
@@ -892,59 +892,59 @@ ontology
 					description = <"">
 				>
 				["at0.24"] = <
-					text = <"*Mitral valve A-wave peak velocity (en)">
+					text = <"*Mitral valve diastolic A-wave peak velocity (en)">
 					description = <"">
 				>
 				["at0.25"] = <
-					text = <"*Mitral valve E-wave peak velocity (en)">
+					text = <"*Mitral valve diastolic E-wave peak velocity (en)">
 					description = <"">
 				>
 				["at0.27"] = <
-					text = <"*Mitral valve E/A-ratio (en)">
+					text = <"*Mitral valve diastolic E/A-ratio (en)">
 					description = <"">
 				>
 				["at0.28"] = <
-					text = <"*Pulmonary artery pressure (en)">
+					text = <"*Pulmonary artery systolic pressure (en)">
 					description = <"">
 				>
 				["at0.29"] = <
-					text = <"*Right atrium area (en)">
+					text = <"*Right atrial systolic area (en)">
 					description = <"">
 				>
 				["at0.30"] = <
-					text = <"*Right atrium pressure (en)">
+					text = <"*Right atrial estimated pressure (en)">
 					description = <"">
 				>
 				["at0.31"] = <
-					text = <"*Right atrium volume (en)">
+					text = <"*Right atrial end systolic volume (en)">
 					description = <"">
 				>
 				["at0.32"] = <
-					text = <"*Right atrium volume indexed (en)">
+					text = <"*Right atrial end systolic volume indexed (en)">
 					description = <"">
 				>
 				["at0.33"] = <
-					text = <"*Right ventricular basal diameter (en)">
+					text = <"*Right ventricular basal end diastolic diameter (en)">
 					description = <"">
 				>
 				["at0.34"] = <
-					text = <"*Right ventricular basal diameter indexed (en)">
+					text = <"*Right ventricular basal end diastolic diameter indexed (en)">
 					description = <"">
 				>
 				["at0.35"] = <
-					text = <"*Right ventricular outflow tract proximal diameter (en)">
+					text = <"*Right ventricular proximal outflow tract end diastolic diameter (en)">
 					description = <"">
 				>
 				["at0.36"] = <
-					text = <"*Septal annulus E-prime wave peak velocity (en)">
+					text = <"*Mitral valve septal annulus diastolic E-prime wave peak velocity (en)">
 					description = <"">
 				>
 				["at0.37"] = <
-					text = <"*Tricuspid annular plane excursion (en)">
+					text = <"*Tricuspid annular plane systolic excursion (en)">
 					description = <"">
 				>
 				["at0.38"] = <
-					text = <"*Tricuspid valve regurgitant peak velocity (en)">
+					text = <"*Tricuspid valve systolic regurgitant peak velocity (en)">
 					description = <"">
 				>
 				["at0001.1"] = <
@@ -1001,47 +1001,47 @@ ontology
 					description = <"Befunde zur radiologischen Untersuchung einer bestimmten Körperstruktur oder -region.">
 				>
 				["at0.1"] = <
-					text = <"*Aortic root diameter at sinuses of Valsalva level (en)">
+					text = <"*Aortic root end diastolic diameter at sinuses of Valsalva level (en)">
 					description = <"">
 				>
 				["at0.2"] = <
-					text = <"*Ascending aorta diameter (en)">
+					text = <"*Ascending aorta end diastolic diameter (en)">
 					description = <"">
 				>
 				["at0.3"] = <
-					text = <"*Aortic valve area (en)">
+					text = <"*Aortic valve systolic area (en)">
 					description = <"">
 				>
 				["at0.4"] = <
-					text = <"*Aortic valve mean pressure gradient (en)">
+					text = <"*Aortic valve systolic mean pressure gradient (en)">
 					description = <"">
 				>
 				["at0.5"] = <
-					text = <"*Aortic valve peak velocity (en)">
+					text = <"*Aortic valve systolic peak velocity (en)">
 					description = <"">
 				>
 				["at0.6"] = <
-					text = <"*Aortic valve velocity time integral (en)">
+					text = <"*Aortic valve systolic velocity time integral (en)">
 					description = <"">
 				>
 				["at0.7"] = <
-					text = <"*E/e' (en)">
+					text = <"*Mitral valve diastolic E/e'-ratio (en)">
 					description = <"">
 				>
 				["at0.8"] = <
-					text = <"*Interventricular septum thickness (en)">
+					text = <"*Interventricular septum end diastolic thickness (en)">
 					description = <"">
 				>
 				["at0.9"] = <
-					text = <"*Lateral annulus E-prime wave peak velocity (en)">
+					text = <"*Mitral valve lateral annulus diastolic E-prime wave peak velocity (en)">
 					description = <"">
 				>
 				["at0.10"] = <
-					text = <"*Left atrium volume (en)">
+					text = <"*Left atrial end systolic volume (en)">
 					description = <"">
 				>
 				["at0.11"] = <
-					text = <"*Left atrium volume indexed (en)">
+					text = <"*Left atrial end systolic volume indexed (en)">
 					description = <"">
 				>
 				["at0.12"] = <
@@ -1049,39 +1049,39 @@ ontology
 					description = <"">
 				>
 				["at0.13"] = <
-					text = <"*Left ventricular global longitudinal strain (en)">
+					text = <"*Left ventricular systolic global longitudinal strain (en)">
 					description = <"">
 				>
 				["at0.14"] = <
-					text = <"*Left ventricular internal diameter (en)">
+					text = <"*Left ventricular end diastolic internal diameter (en)">
 					description = <"">
 				>
 				["at0.15"] = <
-					text = <"*Left ventricular internal diameter indexed (en)">
+					text = <"*Left ventricular end diastolic internal diameter indexed (en)">
 					description = <"">
 				>
 				["at0.16"] = <
-					text = <"*Left ventricular mass (en)">
+					text = <"*Left ventricular end diastolic mass (en)">
 					description = <"">
 				>
 				["at0.17"] = <
-					text = <"*Left ventricular mass indexed (en)">
+					text = <"*Left ventricular end diastolic mass indexed (en)">
 					description = <"">
 				>
 				["at0.18"] = <
-					text = <"*Left ventricular outflow tract diameter (en)">
+					text = <"*Left ventricular outflow tract systolic diameter (en)">
 					description = <"">
 				>
 				["at0.19"] = <
-					text = <"*Left ventricular outflow tract stroke volume (en)">
+					text = <"*Left ventricular outflow tract systolic stroke volume (en)">
 					description = <"">
 				>
 				["at0.20"] = <
-					text = <"*Left ventricular outflow tract velocity time integral (en)">
+					text = <"*Left ventricular outflow tract systolic velocity time integral (en)">
 					description = <"">
 				>
 				["at0.21"] = <
-					text = <"*Left ventricular posterior wall diastolic thickness (en)">
+					text = <"*Left ventricular posterior wall end diastolic thickness (en)">
 					description = <"">
 				>
 				["at0.22"] = <
@@ -1093,59 +1093,59 @@ ontology
 					description = <"">
 				>
 				["at0.24"] = <
-					text = <"*Mitral valve A-wave peak velocity (en)">
+					text = <"*Mitral valve diastolic A-wave peak velocity (en)">
 					description = <"">
 				>
 				["at0.25"] = <
-					text = <"*Mitral valve E-wave peak velocity (en)">
+					text = <"*Mitral valve diastolic E-wave peak velocity (en)">
 					description = <"">
 				>
 				["at0.27"] = <
-					text = <"*Mitral valve E/A-ratio (en)">
+					text = <"*Mitral valve diastolic E/A-ratio (en)">
 					description = <"">
 				>
 				["at0.28"] = <
-					text = <"*Pulmonary artery pressure (en)">
+					text = <"*Pulmonary artery systolic pressure (en)">
 					description = <"">
 				>
 				["at0.29"] = <
-					text = <"*Right atrium area (en)">
+					text = <"*Right atrial systolic area (en)">
 					description = <"">
 				>
 				["at0.30"] = <
-					text = <"*Right atrium pressure (en)">
+					text = <"*Right atrial estimated pressure (en)">
 					description = <"">
 				>
 				["at0.31"] = <
-					text = <"*Right atrium volume (en)">
+					text = <"*Right atrial end systolic volume (en)">
 					description = <"">
 				>
 				["at0.32"] = <
-					text = <"*Right atrium volume indexed (en)">
+					text = <"*Right atrial end systolic volume indexed (en)">
 					description = <"">
 				>
 				["at0.33"] = <
-					text = <"*Right ventricular basal diameter (en)">
+					text = <"*Right ventricular basal end diastolic diameter (en)">
 					description = <"">
 				>
 				["at0.34"] = <
-					text = <"*Right ventricular basal diameter indexed (en)">
+					text = <"*Right ventricular basal end diastolic diameter indexed (en)">
 					description = <"">
 				>
 				["at0.35"] = <
-					text = <"*Right ventricular outflow tract proximal diameter (en)">
+					text = <"*Right ventricular proximal outflow tract end diastolic diameter (en)">
 					description = <"">
 				>
 				["at0.36"] = <
-					text = <"*Septal annulus E-prime wave peak velocity (en)">
+					text = <"*Mitral valve septal annulus diastolic E-prime wave peak velocity (en)">
 					description = <"">
 				>
 				["at0.37"] = <
-					text = <"*Tricuspid annular plane excursion (en)">
+					text = <"*Tricuspid annular plane systolic excursion (en)">
 					description = <"">
 				>
 				["at0.38"] = <
-					text = <"*Tricuspid valve regurgitant peak velocity (en)">
+					text = <"*Tricuspid valve systolic regurgitant peak velocity (en)">
 					description = <"">
 				>
 				["at0001.1"] = <
