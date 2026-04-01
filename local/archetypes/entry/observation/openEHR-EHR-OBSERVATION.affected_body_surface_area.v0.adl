@@ -31,7 +31,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"84ac6e56874fba407aaf12e85e1e8d39">
+		["MD5-CAM-1.0.1"] = <"c75832423e5e7364528fffff53ed19ab">
 		["build_uid"] = <"7dadd608-b833-4b6f-812e-08b18bcb0302">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -67,7 +67,7 @@ definition
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0007] matches {    -- Body site name
 												value matches {
-													DV_TEXT matches {*}
+													DV_CODED_TEXT matches {*}
 												}
 											}
 											ELEMENT[at0008] occurrences matches {0..1} matches {    -- Site surface area
