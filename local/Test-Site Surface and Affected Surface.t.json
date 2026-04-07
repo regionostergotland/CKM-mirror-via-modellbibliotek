@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "8.0.0",
       "build_uid" : "5654aa51-8168-45d7-b037-08c35b73c2f6",
-      "MD5-CAM-1.0.1" : "3cf1a57dfcffeb5cbe1fa1bdde966f80",
+      "MD5-CAM-1.0.1" : "4bbbe656d0fd6bae4d13f67670fa7ac4",
       "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
     },
     "details" : {
@@ -615,7 +615,7 @@
                                   "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 0.0,
-                                    "upper" : 100.0,
+                                    "upper" : 19.0,
                                     "lowerIncluded" : true,
                                     "upperIncluded" : true,
                                     "lowerUnbounded" : false,
@@ -628,7 +628,6 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
-                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -662,7 +661,7 @@
                                   "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 0.0,
-                                    "upper" : 100.0,
+                                    "upper" : 19.0,
                                     "lowerIncluded" : true,
                                     "upperIncluded" : true,
                                     "lowerUnbounded" : false,
@@ -675,7 +674,6 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
-                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -1359,6 +1357,12 @@
             "code" : "at0.4",
             "text" : "Affected site surface area",
             "description" : ""
+          },
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1.1",
+            "text" : "Total TBSA (0-1)",
+            "description" : "Estimation of the proportion of body surface area affected by a burn."
           },
           "at0006.1.1" : {
             "@type" : "ARCHETYPE_TERM",
