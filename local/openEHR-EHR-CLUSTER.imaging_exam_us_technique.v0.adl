@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1a2b116204fec6e0cb1f30aa516decdd">
+		["MD5-CAM-1.0.1"] = <"95b7e62a2589273fb4c26e4667f60555">
 		["build_uid"] = <"0a87d244-c7aa-3381-ac03-e2ed322a35b1">
 	>
 
@@ -68,7 +68,7 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Mode
+			ELEMENT[at0003] occurrences matches {0..*} matches {    -- Mode
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -91,6 +91,11 @@ definition
 							at0016]    -- Teichholz method
 						}
 					}
+				}
+			}
+			ELEMENT[at0029] occurrences matches {0..1} matches {    -- other algorithm
+				value matches {
+					DV_CODED_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Mass algorithm
@@ -234,6 +239,10 @@ ontology
 				>
 				["at0028"] = <
 					text = <"Tissue doppler">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"other algorithm">
 					description = <"">
 				>
 			>
