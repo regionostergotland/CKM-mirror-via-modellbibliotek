@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "6.0.0",
+      "sem_ver" : "7.0.0",
       "build_uid" : "5654aa51-8168-45d7-b037-08c35b73c2f6",
-      "MD5-CAM-1.0.1" : "5f518f97b1bff7182dd051473a0832b1",
+      "MD5-CAM-1.0.1" : "3cf1a57dfcffeb5cbe1fa1bdde966f80",
       "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
     },
     "details" : {
@@ -561,6 +561,18 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_CODED_TEXT",
+                              "defaultValue" : {
+                                "defining_code" : {
+                                  "terminology_id" : {
+                                    "value" : "local_terms",
+                                    "@type" : "TERMINOLOGY_ID"
+                                  },
+                                  "code_string" : "69536005",
+                                  "@type" : "CODE_PHRASE"
+                                },
+                                "value" : "Head",
+                                "@type" : "DV_CODED_TEXT"
+                              },
                               "attributes" : [ {
                                 "@type" : "C_ATTRIBUTE",
                                 "rmAttributeName" : "defining_code",
@@ -577,74 +589,6 @@
                                     "terminologyId" : "local_terms",
                                     "code" : "69536005",
                                     "value" : "Head"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "45048000",
-                                    "value" : "Neck"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "22943007",
-                                    "value" : "Trunk"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "723980000",
-                                    "value" : "Right buttock"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "723979003",
-                                    "value" : "Left buttock"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "71934003",
-                                    "value" : "Genitalia"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "368209003",
-                                    "value" : "Right upper arm"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "368208006",
-                                    "value" : "Left upper arm"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "64262003",
-                                    "value" : "Right forearm"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "66480008",
-                                    "value" : "Left forearm"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "78791008",
-                                    "value" : "Right hand"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "85151006",
-                                    "value" : "Left hand"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "11207009",
-                                    "value" : "Right thigh"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "61396006",
-                                    "value" : "Left thigh"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "32696007",
-                                    "value" : "Right lower leg"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "48979004",
-                                    "value" : "Left lower leg"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "7769000",
-                                    "value" : "Right foot"
-                                  }, {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "22335008",
-                                    "value" : "Left foot"
                                   } ]
                                 } ]
                               } ],
