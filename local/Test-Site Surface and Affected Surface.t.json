@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "13.0.0",
       "build_uid" : "5654aa51-8168-45d7-b037-08c35b73c2f6",
-      "MD5-CAM-1.0.1" : "884d5f5955bef36f18ed073284e73172",
+      "MD5-CAM-1.0.1" : "2b5f1f14323877bb38730d9d345aa40d",
       "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
     },
     "details" : {
@@ -872,6 +872,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -923,6 +924,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -1025,6 +1027,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -1134,6 +1137,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -1283,6 +1287,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
