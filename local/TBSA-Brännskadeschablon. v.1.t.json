@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "18.0.0",
+      "sem_ver" : "19.0.0",
       "build_uid" : "05d246bd-5f50-470c-a820-f6fc0613df8f",
-      "MD5-CAM-1.0.1" : "6e45d3d4abdf0346d0508af6de477998",
+      "MD5-CAM-1.0.1" : "ed198e5596c25c069b595fc0a7c778f8",
       "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
     },
     "details" : {
@@ -1087,74 +1087,6 @@
                                     "terminologyId" : "local_terms_2",
                                     "code" : "69536005",
                                     "value" : "Head"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "45048000",
-                                    "value" : "Neck"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "22943007",
-                                    "value" : "Trunk"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "723980000",
-                                    "value" : "Right buttock"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "723979003",
-                                    "value" : "Left buttock"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "71934003",
-                                    "value" : "Genitalia"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "368209003",
-                                    "value" : "Right upper arm"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "368208006",
-                                    "value" : "Left upper arm"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "64262003",
-                                    "value" : "Right forearm"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "66480008",
-                                    "value" : "Left forearm"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "78791008",
-                                    "value" : "Right hand"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "85151006",
-                                    "value" : "Left hand"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "11207009",
-                                    "value" : "Right thigh"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "61396006",
-                                    "value" : "Left thigh"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "32696007",
-                                    "value" : "Right lower leg"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "48979004",
-                                    "value" : "Left lower leg"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "7769000",
-                                    "value" : "Right foot"
-                                  }, {
-                                    "terminologyId" : "local_terms_2",
-                                    "code" : "22335008",
-                                    "value" : "Left foot"
                                   } ]
                                 } ]
                               } ],
@@ -1300,6 +1232,1833 @@
                                         "value" : "Second degree burn"
                                       }, {
                                         "terminologyId" : "local_terms_3",
+                                        "code" : "403192003",
+                                        "value" : "Third degree burn"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0006.1.2",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.1.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_6"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_6" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "69536005",
+                                    "value" : "Head"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "45048000",
+                                    "value" : "Neck"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "22943007",
+                                    "value" : "Trunk"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "723980000",
+                                    "value" : "Right buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "723979003",
+                                    "value" : "Left buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "71934003",
+                                    "value" : "Genitalia"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "368209003",
+                                    "value" : "Right upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "368208006",
+                                    "value" : "Left upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "64262003",
+                                    "value" : "Right forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "66480008",
+                                    "value" : "Left forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "78791008",
+                                    "value" : "Right hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "85151006",
+                                    "value" : "Left hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "11207009",
+                                    "value" : "Right thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "61396006",
+                                    "value" : "Left thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "32696007",
+                                    "value" : "Right lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "48979004",
+                                    "value" : "Left lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "7769000",
+                                    "value" : "Right foot"
+                                  }, {
+                                    "terminologyId" : "local_terms_6",
+                                    "code" : "22335008",
+                                    "value" : "Left foot"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.1.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 19,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0010.1.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011.1.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.1.2",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "1..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_6"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_6" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_6",
+                                        "code" : "77140003",
+                                        "value" : "First degree burn injury"
+                                      }, {
+                                        "terminologyId" : "local_terms_6",
+                                        "code" : "403191005",
+                                        "value" : "Second degree burn"
+                                      }, {
+                                        "terminologyId" : "local_terms_6",
+                                        "code" : "403192003",
+                                        "value" : "Third degree burn"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0006.1.3",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.1.3",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_7"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_7" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "69536005",
+                                    "value" : "Head"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "45048000",
+                                    "value" : "Neck"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "22943007",
+                                    "value" : "Trunk"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "723980000",
+                                    "value" : "Right buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "723979003",
+                                    "value" : "Left buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "71934003",
+                                    "value" : "Genitalia"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "368209003",
+                                    "value" : "Right upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "368208006",
+                                    "value" : "Left upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "64262003",
+                                    "value" : "Right forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "66480008",
+                                    "value" : "Left forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "78791008",
+                                    "value" : "Right hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "85151006",
+                                    "value" : "Left hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "11207009",
+                                    "value" : "Right thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "61396006",
+                                    "value" : "Left thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "32696007",
+                                    "value" : "Right lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "48979004",
+                                    "value" : "Left lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "7769000",
+                                    "value" : "Right foot"
+                                  }, {
+                                    "terminologyId" : "local_terms_7",
+                                    "code" : "22335008",
+                                    "value" : "Left foot"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.1.3",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 19,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0010.1.3",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011.1.3",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.1.3",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "1..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_7"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_7" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_7",
+                                        "code" : "77140003",
+                                        "value" : "First degree burn injury"
+                                      }, {
+                                        "terminologyId" : "local_terms_7",
+                                        "code" : "403191005",
+                                        "value" : "Second degree burn"
+                                      }, {
+                                        "terminologyId" : "local_terms_7",
+                                        "code" : "403192003",
+                                        "value" : "Third degree burn"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0006.1.4",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.1.4",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_8"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_8" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "69536005",
+                                    "value" : "Head"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "45048000",
+                                    "value" : "Neck"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "22943007",
+                                    "value" : "Trunk"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "723980000",
+                                    "value" : "Right buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "723979003",
+                                    "value" : "Left buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "71934003",
+                                    "value" : "Genitalia"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "368209003",
+                                    "value" : "Right upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "368208006",
+                                    "value" : "Left upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "64262003",
+                                    "value" : "Right forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "66480008",
+                                    "value" : "Left forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "78791008",
+                                    "value" : "Right hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "85151006",
+                                    "value" : "Left hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "11207009",
+                                    "value" : "Right thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "61396006",
+                                    "value" : "Left thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "32696007",
+                                    "value" : "Right lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "48979004",
+                                    "value" : "Left lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "7769000",
+                                    "value" : "Right foot"
+                                  }, {
+                                    "terminologyId" : "local_terms_8",
+                                    "code" : "22335008",
+                                    "value" : "Left foot"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.1.4",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 19,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0010.1.4",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011.1.4",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.1.4",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "1..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_8"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_8" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_8",
+                                        "code" : "77140003",
+                                        "value" : "First degree burn injury"
+                                      }, {
+                                        "terminologyId" : "local_terms_8",
+                                        "code" : "403191005",
+                                        "value" : "Second degree burn"
+                                      }, {
+                                        "terminologyId" : "local_terms_8",
+                                        "code" : "403192003",
+                                        "value" : "Third degree burn"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0006.1.5",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.1.5",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_9"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_9" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "69536005",
+                                    "value" : "Head"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "45048000",
+                                    "value" : "Neck"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "22943007",
+                                    "value" : "Trunk"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "723980000",
+                                    "value" : "Right buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "723979003",
+                                    "value" : "Left buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "71934003",
+                                    "value" : "Genitalia"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "368209003",
+                                    "value" : "Right upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "368208006",
+                                    "value" : "Left upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "64262003",
+                                    "value" : "Right forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "66480008",
+                                    "value" : "Left forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "78791008",
+                                    "value" : "Right hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "85151006",
+                                    "value" : "Left hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "11207009",
+                                    "value" : "Right thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "61396006",
+                                    "value" : "Left thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "32696007",
+                                    "value" : "Right lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "48979004",
+                                    "value" : "Left lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "7769000",
+                                    "value" : "Right foot"
+                                  }, {
+                                    "terminologyId" : "local_terms_9",
+                                    "code" : "22335008",
+                                    "value" : "Left foot"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.1.5",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 19,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0010.1.5",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011.1.5",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.1.5",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "1..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_9"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_9" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_9",
+                                        "code" : "77140003",
+                                        "value" : "First degree burn injury"
+                                      }, {
+                                        "terminologyId" : "local_terms_9",
+                                        "code" : "403191005",
+                                        "value" : "Second degree burn"
+                                      }, {
+                                        "terminologyId" : "local_terms_9",
+                                        "code" : "403192003",
+                                        "value" : "Third degree burn"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0006.1.6",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.1.6",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_10"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_10" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "69536005",
+                                    "value" : "Head"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "45048000",
+                                    "value" : "Neck"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "22943007",
+                                    "value" : "Trunk"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "723980000",
+                                    "value" : "Right buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "723979003",
+                                    "value" : "Left buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "71934003",
+                                    "value" : "Genitalia"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "368209003",
+                                    "value" : "Right upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "368208006",
+                                    "value" : "Left upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "64262003",
+                                    "value" : "Right forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "66480008",
+                                    "value" : "Left forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "78791008",
+                                    "value" : "Right hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "85151006",
+                                    "value" : "Left hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "11207009",
+                                    "value" : "Right thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "61396006",
+                                    "value" : "Left thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "32696007",
+                                    "value" : "Right lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "48979004",
+                                    "value" : "Left lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "7769000",
+                                    "value" : "Right foot"
+                                  }, {
+                                    "terminologyId" : "local_terms_10",
+                                    "code" : "22335008",
+                                    "value" : "Left foot"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.1.6",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 19,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0010.1.6",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011.1.6",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.1.6",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "1..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_10"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_10" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_10",
+                                        "code" : "77140003",
+                                        "value" : "First degree burn injury"
+                                      }, {
+                                        "terminologyId" : "local_terms_10",
+                                        "code" : "403191005",
+                                        "value" : "Second degree burn"
+                                      }, {
+                                        "terminologyId" : "local_terms_10",
+                                        "code" : "403192003",
+                                        "value" : "Third degree burn"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0006.1.7",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.1.7",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_11"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_11" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "69536005",
+                                    "value" : "Head"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "45048000",
+                                    "value" : "Neck"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "22943007",
+                                    "value" : "Trunk"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "723980000",
+                                    "value" : "Right buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "723979003",
+                                    "value" : "Left buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "71934003",
+                                    "value" : "Genitalia"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "368209003",
+                                    "value" : "Right upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "368208006",
+                                    "value" : "Left upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "64262003",
+                                    "value" : "Right forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "66480008",
+                                    "value" : "Left forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "78791008",
+                                    "value" : "Right hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "85151006",
+                                    "value" : "Left hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "11207009",
+                                    "value" : "Right thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "61396006",
+                                    "value" : "Left thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "32696007",
+                                    "value" : "Right lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "48979004",
+                                    "value" : "Left lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "7769000",
+                                    "value" : "Right foot"
+                                  }, {
+                                    "terminologyId" : "local_terms_11",
+                                    "code" : "22335008",
+                                    "value" : "Left foot"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.1.7",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 19,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0010.1.7",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011.1.7",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.1.7",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "1..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_11"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_11" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_11",
+                                        "code" : "77140003",
+                                        "value" : "First degree burn injury"
+                                      }, {
+                                        "terminologyId" : "local_terms_11",
+                                        "code" : "403191005",
+                                        "value" : "Second degree burn"
+                                      }, {
+                                        "terminologyId" : "local_terms_11",
+                                        "code" : "403192003",
+                                        "value" : "Third degree burn"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0006.1.8",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.1.8",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_12"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_12" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "69536005",
+                                    "value" : "Head"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "45048000",
+                                    "value" : "Neck"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "22943007",
+                                    "value" : "Trunk"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "723980000",
+                                    "value" : "Right buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "723979003",
+                                    "value" : "Left buttock"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "71934003",
+                                    "value" : "Genitalia"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "368209003",
+                                    "value" : "Right upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "368208006",
+                                    "value" : "Left upper arm"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "64262003",
+                                    "value" : "Right forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "66480008",
+                                    "value" : "Left forearm"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "78791008",
+                                    "value" : "Right hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "85151006",
+                                    "value" : "Left hand"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "11207009",
+                                    "value" : "Right thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "61396006",
+                                    "value" : "Left thigh"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "32696007",
+                                    "value" : "Right lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "48979004",
+                                    "value" : "Left lower leg"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "7769000",
+                                    "value" : "Right foot"
+                                  }, {
+                                    "terminologyId" : "local_terms_12",
+                                    "code" : "22335008",
+                                    "value" : "Left foot"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.1.8",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 19,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0010.1.8",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011.1.8",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.1.8",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "1..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_12"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_12" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_12",
+                                        "code" : "77140003",
+                                        "value" : "First degree burn injury"
+                                      }, {
+                                        "terminologyId" : "local_terms_12",
+                                        "code" : "403191005",
+                                        "value" : "Second degree burn"
+                                      }, {
+                                        "terminologyId" : "local_terms_12",
                                         "code" : "403192003",
                                         "value" : "Third degree burn"
                                       } ]
@@ -1488,7 +3247,50 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000.1",
       "termDefinitions" : {
-        "en" : { }
+        "en" : {
+          "at0006.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1.1",
+            "text" : "Per body site (Head - 1st degree))",
+            "description" : "Details about body surface area affected at each body site."
+          },
+          "at0006.1.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1.2",
+            "text" : "Per body site (Head - 2nd degree)",
+            "description" : "Details about body surface area affected at each body site."
+          },
+          "at0006.1.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1.3",
+            "text" : "Per body site (Head - 3rd degree)",
+            "description" : "Details about body surface area affected at each body site."
+          },
+          "at0006.1.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1.4",
+            "text" : "Per body site (4)",
+            "description" : "Details about body surface area affected at each body site."
+          },
+          "at0006.1.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1.6",
+            "text" : "Per body site (2)",
+            "description" : "Details about body surface area affected at each body site."
+          },
+          "at0006.1.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1.7",
+            "text" : "Per body site (3)",
+            "description" : "Details about body surface area affected at each body site."
+          },
+          "at0006.1.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1.8",
+            "text" : "Per body site (5)",
+            "description" : "Details about body surface area affected at each body site."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1760,12 +3562,12 @@
         },
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "OBSERVATION",
+          "rmTypeName" : "SECTION",
           "occurrences" : "0..1",
-          "nodeId" : "at0.1",
+          "nodeId" : "at0.3",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-affected_body_surface_area-burn-001.v0",
+          "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-006.v1",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -8531,6 +10333,323 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000",
             "text" : "Encapçalament ad hoc (5)",
+            "description" : "Un encapçalament de secció genèric que s'hauria de reanomenar en una plantilla per adaptar-se a un context clínic específic."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "ac68acfd-77e6-40c5-beef-f63fc86209c9",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Ramona Wellmann",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "wellmann.ramona@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Art Latyp Латыпов Артур Шамилевич",
+        "organisation" : "RusBITech РусБИТех, Москва"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Daniel Hall",
+        "organisation" : "Region Östergötland",
+        "email" : "daniel.hall@regionostergotland.se"
+      },
+      "accreditation" : "Åsa Skagerhult, Lisa Axelsson",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "einar.fosse@unn.no" : "einar.fosse@unn.no",
+        "name" : "Einar Fosse",
+        "organisation" : "Norwegian Centre for Integrated Care and Telemedicine, Tromsø, Norway"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Hospital Sírio Libanês, São Paulo, Brazil",
+        "email" : "vladimir.pizzo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "?"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : {
+        "name" : "Paolo Anedda",
+        "organisation" : "Inpeco",
+        "email" : "paolo.anedda@inpeco.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Vanessa Pereira",
+        "organisation" : "Better - Pathfinder",
+        "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com, lauramoral@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Laura Moral Lopez",
+        "organisation" : "Sistema de Salut de Catalunya",
+        "email" : "lmorallopez@gmail.com"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "136a6566-d1c5-48a5-8c7f-455d5d31e2b6",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-SECTION.ovl-adhoc-006.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "SECTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "existence" : "0..1",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "1..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "OBSERVATION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-affected_body_surface_area-burn-001.v0",
+          "referenceType" : "archetypeOverlay"
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Head",
+            "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+          }
+        },
+        "ru" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "заготовка заголовка (6)",
+            "description" : "Образец заголовка раздела"
+          }
+        },
+        "es-ar" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Encabezado ad hoc (6)",
+            "description" : "Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico."
+          }
+        },
+        "sl" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Naslov sekcije (6)",
+            "description" : "Naslov sekcije"
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Templat-overskrift (6)",
+            "description" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
+          }
+        },
+        "pt-br" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Cabeçalho Ad hoc (6)",
+            "description" : "Um cabeçalho de sessão genérico que deve ser renomeado no template para adequar-se a um contexto clínico específico."
+          }
+        },
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Rubrik (6)",
+            "description" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext."
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Ad hoc Überschrift (6)",
+            "description" : "Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte."
+          }
+        },
+        "it" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Intestazione di sezione ad hoc (6)",
+            "description" : "Un'intestazione di sezione generica che dovrebbe essere rinominata in un template per adattarsi ad uno specifico contesto clinico."
+          }
+        },
+        "fr" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Rubrique ad hoc (6)",
+            "description" : "Un en-tête de section générique qui doit être renommé dans un modèle pour s'adapter à un contexte clinique spécifique."
+          }
+        },
+        "ca" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Capçalera ad hoc (6)",
+            "description" : "Una capçalera de secció genèrica que s'ha de rebatejar en una plantilla per adaptar-se a un context clínic específic."
+          }
+        },
+        "es" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Encapçalament ad hoc (6)",
             "description" : "Un encapçalament de secció genèric que s'hauria de reanomenar en una plantilla per adaptar-se a un context clínic específic."
           }
         }
