@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "24.0.0",
+      "sem_ver" : "25.0.0",
       "build_uid" : "05d246bd-5f50-470c-a820-f6fc0613df8f",
-      "MD5-CAM-1.0.1" : "2bf1150b6dae1ac1b7a76a5be8757712",
+      "MD5-CAM-1.0.1" : "ea26b5bbf43929ec8256a19c2c754a7f",
       "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
     },
     "details" : {
@@ -12445,10 +12445,10 @@
                                     "value" : "local_terms_2",
                                     "@type" : "TERMINOLOGY_ID"
                                   },
-                                  "code_string" : "45048000",
+                                  "code_string" : "723980000",
                                   "@type" : "CODE_PHRASE"
                                 },
-                                "value" : "Neck",
+                                "value" : "Right buttock",
                                 "@type" : "DV_CODED_TEXT"
                               },
                               "attributes" : [ {
@@ -12465,8 +12465,8 @@
                                   "selectedTerminologies" : [ "local_terms_2" ],
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "local_terms_2",
-                                    "code" : "45048000",
-                                    "value" : "Neck"
+                                    "code" : "723980000",
+                                    "value" : "Right buttock"
                                   } ]
                                 } ]
                               } ],
@@ -12484,11 +12484,6 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_PROPORTION",
-                              "defaultValue" : {
-                                "numerator" : 2,
-                                "denominator" : 100,
-                                "@type" : "DV_PROPORTION"
-                              },
                               "attributes" : [ {
                                 "@type" : "C_ATTRIBUTE",
                                 "rmAttributeName" : "numerator",
@@ -12498,7 +12493,7 @@
                                   "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 0.0,
-                                    "upper" : 2.0,
+                                    "upper" : 2.5,
                                     "lowerIncluded" : true,
                                     "upperIncluded" : true,
                                     "lowerUnbounded" : false,
@@ -12643,7 +12638,7 @@
                                       "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 0.0,
-                                        "upper" : 2.0,
+                                        "upper" : 2.5,
                                         "lowerIncluded" : true,
                                         "upperIncluded" : true,
                                         "lowerUnbounded" : false,
@@ -13360,7 +13355,7 @@
           "at0006.1.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1.1",
-            "text" : "Per body site (Neck - 1st degree))",
+            "text" : "Per body site (Right buttock - 1st degree))",
             "description" : "Details about body surface area affected at each body site."
           },
           "at0006.1.2" : {
