@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "49013a8f-0ea8-4f7a-994b-3cae08d765fa",
-      "MD5-CAM-1.0.1" : "3124f41c76624fa5df2848f5a62a8828",
+      "MD5-CAM-1.0.1" : "9ff016fc0721220aa391c53a2a0ac5fb",
       "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
     },
     "details" : {
@@ -2281,7 +2281,1567 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
                       "nodeId" : "at0006.0.7",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.0.7",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "defaultValue" : {
+                                "defining_code" : {
+                                  "terminology_id" : {
+                                    "value" : "local_terms_13",
+                                    "@type" : "TERMINOLOGY_ID"
+                                  },
+                                  "code_string" : "22943007",
+                                  "@type" : "CODE_PHRASE"
+                                },
+                                "value" : "Trunk",
+                                "@type" : "DV_CODED_TEXT"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_13"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_13" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_13",
+                                    "code" : "22943007",
+                                    "value" : "Trunk"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.0.7",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 13,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 13.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0010.0.7",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.0.7",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "occurrences" : "1..1",
+                                  "defaultValue" : {
+                                    "defining_code" : {
+                                      "terminology_id" : {
+                                        "value" : "local_terms_15",
+                                        "@type" : "TERMINOLOGY_ID"
+                                      },
+                                      "code_string" : "77140003",
+                                      "@type" : "CODE_PHRASE"
+                                    },
+                                    "value" : "First degree burn injury",
+                                    "@type" : "DV_CODED_TEXT"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "0..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_15"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_15" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_15",
+                                        "code" : "77140003",
+                                        "value" : "First degree burn injury"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0013.0.7",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_PROPORTION",
+                                  "defaultValue" : {
+                                    "numerator" : 13,
+                                    "denominator" : 100,
+                                    "@type" : "DV_PROPORTION"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "numerator",
+                                    "children" : [ {
+                                      "@type" : "C_REAL",
+                                      "rmTypeName" : "REAL",
+                                      "occurrences" : "1..1",
+                                      "constraint" : [ {
+                                        "lower" : 0.0,
+                                        "upper" : 13.0,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  }, {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "type",
+                                    "children" : [ {
+                                      "@type" : "C_INTEGER",
+                                      "rmTypeName" : "INTEGER",
+                                      "constraint" : [ {
+                                        "lower" : 2,
+                                        "upper" : 2,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0006.0.13",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.0.10",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "defaultValue" : {
+                                "defining_code" : {
+                                  "terminology_id" : {
+                                    "value" : "local_terms_13",
+                                    "@type" : "TERMINOLOGY_ID"
+                                  },
+                                  "code_string" : "22943007",
+                                  "@type" : "CODE_PHRASE"
+                                },
+                                "value" : "Trunk",
+                                "@type" : "DV_CODED_TEXT"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_17"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_17" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_17",
+                                    "code" : "22943007",
+                                    "value" : "Trunk"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.0.10",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 13,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 13.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0010.0.10",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.0.10",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "occurrences" : "1..1",
+                                  "defaultValue" : {
+                                    "defining_code" : {
+                                      "terminology_id" : {
+                                        "value" : "local_terms_15",
+                                        "@type" : "TERMINOLOGY_ID"
+                                      },
+                                      "code_string" : "77140003",
+                                      "@type" : "CODE_PHRASE"
+                                    },
+                                    "value" : "First degree burn injury",
+                                    "@type" : "DV_CODED_TEXT"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "0..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_17"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_17" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_17",
+                                        "code" : "77140003",
+                                        "value" : "First degree burn injury"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0013.0.10",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_PROPORTION",
+                                  "defaultValue" : {
+                                    "numerator" : 13,
+                                    "denominator" : 100,
+                                    "@type" : "DV_PROPORTION"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "numerator",
+                                    "children" : [ {
+                                      "@type" : "C_REAL",
+                                      "rmTypeName" : "REAL",
+                                      "occurrences" : "1..1",
+                                      "constraint" : [ {
+                                        "lower" : 0.0,
+                                        "upper" : 13.0,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  }, {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "type",
+                                    "children" : [ {
+                                      "@type" : "C_INTEGER",
+                                      "rmTypeName" : "INTEGER",
+                                      "constraint" : [ {
+                                        "lower" : 2,
+                                        "upper" : 2,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0006.0.11",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.0.8",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "defaultValue" : {
+                                "defining_code" : {
+                                  "terminology_id" : {
+                                    "value" : "local_terms_13",
+                                    "@type" : "TERMINOLOGY_ID"
+                                  },
+                                  "code_string" : "22943007",
+                                  "@type" : "CODE_PHRASE"
+                                },
+                                "value" : "Trunk",
+                                "@type" : "DV_CODED_TEXT"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_14"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_14" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_14",
+                                    "code" : "22943007",
+                                    "value" : "Trunk"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.0.8",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 13,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 13.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0010.0.8",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.0.8",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "occurrences" : "1..1",
+                                  "defaultValue" : {
+                                    "defining_code" : {
+                                      "terminology_id" : {
+                                        "value" : "local_terms_14",
+                                        "@type" : "TERMINOLOGY_ID"
+                                      },
+                                      "code_string" : "403191005",
+                                      "@type" : "CODE_PHRASE"
+                                    },
+                                    "value" : "Second degree burn",
+                                    "@type" : "DV_CODED_TEXT"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "0..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_14"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_14" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_14",
+                                        "code" : "403191005",
+                                        "value" : "Second degree burn"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0013.0.8",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_PROPORTION",
+                                  "defaultValue" : {
+                                    "numerator" : 13,
+                                    "denominator" : 100,
+                                    "@type" : "DV_PROPORTION"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "numerator",
+                                    "children" : [ {
+                                      "@type" : "C_REAL",
+                                      "rmTypeName" : "REAL",
+                                      "occurrences" : "1..1",
+                                      "constraint" : [ {
+                                        "lower" : 0.0,
+                                        "upper" : 13.0,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  }, {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "type",
+                                    "children" : [ {
+                                      "@type" : "C_INTEGER",
+                                      "rmTypeName" : "INTEGER",
+                                      "constraint" : [ {
+                                        "lower" : 2,
+                                        "upper" : 2,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0006.0.14",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.0.11",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "defaultValue" : {
+                                "defining_code" : {
+                                  "terminology_id" : {
+                                    "value" : "local_terms_13",
+                                    "@type" : "TERMINOLOGY_ID"
+                                  },
+                                  "code_string" : "22943007",
+                                  "@type" : "CODE_PHRASE"
+                                },
+                                "value" : "Trunk",
+                                "@type" : "DV_CODED_TEXT"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_18"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_18" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_18",
+                                    "code" : "22943007",
+                                    "value" : "Trunk"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.0.11",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 13,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 13.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0010.0.11",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.0.11",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "occurrences" : "1..1",
+                                  "defaultValue" : {
+                                    "defining_code" : {
+                                      "terminology_id" : {
+                                        "value" : "local_terms_14",
+                                        "@type" : "TERMINOLOGY_ID"
+                                      },
+                                      "code_string" : "403191005",
+                                      "@type" : "CODE_PHRASE"
+                                    },
+                                    "value" : "Second degree burn",
+                                    "@type" : "DV_CODED_TEXT"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "0..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_18"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_18" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_18",
+                                        "code" : "403191005",
+                                        "value" : "Second degree burn"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0013.0.11",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_PROPORTION",
+                                  "defaultValue" : {
+                                    "numerator" : 13,
+                                    "denominator" : 100,
+                                    "@type" : "DV_PROPORTION"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "numerator",
+                                    "children" : [ {
+                                      "@type" : "C_REAL",
+                                      "rmTypeName" : "REAL",
+                                      "occurrences" : "1..1",
+                                      "constraint" : [ {
+                                        "lower" : 0.0,
+                                        "upper" : 13.0,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  }, {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "type",
+                                    "children" : [ {
+                                      "@type" : "C_INTEGER",
+                                      "rmTypeName" : "INTEGER",
+                                      "constraint" : [ {
+                                        "lower" : 2,
+                                        "upper" : 2,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0006.0.12",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.0.9",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "defaultValue" : {
+                                "defining_code" : {
+                                  "terminology_id" : {
+                                    "value" : "local_terms_13",
+                                    "@type" : "TERMINOLOGY_ID"
+                                  },
+                                  "code_string" : "22943007",
+                                  "@type" : "CODE_PHRASE"
+                                },
+                                "value" : "Trunk",
+                                "@type" : "DV_CODED_TEXT"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_16"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_16" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_16",
+                                    "code" : "22943007",
+                                    "value" : "Trunk"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.0.9",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 13,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 13.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0010.0.9",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.0.9",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "occurrences" : "1..1",
+                                  "defaultValue" : {
+                                    "defining_code" : {
+                                      "terminology_id" : {
+                                        "value" : "local_terms_16",
+                                        "@type" : "TERMINOLOGY_ID"
+                                      },
+                                      "code_string" : "403192003",
+                                      "@type" : "CODE_PHRASE"
+                                    },
+                                    "value" : "Third degree burn",
+                                    "@type" : "DV_CODED_TEXT"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "0..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_16"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_16" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_16",
+                                        "code" : "403192003",
+                                        "value" : "Third degree burn"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0013.0.9",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_PROPORTION",
+                                  "defaultValue" : {
+                                    "numerator" : 13,
+                                    "denominator" : 100,
+                                    "@type" : "DV_PROPORTION"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "numerator",
+                                    "children" : [ {
+                                      "@type" : "C_REAL",
+                                      "rmTypeName" : "REAL",
+                                      "occurrences" : "1..1",
+                                      "constraint" : [ {
+                                        "lower" : 0.0,
+                                        "upper" : 13.0,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  }, {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "type",
+                                    "children" : [ {
+                                      "@type" : "C_INTEGER",
+                                      "rmTypeName" : "INTEGER",
+                                      "constraint" : [ {
+                                        "lower" : 2,
+                                        "upper" : 2,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0006.0.15",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.0.12",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "defaultValue" : {
+                                "defining_code" : {
+                                  "terminology_id" : {
+                                    "value" : "local_terms_13",
+                                    "@type" : "TERMINOLOGY_ID"
+                                  },
+                                  "code_string" : "22943007",
+                                  "@type" : "CODE_PHRASE"
+                                },
+                                "value" : "Trunk",
+                                "@type" : "DV_CODED_TEXT"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_19"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_19" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_19",
+                                    "code" : "22943007",
+                                    "value" : "Trunk"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.0.12",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 13,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 13.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0010.0.12",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.0.12",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "occurrences" : "1..1",
+                                  "defaultValue" : {
+                                    "defining_code" : {
+                                      "terminology_id" : {
+                                        "value" : "local_terms_16",
+                                        "@type" : "TERMINOLOGY_ID"
+                                      },
+                                      "code_string" : "403192003",
+                                      "@type" : "CODE_PHRASE"
+                                    },
+                                    "value" : "Third degree burn",
+                                    "@type" : "DV_CODED_TEXT"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "0..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_19"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_19" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_19",
+                                        "code" : "403192003",
+                                        "value" : "Third degree burn"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0013.0.12",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_PROPORTION",
+                                  "defaultValue" : {
+                                    "numerator" : 13,
+                                    "denominator" : 100,
+                                    "@type" : "DV_PROPORTION"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "numerator",
+                                    "children" : [ {
+                                      "@type" : "C_REAL",
+                                      "rmTypeName" : "REAL",
+                                      "occurrences" : "1..1",
+                                      "constraint" : [ {
+                                        "lower" : 0.0,
+                                        "upper" : 13.0,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  }, {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "type",
+                                    "children" : [ {
+                                      "@type" : "C_INTEGER",
+                                      "rmTypeName" : "INTEGER",
+                                      "constraint" : [ {
+                                        "lower" : 2,
+                                        "upper" : 2,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -2358,7 +3918,7 @@
           "at0006.0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.0.7",
-            "text" : "Per body site (7)",
+            "text" : "Per body site (Anterior trunk - 1st degree)",
             "description" : "Details about body surface area affected at each body site."
           },
           "at0006.0.8" : {
@@ -2377,6 +3937,36 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.0.10",
             "text" : "Per body site (10)",
+            "description" : "Details about body surface area affected at each body site."
+          },
+          "at0006.0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.0.11",
+            "text" : "Per body site (Anterior trunk - 2nd degree)",
+            "description" : "Details about body surface area affected at each body site."
+          },
+          "at0006.0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.0.12",
+            "text" : "Per body site (Anterior trunk - 3rd degree)",
+            "description" : "Details about body surface area affected at each body site."
+          },
+          "at0006.0.13" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.0.13",
+            "text" : "Per body site (Posterior trunk - 1st degree)",
+            "description" : "Details about body surface area affected at each body site."
+          },
+          "at0006.0.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.0.14",
+            "text" : "Per body site (Posterior trunk - 2nd degree)",
+            "description" : "Details about body surface area affected at each body site."
+          },
+          "at0006.0.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.0.15",
+            "text" : "Per body site (Posterior trunk - 3rd degree)",
             "description" : "Details about body surface area affected at each body site."
           }
         }
