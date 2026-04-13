@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "8.0.0",
       "build_uid" : "49013a8f-0ea8-4f7a-994b-3cae08d765fa",
-      "MD5-CAM-1.0.1" : "7cc27fc753f532d5c95b7bcd528e2454",
+      "MD5-CAM-1.0.1" : "16a05e7b2df1ee9a4afbb7159535ae02",
       "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
     },
     "details" : {
@@ -443,7 +443,192 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte.",
+          "keywords" : [ "Abschnitt", "Template", "Überschrift", "Ad hoc", "Abschnittsüberschrift" ],
+          "use" : "Dieser Archetyp kann für die Erstellung einer Abschnittsüberschrift in einem Template verwendet werden. Die Überschrift kann, passend zu dem jeweiligen klinischen Kontext, umbenannt werden. Zum Beispiel: \"Ad hoc Überschrift\" wird umbenannt in \"Untersuchungsergebnisse\".\r\n\r\n",
+          "misuse" : "Die Überschrift sollte in einem Template nicht unverändert verwendet werden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Базовый заголовок раздела, должен быть переименован в локальном шаблоне ",
+          "keywords" : [ "раздел", "шаблон", "заготовка", "название", "образец" ],
+          "use" : "используется для создания и именования разделов в локальных шаблонах",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext.",
+          "keywords" : [ ],
+          "use" : "Används för att skapa en avsnittsrubrik i en openEHR-mall som sedan döps om för att passa in i den specifika kliniska kontexten. Exempelvis \"Rubrik\" döps om till \"Undersökningsfynd\".",
+          "misuse" : "Ska inte lämnas oförändrad i en openEHR-mall.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.",
+          "keywords" : [ ],
+          "use" : "Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".",
+          "misuse" : "No debe mantenerse sin cambios en una plantilla.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes som en generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst.",
+          "keywords" : [ ],
+          "use" : "Brukes til å lage en seksjonsoverskrift i en templat, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Templat-overskrift\" endret til \"Funn ved undersøkelse\", \"Anamnese\", \"Personopplysninger\" eller \"Oppsummering\".",
+          "misuse" : "Skal ikke stå med uendret navn i en templat.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Oferecer um cabeçalho de uma sessão genérica que será renomeado no template para adequar-se a um contexto clínico específico.",
+          "keywords" : [ "cabeçalho" ],
+          "use" : "Utilize para construir um cabeçalho de uma sessão (de um template) que será renomeada para adequar-se a um contexto clínico específico. Por exemplo: \"cabeçalho Ad hoc\" renomeado para \"Achados de exame\".",
+          "misuse" : "Não deve manter a configuração original no template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide a generic section header which will be renamed in a template to suit a specific clinical context.",
+          "keywords" : [ ],
+          "use" : "Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".",
+          "misuse" : "Not to be left unchanged in a template.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Fornire un'intestazione generica della sezione che sarà rinominata in un template per adattarsi ad uno specifico contesto clinico.",
+          "keywords" : [ ],
+          "use" : "Usato per costruire un'intestazione di sezione in un template che sarà rinominato in base al contesto clinico specifico. Per esempio: \"Intestazione ad hoc\" rinominata in \"Risultati dell'esame\".",
+          "misuse" : "Non deve essere lasciato invariato in un template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+          "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+          "misuse" : "No es deixarà sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
     "differential" : true,
@@ -683,7 +868,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "8F4DBE7C7F8924D18DC5EC1629F0FB68"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about the estimated proportion of body surface area affected by a burn injury.",
+          "keywords" : [ "TBSA", "BSA", "burn", "surface", "area", "burns", "assessment", "Lund-Browder", "skin", "rule", "nines", "palmar", "method", "TBSA%" ],
+          "use" : "Use to record details about the estimated proportion of body surface area affected by a burn injury, including the total body surface area affected, the body surface area affected per body site and the body surface area affected per severity.\r\n\r\nThis archetype has been designed as a component of a templated full burn assessment which may comprise a range of ENTRY archetypes and nested CLUSTERs, describing the history, physical examination findings, and other measurements.",
+          "misuse" : "Not to be used to record the measured or calculated body surface area of an individual - use the OBSERVATION.body_surface_area for this purpose.\r\n\r\nNot to be used to record the estimated proportion of body surface area affected by other conditions of the skin - use the parent archetype OBSERVATION.affected_body_surface_area for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.affected_body_surface_area-burn.v0",
     "differential" : true,
@@ -816,6 +1018,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -863,6 +1066,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -967,6 +1171,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -1065,6 +1270,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -1112,6 +1318,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -1216,6 +1423,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -1326,6 +1534,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -1378,6 +1587,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -1482,6 +1692,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -1592,6 +1803,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -1639,6 +1851,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -1743,6 +1956,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -1853,6 +2067,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -1900,6 +2115,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -2004,6 +2220,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -2114,6 +2331,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -2161,6 +2379,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -2265,6 +2484,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -2375,6 +2595,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -2422,6 +2643,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -2526,6 +2748,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -2636,6 +2859,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -2683,6 +2907,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -2787,6 +3012,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -2897,6 +3123,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -2944,6 +3171,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -3048,6 +3276,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -3158,6 +3387,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -3205,6 +3435,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -3309,6 +3540,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -3419,6 +3651,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -3466,6 +3699,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -3570,6 +3804,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -3680,6 +3915,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -3727,6 +3963,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -3831,6 +4068,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -3941,6 +4179,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -3988,6 +4227,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -4092,6 +4332,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -4202,6 +4443,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -4249,6 +4491,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -4353,6 +4596,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -4463,6 +4707,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -4510,6 +4755,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -4614,6 +4860,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -4724,6 +4971,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -4771,6 +5019,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -4875,6 +5124,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -4985,6 +5235,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -5032,6 +5283,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -5124,6 +5376,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -5234,6 +5487,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -5281,6 +5535,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -5385,6 +5640,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -5495,6 +5751,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -5542,6 +5799,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -5646,6 +5904,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -5756,6 +6015,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -5803,6 +6063,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -5907,6 +6168,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -6017,6 +6279,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -6064,6 +6327,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -6168,6 +6432,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -6278,6 +6543,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -6325,6 +6591,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -6429,6 +6696,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -6539,6 +6807,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -6586,6 +6855,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -6690,6 +6960,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -6800,6 +7071,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -6847,6 +7119,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -6951,6 +7224,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -7061,6 +7335,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -7108,6 +7383,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -7212,6 +7488,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -7322,6 +7599,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -7369,6 +7647,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -7473,6 +7752,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -7583,6 +7863,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -7630,6 +7911,7 @@
                                 "children" : [ {
                                   "@type" : "C_INTEGER",
                                   "rmTypeName" : "INTEGER",
+                                  "occurrences" : "1..1",
                                   "constraint" : [ {
                                     "lower" : 2,
                                     "upper" : 2,
@@ -7734,6 +8016,7 @@
                                     "children" : [ {
                                       "@type" : "C_INTEGER",
                                       "rmTypeName" : "INTEGER",
+                                      "occurrences" : "1..1",
                                       "constraint" : [ {
                                         "lower" : 2,
                                         "upper" : 2,
@@ -7758,7 +8041,783 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
                       "nodeId" : "at0006.0.23",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.0.28",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "defaultValue" : {
+                                "defining_code" : {
+                                  "terminology_id" : {
+                                    "value" : "local_terms_39",
+                                    "@type" : "TERMINOLOGY_ID"
+                                  },
+                                  "code_string" : "78791008",
+                                  "@type" : "CODE_PHRASE"
+                                },
+                                "value" : "Right hand",
+                                "@type" : "DV_CODED_TEXT"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_39"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_39" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_39",
+                                    "code" : "78791008",
+                                    "value" : "Right hand"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.0.28",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 2.5,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 2.5,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0010.0.28",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.0.28",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "occurrences" : "1..1",
+                                  "defaultValue" : {
+                                    "defining_code" : {
+                                      "terminology_id" : {
+                                        "value" : "local_terms_40",
+                                        "@type" : "TERMINOLOGY_ID"
+                                      },
+                                      "code_string" : "77140003",
+                                      "@type" : "CODE_PHRASE"
+                                    },
+                                    "value" : "First degree burn injury",
+                                    "@type" : "DV_CODED_TEXT"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "0..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_40"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_40" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_40",
+                                        "code" : "77140003",
+                                        "value" : "First degree burn injury"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0013.0.28",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_PROPORTION",
+                                  "defaultValue" : {
+                                    "numerator" : 2.5,
+                                    "denominator" : 100,
+                                    "@type" : "DV_PROPORTION"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "numerator",
+                                    "children" : [ {
+                                      "@type" : "C_REAL",
+                                      "rmTypeName" : "REAL",
+                                      "occurrences" : "1..1",
+                                      "constraint" : [ {
+                                        "lower" : 0.0,
+                                        "upper" : 2.5,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  }, {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "type",
+                                    "children" : [ {
+                                      "@type" : "C_INTEGER",
+                                      "rmTypeName" : "INTEGER",
+                                      "constraint" : [ {
+                                        "lower" : 2,
+                                        "upper" : 2,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0006.0.30",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.0.29",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "defaultValue" : {
+                                "defining_code" : {
+                                  "terminology_id" : {
+                                    "value" : "local_terms_39",
+                                    "@type" : "TERMINOLOGY_ID"
+                                  },
+                                  "code_string" : "78791008",
+                                  "@type" : "CODE_PHRASE"
+                                },
+                                "value" : "Right hand",
+                                "@type" : "DV_CODED_TEXT"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_41"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_41" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_41",
+                                    "code" : "78791008",
+                                    "value" : "Right hand"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.0.29",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 2.5,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 2.5,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0010.0.29",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.0.29",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "occurrences" : "1..1",
+                                  "defaultValue" : {
+                                    "defining_code" : {
+                                      "terminology_id" : {
+                                        "value" : "local_terms_41",
+                                        "@type" : "TERMINOLOGY_ID"
+                                      },
+                                      "code_string" : "403191005",
+                                      "@type" : "CODE_PHRASE"
+                                    },
+                                    "value" : "Second degree burn",
+                                    "@type" : "DV_CODED_TEXT"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "0..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_41"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_41" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_41",
+                                        "code" : "403191005",
+                                        "value" : "Second degree burn"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0013.0.29",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_PROPORTION",
+                                  "defaultValue" : {
+                                    "numerator" : 2.5,
+                                    "denominator" : 100,
+                                    "@type" : "DV_PROPORTION"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "numerator",
+                                    "children" : [ {
+                                      "@type" : "C_REAL",
+                                      "rmTypeName" : "REAL",
+                                      "occurrences" : "1..1",
+                                      "constraint" : [ {
+                                        "lower" : 0.0,
+                                        "upper" : 2.5,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  }, {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "type",
+                                    "children" : [ {
+                                      "@type" : "C_INTEGER",
+                                      "rmTypeName" : "INTEGER",
+                                      "constraint" : [ {
+                                        "lower" : 2,
+                                        "upper" : 2,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0006.0.31",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.0.30",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "defaultValue" : {
+                                "defining_code" : {
+                                  "terminology_id" : {
+                                    "value" : "local_terms_39",
+                                    "@type" : "TERMINOLOGY_ID"
+                                  },
+                                  "code_string" : "78791008",
+                                  "@type" : "CODE_PHRASE"
+                                },
+                                "value" : "Right hand",
+                                "@type" : "DV_CODED_TEXT"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms_42"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms_42" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms_42",
+                                    "code" : "78791008",
+                                    "value" : "Right hand"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0008.0.30",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "defaultValue" : {
+                                "numerator" : 2.5,
+                                "denominator" : 100,
+                                "@type" : "DV_PROPORTION"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 2.5,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0010.0.30",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_PROPORTION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "numerator",
+                                "children" : [ {
+                                  "@type" : "C_REAL",
+                                  "rmTypeName" : "REAL",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : 0.0,
+                                    "upper" : 100.0,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              }, {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "type",
+                                "children" : [ {
+                                  "@type" : "C_INTEGER",
+                                  "rmTypeName" : "INTEGER",
+                                  "constraint" : [ {
+                                    "lower" : 2,
+                                    "upper" : 2,
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : true,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "CLUSTER",
+                          "nodeId" : "at0011",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "items",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0012.0.30",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_CODED_TEXT",
+                                  "occurrences" : "1..1",
+                                  "defaultValue" : {
+                                    "defining_code" : {
+                                      "terminology_id" : {
+                                        "value" : "local_terms_42",
+                                        "@type" : "TERMINOLOGY_ID"
+                                      },
+                                      "code_string" : "403192003",
+                                      "@type" : "CODE_PHRASE"
+                                    },
+                                    "value" : "Third degree burn",
+                                    "@type" : "DV_CODED_TEXT"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "defining_code",
+                                    "children" : [ {
+                                      "@type" : "C_TERMINOLOGY_CODE",
+                                      "rmTypeName" : "TERMINOLOGY_CODE",
+                                      "occurrences" : "0..1",
+                                      "terminologyId" : {
+                                        "value" : "local_terms_42"
+                                      },
+                                      "constraint" : [ ],
+                                      "selectedTerminologies" : [ "local_terms_42" ],
+                                      "includedExternalTerminologyCodes" : [ {
+                                        "terminologyId" : "local_terms_42",
+                                        "code" : "403192003",
+                                        "value" : "Third degree burn"
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0013.0.30",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_COMPLEX_OBJECT",
+                                  "rmTypeName" : "DV_PROPORTION",
+                                  "defaultValue" : {
+                                    "numerator" : 2.5,
+                                    "denominator" : 100,
+                                    "@type" : "DV_PROPORTION"
+                                  },
+                                  "attributes" : [ {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "numerator",
+                                    "children" : [ {
+                                      "@type" : "C_REAL",
+                                      "rmTypeName" : "REAL",
+                                      "occurrences" : "1..1",
+                                      "constraint" : [ {
+                                        "lower" : 0.0,
+                                        "upper" : 2.5,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  }, {
+                                    "@type" : "C_ATTRIBUTE",
+                                    "rmAttributeName" : "type",
+                                    "children" : [ {
+                                      "@type" : "C_INTEGER",
+                                      "rmTypeName" : "INTEGER",
+                                      "constraint" : [ {
+                                        "lower" : 2,
+                                        "upper" : 2,
+                                        "lowerIncluded" : true,
+                                        "upperIncluded" : true,
+                                        "lowerUnbounded" : false,
+                                        "upperUnbounded" : false
+                                      } ]
+                                    } ]
+                                  } ],
+                                  "attributeTuples" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -7964,6 +9023,24 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.0.29",
             "text" : "Per body site (Left upper arm - 3rd degree)",
+            "description" : "Details about body surface area affected at each body site."
+          },
+          "at0006.0.23" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.0.23",
+            "text" : "Per body site (Right hand - 1st degree)",
+            "description" : "Details about body surface area affected at each body site."
+          },
+          "at0006.0.30" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.0.30",
+            "text" : "Per body site (Right hand - 2nd degree)",
+            "description" : "Details about body surface area affected at each body site."
+          },
+          "at0006.0.31" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.0.31",
+            "text" : "Per body site (Right hand - 3rd degree)",
             "description" : "Details about body surface area affected at each body site."
           }
         }
