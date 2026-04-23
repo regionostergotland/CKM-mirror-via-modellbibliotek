@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"95b7e62a2589273fb4c26e4667f60555">
+		["MD5-CAM-1.0.1"] = <"64bc5eccc73f61ba7b5a2876c25d903b">
 		["build_uid"] = <"0a87d244-c7aa-3381-ac03-e2ed322a35b1">
 	>
 
@@ -82,20 +82,13 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Volume algorithm
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Area algorithm
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::
-							at0015,    -- Simpson's method
-							at0016]    -- Teichholz method
+							[local::at0019]    -- Continuity equation
 						}
 					}
-				}
-			}
-			ELEMENT[at0029] occurrences matches {0..1} matches {    -- other algorithm
-				value matches {
-					DV_CODED_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Mass algorithm
@@ -109,11 +102,23 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Area algorithm
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Volume algorithm
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0019]    -- Continuity equation
+							[local::
+							at0015,    -- Simpson's method
+							at0016,    -- Teichholz method
+							at0031]    -- LVOT SV = ((LVOT diam (cm) / 2)^2) * Pi * LVOT VTI
+						}
+					}
+				}
+			}
+			ELEMENT[at0030] occurrences matches {0..1} matches {    -- Pressure algorithm
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0032]    -- sPAP = TR Vmax^2 * 4 + RAP
 						}
 					}
 				}
@@ -241,8 +246,16 @@ ontology
 					text = <"Tissue doppler">
 					description = <"">
 				>
-				["at0029"] = <
-					text = <"other algorithm">
+				["at0030"] = <
+					text = <"Pressure algorithm">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"LVOT SV = ((LVOT diam (cm) / 2)^2) * Pi * LVOT VTI">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"sPAP = TR Vmax^2 * 4 + RAP">
 					description = <"">
 				>
 			>
