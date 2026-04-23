@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"64bc5eccc73f61ba7b5a2876c25d903b">
+		["MD5-CAM-1.0.1"] = <"794b75c3443c4f692a2b9a6ae8f43cd9">
 		["build_uid"] = <"0a87d244-c7aa-3381-ac03-e2ed322a35b1">
 	>
 
@@ -39,7 +39,8 @@ definition
 							at0021,    -- 2 chamber
 							at0022,    -- 3 chamber
 							at0023,    -- 4 chamber
-							at0024]    -- 5 chamber
+							at0024,    -- 5 chamber
+							at0033]    -- PSAX
 						}
 					}
 				}
@@ -256,6 +257,10 @@ ontology
 				>
 				["at0032"] = <
 					text = <"sPAP = TR Vmax^2 * 4 + RAP">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"PSAX">
 					description = <"">
 				>
 			>
