@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"794b75c3443c4f692a2b9a6ae8f43cd9">
+		["MD5-CAM-1.0.1"] = <"43dda0791134885c853ed35b35511dd4">
 		["build_uid"] = <"0a87d244-c7aa-3381-ac03-e2ed322a35b1">
 	>
 
@@ -96,9 +96,16 @@ definition
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::
-							at0017,    -- Devereux method
-							at0018]    -- Linear cube formula
+							[local::at0017]    -- Devereux method
+						}
+					}
+				}
+			}
+			ELEMENT[at0030] occurrences matches {0..1} matches {    -- Pressure algorithm
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0032]    -- sPAP = TR Vmax^2 * 4 + RAP
 						}
 					}
 				}
@@ -111,15 +118,6 @@ definition
 							at0015,    -- Simpson's method
 							at0016,    -- Teichholz method
 							at0031]    -- LVOT SV = ((LVOT diam (cm) / 2)^2) * Pi * LVOT VTI
-						}
-					}
-				}
-			}
-			ELEMENT[at0030] occurrences matches {0..1} matches {    -- Pressure algorithm
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::at0032]    -- sPAP = TR Vmax^2 * 4 + RAP
 						}
 					}
 				}
@@ -201,10 +199,6 @@ ontology
 				>
 				["at0017"] = <
 					text = <"Devereux method">
-					description = <"">
-				>
-				["at0018"] = <
-					text = <"Linear cube formula">
 					description = <"">
 				>
 				["at0019"] = <
