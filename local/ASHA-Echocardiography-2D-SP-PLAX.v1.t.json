@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.5",
+      "sem_ver" : "1.0.0-alpha.6",
       "build_uid" : "521c9be1-ab43-43ea-80ab-e085dc8de838",
-      "MD5-CAM-1.0.1" : "681512a9515256b8fa3be7317048174f",
+      "MD5-CAM-1.0.1" : "2127c04c85531522cda2bdfa09f8dbe5",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -321,7 +321,7 @@
                   }, {
                     "@type" : "C_ARCHETYPE_ROOT",
                     "rmTypeName" : "CLUSTER",
-                    "occurrences" : "0..1",
+                    "occurrences" : "0..*",
                     "nodeId" : "at0044.1",
                     "attributes" : [ ],
                     "attributeTuples" : [ ],
@@ -537,7 +537,7 @@
           }, {
             "@type" : "C_ARCHETYPE_ROOT",
             "rmTypeName" : "CLUSTER",
-            "occurrences" : "0..1",
+            "occurrences" : "0..*",
             "nodeId" : "at0041.1",
             "attributes" : [ ],
             "attributeTuples" : [ ],
@@ -708,7 +708,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "4a868f7f4906652e52d03e7500a7434d"
+        "PARENT:MD5-CAM-1.0.1" : "6534e4149ff237849364b22e38c42f94"
       },
       "details" : {
         "de" : {
@@ -2258,9 +2258,22 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "43dda0791134885c853ed35b35511dd4"
+        "PARENT:MD5-CAM-1.0.1" : "d12a91e9f3d69ddfee9cf18f07bd0be0"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.imaging_exam_us_technique.v0",
     "differential" : true,
