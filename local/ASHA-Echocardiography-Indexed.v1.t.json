@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.1",
+      "sem_ver" : "1.0.0-alpha.2",
       "build_uid" : "31ebcff4-0f9b-498e-bfac-a92f6829cdbd",
-      "MD5-CAM-1.0.1" : "dc643fe60cfad73080ea4b02e5d2e5ad",
+      "MD5-CAM-1.0.1" : "e0f05d5173fae6e263d3e284c9144f77",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -221,7 +221,7 @@
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "49ba7c65-8c4f-47c7-acb1-1795bbf98623",
+    "uid" : "d508d239-829d-4654-adad-98c512037b46",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -230,7 +230,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "4a868f7f4906652e52d03e7500a7434d"
+        "PARENT:MD5-CAM-1.0.1" : "6534e4149ff237849364b22e38c42f94"
       },
       "details" : { }
     },
@@ -1440,7 +1440,7 @@
                   "terminologyId" : {
                     "value" : "openehr"
                   },
-                  "constraint" : [ "380" ]
+                  "constraint" : [ "122" ]
                 } ]
               } ],
               "attributeTuples" : [ {
@@ -1459,7 +1459,7 @@
                   "members" : [ {
                     "@type" : "C_STRING",
                     "rmTypeName" : "STRING",
-                    "constraint" : [ "1" ]
+                    "constraint" : [ "mm" ]
                   }, {
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
