@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.3",
+      "sem_ver" : "1.0.0-alpha.4",
       "build_uid" : "786d8a53-50e0-4a0e-b77c-bf50725e9b38",
-      "MD5-CAM-1.0.1" : "c6f096300d9246b73ed9c6408e54b5c0",
+      "MD5-CAM-1.0.1" : "101d428a263fbe372aa7b2d05bf7e787",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -321,7 +321,7 @@
                   }, {
                     "@type" : "C_ARCHETYPE_ROOT",
                     "rmTypeName" : "CLUSTER",
-                    "occurrences" : "0..1",
+                    "occurrences" : "0..*",
                     "nodeId" : "at0044.1",
                     "attributes" : [ ],
                     "attributeTuples" : [ ],
@@ -537,7 +537,7 @@
           }, {
             "@type" : "C_ARCHETYPE_ROOT",
             "rmTypeName" : "CLUSTER",
-            "occurrences" : "0..1",
+            "occurrences" : "0..*",
             "nodeId" : "at0041.1",
             "attributes" : [ ],
             "attributeTuples" : [ ],
@@ -708,7 +708,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "4a868f7f4906652e52d03e7500a7434d"
+        "PARENT:MD5-CAM-1.0.1" : "6534e4149ff237849364b22e38c42f94"
       },
       "details" : {
         "de" : {
@@ -1222,7 +1222,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0.12.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1235,20 +1234,42 @@
                 "rmAttributeName" : "property",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "openehr"
                   },
                   "constraint" : [ "507" ]
                 } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "units",
-                "children" : [ {
-                  "@type" : "C_STRING",
-                  "constraint" : [ "%" ]
-                } ]
               } ],
-              "attributeTuples" : [ ]
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "%" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lowerIncluded" : false,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : true,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                } ]
+              } ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -1328,7 +1349,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0.22.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1341,20 +1361,42 @@
                 "rmAttributeName" : "property",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "openehr"
                   },
                   "constraint" : [ "129" ]
                 } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "units",
-                "children" : [ {
-                  "@type" : "C_STRING",
-                  "constraint" : [ "mL" ]
-                } ]
               } ],
-              "attributeTuples" : [ ]
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "mL" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lowerIncluded" : false,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : true,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                } ]
+              } ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -1384,7 +1426,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0.39.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1397,20 +1438,42 @@
                 "rmAttributeName" : "property",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "openehr"
                   },
                   "constraint" : [ "129" ]
                 } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "units",
-                "children" : [ {
-                  "@type" : "C_STRING",
-                  "constraint" : [ "mL" ]
-                } ]
               } ],
-              "attributeTuples" : [ ]
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "mL" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lowerIncluded" : false,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : true,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                } ]
+              } ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -2146,20 +2209,42 @@
                 "rmAttributeName" : "property",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "openehr"
                   },
-                  "constraint" : [ "380" ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "units",
-                "children" : [ {
-                  "@type" : "C_STRING",
-                  "constraint" : [ "1" ]
+                  "constraint" : [ "122" ]
                 } ]
               } ],
-              "attributeTuples" : [ ]
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "mm" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lowerIncluded" : false,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : true,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                } ]
+              } ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -2352,9 +2437,22 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "43dda0791134885c853ed35b35511dd4"
+        "PARENT:MD5-CAM-1.0.1" : "d12a91e9f3d69ddfee9cf18f07bd0be0"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.imaging_exam_us_technique.v0",
     "differential" : true,
@@ -2593,7 +2691,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0004.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2601,6 +2698,13 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
+              "defaultValue" : {
+                "defining_code" : {
+                  "code_string" : "at0015",
+                  "@type" : "CODE_PHRASE"
+                },
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -2611,7 +2715,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.7" ],
+                  "constraint" : [ "ac0.8" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -2652,10 +2756,10 @@
             "code" : "ac0.6",
             "description" : ""
           },
-          "ac0.7" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.7",
+            "code" : "ac0.8",
             "description" : ""
           }
         }
@@ -2697,6 +2801,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.7",
           "members" : [ "at0015", "at0016", "at0031" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0015", "at0016" ]
         }
       }
     },
