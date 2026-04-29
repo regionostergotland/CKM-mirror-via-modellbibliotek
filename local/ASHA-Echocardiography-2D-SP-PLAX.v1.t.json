@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.6",
-      "build_uid" : "521c9be1-ab43-43ea-80ab-e085dc8de838",
-      "MD5-CAM-1.0.1" : "2127c04c85531522cda2bdfa09f8dbe5",
+      "sem_ver" : "1.0.0-alpha.7",
+      "build_uid" : "72df9a1d-8a43-49e9-b454-7207b790bfbb",
+      "MD5-CAM-1.0.1" : "0c486c66a7b4822f53f5bd5f4fe15331",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -2020,20 +2020,42 @@
                 "rmAttributeName" : "property",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "openehr"
                   },
                   "constraint" : [ "122" ]
                 } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "units",
-                "children" : [ {
-                  "@type" : "C_STRING",
-                  "constraint" : [ "mm" ]
-                } ]
               } ],
-              "attributeTuples" : [ ]
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "mm" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lowerIncluded" : false,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : true,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                } ]
+              } ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -2053,20 +2075,42 @@
                 "rmAttributeName" : "property",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "openehr"
                   },
-                  "constraint" : [ "380" ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "units",
-                "children" : [ {
-                  "@type" : "C_STRING",
-                  "constraint" : [ "1" ]
+                  "constraint" : [ "122" ]
                 } ]
               } ],
-              "attributeTuples" : [ ]
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "mm" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lowerIncluded" : false,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : true,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                } ]
+              } ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -2530,7 +2574,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.2" ],
+                  "constraint" : [ "ac0.6" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -2553,12 +2597,6 @@
             "code" : "ac0.1",
             "description" : ""
           },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.2",
-            "description" : ""
-          },
           "ac0.3" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -2575,6 +2613,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.5",
+            "description" : ""
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.6",
             "description" : ""
           }
         }
@@ -2606,6 +2650,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.5",
           "members" : [ "at0020", "at0021", "at0022", "at0023", "at0024", "at0033" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0015", "at0016" ]
         }
       }
     },
