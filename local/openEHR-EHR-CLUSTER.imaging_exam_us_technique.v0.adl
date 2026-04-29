@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"43dda0791134885c853ed35b35511dd4">
+		["MD5-CAM-1.0.1"] = <"d12a91e9f3d69ddfee9cf18f07bd0be0">
 		["build_uid"] = <"0a87d244-c7aa-3381-ac03-e2ed322a35b1">
 	>
 
@@ -116,8 +116,7 @@ definition
 						defining_code matches {
 							[local::
 							at0015,    -- Simpson's method
-							at0016,    -- Teichholz method
-							at0031]    -- LVOT SV = ((LVOT diam (cm) / 2)^2) * Pi * LVOT VTI
+							at0016]    -- Teichholz method
 						}
 					}
 				}
@@ -243,10 +242,6 @@ ontology
 				>
 				["at0030"] = <
 					text = <"Pressure algorithm">
-					description = <"">
-				>
-				["at0031"] = <
-					text = <"LVOT SV = ((LVOT diam (cm) / 2)^2) * Pi * LVOT VTI">
 					description = <"">
 				>
 				["at0032"] = <
