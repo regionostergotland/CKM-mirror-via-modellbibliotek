@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.3.0",
-      "build_uid" : "",
-      "MD5-CAM-1.0.1" : "af173bde46087f6d0ff75591470edb83",
+      "sem_ver" : "1.0.0-alpha.1",
+      "build_uid" : "e55b020e-4c6c-4cd4-b7d2-bff6a206337f",
+      "MD5-CAM-1.0.1" : "be255b17c76aa734f31c30996a45d11d",
       "PARENT:MD5-CAM-1.0.1" : "B8AD0C7EB492491CE6F7968C1AFFB40C"
     },
     "details" : {
@@ -136,6 +136,33 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-INSTRUCTION.ovl-service_request-001.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "ACTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.4",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-ACTION.ovl-service-001.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.6",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-imaging_exam_result-001.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.8",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-problem_diagnosis-001.v1",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -534,6 +561,30 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
+              "nodeId" : "at0010.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "defaultValue" : {
+                    "@type" : "DV_IDENTIFIER"
+                  },
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0011.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -583,6 +634,15 @@
               "attributes" : [ ],
               "attributeTuples" : [ ],
               "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-organisation-001.v1",
+              "referenceType" : "archetypeOverlay"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0142.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-organisation-002.v1",
               "referenceType" : "archetypeOverlay"
             } ]
           } ],
@@ -814,6 +874,30 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0004.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -836,6 +920,1500 @@
         "nb" : { },
         "de" : { },
         "sv" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "8543bf4b-0e15-4990-8a02-c7d082df8617",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout, Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "ballout.sarah@mh-hannover.de, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Therese Lindberg, Erik Sundvall",
+        "organisation" : "Cambio CDS, Karolinska Institutet + Karolinska University Hospital, Region Stockholm + Linköping University",
+        "email" : "therese.lindberg@cambio.se, erik.sundvall@regionstockholm.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Liv Laugen, John Tore Valand, Vebjørn Arntzen, Kanika Kuwelker",
+        "organisation" : "​Oslo University Hospital, Norway, Helse Bergen, Helse Vest IKT",
+        "email" : "liv.laugen@ous-hf.no, john.tore.valand@helse-bergen.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no, kanika.kuwelker@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "29ddac28-c67c-4f1e-9ac2-fbe77eaa991b",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "AD593E18455631079CCA895C6A3612C5"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ACTION.service.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ACTION.ovl-service-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ACTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "description",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0011.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0014.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0032.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DURATION",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0025.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0021.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_COUNT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ {
+                      "@type" : "C_INTEGER",
+                      "rmTypeName" : "Integer",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : 1,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0028.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0015",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0016.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0018.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "pt-br" : { },
+        "de" : { },
+        "nb" : { },
+        "nl" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "f596dd3a-2cba-4dec-9d40-ecfefe33b142",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Eva-Maria Rieß, Natalia Strauch",
+        "organisation" : "Universitätsmedizin Göttingen, Medizinische Hochschule Hannover",
+        "email" : "eva-maria.riess@med.uni-goettingen.de, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke, John Tore Valand, Terje Sagmyr",
+        "organisation" : "Helse Vest IKT AS",
+        "email" : "silje.ljosland.bakke@helse-vest-ikt.no, john.tore.valand@helse-vest-ikt.no, terje.sagmyr@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Ana Paula Pannuti, Débora Farage, Adriana Kitajima, Fernanda Maia e Clóvis Puttini.",
+        "organisation" : "Core Consulting",
+        "email" : "ana.andrade@coreconsulting.com.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Mattijs Kuhlmann",
+        "organisation" : "Nedap",
+        "email" : "mattijs.kuhlmann@nedap.com"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "67c67fa4-ef28-4e32-858e-131bfc49aec1",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.imaging_exam_result.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-imaging_exam_result-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "nodeId" : "at0002",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0091.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0055.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0070.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0072.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "CODE_PHRASE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "at0073", "at0074", "at0075", "at0076", "at0077", "at0078", "at0079", "at0080", "at0090" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0071.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0061.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0014.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0008.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0056.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0063.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0057.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0021.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0058.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0020.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0059.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0023.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "state",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0047",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0048.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0108.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0025",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0092.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0105.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0104.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0099.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "CODE_PHRASE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "at0100", "at0101", "at0102", "at0103" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0098.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_URI",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0106.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0087.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0049.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0088.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0062.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0093",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0094.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0095.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_IDENTIFIER",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0096.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0097.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_URI",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0027",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0031.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_IDENTIFIER",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0028.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_IDENTIFIER",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0029.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "de" : { },
+        "sv" : { },
+        "ca" : { },
+        "es" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "dccb7af8-6c19-4a35-959b-1b4126cdc9a9",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "application" : "Adl Designer",
+        "name" : "Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : {
+        "notes" : "Generated automatically by Adl Designer"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Linda Aulin, Claudia Ehrentraut",
+        "organisation" : "Region Stockholm, Karolinska University Hospital",
+        "email" : "linda.aulin@sll.se, claudia.ehrentraut@regionstockholm.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjørn Arntzen, Liv Laugen",
+        "organisation" : "​Oslo University Hospital, Norway",
+        "email" : "varntzen@ous-hf.no, liv.laugen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
+      },
+      "otherDetails" : {
+        "other_contributors" : "TRADCREA"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Clara Calleja Vega",
+        "organisation" : "CatSalut. Servei Català de la Salut.",
+        "email" : "ccalleja@catsalut.cat"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "5c78dc37-9df1-4b66-ad1b-0195513fba02",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "89470078C0364ACBA5B6A5F286E56C79"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.problem_diagnosis.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-problem_diagnosis-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0079.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0009.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0078.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0077.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0003.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0005.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "CODE_PHRASE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "at0047", "at0048", "at0049" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0072.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0030.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0073.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "CODE_PHRASE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "at0074", "at0075", "at0076" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0069.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0032",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0070.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "es" : { },
+        "es-ar" : { },
+        "de" : { },
+        "en" : { },
+        "ar-sy" : { },
+        "pt-br" : { },
+        "nb" : { },
+        "sv" : { },
+        "ko" : { },
+        "fi" : { },
+        "it" : { },
+        "nl" : { },
+        "zh" : { },
+        "ca" : { },
+        "zh-cn" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "a7873ae4-260a-4e4f-96a0-627603ca1246",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aljoscha Kindermann, Jasmin Buck, Sebastian Garde, Natalia Strauch, Alina Rehberg",
+        "organisation" : "Universityhospital of Heidelberg, University of Heidelberg, Central Queensland University, Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de, rehberg.alina@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Kirsi Poikela, Jörgen Kuylenstierna, Anette Larsson, Åsa Skagerhult, Per Nemirovski",
+        "organisation" : "Tietoevry Sweden AB, eWeave AB, Region Östergötland, Region Uppsala",
+        "email" : "ext.kirsi.poikela@tieto.com, jorgen.kuylenstierna@solvikshalsan.se, anette.a.larsson@tietoevry.com, asa.skagerhult@regionostergotland.se, per.pertoft.nemirovski@regionuppsala.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fi"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ko"
+      },
+      "author" : {
+        "name" : "Seung-Jong Yu",
+        "organisation" : "InfoClinic Co.,Ltd.",
+        "email" : "seungjong.yu@gmail.com"
+      },
+      "accreditation" : "M.D.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Adriana Kitajima, Gabriela Alves, Maria Angela Scatena, Marivan Abrahäo",
+        "organisation" : "Core Consulting",
+        "email" : "contato@coreconsulting.com.br"
+      },
+      "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : {
+        "name" : "Cecilia Mascia",
+        "organisation" : "CRS4 - Center for advanced studies, research and development in Sardinia, Pula (Cagliari), Italy",
+        "email" : "cecilia.mascia@crs4.it"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "Freelancer",
+        "email" : "linforest@163.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Pablo Pazos, Julio de Sosa",
+        "organisation" : "CaboLabs, Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
+      },
+      "accreditation" : "Computer Engineer",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh"
+      },
+      "author" : {
+        "name" : "Yexuan Cheng",
+        "organisation" : "浙江大学",
+        "email" : "3160100913@zju.edu.cn"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina",
+        "email" : "alandmarch@gmail.com"
+      },
+      "accreditation" : "-",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke, John Tore Valand, Liv Laugen, Vebjørn Arntzen",
+        "organisation" : "Helse Bergen HF, ​Oslo University Hospital, Norway",
+        "email" : "liv.laugen@ous-hf.no, varntzen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Joost Holslag",
+        "organisation" : "Nedap",
+        "email" : "joost.holslag@nedap.com"
+      },
+      "accreditation" : "MD",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Manuel José Zafra Doménech",
+        "organisation" : "TRADCREA, S.L.",
+        "email" : "mzafra@tradcrea.com"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Servei Català de la Salut"
+      }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "94a6b6bb-ca80-430a-9c32-698967d39db2",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.organisation.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-organisation-002.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0004.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0019.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Organisation (2)",
+            "description" : "An entity comprising one or more people and having a particular purpose.",
+            "comment" : "For example: a company, institution, association, network, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who provide care or support."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Organisasjon (2)",
+            "description" : "En entitet som består av ett eller flere mennesker med et bestemt formål.",
+            "comment" : "For eksempel: Et firma, institusjon, selskap, forening, nettverk, avdeling, gruppe i nærmiljøet, forsikringsselskap, behandlingsteam eller en gruppe av naboer som opptrer som støtte."
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Organisation (2)",
+            "description" : "Eine Einheit, die aus einer oder mehreren Personen besteht und ein bestimmtes Ziel hat.",
+            "comment" : "Zum Beispiel: ein Unternehmen, eine Institution, ein Verband, ein Netzwerk, eine Abteilung, eine Gemeindegruppe, eine Gesundheitspraxisgruppe, ein Kostenträger/Versicherer, ein Pflegeteam oder eine Gruppe von Nachbarn, die Pflege oder Unterstützung leisten."
+          }
+        },
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Organisation (2)",
+            "description" : "*An entity comprising one or more people and having a particular purpose. (en)",
+            "comment" : "*For example: a company, institution, association, network, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who provide care or support. (en)"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
