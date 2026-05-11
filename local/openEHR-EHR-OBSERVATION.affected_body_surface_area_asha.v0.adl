@@ -31,7 +31,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"aadfd5e11f719bb8ce449eadb946411a">
+		["MD5-CAM-1.0.1"] = <"0c71e115f6b068d8ea05fc389a443c1f">
 		["build_uid"] = <"7dadd608-b833-4b6f-812e-08b18bcb0302">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -86,7 +86,7 @@ definition
 													}
 												}
 											}
-											CLUSTER[at0011] occurrences matches {0..1} matches {    -- Per severity
+											CLUSTER[at0011] occurrences matches {0..*} matches {    -- Per severity
 												items cardinality matches {1..*; unordered} matches {
 													ELEMENT[at0012] matches {    -- Severity
 														value matches {
@@ -105,7 +105,7 @@ definition
 											}
 										}
 									}
-									CLUSTER[at0015] occurrences matches {0..1} matches {    -- Total body surface area per severity
+									CLUSTER[at0015] occurrences matches {0..*} matches {    -- Total body surface area per severity
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0016] matches {    -- Severity
 												value matches {
@@ -209,6 +209,7 @@ ontology
 				["at0011"] = <
 					text = <"Per severity">
 					description = <"Details about each severity of findings at the identified body site.">
+					comment = <"Changed 0..1 to 0..*  to describe different severities on the same body site. ">
 				>
 				["at0012"] = <
 					text = <"Severity">
@@ -228,6 +229,7 @@ ontology
 				["at0015"] = <
 					text = <"Total body surface area per severity">
 					description = <"Details about the total sum of surface area affected per severity, across all body sites.">
+					comment = <" Changed 0..1 to 0..*  to sum up different severities in a total score.  ">
 				>
 				["at0016"] = <
 					text = <"Severity">
