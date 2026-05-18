@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.1",
+      "sem_ver" : "1.0.0-alpha.2",
       "build_uid" : "60234b2b-921e-4dc6-b983-814755d8023a",
-      "MD5-CAM-1.0.1" : "6c0e71a49540ad52de26762d6f909181",
+      "MD5-CAM-1.0.1" : "e9bfa675d87d076c7444b232b160fd0a",
       "PARENT:MD5-CAM-1.0.1" : "cddcbfbf2dbc95463dec7e21ca297e01"
     },
     "details" : {
@@ -283,11 +283,25 @@
                           "children" : [ {
                             "@type" : "C_COMPLEX_OBJECT",
                             "rmTypeName" : "DV_CODED_TEXT",
-                            "defaultValue" : {
-                              "value" : "Nec",
-                              "@type" : "DV_TEXT"
-                            },
-                            "attributes" : [ ],
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "occurrences" : "0..1",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "45048000",
+                                  "value" : "Neck"
+                                } ]
+                              } ]
+                            } ],
                             "attributeTuples" : [ ]
                           } ]
                         } ],
