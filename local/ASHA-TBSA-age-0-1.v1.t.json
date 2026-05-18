@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.2",
-      "build_uid" : "60234b2b-921e-4dc6-b983-814755d8023a",
-      "MD5-CAM-1.0.1" : "e9bfa675d87d076c7444b232b160fd0a",
+      "sem_ver" : "1.0.0-alpha.3",
+      "build_uid" : "69939a0d-f57c-43e5-bbbb-6a300f9c9bd0",
+      "MD5-CAM-1.0.1" : "3c2792309938de7b700f683605597702",
       "PARENT:MD5-CAM-1.0.1" : "cddcbfbf2dbc95463dec7e21ca297e01"
     },
     "details" : {
@@ -283,6 +283,18 @@
                           "children" : [ {
                             "@type" : "C_COMPLEX_OBJECT",
                             "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "45048000",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Neck",
+                              "@type" : "DV_CODED_TEXT"
+                            },
                             "attributes" : [ {
                               "@type" : "C_ATTRIBUTE",
                               "rmAttributeName" : "defining_code",
@@ -701,6 +713,51 @@
                       "rmAttributeName" : "items",
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.5",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "723980000",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Right buttock",
+                              "@type" : "DV_CODED_TEXT"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "occurrences" : "0..1",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "723980000",
+                                  "value" : "Right buttock"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.13",
                         "attributes" : [ {
@@ -821,6 +878,51 @@
                       "@type" : "C_ATTRIBUTE",
                       "rmAttributeName" : "items",
                       "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.6",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "723979003",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Left buttock",
+                              "@type" : "DV_CODED_TEXT"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "occurrences" : "0..1",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "723979003",
+                                  "value" : "Left buttock"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.16",
@@ -943,6 +1045,50 @@
                       "rmAttributeName" : "items",
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.7",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "71934003",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Genitalia",
+                              "@type" : "DV_CODED_TEXT"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "71934003",
+                                  "value" : "Genitalia"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.19",
                         "attributes" : [ {
@@ -1063,6 +1209,51 @@
                       "@type" : "C_ATTRIBUTE",
                       "rmAttributeName" : "items",
                       "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.8",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "368209003",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Right upper arm",
+                              "@type" : "DV_CODED_TEXT"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "occurrences" : "0..1",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "368209003",
+                                  "value" : "Right upper arm"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.22",
@@ -1185,6 +1376,50 @@
                       "rmAttributeName" : "items",
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.9",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "368208006",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Left upper arm",
+                              "@type" : "DV_CODED_TEXT"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "368208006",
+                                  "value" : "Left upper arm"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.25",
                         "attributes" : [ {
@@ -1305,6 +1540,51 @@
                       "@type" : "C_ATTRIBUTE",
                       "rmAttributeName" : "items",
                       "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.16",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "64262003",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Right lower arm",
+                              "@type" : "DV_CODED_TEXT"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "occurrences" : "0..1",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "64262003",
+                                  "value" : "Right lower arm"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.28",
@@ -1427,6 +1707,50 @@
                       "rmAttributeName" : "items",
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.15",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "66480008",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Left lower arm",
+                              "@type" : "DV_CODED_TEXT"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "66480008",
+                                  "value" : "Left lower arm"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.31",
                         "attributes" : [ {
@@ -1547,6 +1871,50 @@
                       "@type" : "C_ATTRIBUTE",
                       "rmAttributeName" : "items",
                       "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.10",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "78791008",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Right hand",
+                              "@type" : "DV_CODED_TEXT"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "78791008",
+                                  "value" : "Right hand"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.34",
@@ -1669,6 +2037,50 @@
                       "rmAttributeName" : "items",
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.11",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "85151006",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Left hand",
+                              "@type" : "DV_CODED_TEXT"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "85151006",
+                                  "value" : "Left hand"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.37",
                         "attributes" : [ {
@@ -1789,6 +2201,50 @@
                       "@type" : "C_ATTRIBUTE",
                       "rmAttributeName" : "items",
                       "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.12",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "11207009",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Right thigh",
+                              "@type" : "DV_CODED_TEXT"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "11207009",
+                                  "value" : "Right thigh"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.40",
@@ -1911,6 +2367,50 @@
                       "rmAttributeName" : "items",
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.13",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "61396006",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Left thigh",
+                              "@type" : "DV_CODED_TEXT"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "61396006",
+                                  "value" : "Left thigh"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.43",
                         "attributes" : [ {
@@ -2031,6 +2531,51 @@
                       "@type" : "C_ATTRIBUTE",
                       "rmAttributeName" : "items",
                       "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.14",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "32696007",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Right lower leg",
+                              "@type" : "DV_CODED_TEXT"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "occurrences" : "0..1",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "32696007",
+                                  "value" : "Right lower leg"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.46",
@@ -2153,6 +2698,50 @@
                       "rmAttributeName" : "items",
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.18",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "48979004",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Left lower leg",
+                              "@type" : "DV_CODED_TEXT"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "48979004",
+                                  "value" : "Left lower leg"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.49",
                         "attributes" : [ {
@@ -2274,6 +2863,50 @@
                       "rmAttributeName" : "items",
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.19",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "7769000",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Right foot",
+                              "@type" : "DV_CODED_TEXT"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "7769000",
+                                  "value" : "Right foot"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.52",
                         "attributes" : [ {
@@ -2394,6 +3027,51 @@
                       "@type" : "C_ATTRIBUTE",
                       "rmAttributeName" : "items",
                       "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0007.17",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_CODED_TEXT",
+                            "defaultValue" : {
+                              "defining_code" : {
+                                "terminology_id" : {
+                                  "value" : "http://snomed.info/sct",
+                                  "@type" : "TERMINOLOGY_ID"
+                                },
+                                "code_string" : "22335008",
+                                "@type" : "CODE_PHRASE"
+                              },
+                              "value" : "Left foot",
+                              "@type" : "DV_CODED_TEXT"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "defining_code",
+                              "children" : [ {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "rmTypeName" : "TERMINOLOGY_CODE",
+                                "occurrences" : "0..1",
+                                "terminologyId" : {
+                                  "value" : "http://snomed.info/sct"
+                                },
+                                "constraint" : [ ],
+                                "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                                "includedExternalTerminologyCodes" : [ {
+                                  "terminologyId" : "http://snomed.info/sct",
+                                  "code" : "22335008",
+                                  "value" : "Left foot"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.55",
