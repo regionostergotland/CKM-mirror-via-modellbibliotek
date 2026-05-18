@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.5",
-      "build_uid" : "21509ee0-2da1-4d6d-9454-30851e5c9ce9",
-      "MD5-CAM-1.0.1" : "a55ad91e6289ab31ff2fc1235c94b5e8",
+      "sem_ver" : "1.0.0-alpha.6",
+      "build_uid" : "ffdb02d3-53b7-4ad2-99da-3cd5456b38e8",
+      "MD5-CAM-1.0.1" : "6fb1c64a8692d1d366ec6615898a994d",
       "PARENT:MD5-CAM-1.0.1" : "cddcbfbf2dbc95463dec7e21ca297e01"
     },
     "details" : {
@@ -2522,6 +2522,52 @@
                                 "constraint" : [ {
                                   "lower" : 0.0,
                                   "upper" : 100.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0010.19",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 1.0,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
                                   "lowerUnbounded" : false,
