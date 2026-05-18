@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.4",
-      "build_uid" : "07d74410-ff04-49a5-8545-97e4b09ec52d",
-      "MD5-CAM-1.0.1" : "1998822f42aa46ca39e45f54778f10fa",
+      "sem_ver" : "1.0.0-alpha.5",
+      "build_uid" : "21509ee0-2da1-4d6d-9454-30851e5c9ce9",
+      "MD5-CAM-1.0.1" : "a55ad91e6289ab31ff2fc1235c94b5e8",
       "PARENT:MD5-CAM-1.0.1" : "cddcbfbf2dbc95463dec7e21ca297e01"
     },
     "details" : {
@@ -4437,6 +4437,7 @@
                               "children" : [ {
                                 "@type" : "C_TERMINOLOGY_CODE",
                                 "rmTypeName" : "TERMINOLOGY_CODE",
+                                "occurrences" : "0..1",
                                 "terminologyId" : {
                                   "value" : "http://snomed.info/sct"
                                 },
@@ -4446,6 +4447,103 @@
                                   "terminologyId" : "http://snomed.info/sct",
                                   "code" : "78791008",
                                   "value" : "Right hand"
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0008.12",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "defaultValue" : {
+                              "numerator" : 2.5,
+                              "denominator" : 100,
+                              "@type" : "DV_PROPORTION"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 100.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0010.11",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 2.5,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
                                 } ]
                               } ]
                             } ],
@@ -4481,6 +4579,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Superficial partial thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.34",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 2.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -4524,6 +4668,52 @@
                               } ]
                             } ],
                             "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.35",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 2.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
                           } ]
                         } ],
                         "attributeTuples" : [ ]
@@ -4555,6 +4745,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Full thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.36",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 2.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -4620,6 +4856,103 @@
                         "attributeTuples" : [ ]
                       }, {
                         "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0008.13",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "defaultValue" : {
+                              "numerator" : 2.5,
+                              "denominator" : 100,
+                              "@type" : "DV_PROPORTION"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 100.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0010.12",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 2.5,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.37",
                         "attributes" : [ {
@@ -4646,6 +4979,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Superficial partial thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.37",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 2.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -4689,6 +5068,52 @@
                               } ]
                             } ],
                             "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.38",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 2.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
                           } ]
                         } ],
                         "attributeTuples" : [ ]
@@ -4720,6 +5145,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Full thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.39",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 2.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -4785,6 +5256,103 @@
                         "attributeTuples" : [ ]
                       }, {
                         "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0008.14",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "defaultValue" : {
+                              "numerator" : 5.5,
+                              "denominator" : 100,
+                              "@type" : "DV_PROPORTION"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 100.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0010.13",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 5.5,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.40",
                         "attributes" : [ {
@@ -4811,6 +5379,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Superficial partial thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.40",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 5.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -4854,6 +5468,52 @@
                               } ]
                             } ],
                             "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.41",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 5.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
                           } ]
                         } ],
                         "attributeTuples" : [ ]
@@ -4885,6 +5545,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Full thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.42",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 5.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -4950,6 +5656,103 @@
                         "attributeTuples" : [ ]
                       }, {
                         "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0008.15",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "defaultValue" : {
+                              "numerator" : 5.5,
+                              "denominator" : 100,
+                              "@type" : "DV_PROPORTION"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 100.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0010.14",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 5.5,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.43",
                         "attributes" : [ {
@@ -4976,6 +5779,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Superficial partial thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.43",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 5.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -5019,6 +5868,52 @@
                               } ]
                             } ],
                             "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.44",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 5.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
                           } ]
                         } ],
                         "attributeTuples" : [ ]
@@ -5050,6 +5945,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Full thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.45",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 5.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -5116,6 +6057,103 @@
                         "attributeTuples" : [ ]
                       }, {
                         "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0008.16",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "defaultValue" : {
+                              "numerator" : 5,
+                              "denominator" : 100,
+                              "@type" : "DV_PROPORTION"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 100.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0010.15",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 5.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.46",
                         "attributes" : [ {
@@ -5142,6 +6180,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Superficial partial thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.46",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 5.0,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -5185,6 +6269,52 @@
                               } ]
                             } ],
                             "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.47",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 5.0,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
                           } ]
                         } ],
                         "attributeTuples" : [ ]
@@ -5216,6 +6346,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Full thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.48",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 5.0,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -5281,6 +6457,103 @@
                         "attributeTuples" : [ ]
                       }, {
                         "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0008.17",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "defaultValue" : {
+                              "numerator" : 5,
+                              "denominator" : 100,
+                              "@type" : "DV_PROPORTION"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 100.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0010.16",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 5.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.49",
                         "attributes" : [ {
@@ -5307,6 +6580,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Superficial partial thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.49",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 5.0,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -5350,6 +6669,52 @@
                               } ]
                             } ],
                             "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.50",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 5.0,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
                           } ]
                         } ],
                         "attributeTuples" : [ ]
@@ -5381,6 +6746,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Full thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.51",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 5.0,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -5446,6 +6857,103 @@
                         "attributeTuples" : [ ]
                       }, {
                         "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0008.18",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "defaultValue" : {
+                              "numerator" : 3.5,
+                              "denominator" : 100,
+                              "@type" : "DV_PROPORTION"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 100.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0010.17",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 3.5,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.52",
                         "attributes" : [ {
@@ -5472,6 +6980,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Superficial partial thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.52",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 3.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -5515,6 +7069,52 @@
                               } ]
                             } ],
                             "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.53",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 3.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
                           } ]
                         } ],
                         "attributeTuples" : [ ]
@@ -5546,6 +7146,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Full thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.54",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 3.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -5612,6 +7258,103 @@
                         "attributeTuples" : [ ]
                       }, {
                         "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0008.19",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "defaultValue" : {
+                              "numerator" : 3.5,
+                              "denominator" : 100,
+                              "@type" : "DV_PROPORTION"
+                            },
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 100.0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "ELEMENT",
+                        "nodeId" : "at0010.18",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "DV_PROPORTION",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "occurrences" : "1..1",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 3.5,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "type",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false
+                                } ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      }, {
+                        "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "CLUSTER",
                         "nodeId" : "at0011.55",
                         "attributes" : [ {
@@ -5638,6 +7381,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Superficial partial thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.55",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 3.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -5681,6 +7470,52 @@
                               } ]
                             } ],
                             "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.56",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 3.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
                           } ]
                         } ],
                         "attributeTuples" : [ ]
@@ -5712,6 +7547,52 @@
                                     "@type" : "C_STRING",
                                     "rmTypeName" : "STRING",
                                     "constraint" : [ "Full thickness" ]
+                                  } ]
+                                } ],
+                                "attributeTuples" : [ ]
+                              } ]
+                            } ],
+                            "attributeTuples" : [ ]
+                          }, {
+                            "@type" : "C_COMPLEX_OBJECT",
+                            "rmTypeName" : "ELEMENT",
+                            "nodeId" : "at0013.57",
+                            "attributes" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ {
+                                "@type" : "C_COMPLEX_OBJECT",
+                                "rmTypeName" : "DV_PROPORTION",
+                                "attributes" : [ {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "numerator",
+                                  "children" : [ {
+                                    "@type" : "C_REAL",
+                                    "rmTypeName" : "REAL",
+                                    "occurrences" : "1..1",
+                                    "constraint" : [ {
+                                      "lower" : 0.0,
+                                      "upper" : 3.5,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
+                                  } ]
+                                }, {
+                                  "@type" : "C_ATTRIBUTE",
+                                  "rmAttributeName" : "type",
+                                  "children" : [ {
+                                    "@type" : "C_INTEGER",
+                                    "rmTypeName" : "INTEGER",
+                                    "constraint" : [ {
+                                      "lower" : 2,
+                                      "upper" : 2,
+                                      "lowerIncluded" : true,
+                                      "upperIncluded" : true,
+                                      "lowerUnbounded" : false,
+                                      "upperUnbounded" : false
+                                    } ]
                                   } ]
                                 } ],
                                 "attributeTuples" : [ ]
@@ -5877,16 +7758,22 @@
           "text" : "Full thickness burn",
           "description" : "Details about each severity of findings at the identified body site."
         },
+        "at0015.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0015.1",
+          "text" : "Total of superficial partial thickness burn",
+          "description" : "Details about the total sum of surface area affected per severity, across all body sites."
+        },
         "at0015.2" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0015.2",
-          "text" : "Total body surface area per severity (2)",
+          "text" : "Total of deep partial thickness burn",
           "description" : "Details about the total sum of surface area affected per severity, across all body sites."
         },
         "at0015.3" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0015.3",
-          "text" : "Total body surface area per severity (3)",
+          "text" : "Total of full thickness burn",
           "description" : "Details about the total sum of surface area affected per severity, across all body sites."
         },
         "at0006.1" : {
