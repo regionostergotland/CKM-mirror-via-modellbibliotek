@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.7",
-      "build_uid" : "e8b8709d-a666-45b3-9fa6-b51b05f63ea7",
-      "MD5-CAM-1.0.1" : "93b5e70f3d661e142b2b5c00e3236f0e",
+      "sem_ver" : "1.0.0-alpha.8",
+      "build_uid" : "874ea549-40e0-4950-8da2-93337f7cc31c",
+      "MD5-CAM-1.0.1" : "0a36939416ff0a504a10e4c97467a56c",
       "PARENT:MD5-CAM-1.0.1" : "cddcbfbf2dbc95463dec7e21ca297e01"
     },
     "details" : {
@@ -6559,7 +6559,7 @@
                             "@type" : "C_COMPLEX_OBJECT",
                             "rmTypeName" : "DV_PROPORTION",
                             "defaultValue" : {
-                              "numerator" : 5,
+                              "numerator" : 5.5,
                               "denominator" : 100,
                               "@type" : "DV_PROPORTION"
                             },
@@ -6585,7 +6585,6 @@
                               "children" : [ {
                                 "@type" : "C_INTEGER",
                                 "rmTypeName" : "INTEGER",
-                                "occurrences" : "1..1",
                                 "constraint" : [ {
                                   "lower" : 2,
                                   "upper" : 2,
@@ -6619,7 +6618,7 @@
                                 "occurrences" : "1..1",
                                 "constraint" : [ {
                                   "lower" : 0.0,
-                                  "upper" : 5.0,
+                                  "upper" : 5.5,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true,
                                   "lowerUnbounded" : false,
@@ -6632,7 +6631,6 @@
                               "children" : [ {
                                 "@type" : "C_INTEGER",
                                 "rmTypeName" : "INTEGER",
-                                "occurrences" : "1..1",
                                 "constraint" : [ {
                                   "lower" : 2,
                                   "upper" : 2,
@@ -6700,7 +6698,7 @@
                                     "occurrences" : "1..1",
                                     "constraint" : [ {
                                       "lower" : 0.0,
-                                      "upper" : 5.0,
+                                      "upper" : 5.5,
                                       "lowerIncluded" : true,
                                       "upperIncluded" : true,
                                       "lowerUnbounded" : false,
@@ -6713,7 +6711,6 @@
                                   "children" : [ {
                                     "@type" : "C_INTEGER",
                                     "rmTypeName" : "INTEGER",
-                                    "occurrences" : "1..1",
                                     "constraint" : [ {
                                       "lower" : 2,
                                       "upper" : 2,
@@ -6784,7 +6781,7 @@
                                     "occurrences" : "1..1",
                                     "constraint" : [ {
                                       "lower" : 0.0,
-                                      "upper" : 5.0,
+                                      "upper" : 5.5,
                                       "lowerIncluded" : true,
                                       "upperIncluded" : true,
                                       "lowerUnbounded" : false,
@@ -6797,7 +6794,6 @@
                                   "children" : [ {
                                     "@type" : "C_INTEGER",
                                     "rmTypeName" : "INTEGER",
-                                    "occurrences" : "1..1",
                                     "constraint" : [ {
                                       "lower" : 2,
                                       "upper" : 2,
@@ -6868,7 +6864,7 @@
                                     "occurrences" : "1..1",
                                     "constraint" : [ {
                                       "lower" : 0.0,
-                                      "upper" : 5.0,
+                                      "upper" : 5.5,
                                       "lowerIncluded" : true,
                                       "upperIncluded" : true,
                                       "lowerUnbounded" : false,
@@ -6881,7 +6877,6 @@
                                   "children" : [ {
                                     "@type" : "C_INTEGER",
                                     "rmTypeName" : "INTEGER",
-                                    "occurrences" : "1..1",
                                     "constraint" : [ {
                                       "lower" : 2,
                                       "upper" : 2,
