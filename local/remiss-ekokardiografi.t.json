@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.3",
-      "build_uid" : "c6a4ec58-39fb-418c-ae56-807857e44561",
-      "MD5-CAM-1.0.1" : "4ca7b958d011d966463fea0d467d92fd",
+      "sem_ver" : "1.0.0-alpha.4",
+      "build_uid" : "810900ea-4217-425d-abc9-c441bf42494c",
+      "MD5-CAM-1.0.1" : "60ae5050b1e0d21622f1f5a72d147ec8",
       "PARENT:MD5-CAM-1.0.1" : "B8AD0C7EB492491CE6F7968C1AFFB40C"
     },
     "details" : {
@@ -915,7 +915,15 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Requester organisation",
+            "description" : "An entity comprising one or more people and having a particular purpose.",
+            "comment" : "For example: a company, institution, association, network, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who provide care or support."
+          }
+        },
         "nb" : { },
         "de" : { },
         "sv" : { }
@@ -3354,7 +3362,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Organisation (2)",
+            "text" : "Receiver organisation",
             "description" : "An entity comprising one or more people and having a particular purpose.",
             "comment" : "For example: a company, institution, association, network, department, community group, healthcare practice group, payer/insurer, care team, or a group of neighbours who provide care or support."
           }
