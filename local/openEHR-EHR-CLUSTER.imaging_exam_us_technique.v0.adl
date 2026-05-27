@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d12a91e9f3d69ddfee9cf18f07bd0be0">
+		["MD5-CAM-1.0.1"] = <"64786446f2a9144722702bf9d8445d8e">
 		["build_uid"] = <"0a87d244-c7aa-3381-ac03-e2ed322a35b1">
 	>
 
@@ -83,40 +83,16 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Area algorithm
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::at0019]    -- Continuity equation
-						}
-					}
-				}
-			}
-			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Mass algorithm
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::at0017]    -- Devereux method
-						}
-					}
-				}
-			}
-			ELEMENT[at0030] occurrences matches {0..1} matches {    -- Pressure algorithm
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::at0032]    -- sPAP = TR Vmax^2 * 4 + RAP
-						}
-					}
-				}
-			}
-			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Volume algorithm
+			ELEMENT[at0034] occurrences matches {0..1} matches {    -- Algorithm
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
-							at0015,    -- Simpson's method
-							at0016]    -- Teichholz method
+							at0035,    -- Continuity equation
+							at0036,    -- Devereux method
+							at0037,    -- Simpson's method
+							at0038,    -- Teichholz method
+							at0039]    -- sPAP = TR Vmax^2 * 4 + RAP
 						}
 					}
 				}
@@ -142,18 +118,6 @@ ontology
 				>
 				["at0003"] = <
 					text = <"Mode">
-					description = <"">
-				>
-				["at0004"] = <
-					text = <"Volume algorithm">
-					description = <"">
-				>
-				["at0005"] = <
-					text = <"Mass algorithm">
-					description = <"">
-				>
-				["at0006"] = <
-					text = <"Area algorithm">
 					description = <"">
 				>
 				["at0007"] = <
@@ -186,22 +150,6 @@ ontology
 				>
 				["at0014"] = <
 					text = <"Speckle tracking">
-					description = <"">
-				>
-				["at0015"] = <
-					text = <"Simpson's method">
-					description = <"">
-				>
-				["at0016"] = <
-					text = <"Teichholz method">
-					description = <"">
-				>
-				["at0017"] = <
-					text = <"Devereux method">
-					description = <"">
-				>
-				["at0019"] = <
-					text = <"Continuity equation">
 					description = <"">
 				>
 				["at0020"] = <
@@ -240,16 +188,32 @@ ontology
 					text = <"Tissue doppler">
 					description = <"">
 				>
-				["at0030"] = <
-					text = <"Pressure algorithm">
-					description = <"">
-				>
-				["at0032"] = <
-					text = <"sPAP = TR Vmax^2 * 4 + RAP">
-					description = <"">
-				>
 				["at0033"] = <
 					text = <"PSAX">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Algorithm">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Continuity equation">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Devereux method">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Simpson's method">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Teichholz method">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"sPAP = TR Vmax^2 * 4 + RAP">
 					description = <"">
 				>
 			>
