@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.5",
-      "build_uid" : "4b1cd47c-cdc1-4bf5-9d0d-99c4897ffc5f",
-      "MD5-CAM-1.0.1" : "2f9ebb35b7c474e503073400f58cf227",
+      "sem_ver" : "1.0.0-alpha.6",
+      "build_uid" : "20b058c0-2a53-43a7-b8a8-281f6eb2b542",
+      "MD5-CAM-1.0.1" : "de69ba281fbda388ba2bd4c2914f1bef",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -802,12 +802,12 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "SNOMED-CT"
+                    "value" : "http://snomed.info/sct"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                  "selectedTerminologies" : [ "http://snomed.info/sct" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "SNOMED-CT",
+                    "terminologyId" : "http://snomed.info/sct",
                     "code" : "80891009",
                     "value" : "Heart"
                   } ]
