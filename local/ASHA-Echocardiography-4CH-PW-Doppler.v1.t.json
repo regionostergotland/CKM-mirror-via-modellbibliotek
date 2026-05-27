@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.3",
-      "build_uid" : "0eaaed08-1dd0-4acc-a4f6-e24e670aadd0",
-      "MD5-CAM-1.0.1" : "bae54ef854863adbbaec3aeb70f13d7b",
+      "sem_ver" : "1.0.0-alpha.4",
+      "build_uid" : "373a0e8d-ee42-426c-b721-6f235d06e1a1",
+      "MD5-CAM-1.0.1" : "7b0df6848d17f343742e94a4543d573e",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -682,7 +682,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "6534e4149ff237849364b22e38c42f94"
+        "PARENT:MD5-CAM-1.0.1" : "fcdb79278d39a337093528c19440fd04"
       },
       "details" : {
         "de" : {
@@ -1150,7 +1150,33 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0.15.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "122" ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "units",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "constraint" : [ "mm" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
