@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.4",
-      "build_uid" : "18711e47-64a2-4b62-9ae5-4ec08eac43c0",
-      "MD5-CAM-1.0.1" : "b266cb2922f2300ce1253292652d52f2",
+      "sem_ver" : "1.0.0-alpha.5",
+      "build_uid" : "38657eda-75d3-466d-94a3-43d7d1845cdc",
+      "MD5-CAM-1.0.1" : "bf89b87015be9a1bade1feb03c18a8b6",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -802,6 +802,18 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "http://snomed.info/sct",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "80891009",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Heart",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
