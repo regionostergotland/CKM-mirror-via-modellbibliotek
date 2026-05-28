@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.7",
+      "sem_ver" : "1.0.0-alpha.8",
       "build_uid" : "5a5b9d1a-f616-4ccb-9623-73a30364aed9",
-      "MD5-CAM-1.0.1" : "ab2c6f7b3bcb868708089661a0307286",
+      "MD5-CAM-1.0.1" : "8733a943e654d25d0d20e222bf6d8684",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -164,12 +164,12 @@
                             "rmTypeName" : "TERMINOLOGY_CODE",
                             "occurrences" : "0..1",
                             "terminologyId" : {
-                              "value" : "SNOMED-CT"
+                              "value" : "http://snomed.info/sct"
                             },
                             "constraint" : [ ],
-                            "selectedTerminologies" : [ "SNOMED-CT" ],
+                            "selectedTerminologies" : [ "http://snomed.info/sct" ],
                             "includedExternalTerminologyCodes" : [ {
-                              "terminologyId" : "SNOMED-CT",
+                              "terminologyId" : "http://snomed.info/sct",
                               "code" : "40701008",
                               "value" : "Echocardiography"
                             } ]
