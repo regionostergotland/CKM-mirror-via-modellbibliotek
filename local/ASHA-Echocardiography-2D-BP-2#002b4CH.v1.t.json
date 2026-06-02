@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.10",
-      "build_uid" : "623c36bf-589b-4fb5-8217-f260cb4bd0e5",
-      "MD5-CAM-1.0.1" : "5712adc2c8eb1edda75903f9c9af92cd",
+      "sem_ver" : "1.0.0-alpha.11",
+      "build_uid" : "a82a96ed-c3e9-4e38-b432-2295654acba6",
+      "MD5-CAM-1.0.1" : "63d909ab9a47bbc325d5c7c9d12d70c4",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -541,7 +541,7 @@
             "nodeId" : "at0041.1",
             "attributes" : [ ],
             "attributeTuples" : [ ],
-            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-imaging_exam_us_technique_copy-001.v0",
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-imaging_exam_us_technique-001.v0",
             "referenceType" : "archetypeOverlay"
           } ]
         } ],
@@ -2454,7 +2454,7 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "e3a5d5d9-f077-48f6-a592-2868c8997366",
+    "uid" : "7db5481a-2c53-4f9b-82d7-bca0a11eaa1d",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -2463,15 +2463,15 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "93e064a0f3e8277edae1b5f94d66eaa0"
+        "PARENT:MD5-CAM-1.0.1" : "64786446f2a9144722702bf9d8445d8e"
       },
       "details" : { }
     },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.imaging_exam_us_technique_copy.v0",
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.imaging_exam_us_technique.v0",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-imaging_exam_us_technique_copy-001.v0"
+      "value" : "openEHR-EHR-CLUSTER.ovl-imaging_exam_us_technique-001.v0"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -2490,7 +2490,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "defaultValue" : {
                 "defining_code" : {
                   "terminology_id" : {
@@ -2509,7 +2508,7 @@
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
+                  "occurrences" : "1..1",
                   "terminologyId" : {
                     "value" : "http://snomed.info/sct"
                   },
@@ -2573,7 +2572,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.4" ],
+                  "constraint" : [ "ac0.5" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -2602,7 +2601,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.1" ],
+                  "constraint" : [ "ac0.6" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -2620,7 +2619,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "defaultValue" : {
                 "defining_code" : {
                   "terminology_id" : {
@@ -2639,7 +2637,7 @@
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "0..1",
+                  "occurrences" : "1..1",
                   "terminologyId" : {
                     "value" : "http://snomed.info/sct"
                   },
@@ -2699,7 +2697,7 @@
                   "terminologyId" : {
                     "value" : "local"
                   },
-                  "constraint" : [ "ac0.5" ],
+                  "constraint" : [ "ac0.11" ],
                   "selectedTerminologies" : [ ]
                 } ]
               } ],
@@ -2716,22 +2714,22 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.4",
-            "description" : ""
-          },
           "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.5",
+            "description" : ""
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.6",
+            "description" : ""
+          },
+          "ac0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.11",
             "description" : ""
           }
         }
@@ -2739,29 +2737,49 @@
       "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : {
-        "ac0.1" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.1",
-          "members" : [ "at0026", "at0027", "at0028" ]
-        },
         "ac0.2" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
-          "members" : [ "at0035", "at0036", "at0037", "at0038", "at0039" ]
+          "members" : [ "at0020", "at0021", "at0022", "at0023", "at0024", "at0033" ]
         },
         "ac0.3" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.3",
-          "members" : [ "at0035", "at0036", "at0037", "at0038", "at0039" ]
+          "members" : [ ]
         },
         "ac0.4" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
-          "members" : [ "at0007", "at0008", "at0009" ]
+          "members" : [ ]
         },
         "ac0.5" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.5",
+          "members" : [ "at0007", "at0008", "at0009" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0026", "at0027", "at0028" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
           "members" : [ "at0035", "at0036", "at0037", "at0038", "at0039" ]
         }
       }
