@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.6",
-      "build_uid" : "573371d6-6704-4017-b40b-df06e2cc40ba",
-      "MD5-CAM-1.0.1" : "03652ae03f6fe532fdaf1da8d7dda99c",
+      "sem_ver" : "1.0.0-alpha.7",
+      "build_uid" : "e51cff1e-b22f-42ff-9e29-8c4f362548a0",
+      "MD5-CAM-1.0.1" : "135427e13e2cbb4afff4dba63650c502",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -2313,9 +2313,14 @@
               "rmTypeName" : "DV_CODED_TEXT",
               "defaultValue" : {
                 "defining_code" : {
-                  "code_string" : "at0023",
+                  "terminology_id" : {
+                    "value" : "http://snomed.info/sct",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "399214001",
                   "@type" : "CODE_PHRASE"
                 },
+                "value" : "4 chamber",
                 "@type" : "DV_CODED_TEXT"
               },
               "attributes" : [ {
@@ -2326,10 +2331,35 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
-                    "value" : "local"
+                    "value" : "http://snomed.info/sct"
                   },
-                  "constraint" : [ "ac0.7" ],
-                  "selectedTerminologies" : [ ]
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "399139001",
+                    "value" : "PLAX"
+                  }, {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "399232001",
+                    "value" : "2 chamber"
+                  }, {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "399339008",
+                    "value" : "3 chamber"
+                  }, {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "399214001",
+                    "value" : "4 chamber"
+                  }, {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "398994001",
+                    "value" : "5 chamber"
+                  }, {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "399306005",
+                    "value" : "PSAX"
+                  } ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -2412,9 +2442,14 @@
               "rmTypeName" : "DV_CODED_TEXT",
               "defaultValue" : {
                 "defining_code" : {
-                  "code_string" : "at0013",
+                  "terminology_id" : {
+                    "value" : "http://snomed.info/sct",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "1172738002",
                   "@type" : "CODE_PHRASE"
                 },
+                "value" : "Doppler",
                 "@type" : "DV_CODED_TEXT"
               },
               "attributes" : [ {
@@ -2425,10 +2460,31 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
-                    "value" : "local"
+                    "value" : "http://snomed.info/sct"
                   },
-                  "constraint" : [ "ac0.9" ],
-                  "selectedTerminologies" : [ ]
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "399155008",
+                    "value" : "M-mode"
+                  }, {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "399064001",
+                    "value" : "2D"
+                  }, {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "426865009",
+                    "value" : "3D"
+                  }, {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "1172738002",
+                    "value" : "Doppler"
+                  }, {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "830079008",
+                    "value" : "Speckle tracking"
+                  } ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -2478,22 +2534,10 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.7",
-            "description" : ""
-          },
           "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.8",
-            "description" : ""
-          },
-          "ac0.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.9",
             "description" : ""
           }
         }
@@ -2545,6 +2589,36 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.9",
           "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0020", "at0021", "at0022", "at0023", "at0024", "at0033" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
+          "members" : [ ]
         }
       }
     },
