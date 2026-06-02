@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.5",
+      "sem_ver" : "2.0.0-alpha.5",
       "build_uid" : "96e16fb8-7795-4ee5-a14f-abc38f257e11",
-      "MD5-CAM-1.0.1" : "c9d1bed8d1f95f1c8de941ded9881a9b",
+      "MD5-CAM-1.0.1" : "e75a287703dbe4546feca3e7a6551ba1",
       "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835",
       "original_language" : "ISO_639-1::en"
     },
@@ -5062,37 +5062,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "defaultValue" : {
-                "defining_code" : {
-                  "terminology_id" : {
-                    "value" : "http://snomed.info/sct",
-                    "@type" : "TERMINOLOGY_ID"
-                  },
-                  "code_string" : "399139001",
-                  "@type" : "CODE_PHRASE"
-                },
-                "value" : "Parasternal long axis view",
-                "@type" : "DV_CODED_TEXT"
-              },
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "http://snomed.info/sct"
-                  },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "http://snomed.info/sct" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "http://snomed.info/sct",
-                    "code" : "399139001",
-                    "value" : "Parasternal long axis view"
-                  } ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
           } ],
