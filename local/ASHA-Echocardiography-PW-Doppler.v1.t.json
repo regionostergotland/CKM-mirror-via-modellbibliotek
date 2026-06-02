@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "1.0.0-alpha.6",
       "build_uid" : "55ad4d61-c363-455e-b73a-a42dd74ebe83",
-      "MD5-CAM-1.0.1" : "3f978cbdbe240b16441ec9c3cbca4cdd",
+      "MD5-CAM-1.0.1" : "1f16c835c025cab38e4a72c18a404f09",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -2339,6 +2339,18 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "http://snomed.info/sct",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "1172738002",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Doppler",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
