@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5ce293d7da4733a61113362cefbb71f4">
+		["MD5-CAM-1.0.1"] = <"93e064a0f3e8277edae1b5f94d66eaa0">
 		["build_uid"] = <"0a87d244-c7aa-3381-ac03-e2ed322a35b1">
 	>
 
@@ -32,17 +32,7 @@ definition
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..*} matches {    -- View
 				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0020,    -- PLAX
-							at0021,    -- 2 chamber
-							at0022,    -- 3 chamber
-							at0023,    -- 4 chamber
-							at0024,    -- 5 chamber
-							at0033]    -- PSAX
-						}
-					}
+					DV_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- 2D Method
@@ -71,16 +61,7 @@ definition
 			}
 			ELEMENT[at0003] occurrences matches {0..*} matches {    -- Mode
 				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0010,    -- M-mode
-							at0011,    -- 2D
-							at0012,    -- 3D
-							at0013,    -- Doppler
-							at0014]    -- Speckle tracking
-						}
-					}
+					DV_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0034] occurrences matches {0..1} matches {    -- Algorithm
@@ -132,46 +113,6 @@ ontology
 					text = <"Triplane">
 					description = <"">
 				>
-				["at0010"] = <
-					text = <"M-mode">
-					description = <"">
-				>
-				["at0011"] = <
-					text = <"2D">
-					description = <"">
-				>
-				["at0012"] = <
-					text = <"3D">
-					description = <"">
-				>
-				["at0013"] = <
-					text = <"Doppler">
-					description = <"">
-				>
-				["at0014"] = <
-					text = <"Speckle tracking">
-					description = <"">
-				>
-				["at0020"] = <
-					text = <"PLAX">
-					description = <"">
-				>
-				["at0021"] = <
-					text = <"2 chamber">
-					description = <"">
-				>
-				["at0022"] = <
-					text = <"3 chamber">
-					description = <"">
-				>
-				["at0023"] = <
-					text = <"4 chamber">
-					description = <"">
-				>
-				["at0024"] = <
-					text = <"5 chamber">
-					description = <"">
-				>
 				["at0025"] = <
 					text = <"Doppler Method">
 					description = <"">
@@ -186,10 +127,6 @@ ontology
 				>
 				["at0028"] = <
 					text = <"Tissue doppler">
-					description = <"">
-				>
-				["at0033"] = <
-					text = <"PSAX">
 					description = <"">
 				>
 				["at0034"] = <
