@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.6",
+      "sem_ver" : "1.0.0-alpha.7",
       "build_uid" : "ecb6db10-b324-4b75-ae01-56c481261a7c",
-      "MD5-CAM-1.0.1" : "d3495904237e6fc08cb8b0a1f40ab4bd",
+      "MD5-CAM-1.0.1" : "53bfdd3f1e802d48a9938caf596bb234",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -2341,9 +2341,14 @@
               "rmTypeName" : "DV_CODED_TEXT",
               "defaultValue" : {
                 "defining_code" : {
-                  "code_string" : "at0011",
+                  "terminology_id" : {
+                    "value" : "http://snomed.info/sct",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "399064001",
                   "@type" : "CODE_PHRASE"
                 },
+                "value" : "2D",
                 "@type" : "DV_CODED_TEXT"
               },
               "attributes" : [ {
@@ -2354,10 +2359,31 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
-                    "value" : "local"
+                    "value" : "http://snomed.info/sct"
                   },
-                  "constraint" : [ "ac0.8" ],
-                  "selectedTerminologies" : [ ]
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "http://snomed.info/sct" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "399155008",
+                    "value" : "M-mode"
+                  }, {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "399064001",
+                    "value" : "2D"
+                  }, {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "426865009",
+                    "value" : "3D"
+                  }, {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "1172738002",
+                    "value" : "Doppler"
+                  }, {
+                    "terminologyId" : "http://snomed.info/sct",
+                    "code" : "830079008",
+                    "value" : "Speckle tracking"
+                  } ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -2418,12 +2444,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.7",
             "description" : ""
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.8",
-            "description" : ""
           }
         }
       },
@@ -2469,6 +2489,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.8",
           "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ "at0010", "at0011", "at0012", "at0013", "at0014" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ ]
         }
       }
     },
