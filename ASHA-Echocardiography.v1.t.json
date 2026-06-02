@@ -8,7 +8,7 @@
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
-      "codeString" : "in_development"
+      "codeString" : "unmanaged"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -19,8 +19,8 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.5",
-      "build_uid" : "c8427135-a881-476e-9297-45f8fcca6350",
+      "sem_ver" : "1.0.0-alpha.6",
+      "build_uid" : "be6a3502-c4fa-4e09-8fd0-bfa39e005bc2",
       "MD5-CAM-1.0.1" : "ee782d53024a2dc2fb2aa91771df4cd9",
       "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
     },
@@ -649,7 +649,7 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "e59733fe-625f-3f27-8797-b26c7fc53c5d",
+  "buildUid" : "91d48937-1d92-3fa6-9f53-1476f130d97f",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
@@ -2381,7 +2381,57 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "lower",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DURATION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_DURATION",
+                                  "rmTypeName" : "DURATION",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : "PT0S",
+                                    "upper" : "P200Y",
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : false,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          }, {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "upper",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DURATION",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_DURATION",
+                                  "rmTypeName" : "DURATION",
+                                  "occurrences" : "1..1",
+                                  "constraint" : [ {
+                                    "lower" : "PT0S",
+                                    "upper" : "P200Y",
+                                    "lowerIncluded" : true,
+                                    "upperIncluded" : false,
+                                    "lowerUnbounded" : false,
+                                    "upperUnbounded" : false
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
