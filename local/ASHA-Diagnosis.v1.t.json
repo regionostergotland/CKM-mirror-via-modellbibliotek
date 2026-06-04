@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.4",
+      "sem_ver" : "1.0.0-alpha.5",
       "build_uid" : "1c57bf0a-bbf3-45df-b881-08767f854b5d",
-      "MD5-CAM-1.0.1" : "23f2629e714a88394590a7920a0502ea",
+      "MD5-CAM-1.0.1" : "ef985be8f28dcb63b49fb1f33e345867",
       "PARENT:MD5-CAM-1.0.1" : "89470078C0364ACBA5B6A5F286E56C79"
     },
     "details" : {
@@ -534,7 +534,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "diagnoskod-ekokardiografi",
+          "text" : "ASHA Diagnoskod",
           "description" : "Detaljer om enskilt identifierat hälsotillstånd, skada, funktionshinder eller något annat problem som påverkar individens fysiska, psykiska och eller sociala välbefinnande.",
           "comment" : "Gränsen mellan problem och diagnos är flytande. En ökad detaljnivå och mer stödjande evidens väger normalt över mot att tillståndet benämns diagnos."
         },
