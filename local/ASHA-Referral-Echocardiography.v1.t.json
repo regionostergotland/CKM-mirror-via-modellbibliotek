@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.5",
-      "build_uid" : "fc2c3baf-67a2-4489-990e-ca0e7e478c4d",
-      "MD5-CAM-1.0.1" : "6f574482bfdadf101b863bed6b863c15",
+      "sem_ver" : "1.0.0-alpha.6",
+      "build_uid" : "86dff464-8806-4884-b8ee-56b91a1d1d1b",
+      "MD5-CAM-1.0.1" : "b92b83a8346cfcdf6015b77df94ac532",
       "PARENT:MD5-CAM-1.0.1" : "B8AD0C7EB492491CE6F7968C1AFFB40C"
     },
     "details" : {
@@ -458,7 +458,7 @@
                           }, {
                             "terminologyId" : "local_terms",
                             "code" : "IE",
-                            "value" : "Inneliggande|Ej lfyttbar"
+                            "value" : "Inneliggande|Ej flyttbar"
                           }, {
                             "terminologyId" : "local_terms",
                             "code" : "P",
