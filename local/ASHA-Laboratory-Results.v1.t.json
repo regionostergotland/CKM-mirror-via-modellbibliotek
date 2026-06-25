@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.1",
-      "build_uid" : "a6471ec2-d9a5-4529-ae8e-b4ebaea5a1bb",
-      "MD5-CAM-1.0.1" : "fcb3503382dd924cc5f5b4a3a2cbaf75",
+      "sem_ver" : "1.0.0-alpha.2",
+      "build_uid" : "91a888bd-e9dc-42a3-8933-72033a67b5e0",
+      "MD5-CAM-1.0.1" : "0997cfc44e4f73c6dd89a2c8a18e79c9",
       "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
     },
     "details" : {
@@ -2764,8 +2764,48 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
               "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "380" ]
+                } ]
+              } ],
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "1" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lowerIncluded" : false,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : true,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                } ]
+              } ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -3726,8 +3766,48 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
               "occurrences" : "1..1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "380" ]
+                } ]
+              } ],
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "1" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lowerIncluded" : false,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : true,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                } ]
+              } ]
             } ]
           } ],
           "attributeTuples" : [ ]
