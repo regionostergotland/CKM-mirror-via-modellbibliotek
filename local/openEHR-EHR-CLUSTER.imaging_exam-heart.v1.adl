@@ -35,57 +35,45 @@ description
 		["email"] = <"heather.leslie@atomicainformatics.com">
 	>
 	lifecycle_state = <"published">
-	other_contributors = <"Andreas Abildgaard, OUS, Norway","Marit Alice Venheim, Helse Vest IKT, Norway (Nasjonal IKT redaktør)","Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)","Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)","SB Bhattacharyya, Bhattacharyyas Clinical Records Research & Informatics LLP, India","Randi Brendberg, Helse Nord RHF, Norway","Gunn Elin Blakkisrud, DIPS ASA, Norway","Peter Fedorcsak, University of Oslo, Norway (openEHR Editor)","Kåre Flø, DIPS ASA, Norway","Evelyn Hovenga, EJSH Consulting, Australia","Kija Indrearne, Helse Bergen, Norway","Mikkel Johan Gaup Grønmo, Regional forvaltning EPJ, Helse Nord, Norway (Nasjonal IKT redaktør)","Aud Jorunn Mjelstad, Helse Bergen, Norway","Anjali Kulkarni, Karkinos, India","Kanika Kuwelker, Helse Vest IKT, Norway (Nasjonal IKT redaktør)","Liv Laugen, ​Oslo University Hospital, Norway, Norway (openEHR Editor)","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Svenne Naumann, Finnmarkssykehuset, Norway","Mikael Nyström, Cambio Healthcare Systems AB, Sweden","Bjørn Næss, DIPS ASA, Norway","Natalia Strauch, Medizinische Hochschule Hannover, Germany","Norwegian Review Summary, Norwegian Public Hospitals, Norway","John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)">
+	other_contributors = <"Andreas Abildgaard, OUS, Norway","Marit Alice Venheim, Helse Vest IKT, Norway (Nasjonal IKT redaktør)","Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)","Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)","SB Bhattacharyya, Bhattacharyyas Clinical Records Research & Informatics LLP, India","Randi Brendberg, Helse Nord RHF, Norway","Gunn Elin Blakkisrud, DIPS ASA, Norway","Peter Fedorcsak, University of Oslo, Norway (openEHR Editor)","Kåre Flø, DIPS ASA, Norway","Evelyn Hovenga, EJSH Consulting, Australia","Kija Indrearne, Helse Bergen, Norway","Mikkel Johan Gaup Grønmo, Regional forvaltning EPJ, Helse Nord, Norway (Nasjonal IKT redaktør)","Aud Jorunn Mjelstad, Helse Bergen, Norway","Anjali Kulkarni, Karkinos, India","Kanika Kuwelker, Helse Vest IKT, Norway (Nasjonal IKT redaktør)","Liv Laugen, ​Oslo University Hospital, Norway, Norway (openEHR Editor)","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Svenne Naumann, Finnmarkssykehuset, Norway","Mikael Nyström, Cambio Healthcare Systems AB, Sweden","Bjørn Næss, DIPS ASA, Norway","Natalia Strauch, Medizinische Hochschule Hannover, Germany","Norwegian Review Summary, Norwegian Public Hospitals, Norway","John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)","David Wetterbro, Region Ostergotland, Sweden","Klara Persson, Region Ostergotland, Sweden">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
-			purpose = <"Zur Darstellung der Befunde einer radiologischen Untersuchung einer bestimmten Körperstruktur oder -region und deren Interpretation.">
+			purpose = <"*To record the findings on a radiological examination of the heart, and their interpretation. (en)">
 			keywords = <"Befund, Ergebnis, Bildgebung, Körper, Organ, System, Struktur, Region, Beobachtung, Diagnostik, Radiologie, Bild", ...>
-			use = <"Zur Erfassung der Befunde einer radiologischen Untersuchung einer bestimmten Körperstruktur oder -region und ihrer Interpretation.
+			use = <"*Use to record the findings on radiological examination of the heart, and their interpretation.
 
-Der vorgesehene Anwendungsbereich für die Archetypenfamilie CLUSTER.imaging_exam ist die Erfassung aller detaillierten Befunde einer radiologischen Untersuchung. Die Familie der spezialisierten Archetypen ist von diesem generischen übergeordneten Archetyp CLUSTER.imaging_exam abgeleitet, der als universelles Muster für die Aufzeichnung aller Befunde in einer bestimmten Körperstruktur oder -region und unter Verwendung einer beliebigen Modalität konzipiert ist.
+The intended scope for this archetype is to record detailed findings on imaging examination of the heart using any modality.
 
-Dieser Archetyp und die mit ihm verbundenen Spezialisierungen sind so konzipiert, dass sie in den SLOT „Bildgebende Untersuchung einer Körperstruktur“ in OBSERVATION.imaging_exam_result oder in den SLOT „Zusätzliche Details“ in anderen relevanten Archetypen von CLUSTER.imaging_exam verschachtelt werden, können aber auch in anderen ENTRY- oder CLUSTER-Archetypen verwendet werden, sofern dies klinisch sinnvoll ist. Wenn dieser Archetyp oder seine Spezialisierungen um weitere Ebenen detaillierter Befunde erweitert werden müssen, können zusätzliche Instanzen des Archetyps CLUSTER.imaging_exam oder seiner Spezialisierungen im SLOT „Additional details“ verschachtelt werden.
+This archetype is designed to be nested within the 'Structured imaging findings' SLOT in the OBSERVATION.imaging_exam_result or within other relevant CLUSTER.imaging_exam archetypes, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. (en)">
+			misuse = <"*Not to be used to record findings observed outside the heart. Use a separate instance of one or more archetypes from the CLUSTER.imaging_exam family for this purpose.
 
-Jede struktur- oder regionenspezifische Ausprägung dieses übergeordneten Archetyps soll alle erwarteten und relevanten Befunde umfassen. Zum Beispiel unterstützt CLUSTER.imaging_exam-ovary die Aufzeichnung aller Befunde, die bei der Berichterstattung über die Bildgebung des Eierstocks mit einer beliebigen radiologischen Modalität zu erwarten sind, einschließlich der Größe des Eierstocks, der Größe des größten Follikels sowie des Durchmessers und der Beschreibung bestimmter Follikel. In ähnlicher Weise enthält CLUSTER.imaging_exam-lymph_node_group Datenelemente, die zur Erfassung spezifischer Befunde einer Lymphknotengruppe erforderlich sind, einschließlich ihrer genauen oder relativen Lage im Körper und der Anzahl der Lymphknoten in der Gruppe. 
-
-Wenn für eine Körperregion oder -struktur keine entsprechende Spezialisierung verfügbar ist, kann dieser generische Archetyp zur Erfassung aller relevanten Befunde, einschließlich der Identifizierung der Struktur oder Region, verwendet werden.">
-			misuse = <"Nicht zur Darstellung von Befunden verwenden, die außerhalb der identifizierten Körperstruktur oder -region beobachtet wurden. Verwenden Sie zu diesem Zweck eine separate Instanz eines oder mehrerer Archetypen aus der Familie CLUSTER.imaging_exam.
-
-Darf nicht verwendet werden, um Details in Bezug auf die Gesamtbefunde, den Kontext oder technische Details in Bezug auf ein vollständiges Testergebnis einer bildgebenden Untersuchung darzustellen. Verwenden Sie zu diesem Zweck das OBSERVATION.imaging_exam_result. Zum Beispiel Kommentare zur Studienqualität, zu Differenzialdiagnosen und zum Gesamteindruck.">
+Not to be used to record details related to the overall findings, context or technical details related to a complete imaging examination test result. Use the OBSERVATION.imaging_exam_result for this purpose. For example, comments on the study quality, differential diagnoses, and overall impression. (en)">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
-			purpose = <"For å registrere funn og tolkning av radiologisk undersøkelse av et definert organ eller en kroppsdel.">
+			purpose = <"*To record the findings on a radiological examination of the heart, and their interpretation. (en)">
 			keywords = <"funn","observasjon","bildediagnostikk","kropp","organ","kroppsstruktur","diagnostisk","radiologi","bilde">
-			use = <"Bruk for å registrere funn og tolkning av radiologisk undersøkelse av et definert organ eller en kroppsdel.
+			use = <"*Use to record the findings on radiological examination of the heart, and their interpretation.
 
-Det tiltenkte formålet med hele gruppen av arketyper innen CLUSTER.imaging_exam (Bildediagnostisk undersøkelse - kroppsstruktur) er å kunne registrere alle detaljerte funn og observasjoner ved radiologiske undersøkelser. Gruppen av spesialiserte arketyper er avledet fra denne generiske forelder-arketypen, CLUSTER.imaging_exam (Bildediagnostisk undersøkelse - kroppsstruktur), og har et generelt mønster for å registrere ethvert funn i ethvert organ eller kroppsdel og ved bruk av enhver modalitet.
+The intended scope for this archetype is to record detailed findings on imaging examination of the heart using any modality.
 
-Denne arketypen og dens tilhørende gruppe av spesialiseringer er utformet for å nøstes i SLOT'et \"Strukturerte funn\" i OBSERVATION.imaging_exam_result (Bildediagnostisk svar), eller i SLOT'et \"Ytterligere detaljer\" i en annen relevant CLUSTER.imaging_exam - arketype (Bildediagnostisk undersøkelse - XYZ, der \"XYZ\" er nærmere angitt organ). Men den kan også brukes i enhver annen ENTRY- eller CLUSTER-arketype der det er klinisk passende. Hvis denne arketypen, eller en spesialisering av denne, må utvides med flere nivåer med detaljerte funn eller observasjoner, kan flere forekomster av arketypen eller dens spesialiseringer nøstes i SLOT'et \"Ytterligere detaljer\".
+This archetype is designed to be nested within the 'Structured imaging findings' SLOT in the OBSERVATION.imaging_exam_result or within other relevant CLUSTER.imaging_exam archetypes, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. (en)">
+			misuse = <"*Not to be used to record findings observed outside the heart. Use a separate instance of one or more archetypes from the CLUSTER.imaging_exam family for this purpose.
 
-Hver organ- eller regionspesifikk spesialisering av denne overordnede arketypen er ment å inkludere alle rimelig forventede og relevante funn. For eksempel vil CLUSTER.imaging_exam-overy (Bildediagnostisk undersøkelse - eggstokk) dekke registrering av alle funn eller observasjoner som man forventer å finne ved radiologisk undersøkelse av eggstokk, uavhengig av modalitet. Dette inkluderer størrelse av eggstokk, dimensjonen av den største follikkelen og diameter og beskrivelse av spesifikke follikler. På samme måte vil CLUSTER.imaging_exam-lymph_node_group (Bildediagnostisk undersøkelse - lymfeknutegruppe) inneholde dataelementer som er nødvendig for å registrere spesifikke funn av en lymfeknutegruppe, inkludert den nøyaktige eller relative plassering i kroppen og antall lymfeknuter i gruppen.
-
-Dersom en passende spesialisering ikke er tilgjengelig for et organ eller kroppsdel, kan denne generiske arketypen brukes for å registrere alle relevante funn, inkludert identifikasjon av organ eller kroppsdel.">
-			misuse = <"Skal ikke brukes til å registrere funn som er gjort utenom det definerte organet eller den definerte kroppsdelen. Bruk en egen instans av en eller flere arketyper innen gruppen av CLUSTER.imaging_exam - arketyper (Undersøkelsesfunn) for dette formålet.
-
-Skal ikke brukes til å registrere overordnede undersøkelsesfunn, kontekst eller tekniske detaljer relatert til bildeundersøkelsen. Bruk arketypen OBSERVATION.imaging_exam_result (Bildediagnostisk svar) for å registrere for eksempel kommentar om undersøkelseskvalitet, differensialdiagnose og overordnet konklusjon.">
+Not to be used to record details related to the overall findings, context or technical details related to a complete imaging examination test result. Use the OBSERVATION.imaging_exam_result for this purpose. For example, comments on the study quality, differential diagnoses, and overall impression. (en)">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"To record the findings on radiological examination of a specified body structure or region, and their interpretation.">
+			purpose = <"To record the findings on a radiological examination of the heart, and their interpretation.">
 			keywords = <"finding, imaging, body, system, structure, region, observation, diagnostic, radiology, image", ...>
 			copyright = <"© openEHR Foundation">
-			use = <"Use to record the findings on radiological examination of a specified body structure or region, and their interpretation.
+			use = <"Use to record the findings on radiological examination of the heart, and their interpretation.
 
-The intended scope for the CLUSTER.imaging_exam family of archetypes to be used to record all detailed findings on radiological examination. The family of specialised archetypes are derived from this generic parent archetype, CLUSTER.imaging_exam, designed as a universal pattern for recording any findings in any specified body structure or region and using any modality.
+The intended scope for this archetype is to record detailed findings on imaging examination of the heart using any modality.
 
-This archetype and its related family of specialisations are designed to be nested within the 'Structured imaging findings' SLOT in the OBSERVATION.imaging_exam_result or within the 'Additional details' SLOT in other relevant CLUSTER.imaging_exam archetypes, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. If this archetype or its specialisations need to be extended with further levels of detailed findings, additional instances of the CLUSTER.imaging_exam or its specialisations can be nested in the 'Additional details' SLOT.
-
-Each structure- or region-specific specialisation of this parent archetype is intended to be inclusive of all reasonably anticipated and relevant findings. For example, the CLUSTER.imaging_exam-ovary will support recording of all findings that would be expected in reporting on imaging of the ovary using any radiological modality, including the size of the ovary, largest follicle size and the diameter and description of specific follicles. Similarly, CLUSTER.imaging_exam-lymph_node_group will contain data elements required to record specific findings of a lymph node group, including its precise or relative location in the body and the number of lymph nodes in the group. 
-
-If an appropriate specialisation is not available for a body structure or region, this generic archetype can be used to record all relevant findings, including identification of the structure or region.">
-			misuse = <"Not to be used to record findings observed outside the identified body structure or region. Use a separate instance of one or more archetypes from the CLUSTER.imaging_exam family for this purpose.
+This archetype is designed to be nested within the 'Structured imaging findings' SLOT in the OBSERVATION.imaging_exam_result or within other relevant CLUSTER.imaging_exam archetypes, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.">
+			misuse = <"Not to be used to record findings observed outside the heart. Use a separate instance of one or more archetypes from the CLUSTER.imaging_exam family for this purpose.
 
 Not to be used to record details related to the overall findings, context or technical details related to a complete imaging examination test result. Use the OBSERVATION.imaging_exam_result for this purpose. For example, comments on the study quality, differential diagnoses, and overall impression.">
 		>
@@ -96,7 +84,7 @@ Not to be used to record details related to the overall findings, context or tec
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fcdb79278d39a337093528c19440fd04">
+		["MD5-CAM-1.0.1"] = <"eb56bf3e79e33312bd308d30b393d216">
 		["build_uid"] = <"3677e97d-c5d0-483c-a291-474e45b3b4eb">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"1.1.3">
@@ -608,7 +596,7 @@ ontology
 			items = <
 				["at0000.1"] = <
 					text = <"Imaging examination of a heart">
-					description = <"Findings on radiological examination of a specified body structure or region.">
+					description = <"Findings on a radiological examination of the heart.">
 				>
 				["at0.1"] = <
 					text = <"Aortic root end diastolic diameter at sinuses of Valsalva level">
@@ -813,7 +801,7 @@ ontology
 			items = <
 				["at0000.1"] = <
 					text = <"*Imaging examination of a heart (en)">
-					description = <"Funn eller observasjoner ved radiologisk undersøkelse av et definert organ eller en kroppsdel.">
+					description = <"*Findings on a radiological examination of the heart. (en)">
 				>
 				["at0.1"] = <
 					text = <"*Aortic root end diastolic diameter at sinuses of Valsalva level (en)">
@@ -1018,7 +1006,7 @@ ontology
 			items = <
 				["at0000.1"] = <
 					text = <"*Imaging examination of a heart (en)">
-					description = <"Befunde zur radiologischen Untersuchung einer bestimmten Körperstruktur oder -region.">
+					description = <"*Findings on a radiological examination of the heart. (en)">
 				>
 				["at0.1"] = <
 					text = <"*Aortic root end diastolic diameter at sinuses of Valsalva level (en)">
