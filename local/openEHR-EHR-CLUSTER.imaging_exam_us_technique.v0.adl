@@ -15,6 +15,12 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <"To record the technique used on an ultrasound examination.">
+			keywords = <"technique, ultrasound, imaging, image, radiology", ...>
+			use = <"Use to record the technique used on an ultrasound examination.
+
+This archetype is designed to be nested within the 'Structured technique/procedure' SLOT in the OBSERVATION.imaging_exam_result or within other relevant CLUSTER.imaging_exam archetypes, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate.">
+			misuse = <"Not to be used to record details related to the overall findings or context related to a ultrasound examination. Use the OBSERVATION.imaging_exam_result for this purpose. For example, comments on the study quality, differential diagnoses, and overall impression.">
 		>
 	>
 	other_details = <
@@ -23,7 +29,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"64786446f2a9144722702bf9d8445d8e">
+		["MD5-CAM-1.0.1"] = <"c8a111d722a79ae566404259b2743c39">
 		["build_uid"] = <"0a87d244-c7aa-3381-ac03-e2ed322a35b1">
 	>
 
@@ -106,7 +112,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Imaging examination ultrasound techniques">
-					description = <"imaging_exam_us_technique">
+					description = <"Specific ultrasound techniques used on an ultrasound examination.">
 				>
 				["at0001"] = <
 					text = <"View">
