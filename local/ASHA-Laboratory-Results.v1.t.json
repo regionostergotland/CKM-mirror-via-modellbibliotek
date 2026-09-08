@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.5",
-      "build_uid" : "a84d435c-3ca9-41c3-a548-5c93df95b7f5",
-      "MD5-CAM-1.0.1" : "ff6884f1017ab661937d165799c5dd1f",
+      "sem_ver" : "1.0.0-alpha.6",
+      "build_uid" : "8a7fb007-dfa8-45e9-b81e-104daf40f099",
+      "MD5-CAM-1.0.1" : "f0066e5e7ddf9743049b4b71ccf8fde5",
       "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
     },
     "details" : {
@@ -1928,7 +1928,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0004.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -2192,6 +2191,13 @@
             "text" : "ng/L",
             "description" : "ng/L",
             "code" : "ng/L"
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Reference range",
+            "description" : "Additional advice on the applicability of the reference range to this result or may carry text or coded textual guidance as to whether the result is within the normal range.",
+            "comment" : "For example, 'within normal limits for age and sex'."
           }
         },
         "nb" : {
@@ -2936,7 +2942,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0004.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -3194,6 +3199,13 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Reference range",
+            "description" : "Additional advice on the applicability of the reference range to this result or may carry text or coded textual guidance as to whether the result is within the normal range.",
+            "comment" : "For example, 'within normal limits for age and sex'."
           }
         },
         "nb" : {
@@ -3938,7 +3950,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0004.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -4196,6 +4207,13 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Reference range",
+            "description" : "Additional advice on the applicability of the reference range to this result or may carry text or coded textual guidance as to whether the result is within the normal range.",
+            "comment" : "For example, 'within normal limits for age and sex'."
           }
         },
         "nb" : {
@@ -4940,7 +4958,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0004.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -5198,6 +5215,13 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Reference range",
+            "description" : "Additional advice on the applicability of the reference range to this result or may carry text or coded textual guidance as to whether the result is within the normal range.",
+            "comment" : "For example, 'within normal limits for age and sex'."
           }
         },
         "nb" : {
@@ -5942,7 +5966,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0004.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -6200,6 +6223,13 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Reference range",
+            "description" : "Additional advice on the applicability of the reference range to this result or may carry text or coded textual guidance as to whether the result is within the normal range.",
+            "comment" : "For example, 'within normal limits for age and sex'."
           }
         },
         "nb" : {
