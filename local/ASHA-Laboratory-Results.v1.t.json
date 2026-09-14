@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.6",
-      "build_uid" : "8a7fb007-dfa8-45e9-b81e-104daf40f099",
-      "MD5-CAM-1.0.1" : "f0066e5e7ddf9743049b4b71ccf8fde5",
-      "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
+      "sem_ver" : "1.0.0-alpha.7",
+      "build_uid" : "3cd23860-1e80-46aa-b5f1-bff2456e29a4",
+      "MD5-CAM-1.0.1" : "2a9b371a7b5a413ecebe7f78eb72b3fc",
+      "PARENT:MD5-CAM-1.0.1" : "E6D7C2B61BD261C40AFF4E8D445F9FC6"
     },
     "details" : {
       "de" : {
@@ -371,6 +371,25 @@
           "code" : "at0000.1.1",
           "text" : "Labbvärden_test_DEMO",
           "description" : "Dokument för att kommunicera information till andra om resultatet av ett test eller bedömning."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilläggsinformation",
+          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
+          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
         }
       },
       "fi" : {
@@ -1449,7 +1468,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1F7B2B9BE0461871F3D46CDAFF5B5C42"
+        "PARENT:MD5-CAM-1.0.1" : "5E85E26C754037F9839ADADAB5F76EF2"
       },
       "details" : {
         "de" : {
@@ -2162,6 +2181,27 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
+          "nodeId" : "at0032.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -2463,7 +2503,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1F7B2B9BE0461871F3D46CDAFF5B5C42"
+        "PARENT:MD5-CAM-1.0.1" : "5E85E26C754037F9839ADADAB5F76EF2"
       },
       "details" : {
         "de" : {
@@ -3176,6 +3216,27 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
+          "nodeId" : "at0032.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -3471,7 +3532,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1F7B2B9BE0461871F3D46CDAFF5B5C42"
+        "PARENT:MD5-CAM-1.0.1" : "5E85E26C754037F9839ADADAB5F76EF2"
       },
       "details" : {
         "de" : {
@@ -4184,6 +4245,27 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
+          "nodeId" : "at0032.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -4479,7 +4561,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1F7B2B9BE0461871F3D46CDAFF5B5C42"
+        "PARENT:MD5-CAM-1.0.1" : "5E85E26C754037F9839ADADAB5F76EF2"
       },
       "details" : {
         "de" : {
@@ -5192,6 +5274,27 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
+          "nodeId" : "at0032.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -5487,7 +5590,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1F7B2B9BE0461871F3D46CDAFF5B5C42"
+        "PARENT:MD5-CAM-1.0.1" : "5E85E26C754037F9839ADADAB5F76EF2"
       },
       "details" : {
         "de" : {
@@ -6191,6 +6294,27 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_URI",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0032.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
