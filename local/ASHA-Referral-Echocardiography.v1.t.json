@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.10",
-      "build_uid" : "9402e494-1139-4619-9e7e-6d9e99f3a947",
-      "MD5-CAM-1.0.1" : "36fcc9cfc676a898c64bb7505317fbaf",
+      "sem_ver" : "1.0.0-alpha.11",
+      "build_uid" : "c1a2cf6c-e8d7-4384-a687-a8b772c2cc35",
+      "MD5-CAM-1.0.1" : "6b209b80b80d456871e853493f573b55",
       "PARENT:MD5-CAM-1.0.1" : "B8AD0C7EB492491CE6F7968C1AFFB40C"
     },
     "details" : {
@@ -868,7 +868,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
+        "PARENT:MD5-CAM-1.0.1" : "97F0D3BB6CACF9297BB434EDE9624022"
       },
       "details" : {
         "de" : {
@@ -1076,7 +1076,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "AD593E18455631079CCA895C6A3612C5"
+        "PARENT:MD5-CAM-1.0.1" : "910577A40659C9665D96E1AFAD01AD44"
       },
       "details" : {
         "de" : {
@@ -1152,6 +1152,21 @@
           "keywords" : [ "verwijzing", "bezoek" ],
           "use" : "Om gegevens vast te leggen over een eenvoudige gezondheidsgerelateerde dienst of activiteit geleverd door een arts, organisatie of instantie. Dit omvat het bijhouden van de voortgang van planning, via het maken van afspraken en levering tot voltooiing, evenals afwijkingen van het geplande zorgpad zoals uitstel of annulering. Dit wordt bereikt door het vastleggen van relevante gegevenselementen over specifieke activiteiten, die in dit archetype elk worden beschreven als de zorgstroomstappen 'Pathway'.\r\n\r\nDe reikwijdte van dit archetype omvat bewust activiteiten voor een breed scala aan klinische diensten, om te fungeren als een niet-specifiek archetype voor alle niet-complexe use cases. Voorbeelden zijn onder andere\r\n- zelfverwijzing door een patiënt voor een controlebezoek aan een tandarts voor preventieve zorg\r\n- een reeks bezoeken aan een fysiotherapeut voor de behandeling van een overbelasting van het bewegingsapparaat; en\r\n- een verwijzing van een aanvragende zorgverlener, zoals een huisarts, naar een ontvangende zorgverlener, zoals een specialist, om de patiënt een specifieke dienst, advies of zorg te laten ontvangen.\r\n\r\nAanvullende gestructureerde en gedetailleerde informatie over de dienst kan worden vastgelegd met behulp van doel-specifieke archetypes die waar nodig worden ingevoegd in de sleuf \"Dienstinformatie\".\r\n\r\nDit archetype mag slechts op twee manieren worden gebruikt:\r\n- als een volledig verslag van de geleverde dienst; of\r\n- als een kader om voornamelijk de status van de gevraagde dienst vast te leggen, met afzonderlijke OBSERVATION-archetypes die gebruikt worden om de eigenlijke testresultaten voor de geleverde dienst vast te leggen - bijvoorbeeld OBSERVATION.hearing_screening_result.\r\n\r\nTimings met betrekking tot servicebeheer kunnen op twee manieren worden beheerd:\r\n- Met behulp van het referentiemodel - de tijd voor de uitvoering van elke padstap zal het ACTION tijd-attribuut voor elke stap gebruiken.\r\n- Archetypische gegevenselementen - het gegevenselement \"Geplande datum/tijd\" is bedoeld om het tijdstip vast te leggen waarop de dienst uitgevoerd zou worden. Opmerking: het overeenkomstige ACTION tijd-attribuut voor de stap Geplande route registreert het tijdstip waarop de klinische activiteit in een systeem werd gepland, niet de beoogde datum/tijd waarop de activiteit zou worden uitgevoerd.\r\n\r\nIn de praktijk zullen sommige diensten (bijvoorbeeld in de ambulante zorg) eenmalig plaatsvinden en niet vooraf besteld worden. De gegevens over de dienst worden toegevoegd aan de stap 'Dienst voltooid'. In sommige gevallen wordt een terugkerende dienst besteld, en in deze situatie worden de gegevens voor de stap \"Geleverde dienst\" bij elke gelegenheid geregistreerd, waardoor de instructie in de actieve status blijft. Wanneer de laatste levering van de dienst wordt geregistreerd, wordt de actie 'Dienst voltooid' geregistreerd, wat aangeeft dat deze opdracht nu in de status 'voltooid' staat.\r\n\r\nIn andere situaties, zoals secundaire zorg, kan er een formele opdracht zijn voor een dienst met behulp van een overeenkomstig INSTRUCTION.request archetype. Dit ACTION archetype kan dan worden gebruikt om de workflow vast te leggen van wanneer en hoe de opdracht is uitgevoerd.\r\n\r\nHet vastleggen van informatie met behulp van dit ACTION archetype geeft aan dat een of andere activiteit daadwerkelijk heeft plaatsgevonden; dit zal meestal de dienstlevering zelf zijn, maar het kan ook een mislukte poging zijn of een andere activiteit zoals uitstel van de dienstlevering. Als er een formele order is voor de dienst, wordt de status van deze order weergegeven door de Pathway stap waartegen de gegevens worden geregistreerd. Bij gebruik van dit archetype kan de voortgang van een verwijzingsverzoek bijvoorbeeld worden vastgelegd door middel van afzonderlijke vermeldingen in de voortgangsnotities van het EPD bij elke stap van het pad:\r\n- de geplande begindatum/tijd voor de verwijzing vastleggen (dienst gepland); en\r\n- vastleggen dat de verwijzing voltooid is, eventueel met informatie over de geleverde dienst (dienst voltooid).\r\n\r\nAls de activiteiten de gebruikelijke Gepland > Afspraak gemaakt > Actief > Voltooid toestanden volgen, is het vastleggen van een 'Reden' meestal niet nodig - het wordt eerder gebruikt om de reden voor afwijking van het typische zorgpad vast te leggen.\r\n\r\nLet op dat er in het openEHR Referentiemodel een attribuut 'Tijd' is, dat bedoeld is om de datum en tijd vast te leggen waarop elke stap in het zorgpad van de Actie werd uitgevoerd. Dit is het te gebruiken attribuut voor het vastleggen van de start van de dienst (bij gebruik van de stap 'Geleverde dienst') of de tijd dat de dienst werd afgebroken (bij gebruik van de stap 'Dienst afgebroken').",
           "misuse" : "Niet te gebruiken om gegevens vast te leggen over uitgevoerde activiteiten voor activiteiten waarvoor een speciaal gebouwd ACTION-archetype nodig is omdat zij zeer specifieke vereisten inzake gegevensregistratie of trajectstappen hebben. Bijvoorbeeld: ACTION.procedure of ACTION.health_education.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "旨在用于记录关于临床医务人员、组织机构或代理机构/服务机构所提供的，简单的，与健康相关的服务或活动的详情。",
+          "keywords" : [ "服务", "服务项目", "转诊", "转诊介绍", "转介", "推荐", "推介", "就诊", "就医", "访视", "就医", "就医过程", "接触", "健康医疗服务接触" ],
+          "use" : "旨在用于记录关于临床医务人员、组织机构或代理机构/服务机构所提供的，简单的，与健康相关的服务或活动的详情。其中包括追踪从计划编制/规划、排程/排期、提供/交付服务直至完成的整个过程的进展情况，以及相对于既定照护服务/诊疗路径的偏差/偏离情况（如服务延期或取消）。为此，实现的方式就是，在本原始型当中，记录特定活动的相关数据元，并将这些数据元均描述为“路径”（Pathway）照护服务/诊疗流程步骤。\r\n\r\n本原始型的适用范围有意涵盖了各类临床服务的活动，旨在作为适用于所有非复杂用例的通用原始型。示例包括但不限于：\r\n- 患者为接受预防性照护/诊疗服务，自行提出的牙科健康检查转诊；\r\n- 患者因肌肉骨骼劳损接受治疗而前往物理治疗师处的一系列就诊；\r\n- 转诊：由请求方健康医疗服务提供者（如初级保健/基层临床医务人员）将患者转诊至接收方健康医疗服务提供者（如专科医生），以便让患者获得特定的服务、建议或照护/诊疗服务。\r\n\r\n如需记录有关该服务的更多结构化详情，可在“服务详情”（Service detail）插槽中插入专用原始型。\r\n\r\n仅可采取下列两种方式来使用本原始型：\r\n- 作为关于所提供服务的完整记录；\r\n- 作为主要记录所请求服务的状态的框架，同时利用单独的观察类原始型（OBSERVATION）来记录所提供服务的实际观察（检验/检查）结果，如观察类听力筛查结果原始型（OBSERVATION.hearing_screening_result）。\r\n\r\n可以采取下列两种方式之一来管理那些与服务[项目]管理相关的时间：\r\n- 利用参考模型：任何路径步骤的执行时间均会采用各步骤的行动类（ACTION）时间属性。\r\n- 原始型化数据元：“所排程的日期/时间”（Scheduled date/time）数据元旨在用于记录当时预定执行此项服务的时间。注：“已排程”（Scheduled）路径步骤相应的行动类时间属性，将记录的是当时将此项临床活动排程到系统当中的时间，而并非预定开展/执行此项活动的预定日期/时间。\r\n\r\n在实际工作中，部分的服务（如门诊照护/诊疗过程中）为即时开展，仅会发生一次，无需提前下达医嘱。关于此类服务的详情，将会在“服务已完成”（Service completed）路径步骤下录入相关的数据。在某些情况下，会下达关于重复型服务的医嘱，而此时，对于此类服务的每次重复，将会在“服务已提供”（Service delivered）路径步骤下记录相关的数据，并保持服务医嘱处于有效状态。当记录最后一次的服务提供情况时，则记录的是“服务已完成”行动，以表明此项服务医嘱已处于已完成状态。\r\n\r\n在其他的情况下（如二级照护/诊疗服务），可能会利用相应的指令类请求原始型（INSTRUCTION.request）来表达针对特定服务的正式医嘱。随后，则可以利用这一行动类原始型来记录关于开展/执行此项医嘱的时间和方式等工作流信息。\r\n\r\n采用这一行动类原始型来记录信息，表明已实际发生某项活动；此项活动通常为相应的服务提供过程本身，但也可能是一次失败的尝试，或者是其他的活动（如服务提供的延期）。若此项服务存在正式的医嘱，则会采用相应的“路径”步骤来表达该项医嘱的状态。例如，在每个“路径”步骤当中，可以在电子健康档案（EHR）病程/进展记录里，采用单独的条目来记录转诊请求的进展状态：\r\n- 记录转诊的已排程的开始日期/时间（“服务已排程”）；\r\n- 记录转诊已完成，并且有可能包括所提供服务的相关信息（“服务已完成”）。\r\n\r\n当活动遵循的是“计划中（Planned）> 已排程（Scheduled）> 进行中（Active）> 已完成（Completed）”的常规状态流程时，通常无需记录“原因”（Reason）；该原因字段通常用于记录偏离常规诊疗/照护服务路径的原因。\r\n\r\n请注意，在openEHR参考模型当中，存在“时间”（Time）属性，旨在用于记录相应“行动”（Action）之中每个路径步骤的执行日期和时间。而且，服务开始时间（需采用“服务已提供”路径步骤）或服务中止时间（需采用“服务已中止”路径步骤）也都将采用该属性来记录。",
+          "misuse" : "并非旨在用于记录关于所开展/执行的那些需要采用专用行动类原始型的活动的数据，因为此类活动有着非常特殊的数据记录要求或路径步骤要求。例如：行动类操作原始型（ACTION.procedure）或行动类健康宣教原始型（ACTION.health_education）。",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -1903,7 +1918,8 @@
         "pt-br" : { },
         "de" : { },
         "nb" : { },
-        "nl" : { }
+        "nl" : { },
+        "zh-cn" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1975,6 +1991,20 @@
         "name" : "Mattijs Kuhlmann",
         "organisation" : "Nedap",
         "email" : "mattijs.kuhlmann@nedap.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "Freelancer",
+        "email" : "linforest@163.com"
       },
       "otherDetails" : { }
     } ]
@@ -2444,7 +2474,8 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
-              "nodeId" : "at0093",
+              "occurrences" : "0..0",
+              "nodeId" : "at0093.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "items",
@@ -2510,7 +2541,8 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
-              "nodeId" : "at0027",
+              "occurrences" : "0..0",
+              "nodeId" : "at0027.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "items",
@@ -2687,7 +2719,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "89470078C0364ACBA5B6A5F286E56C79"
+        "PARENT:MD5-CAM-1.0.1" : "9B0D50B3F044BA754FBFDD974AE612E0"
       },
       "details" : {
         "de" : {
@@ -2982,8 +3014,18 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0003.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -3017,6 +3059,13 @@
                   "attributeTuples" : [ ]
                 } ]
               } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0080.1",
+              "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
@@ -3345,7 +3394,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
+        "PARENT:MD5-CAM-1.0.1" : "97F0D3BB6CACF9297BB434EDE9624022"
       },
       "details" : {
         "de" : {
@@ -3580,7 +3629,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
+        "PARENT:MD5-CAM-1.0.1" : "97F0D3BB6CACF9297BB434EDE9624022"
       },
       "details" : {
         "de" : {
@@ -3862,7 +3911,7 @@
         "sem_ver" : "1.0.1-rc.3",
         "build_uid" : "5746ba87-6c50-487d-ae95-843cd2a76da7",
         "MD5-CAM-1.0.1" : "45419427e614adc838c78321ce7c183c",
-        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
+        "PARENT:MD5-CAM-1.0.1" : "97F0D3BB6CACF9297BB434EDE9624022"
       },
       "details" : {
         "de" : {
@@ -4141,7 +4190,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "AD593E18455631079CCA895C6A3612C5"
+        "PARENT:MD5-CAM-1.0.1" : "910577A40659C9665D96E1AFAD01AD44"
       },
       "details" : {
         "de" : {
@@ -4217,6 +4266,21 @@
           "keywords" : [ "verwijzing", "bezoek" ],
           "use" : "Om gegevens vast te leggen over een eenvoudige gezondheidsgerelateerde dienst of activiteit geleverd door een arts, organisatie of instantie. Dit omvat het bijhouden van de voortgang van planning, via het maken van afspraken en levering tot voltooiing, evenals afwijkingen van het geplande zorgpad zoals uitstel of annulering. Dit wordt bereikt door het vastleggen van relevante gegevenselementen over specifieke activiteiten, die in dit archetype elk worden beschreven als de zorgstroomstappen 'Pathway'.\r\n\r\nDe reikwijdte van dit archetype omvat bewust activiteiten voor een breed scala aan klinische diensten, om te fungeren als een niet-specifiek archetype voor alle niet-complexe use cases. Voorbeelden zijn onder andere\r\n- zelfverwijzing door een patiënt voor een controlebezoek aan een tandarts voor preventieve zorg\r\n- een reeks bezoeken aan een fysiotherapeut voor de behandeling van een overbelasting van het bewegingsapparaat; en\r\n- een verwijzing van een aanvragende zorgverlener, zoals een huisarts, naar een ontvangende zorgverlener, zoals een specialist, om de patiënt een specifieke dienst, advies of zorg te laten ontvangen.\r\n\r\nAanvullende gestructureerde en gedetailleerde informatie over de dienst kan worden vastgelegd met behulp van doel-specifieke archetypes die waar nodig worden ingevoegd in de sleuf \"Dienstinformatie\".\r\n\r\nDit archetype mag slechts op twee manieren worden gebruikt:\r\n- als een volledig verslag van de geleverde dienst; of\r\n- als een kader om voornamelijk de status van de gevraagde dienst vast te leggen, met afzonderlijke OBSERVATION-archetypes die gebruikt worden om de eigenlijke testresultaten voor de geleverde dienst vast te leggen - bijvoorbeeld OBSERVATION.hearing_screening_result.\r\n\r\nTimings met betrekking tot servicebeheer kunnen op twee manieren worden beheerd:\r\n- Met behulp van het referentiemodel - de tijd voor de uitvoering van elke padstap zal het ACTION tijd-attribuut voor elke stap gebruiken.\r\n- Archetypische gegevenselementen - het gegevenselement \"Geplande datum/tijd\" is bedoeld om het tijdstip vast te leggen waarop de dienst uitgevoerd zou worden. Opmerking: het overeenkomstige ACTION tijd-attribuut voor de stap Geplande route registreert het tijdstip waarop de klinische activiteit in een systeem werd gepland, niet de beoogde datum/tijd waarop de activiteit zou worden uitgevoerd.\r\n\r\nIn de praktijk zullen sommige diensten (bijvoorbeeld in de ambulante zorg) eenmalig plaatsvinden en niet vooraf besteld worden. De gegevens over de dienst worden toegevoegd aan de stap 'Dienst voltooid'. In sommige gevallen wordt een terugkerende dienst besteld, en in deze situatie worden de gegevens voor de stap \"Geleverde dienst\" bij elke gelegenheid geregistreerd, waardoor de instructie in de actieve status blijft. Wanneer de laatste levering van de dienst wordt geregistreerd, wordt de actie 'Dienst voltooid' geregistreerd, wat aangeeft dat deze opdracht nu in de status 'voltooid' staat.\r\n\r\nIn andere situaties, zoals secundaire zorg, kan er een formele opdracht zijn voor een dienst met behulp van een overeenkomstig INSTRUCTION.request archetype. Dit ACTION archetype kan dan worden gebruikt om de workflow vast te leggen van wanneer en hoe de opdracht is uitgevoerd.\r\n\r\nHet vastleggen van informatie met behulp van dit ACTION archetype geeft aan dat een of andere activiteit daadwerkelijk heeft plaatsgevonden; dit zal meestal de dienstlevering zelf zijn, maar het kan ook een mislukte poging zijn of een andere activiteit zoals uitstel van de dienstlevering. Als er een formele order is voor de dienst, wordt de status van deze order weergegeven door de Pathway stap waartegen de gegevens worden geregistreerd. Bij gebruik van dit archetype kan de voortgang van een verwijzingsverzoek bijvoorbeeld worden vastgelegd door middel van afzonderlijke vermeldingen in de voortgangsnotities van het EPD bij elke stap van het pad:\r\n- de geplande begindatum/tijd voor de verwijzing vastleggen (dienst gepland); en\r\n- vastleggen dat de verwijzing voltooid is, eventueel met informatie over de geleverde dienst (dienst voltooid).\r\n\r\nAls de activiteiten de gebruikelijke Gepland > Afspraak gemaakt > Actief > Voltooid toestanden volgen, is het vastleggen van een 'Reden' meestal niet nodig - het wordt eerder gebruikt om de reden voor afwijking van het typische zorgpad vast te leggen.\r\n\r\nLet op dat er in het openEHR Referentiemodel een attribuut 'Tijd' is, dat bedoeld is om de datum en tijd vast te leggen waarop elke stap in het zorgpad van de Actie werd uitgevoerd. Dit is het te gebruiken attribuut voor het vastleggen van de start van de dienst (bij gebruik van de stap 'Geleverde dienst') of de tijd dat de dienst werd afgebroken (bij gebruik van de stap 'Dienst afgebroken').",
           "misuse" : "Niet te gebruiken om gegevens vast te leggen over uitgevoerde activiteiten voor activiteiten waarvoor een speciaal gebouwd ACTION-archetype nodig is omdat zij zeer specifieke vereisten inzake gegevensregistratie of trajectstappen hebben. Bijvoorbeeld: ACTION.procedure of ACTION.health_education.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "旨在用于记录关于临床医务人员、组织机构或代理机构/服务机构所提供的，简单的，与健康相关的服务或活动的详情。",
+          "keywords" : [ "服务", "服务项目", "转诊", "转诊介绍", "转介", "推荐", "推介", "就诊", "就医", "访视", "就医", "就医过程", "接触", "健康医疗服务接触" ],
+          "use" : "旨在用于记录关于临床医务人员、组织机构或代理机构/服务机构所提供的，简单的，与健康相关的服务或活动的详情。其中包括追踪从计划编制/规划、排程/排期、提供/交付服务直至完成的整个过程的进展情况，以及相对于既定照护服务/诊疗路径的偏差/偏离情况（如服务延期或取消）。为此，实现的方式就是，在本原始型当中，记录特定活动的相关数据元，并将这些数据元均描述为“路径”（Pathway）照护服务/诊疗流程步骤。\r\n\r\n本原始型的适用范围有意涵盖了各类临床服务的活动，旨在作为适用于所有非复杂用例的通用原始型。示例包括但不限于：\r\n- 患者为接受预防性照护/诊疗服务，自行提出的牙科健康检查转诊；\r\n- 患者因肌肉骨骼劳损接受治疗而前往物理治疗师处的一系列就诊；\r\n- 转诊：由请求方健康医疗服务提供者（如初级保健/基层临床医务人员）将患者转诊至接收方健康医疗服务提供者（如专科医生），以便让患者获得特定的服务、建议或照护/诊疗服务。\r\n\r\n如需记录有关该服务的更多结构化详情，可在“服务详情”（Service detail）插槽中插入专用原始型。\r\n\r\n仅可采取下列两种方式来使用本原始型：\r\n- 作为关于所提供服务的完整记录；\r\n- 作为主要记录所请求服务的状态的框架，同时利用单独的观察类原始型（OBSERVATION）来记录所提供服务的实际观察（检验/检查）结果，如观察类听力筛查结果原始型（OBSERVATION.hearing_screening_result）。\r\n\r\n可以采取下列两种方式之一来管理那些与服务[项目]管理相关的时间：\r\n- 利用参考模型：任何路径步骤的执行时间均会采用各步骤的行动类（ACTION）时间属性。\r\n- 原始型化数据元：“所排程的日期/时间”（Scheduled date/time）数据元旨在用于记录当时预定执行此项服务的时间。注：“已排程”（Scheduled）路径步骤相应的行动类时间属性，将记录的是当时将此项临床活动排程到系统当中的时间，而并非预定开展/执行此项活动的预定日期/时间。\r\n\r\n在实际工作中，部分的服务（如门诊照护/诊疗过程中）为即时开展，仅会发生一次，无需提前下达医嘱。关于此类服务的详情，将会在“服务已完成”（Service completed）路径步骤下录入相关的数据。在某些情况下，会下达关于重复型服务的医嘱，而此时，对于此类服务的每次重复，将会在“服务已提供”（Service delivered）路径步骤下记录相关的数据，并保持服务医嘱处于有效状态。当记录最后一次的服务提供情况时，则记录的是“服务已完成”行动，以表明此项服务医嘱已处于已完成状态。\r\n\r\n在其他的情况下（如二级照护/诊疗服务），可能会利用相应的指令类请求原始型（INSTRUCTION.request）来表达针对特定服务的正式医嘱。随后，则可以利用这一行动类原始型来记录关于开展/执行此项医嘱的时间和方式等工作流信息。\r\n\r\n采用这一行动类原始型来记录信息，表明已实际发生某项活动；此项活动通常为相应的服务提供过程本身，但也可能是一次失败的尝试，或者是其他的活动（如服务提供的延期）。若此项服务存在正式的医嘱，则会采用相应的“路径”步骤来表达该项医嘱的状态。例如，在每个“路径”步骤当中，可以在电子健康档案（EHR）病程/进展记录里，采用单独的条目来记录转诊请求的进展状态：\r\n- 记录转诊的已排程的开始日期/时间（“服务已排程”）；\r\n- 记录转诊已完成，并且有可能包括所提供服务的相关信息（“服务已完成”）。\r\n\r\n当活动遵循的是“计划中（Planned）> 已排程（Scheduled）> 进行中（Active）> 已完成（Completed）”的常规状态流程时，通常无需记录“原因”（Reason）；该原因字段通常用于记录偏离常规诊疗/照护服务路径的原因。\r\n\r\n请注意，在openEHR参考模型当中，存在“时间”（Time）属性，旨在用于记录相应“行动”（Action）之中每个路径步骤的执行日期和时间。而且，服务开始时间（需采用“服务已提供”路径步骤）或服务中止时间（需采用“服务已中止”路径步骤）也都将采用该属性来记录。",
+          "misuse" : "并非旨在用于记录关于所开展/执行的那些需要采用专用行动类原始型的活动的数据，因为此类活动有着非常特殊的数据记录要求或路径步骤要求。例如：行动类操作原始型（ACTION.procedure）或行动类健康宣教原始型（ACTION.health_education）。",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -5048,7 +5112,8 @@
             "text" : "Dienst (2)",
             "description" : "Een eenvoudige gezondheidsgerelateerde dienst of activiteit geleverd door een arts, organisatie of instantie."
           }
-        }
+        },
+        "zh-cn" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -5120,6 +5185,20 @@
         "name" : "Mattijs Kuhlmann",
         "organisation" : "Nedap",
         "email" : "mattijs.kuhlmann@nedap.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "Freelancer",
+        "email" : "linforest@163.com"
       },
       "otherDetails" : { }
     } ]
