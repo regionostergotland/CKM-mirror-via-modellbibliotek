@@ -6,6 +6,17 @@ concept
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+				["name"] = <"Emmanuel Eschmann">
+				["organisation"] = <"CISTEC AG">
+				["email"] = <"emmanuel.eschmann@cistec.com">
+			>
+			other_details = <
+				["other_contributors"] = <"Jonas Bucher, CISTEC AG, Switzerland">
+			>
+		>
 		["pt-pt"] = <
 			language = <[ISO_639-1::pt-pt]>
 			author = <
@@ -17,9 +28,9 @@ language
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			author = <
-				["name"] = <"Oscar Karlsson">
-				["organisation"] = <"Karolinska Universitetssjukhuset">
-				["email"] = <"oscar.karlsson@regionstockholm.se">
+				["name"] = <"Oscar Karlsson, Manna Vosta">
+				["organisation"] = <"Karolinska Universitetssjukhuset, Karolinska University Hospital">
+				["email"] = <"oscar.karlsson@regionstockholm.se, manna.vosta@regionstockholm.se">
 			>
 		>
 		["nb"] = <
@@ -31,6 +42,14 @@ language
 			>
 			accreditation = <"Nasjonal IKT">
 		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			author = <
+				["name"] = <"Jonas Bucher">
+				["organisation"] = <"Cistec AG">
+				["email"] = <"jonas.bucher@cistec.com">
+			>
+		>
 	>
 description
 	original_author = <
@@ -40,6 +59,13 @@ description
 		["date"] = <"2012-12-11">
 	>
 	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			purpose = <"Zur Erfassung der Einzelheiten einer formellen Überprüfung der klinischen Situation eines Patienten oder eines bestimmten Aspekts seiner klinischen Versorgung.">
+			use = <"Zur Erfassung der Einzelheiten einer formellen Überprüfung der klinischen Situation eines Patienten oder eines bestimmten Aspekts seiner klinischen Versorgung. Zum Beispiel, um Arzneimittelüberprüfungen oder Überprüfungen durch einen Case Manager zu dokumentieren.">
+			keywords = <"Überprüfung", "Beurteilung", "Medizin", "klinisch", "Fall", "Akte">
+			misuse = <"">
+		>
 		["pt-pt"] = <
 			language = <[ISO_639-1::pt-pt]>
 			purpose = <"Registar os detalhes de uma análise formal da situação clínica de um sujeito ou de qualquer aspeto específico dos seus cuidados clínicos.">
@@ -49,8 +75,8 @@ description
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
-			purpose = <"Att dokumentera innehållet och detaljerna kring en formell granskning av en persons kliniska situation eller en specifik aspekt av den kliniska vården.">
-			use = <"Används för att dokumentera en formell granskning av en persons kliniska situation eller en specifik aspekt av den kliniska vården.
+			purpose = <"Att dokumentera innehållet och detaljerna kring en formell granskning av en patients kliniska situation eller en specifik aspekt av den kliniska vården.">
+			use = <"Används för att dokumentera en formell granskning av en patients kliniska situation eller en specifik aspekt av den kliniska vården.
 Exempelvis för att dokumentera läkemedelsgranskningar eller vårdplaneringsmöten (t.ex. utförda av en patientansvarig sjuksköterska eller samordnare).">
 			keywords = <"granskning", "bedömning", "medicin", "klinisk", "patientfall">
 			misuse = <"">
@@ -71,6 +97,13 @@ For eksempel: brukes for å registrere Gjennomgang av legemiddelliste; eller Koo
 			misuse = <"">
 			copyright = <"© openEHR Foundation">
 		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			purpose = <"Pour enregistrer les détails d'une revue formelle de la situation clinique d'un sujet ou de tout aspect spécifique de ses soins cliniques.">
+			use = <"À utiliser pour enregistrer les détails d'une revue formelle de la situation clinique d'un sujet ou de tout aspect spécifique de ses soins cliniques. Par exemple pour enregistrer des contrôles de médicaments ou des bilans effectués par un responsable de suivi.">
+			keywords = <"revue", "évaluation", "médecine", "clinique", "cas", "fichier">
+			misuse = <"">
+		>
 	>
 	lifecycle_state = <"in_development">
 	other_contributors = <>
@@ -81,8 +114,8 @@ For eksempel: brukes for å registrere Gjennomgang av legemiddelliste; eller Koo
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5F1FF554C835566C2BC9A3116B3DAB95">
-		["build_uid"] = <"f5293472-77b7-40d6-8c81-25548859868e">
+		["MD5-CAM-1.0.1"] = <"18AFB80928AA95AF3DAB27B3A1E2FFEA">
+		["build_uid"] = <"6ae89a60-b6d2-4523-af0b-83e75eb2d572">
 		["revision"] = <"0.0.1-alpha">
 	>
 
@@ -170,16 +203,50 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Granskning">
-					description = <"Composition för dokumentation av en formell granskning av patientens kliniska situation eller någon specifik aspekt av den kliniska vården.">
+					description = <"COMPOSITION för dokumentation av en formell granskning av patientens kliniska situation eller någon specifik aspekt av den kliniska vården.">
 				>
 				["at0002"] = <
-					text = <"*Item tree (en)">
+					text = <"*Item tree(en)">
 					description = <"@ internal @">
 				>
 				["at0003"] = <
-					text = <"*Extension (en)">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					text = <"Tilläggsinformation">
+					description = <"Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.">
+					comment = <"Exempelvis lokala informationskrav eller metadata för anpassning till FHIR.">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"Überprüfung">
+					description = <"Komposition zur Erfassung der Details einer formellen Überprüfung der klinischen Situation eines Patienten oder eines bestimmten Aspekts seiner klinischen Versorgung.">
+				>
+				["at0002"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Erweiterung">
+					description = <"Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.">
+					comment = <"Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen.">
+				>
+			>
+		>
+		["fr"] = <
+			items = <
+				["at0000"] = <
+					text = <"Revue">
+					description = <"Composition destinée à enregistrer les détails d'une revue formelle de la situation clinique d'un sujet ou de tout aspect spécifique de ses soins cliniques.">
+				>
+				["at0002"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Extension">
+					description = <"Informations supplémentaires nécessaires pour représenter un contenu local ou pour assurer l’alignement avec d’autres modèles de référence ou formalismes.">
+					comment = <"Par exemple: exigences d’information locales ou métadonnées supplémentaires permettant l’alignement avec des équivalents FHIR ou CIMI.">
 				>
 			>
 		>
