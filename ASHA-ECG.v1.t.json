@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.4",
-      "build_uid" : "474cef24-b270-48a5-8643-025cc194cc95",
-      "MD5-CAM-1.0.1" : "797b541bec607708703d22097dd55d28",
-      "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
+      "sem_ver" : "1.0.0-alpha.5",
+      "build_uid" : "400714b1-0618-4352-a255-f5c33bec50e2",
+      "MD5-CAM-1.0.1" : "ac479779bbe904a40166c8f50ddde6c6",
+      "PARENT:MD5-CAM-1.0.1" : "E6D7C2B61BD261C40AFF4E8D445F9FC6"
     },
     "details" : {
       "de" : {
@@ -412,6 +412,32 @@
           "code" : "at0000.1.1",
           "text" : "ASHA-ECG.v1",
           "description" : "Dokument för att kommunicera information till andra om resultatet av ett test eller bedömning."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilläggsinformation",
+          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
+          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilläggsinformation",
+          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
+          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
         }
       },
       "fi" : {
@@ -10531,7 +10557,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
+        "PARENT:MD5-CAM-1.0.1" : "97F0D3BB6CACF9297BB434EDE9624022"
       },
       "details" : {
         "de" : {
@@ -10782,7 +10808,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5DFD0809E7CD46EA0712A590C68F545B"
+        "PARENT:MD5-CAM-1.0.1" : "97F0D3BB6CACF9297BB434EDE9624022"
       },
       "details" : {
         "de" : {
