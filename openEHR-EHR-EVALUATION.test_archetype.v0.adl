@@ -1,0 +1,44 @@
+archetype (adl_version=1.4; uid=c67dce79-a364-4fac-a631-d3d2e2afe884)
+	openEHR-EHR-EVALUATION.test_archetype.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2026-09-15">
+	>
+	lifecycle_state = <"in_development">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["build_uid"] = <"9caf1218-1b5c-4fdf-9661-91e3356b6aee">
+		["revision"] = <"1.0.0-alpha.1">
+		["MD5-CAM-1.0.1"] = <"e82e1f72099172c27b990f7dcad4e603">
+	>
+
+definition
+	EVALUATION[at0000] matches {*}    -- test_archetype
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"test_archetype">
+					description = <"test_archetype">
+				>
+			>
+		>
+	>
