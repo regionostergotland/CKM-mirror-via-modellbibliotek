@@ -1,4 +1,4 @@
-# 🫀 Imaging Examination of the Heart (Updated: 2025-11-14)
+# 🫀 Imaging Examination of the Heart (Updated: 2026-09-18)
 
 Echocardiography model (draft)
 <img width="1389" height="1145" alt="image" src="https://github.com/user-attachments/assets/3a196272-7b0e-48f7-8915-87ecabf05cc4" />
@@ -163,19 +163,22 @@ Degree of exertion. There is a cycle machine that the patient can lie in during 
 
 State
 
-In the observation archetype, State consists of three attributes: Confounding factors, Position, and Stabilising appliance. We want to be able to specify both the phase of the cardiac cycle and exertion. These could individually be recorded under Confounding factors, but since both are relevant simultaneously, we need to find a solution.
-Our proposal is to add a slot for Exertion in the observation archetype and to use Confounding factor for the cardiac cycle phase. However, the question remains whether the cardiac cycle phase should instead be part of the data value attribute.
-The patient's position is not something that the Department of Physiology documents during an echocardiography examination.
+The State section in the observation archetype consists of three attributes: Confounding factors, Position, and Stabilising appliance. We need to be able to specify the level of exertion. This could be recorded using Confounding factors, but since there is already a cluster archetype, `CLUSTER.level_of_exertion.v0`, we would like to see a dedicated slot for Exertion.
+
+The patient's position is not something that the Department of Clinical Physiology documents during an echocardiographic examination.
 
 **CLUSTER.imaging_exam_heart.v0**
 
-The archetype that holds the measurement values. The question is if we would rather have several archetypes for each specific heart structure (ventricle, atrium etc.)
+This archetype is a specialization of the CLUSTER archetype `openEHR-EHR-CLUSTER.imaging_exam.v1`. In addition to the attributes inherited from the parent archetype, it contains attributes for measurement values that includes the part of the heart on which the measurement was performed, the measured quantity (volume, area, pressure, etc.), and the phase of the cardiac cycle.
+
+In the current draft of the archetype, there are 38 measurement values from an echocardiographic examination, which are being used in a Proof of Concept  in Region Östergötland. This selection is intended to reflect the measurements typically performed during a standard examination. The plan is to expand this to approximately 100 measurements in order to better capture all measurement values that may be obtained during an echocardiographic examination.
+
+A decision was made not to divide the archetype into multiple specializations for different parts of the heart. This eliminates the problem of having parameters that do not belong to a single structure, or cases where only a single measurement value exists for a particular cardiac structure and would therefore require its own archetype specialization.
 
 **CLUSTER.imaging_exam_us_technique.v0**
 
-This archetype is intended to capture information about the technical conditions of the measurement.
-It is still unclear whether it should be designed for all imaging analysis techniques, all ultrasound examinations, or exclusively for echocardiography.
-It will include attributes for View, Method, Mode, Volume algorithm, Mass algorithm, and Area algorithm.
-The question is which of these attributes are specific to echocardiography. The selection of values for the View attribute is, in any case, unique to echocardiography.
+This archetype is intended to hold information about the technical conditions of an ultrasound measurement and is intended to be placed in the Structured technique/procedure slot of the archetype `openEHR-EHR-OBSERVATION.imaging_exam_result.v1`.
+
+It will contain attributes for View, Mode, 2D Method, Doppler Method, and Algorithm. All attributes have internally coded value sets with options specifically tailored for echocardiographic examinations. These value sets can be overridden when the archetype is used within a template.
 
 
