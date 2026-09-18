@@ -57,9 +57,6 @@ Describes the technique used to produce the image.
 - **Speckle tracking**  
   [text]
 
-- **Estimation**  
-  An estimated value of a quantity derived from the measurement of another quantity. The result is based on broad categorizations as well as the clinician’s expert knowledge and experience.
-
 ## View
 Views or projections, i.e., different angles from which the heart can be seen.
 
@@ -165,11 +162,12 @@ This method is used to calculate left ventricular mass based on measurements tha
 **openEHR:** This is currently represented through specific elements in CLUSTER.imaging_exam_us_technique.v0.
 
 ## Estimation
-[Text]
+An estimated value of a quantity derived from the measurement of another quantity. The result is based on broad categorizations as well as the clinician’s expert knowledge and experience.
 
 ## Draft openEHR
 
-<img width="1592" height="1201" alt="image" src="https://github.com/user-attachments/assets/549f8f50-4fd0-4fec-bd52-96ef2b6bfe3a" />
+<img width="1480" height="1142" alt="image" src="https://github.com/user-attachments/assets/03a58dbb-1536-4dc7-b95c-f17d79864763" />
+
 
 **OBSERVATION.imaging_exam_result.v1**
 
