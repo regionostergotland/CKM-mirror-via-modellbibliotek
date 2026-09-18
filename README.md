@@ -141,7 +141,7 @@ Quantity measured on a certain body structure. The measurement can be "indexed,"
 ## Exertion
 Degree of exertion. There is a cycle machine that the patient can lie in during the examination.
 
-**openEHR**: Since this describes a condition of the patient, it should be expressed under `State` in the observation archetype. There is an archetype, `CLUSTER.level_of_exertion.v0`, that could be used.
+**openEHR**: Since this describes a condition of the patient, it should be expressed under `State` in the observation archetype. There is an archetype, `CLUSTER.level_of_exertion.v0`, that could be used but there is no slot for it at the moment.
 
 ## Calculation
 There are different ways of calculating values, including:
