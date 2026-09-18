@@ -1,7 +1,8 @@
 # 🫀 Imaging Examination of the Heart (Updated: 2026-09-18)
 
-Echocardiography model (draft)
-<img width="1389" height="1145" alt="image" src="https://github.com/user-attachments/assets/3a196272-7b0e-48f7-8915-87ecabf05cc4" />
+Echocardiography model (draft, updated 2026-09-18)
+<img width="1446" height="1127" alt="image" src="https://github.com/user-attachments/assets/03bdd87d-9626-4f7b-8b94-b2c8cd38d4cb" />
+
 
 MRI model (predraft)
 <img width="1269" height="788" alt="image" src="https://github.com/user-attachments/assets/b3f4059f-d4b8-40d4-8734-bfff24b61675" />
@@ -14,11 +15,15 @@ At the Physiological Clinic, there is no standard procedure for how an examinati
 
 Body structure can be handled in different ways, either as a part of the element for the measurement value or on the level of the archetype, or on an specific element for structure/laterality in the archetype.
 
+At present, the anatomical structure concerned is described in the name of each measurement value element. If there is a need to specify it explicitly, the Structured body site slot could be used together with the cluster archetype openEHR-EHR-CLUSTER.anatomical_location.v1.
+
 ## Laterality
 The number of parameters listed by the Physiological Clinic differs significantly between the right and left ventricles. This is due to several reasons: historically, the left ventricle was considered more important than the right ventricle and therefore received more focus. But nowadays, the thinking is somewhat different. Furthermore, the right ventricle has a special shape, like a pyramid with a "banana-shaped" base. This means that Simpson's method cannot be used as it assumes a more "bullet-shaped" form. It is simply easier to perform calculations on the left ventricle.  
 This circumstance is unique to echocardiography; when it comes to MRI, volumes can be calculated in the same way for both ventricles.
 
 Laterality can be handled in different ways, either as a part of the element for the measurement value or on a specific element for structure/laterality.
+
+At present, the anatomical structure concerned is described in the name of each measurement value element. If there is a need to specify it explicitly, the Structured body site slot could be used together with the cluster archetype openEHR-EHR-CLUSTER.anatomical_location.v1.
 
 **openEHR**: body structure + physical quantity will be handled under `Items` in the cluster archetype.
 
@@ -47,13 +52,13 @@ Describes the technique used to produce the image.
   Measurement is based on a three-dimensional image. The advantage is that the image is not based on the assumptions required for biplane or triplane.
 
 - **Doppler**  
-  A two-dimensional image supplemented with a color-coded layer representing blood flows (Spectral Doppler) and tissue velocities (Tissue Doppler) based on frequency changes.
+  A two-dimensional image supplemented with a color-coded layer representing blood flows (Spectral Doppler (Continuous wave doppler and Pulsed wave doppler) and tissue velocities (Tissue Doppler) based on frequency changes.
 
 - **Speckle tracking**  
   [text]
 
 - **Estimation**  
-  [text]
+  An estimated value of a quantity derived from the measurement of another quantity. The result is based on broad categorizations as well as the clinician’s expert knowledge and experience.
 
 ## View
 Views or projections, i.e., different angles from which the heart can be seen.
@@ -64,6 +69,9 @@ Views or projections, i.e., different angles from which the heart can be seen.
 
 - **PLAX**  
   Parasternal long axis, a view that shows the heart from the left side and visualizes the left atrium, mitral valve, left ventricle, aortic valve, and ascending aorta.
+
+- **PSAX**  
+  [text]
 
 - **2 chamber**  
   Apical 2-chamber view (A2C) visualizes the left atrium (LA) and left ventricle (LV) in a longitudinal section, specifically the anterior and inferior walls of the left ventricle.
@@ -77,10 +85,13 @@ Views or projections, i.e., different angles from which the heart can be seen.
 - **5 chamber**  
   Shows the four chambers plus the aorta.
 
+  - **Subcostal**  
+  [text]
+
 ## Cardiac Cycle Phase
 The measurement is taken during or in a specific part of the heart's cycle.
 
-**openEHR**: Since this describes a condition of the patient, it should be expressed under `State` in the observation archetype.
+**openEHR**: Because the cardiac cycle phase very rarely varies for the same parameter, we have chosen not to represent it as a separate attribute under State. Instead, it is specified directly within the attribute for the measurement value under Items.
 
 - **End systole**  
   The phase in the heart cycle when the ventricles have contracted maximally and emptied of blood, just before they begin to relax.
@@ -136,21 +147,22 @@ Degree of exertion. There is a cycle machine that the patient can lie in during 
 **openEHR**: Since this describes a condition of the patient, it should be expressed under `State` in the observation archetype. There is an archetype, `CLUSTER.level_of_exertion.v0`, that could be used.
 
 ## Calculation
+There are different ways of calculating values, including:
 
-- **Indexed**  
-  The measurement can be "indexed," meaning the value is divided by body surface area.  
-  **Question**: Should this be part of the archetype or should the archetype only hold the measurement values and the template hold the body surface area (+formula), and this then be calculated during display?
+- **Indexed values**  
+A measurement may be indexed, meaning that the value has been divided by the patient's body surface area (BSA).
 
-- **Simpson's method / biplane method of discs (volume)**  
-  For calculation of left ventricular volume and also used for calculating ejection fraction.
+  We have chosen not to perform this calculation at the time of data retrieval but instead to include the indexed value directly in the archetype. This is to avoid the risk of errors arising from any subsequent recalculation.
 
-- **Teichholz method (volume)**
+- **Values calculated during a measurement**  
+Simpson's method (biplane method of discs) (volume)  
+This method is used to calculate left ventricular volume and is also subsequently used in the calculation of the ejection fraction.
 
-- **Devereux method (mass)**
+- **Values calculated from previously performed measurements**  
+Devereux method (mass)  
+This method is used to calculate left ventricular mass based on measurements that have already been obtained.
 
-- **Linear Cube formula (mass/relative wall thickness)**
-
-- **Continuity equation of VTI (area)**
+**openEHR:** This is currently represented through specific elements in CLUSTER.imaging_exam_us_technique.v0.
 
 ## Estimation
 [Text]
