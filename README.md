@@ -109,11 +109,11 @@ Quantity measured on a certain body structure. The measurement can be "indexed,"
 
 - **Volume**  
   Volume in a cavity in the heart, e.g., ventricle or atrium.  
-  **How it's measured**: Calculated for the left ventricle either with Simpson's method/biplane method of discs or measured in 3D-mode for both left and right ventricles. Also from 2D single plane — how?
+  **How it's measured**: Calculated for the left ventricle either with Simpson's method/biplane method of discs or measured in 3D-mode for both left and right ventricles.
 
 - **Ejection fraction**  
   The heart's pumping ability, i.e., how much of the heart's diastolic volume is pumped out with each heartbeat.  
-  **How it's measured**: Calculated and based on volume either from biplane-mode or measured in 3D-mode (also M-mode [Wikipedia link]).
+  **How it's measured**: Calculated and based on volume either from biplane-mode or measured in 3D-mode.
 
 - **Diameter**  
   Thickness of a structure.  
