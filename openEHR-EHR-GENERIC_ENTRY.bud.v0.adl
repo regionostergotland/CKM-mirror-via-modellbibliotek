@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"db887a1fb40a1557c69a00ff8067602c">
+		["MD5-CAM-1.0.1"] = <"e0ffa4695855a7aab03cfbb3a729796b">
 		["build_uid"] = <"4a566f07-b5ee-393e-b574-b66273fcb10e">
 	>
 
@@ -45,6 +45,75 @@ definition
 											at0007,    -- Inomhus annan byggnad
 											at0008,    -- Utomhus
 											at0009]    -- Trafiken
+										}
+									}
+								}
+							}
+							ELEMENT[at0010] occurrences matches {0..1} matches {    -- Olycksorsak
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0011,    -- Övrigt
+											at0012,    -- Olycka arbete
+											at0013,    -- Olycka fritid
+											at0014,    -- Suicidförsök
+											at0015,    -- Mordförsök
+											at0016]    -- Misshandel
+										}
+									}
+								}
+							}
+							ELEMENT[at0019] occurrences matches {0..1} matches {    -- Inregistreringsdatum
+								value matches {
+									DV_DATE matches {*}
+								}
+							}
+							ELEMENT[at0018] occurrences matches {0..1} matches {    -- Signatur
+								value matches {
+									DV_CODED_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0020] occurrences matches {0..1} matches {    -- Cirkumferent skada
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0024,    -- Ja
+											at0025]    -- Nej
+										}
+									}
+								}
+							}
+							ELEMENT[at0021] occurrences matches {0..1} matches {    -- Skada över stor led
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0022,    -- Ja
+											at0023]    -- Nej
+										}
+									}
+								}
+							}
+							ELEMENT[at0026] occurrences matches {0..1} matches {    -- Förekomst av annat trauma
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0027,    -- Ja
+											at0028]    -- Nej
+										}
+									}
+								}
+							}
+							ELEMENT[at0029] occurrences matches {0..1} matches {    -- Komplicerad/särskilda behov
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0030,    -- Nej
+											at0031]    -- Ja
 										}
 									}
 								}
@@ -98,6 +167,90 @@ ontology
 				>
 				["at0009"] = <
 					text = <"Trafiken">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Olycksorsak">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Övrigt">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Olycka arbete">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Olycka fritid">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Suicidförsök">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Mordförsök">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Misshandel">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Signatur">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Inregistreringsdatum">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Cirkumferent skada">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Skada över stor led">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Nej">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Nej">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Förekomst av annat trauma">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Nej">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Komplicerad/särskilda behov">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Nej">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Ja">
 					description = <"">
 				>
 			>
