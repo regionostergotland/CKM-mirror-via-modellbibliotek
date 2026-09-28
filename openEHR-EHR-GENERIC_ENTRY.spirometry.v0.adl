@@ -1,0 +1,63 @@
+archetype (adl_version=1.4; uid=c5c5ced3-fa13-4a7c-ad3f-8f712bc5769f)
+	openEHR-EHR-GENERIC_ENTRY.spirometry.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::sv]>
+
+description
+	original_author = <
+		["date"] = <"2026-09-28">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"cd8bbcb5226b2ba62ef0c7e9000d93ee">
+		["build_uid"] = <"e892c07d-0481-37cc-a556-6aac6dfee7bd">
+	>
+
+definition
+	GENERIC_ENTRY[at0000] matches {    -- spirometry
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Total lungkapacitet
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"spirometry">
+					description = <"spirometry">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Kroppspletysmografi - Total lungkapacitet">
+					description = <"TLC (l)">
+				>
+			>
+		>
+	>
