@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e0ffa4695855a7aab03cfbb3a729796b">
+		["MD5-CAM-1.0.1"] = <"d405a20a81718da298effefb16c67193">
 		["build_uid"] = <"4a566f07-b5ee-393e-b574-b66273fcb10e">
 	>
 
@@ -114,6 +114,52 @@ definition
 											[local::
 											at0030,    -- Nej
 											at0031]    -- Ja
+										}
+									}
+								}
+							}
+						}
+					}
+					CLUSTER[at0032] occurrences matches {0..1} matches {    -- BRIVAscore
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0033] occurrences matches {0..1} matches {    -- Övervakning
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0034,    -- 0
+											at0035,    -- 1
+											at0036,    -- 2
+											at0037,    -- 3
+											at0038]    -- 4
+										}
+									}
+								}
+							}
+							ELEMENT[at0039] occurrences matches {0..1} matches {    -- Respiration
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0040,    -- 0
+											at0041,    -- 1
+											at0042,    -- 2
+											at0043,    -- 3
+											at0044]    -- 4
+										}
+									}
+								}
+							}
+							ELEMENT[at0045] occurrences matches {0..1} matches {    -- Cirkulation
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0046,    -- 0
+											at0047,    -- 1
+											at0048,    -- 2
+											at0049,    -- 3
+											at0050]    -- 4
 										}
 									}
 								}
@@ -252,6 +298,82 @@ ontology
 				["at0031"] = <
 					text = <"Ja">
 					description = <"">
+				>
+				["at0032"] = <
+					text = <"BRIVAscore">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Övervakning">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"1">
+					description = <"Daglig reg ×1–2 av temp, dryck, urin och energimätning">
+				>
+				["at0036"] = <
+					text = <"2">
+					description = <"Kontinuerlig övervakning av patient: ex suicidrisk, barnpatient, konfusionstillstånd">
+				>
+				["at0037"] = <
+					text = <"3">
+					description = <"Kontinuerlig övervakning av EKG, HF, SaO₂, ABP, ETC0₂ samt kontroller ×24 av diures, temp och andning. Deltracmätning">
+				>
+				["at0038"] = <
+					text = <"4">
+					description = <"Utöver 3 p: övrig tryckmätning, kontinuerlig CVP-mätning och ETC0₂-mätning krävs p g a patientens tillstånd">
+				>
+				["at0039"] = <
+					text = <"Respiration">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"1">
+					description = <"BRIVA-patient som post-op övervakas på postop-avdelningen">
+				>
+				["at0042"] = <
+					text = <"2">
+					description = <"Spontanandning som övervakas (ex post-op), syrgas, stöd, andningsvård, inhalation av läkemedel">
+				>
+				["at0043"] = <
+					text = <"3">
+					description = <"Okomplicerad respiratorbehandling: inställning ändras <5 ggr/dygn">
+				>
+				["at0044"] = <
+					text = <"4">
+					description = <"Komplicerad respiratorbehandling: inställning ändras >4 ggr/dygn. Hotande andningsinsufficiens. Urträning med resp.behov >12 h/dygn">
+				>
+				["at0045"] = <
+					text = <"Cirkulation">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"0">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"2">
+					description = <"Behandlas med vasoaktiv drog inom 48 tim. Riskpatient för cirkulationssvikt, störtblödning, arytmier">
+				>
+				["at0049"] = <
+					text = <"3">
+					description = <"Cirkulationssvikt: 1 vasoaktiv drog">
+				>
+				["at0050"] = <
+					text = <"4">
+					description = <"Cirkulationssvikt: >1 vasoaktiv drog">
 				>
 			>
 		>
