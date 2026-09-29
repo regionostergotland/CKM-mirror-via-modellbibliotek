@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.7",
-      "build_uid" : "e51cff1e-b22f-42ff-9e29-8c4f362548a0",
-      "MD5-CAM-1.0.1" : "135427e13e2cbb4afff4dba63650c502",
+      "sem_ver" : "1.0.0-alpha.8",
+      "build_uid" : "72c11ab7-0e92-4a29-a1f9-1685a808607e",
+      "MD5-CAM-1.0.1" : "03b6ecb816d20cfb6146ac043d9a8a5c",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -144,18 +144,6 @@
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "DV_CODED_TEXT",
                         "occurrences" : "1..1",
-                        "defaultValue" : {
-                          "defining_code" : {
-                            "terminology_id" : {
-                              "value" : "http://snomed.info/sct",
-                              "@type" : "TERMINOLOGY_ID"
-                            },
-                            "code_string" : "http://snomed.info/sct",
-                            "@type" : "CODE_PHRASE"
-                          },
-                          "value" : "Echocardiography",
-                          "@type" : "DV_CODED_TEXT"
-                        },
                         "attributes" : [ {
                           "@type" : "C_ATTRIBUTE",
                           "rmAttributeName" : "defining_code",
@@ -170,7 +158,7 @@
                             "selectedTerminologies" : [ "http://snomed.info/sct" ],
                             "includedExternalTerminologyCodes" : [ {
                               "terminologyId" : "http://snomed.info/sct",
-                              "code" : "http://snomed.info/sct",
+                              "code" : "40701008",
                               "value" : "Echocardiography"
                             } ]
                           } ]
@@ -728,7 +716,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "fcdb79278d39a337093528c19440fd04"
+        "PARENT:MD5-CAM-1.0.1" : "eb56bf3e79e33312bd308d30b393d216"
       },
       "details" : {
         "de" : {
@@ -774,6 +762,21 @@
           "use" : "Use to record the findings on radiological examination of a specified body structure or region, and their interpretation.\r\n\r\nThe intended scope for the CLUSTER.imaging_exam family of archetypes to be used to record all detailed findings on radiological examination. The family of specialised archetypes are derived from this generic parent archetype, CLUSTER.imaging_exam, designed as a universal pattern for recording any findings in any specified body structure or region and using any modality.\r\n\r\nThis archetype and its related family of specialisations are designed to be nested within the 'Structured imaging findings' SLOT in the OBSERVATION.imaging_exam_result or within the 'Additional details' SLOT in other relevant CLUSTER.imaging_exam archetypes, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. If this archetype or its specialisations need to be extended with further levels of detailed findings, additional instances of the CLUSTER.imaging_exam or its specialisations can be nested in the 'Additional details' SLOT.\r\n\r\nEach structure- or region-specific specialisation of this parent archetype is intended to be inclusive of all reasonably anticipated and relevant findings. For example, the CLUSTER.imaging_exam-ovary will support recording of all findings that would be expected in reporting on imaging of the ovary using any radiological modality, including the size of the ovary, largest follicle size and the diameter and description of specific follicles. Similarly, CLUSTER.imaging_exam-lymph_node_group will contain data elements required to record specific findings of a lymph node group, including its precise or relative location in the body and the number of lymph nodes in the group. \r\n\r\nIf an appropriate specialisation is not available for a body structure or region, this generic archetype can be used to record all relevant findings, including identification of the structure or region.",
           "misuse" : "Not to be used to record findings observed outside the identified body structure or region. Use a separate instance of one or more archetypes from the CLUSTER.imaging_exam family for this purpose.\r\n\r\nNot to be used to record details related to the overall findings, context or technical details related to a complete imaging examination test result. Use the OBSERVATION.imaging_exam_result for this purpose. For example, comments on the study quality, differential diagnoses, and overall impression.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera fynden vid en radiologisk undersökning av en specificerad kroppsstruktur eller -region och tolkningen av dessa.\r\n\r\n",
+          "keywords" : [ "fynd, avbildning, bilddiagnostik, bildtagning, kropp, system, struktur, region, observation, diagnostik, radiologi, bild" ],
+          "use" : "Används för att registrera fynden vid en radiologisk undersökning av en specificerad kroppsstruktur eller -region och tolkningen av dessa.\r\n\r\nDen avsedda omfattningen för arketypfamiljen CLUSTER.imaging_exam är att den ska användas för att registrera alla detaljerade fynd vid en radiologisk undersökning. Familjen av specialiserade arketyper är härledd från den generiska och överordnade arketyp CLUSTER.imaging_exam som är utformad som ett universellt mönster för att registrera samtliga fynd i en specificerad kroppsstruktur eller -region och under användning av någon modalitet.\r\n\r\nDenna arketyp och dess relaterade familj av specialiseringar är utformade för att nästlas i SLOT:en ”Strukturerade bilddiagnostiska fynd” i OBSERVATION.imaging_exam_result eller i SLOT:en ”Ytterligare detaljer” i andra relevanta CLUSTER.imaging_exam-arketyper, men kan också användas inom andra ENTRY- eller CLUSTER-arketyper, där det är kliniskt lämpligt. Om denna arketyp eller dess specialiseringar behöver utökas med ytterligare nivåer av detaljerade fynd, kan ytterligare instanser av CLUSTER.imaging_exam eller dess specialiseringar nästlas i SLOT:en ”Ytterligare detaljer”.\r\n\r\nVarje struktur- eller regionspecifik specialisering av denna överordnade arketyp är avsedd att omfatta alla förväntade och relevanta fynd. Exempelvis kommer CLUSTER.imaging_exam-ovary att stödja registrering av alla fynd som kan förväntas vid rapportering om avbildning av äggstocken med hjälp av någon radiologisk modalitet, inklusive äggstockens storlek, största follikelstorlek samt diameter och beskrivning av specifika folliklar. På samma sätt kommer CLUSTER.imaging_exam-lymph_node_group att innehålla fält som krävs för att registrera specifika fynd för en lymfkörtelgrupp, inklusive dess exakta eller relativa placering i kroppen och antalet lymfkörtlar i gruppen.\r\n\r\nOm en lämplig specialisering inte finns tillgänglig för en kroppsstruktur eller -region kan denna generiska arketyp användas för att registrera alla relevanta fynd, inklusive identifiering av strukturen eller regionen.",
+          "misuse" : "Ska inte användas för att registrera fynd som har observerats utanför den identifierade kroppsstrukturen eller -regionen. Använd en separat instans av en eller flera arketyper från CLUSTER.imaging_exam-familjen för detta ändamål.\r\n\r\nSka inte användas för att registrera detaljer som relaterar till de övergripande fynden, sammanhanget eller tekniska detaljer gällande ett fullständigt bilddiagnostiskt undersökningsresultat. Använd OBSERVATION.imaging_exam_result för detta ändamål. Till exempel kommentarer om undersökningens kvalitet, differentialdiagnoser och helhetsintryck.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -2213,7 +2216,113 @@
       "termDefinitions" : {
         "en" : { },
         "nb" : { },
-        "de" : { }
+        "de" : { },
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Bilddiagnostisk undersökning av en kroppsstruktur",
+            "description" : "Fynden vid en radiologisk undersökning av en specificerad kroppsstruktur eller -region"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Kroppsstruktur",
+            "description" : "Namn på den kroppsstruktur eller -region som har undersökts.",
+            "comment" : "Till exempel: ”Lever”, ”Höger fotled” eller ”Lymfkörtelgrupp”. Kodning av kroppsstrukturen med en lämplig terminologi, t.ex. SNOMED CT, rekommenderas. Om kroppsstrukturen har identifierats fullständigt i detta ”Kroppsstruktur”-fält blir fältet ”Kroppsställe\" och SLOT:en \"Strukturerat kroppsställe\" överflödiga."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Bilddiagnostisk undersökning av en kroppsstruktur",
+            "description" : "Fynden vid en radiologisk undersökning av en specificerad kroppsstruktur eller -region"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Kroppsstruktur",
+            "description" : "Namn på den kroppsstruktur eller -region som har undersökts.",
+            "comment" : "Till exempel: ”Lever”, ”Höger fotled” eller ”Lymfkörtelgrupp”. Kodning av kroppsstrukturen med en lämplig terminologi, t.ex. SNOMED CT, rekommenderas. Om kroppsstrukturen har identifierats fullständigt i detta ”Kroppsstruktur”-fält blir fältet ”Kroppsställe\" och SLOT:en \"Strukturerat kroppsställe\" överflödiga."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Kroppsställe",
+            "description" : "Namn på det område av kroppen som undersöks.\r\n",
+            "comment" : "Till exempel: en lymfkörtelgrupp (kroppsstruktur) som finns i ”höger axill”. Kodning av ”Kroppsställe” med en terminologi, t.ex. SNOMED CT, är önskvärd. Om kroppsstället har identifierats fullständigt i fältet ”Kroppsstruktur” blir detta fält överflödigt."
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Strukturerat kroppsställe",
+            "description" : "Strukturerade detaljer om det område av kroppen som undersöks.",
+            "comment" : "Till exempel: detaljer om en relativ anatomisk lokalisation, såsom ”2 cm distalt om blindtarmen”. Om kroppsstället har identifierats fullständigt i fältet \"Kroppsstruktur\" eller \"Kroppsställe\" blir denna SLOT överflödig."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Bilddiagnostiskt fynd",
+            "description" : "Beskrivning av de bilddiagnostiska fynd som har observerats under denna undersökning."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Ytterligare detaljer",
+            "description" : "Ytterligare strukturerade detaljer om bilddiagnostiska fynd för den identifierade kroppsstrukturen eller -regionen, eller fynd av relaterade strukturer."
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Slutsats",
+            "description" : "Enstaka ord, fras eller kort beskrivning som representerar den kliniska innebörden och betydelsen av alla bilddiagnostiska fynd för den identifierade kroppsstrukturen.",
+            "comment" : "Kallas även \"Bedömning\". Till exempel: ”Ingen avvikelse upptäckt” eller ”Fri vätska närvarande”. Kodning av ”Slutsats” med en terminologi är tillåten, om det är användbart. Flera förekomster möjliggör mer än en kodad slutsats. En beskrivning kan omfatta en jämförelse med tidigare undersökningar av den identifierade kroppsstrukturen, om så är lämpligt."
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Kommentar",
+            "description" : "Ytterligare beskrivning av de bilddiagnostiska fynden gällande kroppsstrukturen, som inte fångas upp i andra fält."
+          },
+          "at0007.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Kommentar",
+            "description" : "Ytterligare beskrivning av de bilddiagnostiska fynden gällande kroppsstrukturen, som inte fångas upp i andra fält."
+          },
+          "at0002.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Kroppsställe",
+            "description" : "Namn på det område av kroppen som undersöks.\r\n",
+            "comment" : "Till exempel: en lymfkörtelgrupp (kroppsstruktur) som finns i ”höger axill”. Kodning av ”Kroppsställe” med en terminologi, t.ex. SNOMED CT, är önskvärd. Om kroppsstället har identifierats fullständigt i fältet ”Kroppsstruktur” blir detta fält överflödigt."
+          },
+          "at0006.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Slutsats",
+            "description" : "Enstaka ord, fras eller kort beskrivning som representerar den kliniska innebörden och betydelsen av alla bilddiagnostiska fynd för den identifierade kroppsstrukturen.",
+            "comment" : "Kallas även \"Bedömning\". Till exempel: ”Ingen avvikelse upptäckt” eller ”Fri vätska närvarande”. Kodning av ”Slutsats” med en terminologi är tillåten, om det är användbart. Flera förekomster möjliggör mer än en kodad slutsats. En beskrivning kan omfatta en jämförelse med tidigare undersökningar av den identifierade kroppsstrukturen, om så är lämpligt."
+          },
+          "at0001.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Kroppsstruktur",
+            "description" : "Namn på den kroppsstruktur eller -region som har undersökts.",
+            "comment" : "Till exempel: ”Lever”, ”Höger fotled” eller ”Lymfkörtelgrupp”. Kodning av kroppsstrukturen med en lämplig terminologi, t.ex. SNOMED CT, rekommenderas. Om kroppsstrukturen har identifierats fullständigt i detta ”Kroppsstruktur”-fält blir fältet ”Kroppsställe\" och SLOT:en \"Strukturerat kroppsställe\" överflödiga."
+          },
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Bilddiagnostisk undersökning av en kroppsstruktur",
+            "description" : "Fynden vid en radiologisk undersökning av en specificerad kroppsstruktur eller -region"
+          },
+          "at0004.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Bilddiagnostiskt fynd",
+            "description" : "Beskrivning av de bilddiagnostiska fynd som har observerats under denna undersökning."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -2259,6 +2368,20 @@
         "email" : "varntzen@ous-hf.no"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Claudia Ehrentraut",
+        "organisation" : "Karolinska University Hospital",
+        "email" : "claudia.ehrentraut@regionstockholm.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -2271,7 +2394,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "64786446f2a9144722702bf9d8445d8e"
+        "PARENT:MD5-CAM-1.0.1" : "c8a111d722a79ae566404259b2743c39"
       },
       "details" : {
         "en" : {
