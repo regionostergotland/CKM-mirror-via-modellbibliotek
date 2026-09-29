@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "1.0.0-alpha.8",
       "build_uid" : "72c11ab7-0e92-4a29-a1f9-1685a808607e",
-      "MD5-CAM-1.0.1" : "03b6ecb816d20cfb6146ac043d9a8a5c",
+      "MD5-CAM-1.0.1" : "048a99923931aa050f4225afd4ee502c",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -716,7 +716,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "eb56bf3e79e33312bd308d30b393d216"
+        "PARENT:MD5-CAM-1.0.1" : "17c583028f42472d31992c45b1defc94"
       },
       "details" : {
         "de" : {
@@ -2217,112 +2217,7 @@
         "en" : { },
         "nb" : { },
         "de" : { },
-        "sv" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Bilddiagnostisk undersökning av en kroppsstruktur",
-            "description" : "Fynden vid en radiologisk undersökning av en specificerad kroppsstruktur eller -region"
-          },
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Kroppsstruktur",
-            "description" : "Namn på den kroppsstruktur eller -region som har undersökts.",
-            "comment" : "Till exempel: ”Lever”, ”Höger fotled” eller ”Lymfkörtelgrupp”. Kodning av kroppsstrukturen med en lämplig terminologi, t.ex. SNOMED CT, rekommenderas. Om kroppsstrukturen har identifierats fullständigt i detta ”Kroppsstruktur”-fält blir fältet ”Kroppsställe\" och SLOT:en \"Strukturerat kroppsställe\" överflödiga."
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Bilddiagnostisk undersökning av en kroppsstruktur",
-            "description" : "Fynden vid en radiologisk undersökning av en specificerad kroppsstruktur eller -region"
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Kroppsstruktur",
-            "description" : "Namn på den kroppsstruktur eller -region som har undersökts.",
-            "comment" : "Till exempel: ”Lever”, ”Höger fotled” eller ”Lymfkörtelgrupp”. Kodning av kroppsstrukturen med en lämplig terminologi, t.ex. SNOMED CT, rekommenderas. Om kroppsstrukturen har identifierats fullständigt i detta ”Kroppsstruktur”-fält blir fältet ”Kroppsställe\" och SLOT:en \"Strukturerat kroppsställe\" överflödiga."
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Kroppsställe",
-            "description" : "Namn på det område av kroppen som undersöks.\r\n",
-            "comment" : "Till exempel: en lymfkörtelgrupp (kroppsstruktur) som finns i ”höger axill”. Kodning av ”Kroppsställe” med en terminologi, t.ex. SNOMED CT, är önskvärd. Om kroppsstället har identifierats fullständigt i fältet ”Kroppsstruktur” blir detta fält överflödigt."
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Strukturerat kroppsställe",
-            "description" : "Strukturerade detaljer om det område av kroppen som undersöks.",
-            "comment" : "Till exempel: detaljer om en relativ anatomisk lokalisation, såsom ”2 cm distalt om blindtarmen”. Om kroppsstället har identifierats fullständigt i fältet \"Kroppsstruktur\" eller \"Kroppsställe\" blir denna SLOT överflödig."
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "Bilddiagnostiskt fynd",
-            "description" : "Beskrivning av de bilddiagnostiska fynd som har observerats under denna undersökning."
-          },
-          "at0005" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "Ytterligare detaljer",
-            "description" : "Ytterligare strukturerade detaljer om bilddiagnostiska fynd för den identifierade kroppsstrukturen eller -regionen, eller fynd av relaterade strukturer."
-          },
-          "at0006" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Slutsats",
-            "description" : "Enstaka ord, fras eller kort beskrivning som representerar den kliniska innebörden och betydelsen av alla bilddiagnostiska fynd för den identifierade kroppsstrukturen.",
-            "comment" : "Kallas även \"Bedömning\". Till exempel: ”Ingen avvikelse upptäckt” eller ”Fri vätska närvarande”. Kodning av ”Slutsats” med en terminologi är tillåten, om det är användbart. Flera förekomster möjliggör mer än en kodad slutsats. En beskrivning kan omfatta en jämförelse med tidigare undersökningar av den identifierade kroppsstrukturen, om så är lämpligt."
-          },
-          "at0007" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007",
-            "text" : "Kommentar",
-            "description" : "Ytterligare beskrivning av de bilddiagnostiska fynden gällande kroppsstrukturen, som inte fångas upp i andra fält."
-          },
-          "at0007.0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007",
-            "text" : "Kommentar",
-            "description" : "Ytterligare beskrivning av de bilddiagnostiska fynden gällande kroppsstrukturen, som inte fångas upp i andra fält."
-          },
-          "at0002.0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Kroppsställe",
-            "description" : "Namn på det område av kroppen som undersöks.\r\n",
-            "comment" : "Till exempel: en lymfkörtelgrupp (kroppsstruktur) som finns i ”höger axill”. Kodning av ”Kroppsställe” med en terminologi, t.ex. SNOMED CT, är önskvärd. Om kroppsstället har identifierats fullständigt i fältet ”Kroppsstruktur” blir detta fält överflödigt."
-          },
-          "at0006.0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Slutsats",
-            "description" : "Enstaka ord, fras eller kort beskrivning som representerar den kliniska innebörden och betydelsen av alla bilddiagnostiska fynd för den identifierade kroppsstrukturen.",
-            "comment" : "Kallas även \"Bedömning\". Till exempel: ”Ingen avvikelse upptäckt” eller ”Fri vätska närvarande”. Kodning av ”Slutsats” med en terminologi är tillåten, om det är användbart. Flera förekomster möjliggör mer än en kodad slutsats. En beskrivning kan omfatta en jämförelse med tidigare undersökningar av den identifierade kroppsstrukturen, om så är lämpligt."
-          },
-          "at0001.1.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Kroppsstruktur",
-            "description" : "Namn på den kroppsstruktur eller -region som har undersökts.",
-            "comment" : "Till exempel: ”Lever”, ”Höger fotled” eller ”Lymfkörtelgrupp”. Kodning av kroppsstrukturen med en lämplig terminologi, t.ex. SNOMED CT, rekommenderas. Om kroppsstrukturen har identifierats fullständigt i detta ”Kroppsstruktur”-fält blir fältet ”Kroppsställe\" och SLOT:en \"Strukturerat kroppsställe\" överflödiga."
-          },
-          "at0000.1.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Bilddiagnostisk undersökning av en kroppsstruktur",
-            "description" : "Fynden vid en radiologisk undersökning av en specificerad kroppsstruktur eller -region"
-          },
-          "at0004.0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "Bilddiagnostiskt fynd",
-            "description" : "Beskrivning av de bilddiagnostiska fynd som har observerats under denna undersökning."
-          }
-        }
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
