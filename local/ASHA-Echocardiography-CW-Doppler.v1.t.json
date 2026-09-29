@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.6",
-      "build_uid" : "bd6f5905-73e2-4097-a74a-2a904dbc4c50",
-      "MD5-CAM-1.0.1" : "eb189f9cfdd4bbc721e05bc115a91862",
+      "sem_ver" : "1.0.0-alpha.7",
+      "build_uid" : "3bb058a7-305f-4334-8251-5d11c359cd58",
+      "MD5-CAM-1.0.1" : "e137b517a82eaec113212689e5a6d498",
       "PARENT:MD5-CAM-1.0.1" : "B36DCF18E096027C5B1A27F497CE72AA"
     },
     "details" : {
@@ -728,7 +728,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "fcdb79278d39a337093528c19440fd04"
+        "PARENT:MD5-CAM-1.0.1" : "17c583028f42472d31992c45b1defc94"
       },
       "details" : {
         "de" : {
@@ -774,6 +774,21 @@
           "use" : "Use to record the findings on radiological examination of a specified body structure or region, and their interpretation.\r\n\r\nThe intended scope for the CLUSTER.imaging_exam family of archetypes to be used to record all detailed findings on radiological examination. The family of specialised archetypes are derived from this generic parent archetype, CLUSTER.imaging_exam, designed as a universal pattern for recording any findings in any specified body structure or region and using any modality.\r\n\r\nThis archetype and its related family of specialisations are designed to be nested within the 'Structured imaging findings' SLOT in the OBSERVATION.imaging_exam_result or within the 'Additional details' SLOT in other relevant CLUSTER.imaging_exam archetypes, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. If this archetype or its specialisations need to be extended with further levels of detailed findings, additional instances of the CLUSTER.imaging_exam or its specialisations can be nested in the 'Additional details' SLOT.\r\n\r\nEach structure- or region-specific specialisation of this parent archetype is intended to be inclusive of all reasonably anticipated and relevant findings. For example, the CLUSTER.imaging_exam-ovary will support recording of all findings that would be expected in reporting on imaging of the ovary using any radiological modality, including the size of the ovary, largest follicle size and the diameter and description of specific follicles. Similarly, CLUSTER.imaging_exam-lymph_node_group will contain data elements required to record specific findings of a lymph node group, including its precise or relative location in the body and the number of lymph nodes in the group. \r\n\r\nIf an appropriate specialisation is not available for a body structure or region, this generic archetype can be used to record all relevant findings, including identification of the structure or region.",
           "misuse" : "Not to be used to record findings observed outside the identified body structure or region. Use a separate instance of one or more archetypes from the CLUSTER.imaging_exam family for this purpose.\r\n\r\nNot to be used to record details related to the overall findings, context or technical details related to a complete imaging examination test result. Use the OBSERVATION.imaging_exam_result for this purpose. For example, comments on the study quality, differential diagnoses, and overall impression.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera fynden vid en radiologisk undersökning av en specificerad kroppsstruktur eller -region och tolkningen av dessa.\r\n\r\n",
+          "keywords" : [ "fynd, avbildning, bilddiagnostik, bildtagning, kropp, system, struktur, region, observation, diagnostik, radiologi, bild" ],
+          "use" : "Används för att registrera fynden vid en radiologisk undersökning av en specificerad kroppsstruktur eller -region och tolkningen av dessa.\r\n\r\nDen avsedda omfattningen för arketypfamiljen CLUSTER.imaging_exam är att den ska användas för att registrera alla detaljerade fynd vid en radiologisk undersökning. Familjen av specialiserade arketyper är härledd från den generiska och överordnade arketyp CLUSTER.imaging_exam som är utformad som ett universellt mönster för att registrera samtliga fynd i en specificerad kroppsstruktur eller -region och under användning av någon modalitet.\r\n\r\nDenna arketyp och dess relaterade familj av specialiseringar är utformade för att nästlas i SLOT:en ”Strukturerade bilddiagnostiska fynd” i OBSERVATION.imaging_exam_result eller i SLOT:en ”Ytterligare detaljer” i andra relevanta CLUSTER.imaging_exam-arketyper, men kan också användas inom andra ENTRY- eller CLUSTER-arketyper, där det är kliniskt lämpligt. Om denna arketyp eller dess specialiseringar behöver utökas med ytterligare nivåer av detaljerade fynd, kan ytterligare instanser av CLUSTER.imaging_exam eller dess specialiseringar nästlas i SLOT:en ”Ytterligare detaljer”.\r\n\r\nVarje struktur- eller regionspecifik specialisering av denna överordnade arketyp är avsedd att omfatta alla förväntade och relevanta fynd. Exempelvis kommer CLUSTER.imaging_exam-ovary att stödja registrering av alla fynd som kan förväntas vid rapportering om avbildning av äggstocken med hjälp av någon radiologisk modalitet, inklusive äggstockens storlek, största follikelstorlek samt diameter och beskrivning av specifika folliklar. På samma sätt kommer CLUSTER.imaging_exam-lymph_node_group att innehålla fält som krävs för att registrera specifika fynd för en lymfkörtelgrupp, inklusive dess exakta eller relativa placering i kroppen och antalet lymfkörtlar i gruppen.\r\n\r\nOm en lämplig specialisering inte finns tillgänglig för en kroppsstruktur eller -region kan denna generiska arketyp användas för att registrera alla relevanta fynd, inklusive identifiering av strukturen eller regionen.",
+          "misuse" : "Ska inte användas för att registrera fynd som har observerats utanför den identifierade kroppsstrukturen eller -regionen. Använd en separat instans av en eller flera arketyper från CLUSTER.imaging_exam-familjen för detta ändamål.\r\n\r\nSka inte användas för att registrera detaljer som relaterar till de övergripande fynden, sammanhanget eller tekniska detaljer gällande ett fullständigt bilddiagnostiskt undersökningsresultat. Använd OBSERVATION.imaging_exam_result för detta ändamål. Till exempel kommentarer om undersökningens kvalitet, differentialdiagnoser och helhetsintryck.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -1064,7 +1079,7 @@
                   "terminologyId" : {
                     "value" : "openehr"
                   },
-                  "constraint" : [ "335" ]
+                  "constraint" : [ "122" ]
                 } ]
               } ],
               "attributeTuples" : [ {
@@ -1083,7 +1098,7 @@
                   "members" : [ {
                     "@type" : "C_STRING",
                     "rmTypeName" : "STRING",
-                    "constraint" : [ "cm2" ]
+                    "constraint" : [ "cm" ]
                   }, {
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
@@ -2211,7 +2226,8 @@
       "termDefinitions" : {
         "en" : { },
         "nb" : { },
-        "de" : { }
+        "de" : { },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -2257,6 +2273,20 @@
         "email" : "varntzen@ous-hf.no"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Claudia Ehrentraut",
+        "organisation" : "Karolinska University Hospital",
+        "email" : "claudia.ehrentraut@regionstockholm.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -2269,7 +2299,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "64786446f2a9144722702bf9d8445d8e"
+        "PARENT:MD5-CAM-1.0.1" : "c8a111d722a79ae566404259b2743c39"
       },
       "details" : {
         "en" : {
