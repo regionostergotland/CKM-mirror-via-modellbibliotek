@@ -21,8 +21,8 @@
       "custodian_namespace" : "",
       "sem_ver" : "1.0.0-alpha.1",
       "build_uid" : "39928cb5-6237-42a3-9718-a5e2e85b0021",
-      "MD5-CAM-1.0.1" : "030e7b68e3c8117acd129c12ca16bbe7",
-      "PARENT:MD5-CAM-1.0.1" : "B99D3621B084016C3AD199F67329F835"
+      "MD5-CAM-1.0.1" : "6d63be727a4a14c445cab9bec7d1212c",
+      "PARENT:MD5-CAM-1.0.1" : "E6D7C2B61BD261C40AFF4E8D445F9FC6"
     },
     "details" : {
       "de" : {
@@ -379,6 +379,19 @@
           "code" : "at0000.1.1",
           "text" : "ASHA-TBSA.v1",
           "description" : "Dokument för att kommunicera information till andra om resultatet av ett test eller bedömning."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilläggsinformation",
+          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
+          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
         }
       },
       "fi" : {
