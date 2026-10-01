@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"eb4db668627b4f28afd9c5215ae00a44">
+		["MD5-CAM-1.0.1"] = <"9bb20abe88b3daf141938d9a133e55d0">
 		["build_uid"] = <"4a566f07-b5ee-393e-b574-b66273fcb10e">
 	>
 
@@ -218,6 +218,48 @@ definition
 											at0074]    -- 4
 										}
 									}
+								}
+							}
+							ELEMENT[at0081] occurrences matches {0..1} matches {    -- Dessutomkoder
+								value matches {
+									0|[local::at0085],
+									0|[local::at0086],
+									1|[local::at0087],
+									1|[local::at0088],
+									1|[local::at0089],
+									1|[local::at0090],
+									1|[local::at0091],
+									2|[local::at0092],
+									0|[local::at0093],
+									0|[local::at0094],
+									0|[local::at0095],
+									2|[local::at0096],
+									1|[local::at0097],
+									1|[local::at0098],
+									2|[local::at0099],
+									1|[local::at0100],
+									1|[local::at0101],
+									1|[local::at0102],
+									1|[local::at0103],
+									0|[local::at0104],
+									2|[local::at0105],
+									1|[local::at0106],
+									1|[local::at0107],
+									1|[local::at0108],
+									1|[local::at0109],
+									0|[local::at0110],
+									0|[local::at0111],
+									0|[local::at0112],
+									0|[local::at0113],
+									4|[local::at0114],
+									1|[local::at0115],
+									1|[local::at0116],
+									1|[local::at0117],
+									1|[local::at0118],
+									1|[local::at0119],
+									1|[local::at0120],
+									0|[local::at0121],
+									0|[local::at0122]
 								}
 							}
 						}
@@ -526,6 +568,162 @@ ontology
 				["at0074"] = <
 					text = <"4">
 					description = <"Mer än 3-poängsalternativet, eller förstadygnens vätsketerapi på större brännskada">
+				>
+				["at0081"] = <
+					text = <"Dessutomkoder">
+					description = <"">
+				>
+				["at0085"] = <
+					text = <"ANÅL">
+					description = <"Insättning av artärnål">
+				>
+				["at0086"] = <
+					text = <"ANÅLUT">
+					description = <"Artärnål ut">
+				>
+				["at0087"] = <
+					text = <"BIO BRAIN">
+					description = <"Hudersättning">
+				>
+				["at0088"] = <
+					text = <"BTM">
+					description = <"Novosorb strukturerande konstmatrial">
+				>
+				["at0089"] = <
+					text = <"Celler">
+					description = <"Autologa Keratonocyter">
+				>
+				["at0090"] = <
+					text = <"CELLFRI D">
+					description = <"Cellfri dermis">
+				>
+				["at0091"] = <
+					text = <"Clinitronsäng">
+					description = <"Tryckavlastandesäng">
+				>
+				["at0092"] = <
+					text = <"COP">
+					description = <"OP C-op/BRIVA  antal tim +1 tim">
+				>
+				["at0093"] = <
+					text = <"CT">
+					description = <"Datortomografi">
+				>
+				["at0094"] = <
+					text = <"CVK">
+					description = <"Insättning av CVK">
+				>
+				["at0095"] = <
+					text = <"CVKUT">
+					description = <"CVK ut">
+				>
+				["at0096"] = <
+					text = <"DIALYS">
+					description = <"Dialys">
+				>
+				["at0097"] = <
+					text = <"EPICITE">
+					description = <"Cellulosa">
+				>
+				["at0098"] = <
+					text = <"Epiprotect">
+					description = <"Cellulosa">
+				>
+				["at0099"] = <
+					text = <"FOTORTOS">
+					description = <"Inköp av fotortos/ort ortoser till skor">
+				>
+				["at0100"] = <
+					text = <"HEMTRA">
+					description = <"Hemtransport som ej hemlandsting betalar">
+				>
+				["at0101"] = <
+					text = <"HUDODL1">
+					description = <"Hud odlad 1 poäng">
+				>
+				["at0102"] = <
+					text = <"INTEG">
+					description = <"Integra 1 poäng">
+				>
+				["at0103"] = <
+					text = <"IVA kostnad">
+					description = <"Pat som vårdats på IVA">
+				>
+				["at0104"] = <
+					text = <"KAD">
+					description = <"Insättning av KAD">
+				>
+				["at0105"] = <
+					text = <"KOHORTVÅRD">
+					description = <"Personal får enbart vårda denna pat.">
+				>
+				["at0106"] = <
+					text = <"KST_MRB">
+					description = <"Kostnad för MRB">
+				>
+				["at0107"] = <
+					text = <"Matriderm">
+					description = <"konstgjort delhud">
+				>
+				["at0108"] = <
+					text = <"Nekrohud">
+					description = <"Donatorhud">
+				>
+				["at0109"] = <
+					text = <"Nexobrid">
+					description = <"Ananas">
+				>
+				["at0110"] = <
+					text = <"PDRÄN">
+					description = <"Insättning av pleuradrän">
+				>
+				["at0111"] = <
+					text = <"PDRÄNUT">
+					description = <"Pleuradrän ut">
+				>
+				["at0112"] = <
+					text = <"PEG">
+					description = <"P E Gastrostomikat">
+				>
+				["at0113"] = <
+					text = <"PEGUT">
+					description = <"P E Gastrostomikat ut1">
+				>
+				["at0114"] = <
+					text = <"PLFERES">
+					description = <"Plasmafores">
+				>
+				["at0115"] = <
+					text = <"POSTOP">
+					description = <"Uppvakning på postop">
+				>
+				["at0116"] = <
+					text = <"PSYK:VAK">
+					description = <"Övervakning från Psyk">
+				>
+				["at0117"] = <
+					text = <"SPECIALFÖRBAND">
+					description = <"Sorbactgel, vid många förband">
+				>
+				["at0118"] = <
+					text = <"Specialläkemedel vid brännskadevård">
+					description = <"Tex  Fetcroja, Kengerexal, Zerbaxa">
+				>
+				["at0119"] = <
+					text = <"SUPRATHEL">
+					description = <"Ersättningshud">
+				>
+				["at0120"] = <
+					text = <"TRACK">
+					description = <"Insättning av track">
+				>
+				["at0121"] = <
+					text = <"TUB">
+					description = <"Insättning av tub">
+				>
+				["at0122"] = <
+					text = <"TUBUT">
+					description = <"Tub ut(ej Nbtub)">
 				>
 			>
 		>
