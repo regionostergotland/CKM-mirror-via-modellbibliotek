@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"aaa3cac00c41989bf5928b7bde2501df">
+		["MD5-CAM-1.0.1"] = <"c659651c7ba3b4c8d2fcd55d8aa5d8e7">
 		["build_uid"] = <"4a566f07-b5ee-393e-b574-b66273fcb10e">
 	>
 
@@ -72,50 +72,6 @@ definition
 							ELEMENT[at0018] occurrences matches {0..1} matches {    -- Signatur
 								value matches {
 									DV_CODED_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0020] occurrences matches {0..1} matches {    -- Cirkumferent skada
-								value matches {
-									DV_CODED_TEXT matches {
-										defining_code matches {
-											[local::
-											at0024,    -- Ja
-											at0025]    -- Nej
-										}
-									}
-								}
-							}
-							ELEMENT[at0021] occurrences matches {0..1} matches {    -- Skada över stor led
-								value matches {
-									DV_CODED_TEXT matches {
-										defining_code matches {
-											[local::
-											at0022,    -- Ja
-											at0023]    -- Nej
-										}
-									}
-								}
-							}
-							ELEMENT[at0026] occurrences matches {0..1} matches {    -- Förekomst av annat trauma
-								value matches {
-									DV_CODED_TEXT matches {
-										defining_code matches {
-											[local::
-											at0027,    -- Ja
-											at0028]    -- Nej
-										}
-									}
-								}
-							}
-							ELEMENT[at0029] occurrences matches {0..1} matches {    -- Komplicerad/särskilda behov
-								value matches {
-									DV_CODED_TEXT matches {
-										defining_code matches {
-											[local::
-											at0030,    -- Nej
-											at0031]    -- Ja
-										}
-									}
 								}
 							}
 						}
@@ -293,6 +249,26 @@ definition
 									}
 								}
 							}
+							ELEMENT[at0135] occurrences matches {0..1} matches {    -- Poäng
+								value matches {
+									DV_QUANTITY matches {*}
+								}
+							}
+							ELEMENT[at0136] occurrences matches {0..1} matches {    -- Förbands
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0137] occurrences matches {0..1} matches {    -- Tagst läkt
+								value matches {
+									DV_BOOLEAN matches {*}
+								}
+							}
+							ELEMENT[at0139] occurrences matches {0..1} matches {    -- Tagst ej läkt
+								value matches {
+									DV_BOOLEAN matches {*}
+								}
+							}
 						}
 					}
 				}
@@ -378,54 +354,6 @@ ontology
 				>
 				["at0019"] = <
 					text = <"Inregistreringsdatum">
-					description = <"">
-				>
-				["at0020"] = <
-					text = <"Cirkumferent skada">
-					description = <"">
-				>
-				["at0021"] = <
-					text = <"Skada över stor led">
-					description = <"">
-				>
-				["at0022"] = <
-					text = <"Ja">
-					description = <"">
-				>
-				["at0023"] = <
-					text = <"Nej">
-					description = <"">
-				>
-				["at0024"] = <
-					text = <"Ja">
-					description = <"">
-				>
-				["at0025"] = <
-					text = <"Nej">
-					description = <"">
-				>
-				["at0026"] = <
-					text = <"Förekomst av annat trauma">
-					description = <"">
-				>
-				["at0027"] = <
-					text = <"Ja">
-					description = <"">
-				>
-				["at0028"] = <
-					text = <"Nej">
-					description = <"">
-				>
-				["at0029"] = <
-					text = <"Komplicerad/särskilda behov">
-					description = <"">
-				>
-				["at0030"] = <
-					text = <"Nej">
-					description = <"">
-				>
-				["at0031"] = <
-					text = <"Ja">
 					description = <"">
 				>
 				["at0032"] = <
@@ -803,6 +731,22 @@ ontology
 				["at0134"] = <
 					text = <"10">
 					description = <"Operation/4 timmar">
+				>
+				["at0135"] = <
+					text = <"Poäng">
+					description = <"">
+				>
+				["at0136"] = <
+					text = <"Förbands">
+					description = <"">
+				>
+				["at0137"] = <
+					text = <"Tagst läkt">
+					description = <"">
+				>
+				["at0139"] = <
+					text = <"Tagst ej läkt">
+					description = <"">
 				>
 			>
 		>
