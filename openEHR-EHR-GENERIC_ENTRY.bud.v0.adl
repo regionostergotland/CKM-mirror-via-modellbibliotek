@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9bb20abe88b3daf141938d9a133e55d0">
+		["MD5-CAM-1.0.1"] = <"aaa3cac00c41989bf5928b7bde2501df">
 		["build_uid"] = <"4a566f07-b5ee-393e-b574-b66273fcb10e">
 	>
 
@@ -260,6 +260,37 @@ definition
 									1|[local::at0120],
 									0|[local::at0121],
 									0|[local::at0122]
+								}
+							}
+						}
+					}
+					CLUSTER[at0123] occurrences matches {0..1} matches {    -- Sårmottagning
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0124] occurrences matches {0..1} matches {    -- Oml p
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0125,    -- 1
+											at0126,    -- 2
+											at0127,    -- 3
+											at0128,    -- 3
+											at0129]    -- 4
+										}
+									}
+								}
+							}
+							ELEMENT[at0130] occurrences matches {0..1} matches {    -- Op
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0131,    -- 4
+											at0132,    -- 6
+											at0133,    -- 8
+											at0134]    -- 10
+										}
+									}
 								}
 							}
 						}
@@ -724,6 +755,54 @@ ontology
 				["at0122"] = <
 					text = <"TUBUT">
 					description = <"Tub ut(ej Nbtub)">
+				>
+				["at0123"] = <
+					text = <"Sårmottagning">
+					description = <"">
+				>
+				["at0124"] = <
+					text = <"Oml p">
+					description = <"">
+				>
+				["at0125"] = <
+					text = <"1">
+					description = <"1 personal/Omläggning av litet sår/ Oml 1-15 minuter">
+				>
+				["at0126"] = <
+					text = <"2">
+					description = <"1 personal/Omläggning av större sår, dusch/bad/ Oml 16-60 minuter">
+				>
+				["at0127"] = <
+					text = <"3">
+					description = <"1 personal/Omläggning av större sår, dusch/bad, bad i \"fiol\", nybesök/ Oml > 60 minuter">
+				>
+				["at0128"] = <
+					text = <"3">
+					description = <"1 personal/Akut skada/ -">
+				>
+				["at0129"] = <
+					text = <"4">
+					description = <"Mer än 1 personal/Omläggning i sedering/ Sedering">
+				>
+				["at0130"] = <
+					text = <"Op">
+					description = <"">
+				>
+				["at0131"] = <
+					text = <"4">
+					description = <"Operation/1 timme">
+				>
+				["at0132"] = <
+					text = <"6">
+					description = <"Operation/2 timmar">
+				>
+				["at0133"] = <
+					text = <"8">
+					description = <"Operation/3 timmar">
+				>
+				["at0134"] = <
+					text = <"10">
+					description = <"Operation/4 timmar">
 				>
 			>
 		>
