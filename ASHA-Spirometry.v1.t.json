@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.7",
-      "build_uid" : "e17718fb-136d-481a-8050-8517ea9388bf",
-      "MD5-CAM-1.0.1" : "07463bf031e74e0b54e921cd742851d7",
+      "sem_ver" : "1.0.0-alpha.8",
+      "build_uid" : "66f016d8-4873-4163-be2a-4ff09dcdf728",
+      "MD5-CAM-1.0.1" : "5a1ef698ad77297dd59e420f58b4e1b9",
       "PARENT:MD5-CAM-1.0.1" : "E6D7C2B61BD261C40AFF4E8D445F9FC6"
     },
     "details" : {
@@ -6232,30 +6232,6 @@
                   } ],
                   "attributeTuples" : [ ]
                 } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "offset",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DURATION",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_DURATION",
-                      "rmTypeName" : "DURATION",
-                      "constraint" : [ {
-                        "lower" : "PT5M",
-                        "upper" : "PT5M",
-                        "lowerIncluded" : true,
-                        "upperIncluded" : true,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
               } ],
               "attributeTuples" : [ ]
             }, {
@@ -7014,30 +6990,6 @@
                   } ],
                   "attributeTuples" : [ ]
                 } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "offset",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DURATION",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_DURATION",
-                      "rmTypeName" : "DURATION",
-                      "constraint" : [ {
-                        "lower" : "PT10M",
-                        "upper" : "PT10M",
-                        "lowerIncluded" : true,
-                        "upperIncluded" : true,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
               } ],
               "attributeTuples" : [ ]
             }, {
@@ -7792,32 +7744,6 @@
                       "nodeId" : "at0098.2",
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "offset",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DURATION",
-                  "occurrences" : "0..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_DURATION",
-                      "rmTypeName" : "DURATION",
-                      "occurrences" : "0..1",
-                      "constraint" : [ {
-                        "lower" : "PT15M",
-                        "upper" : "PT15M",
-                        "lowerIncluded" : true,
-                        "upperIncluded" : true,
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false
-                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
