@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.8",
-      "build_uid" : "66f016d8-4873-4163-be2a-4ff09dcdf728",
-      "MD5-CAM-1.0.1" : "5a1ef698ad77297dd59e420f58b4e1b9",
+      "sem_ver" : "1.0.0-alpha.9",
+      "build_uid" : "215d0593-d8bc-4be8-abe8-6bc986a19821",
+      "MD5-CAM-1.0.1" : "582315f883443c1cec16c0b97e8ba2f6",
       "PARENT:MD5-CAM-1.0.1" : "E6D7C2B61BD261C40AFF4E8D445F9FC6"
     },
     "details" : {
@@ -4720,7 +4720,7 @@
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "POINT_EVENT",
+              "rmTypeName" : "EVENT",
               "nodeId" : "at0002.5",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -5478,7 +5478,7 @@
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "POINT_EVENT",
+              "rmTypeName" : "EVENT",
               "nodeId" : "at0002.4",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -6236,7 +6236,7 @@
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "POINT_EVENT",
+              "rmTypeName" : "EVENT",
               "nodeId" : "at0002.3",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -6994,7 +6994,7 @@
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "POINT_EVENT",
+              "rmTypeName" : "EVENT",
               "nodeId" : "at0002.2",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
