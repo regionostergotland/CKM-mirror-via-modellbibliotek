@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.6",
-      "build_uid" : "1ab85b1c-fdd9-4e2a-862f-e8e0dbc80208",
-      "MD5-CAM-1.0.1" : "90561f213cc6b193a57423905274b355",
+      "sem_ver" : "1.0.0-alpha.7",
+      "build_uid" : "e17718fb-136d-481a-8050-8517ea9388bf",
+      "MD5-CAM-1.0.1" : "07463bf031e74e0b54e921cd742851d7",
       "PARENT:MD5-CAM-1.0.1" : "E6D7C2B61BD261C40AFF4E8D445F9FC6"
     },
     "details" : {
@@ -1477,7 +1477,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Spirometry result - no protocol",
+            "text" : "Dynamic spirometry",
             "description" : "Pulmonary function test results using a spirometer or peak flow meter."
           },
           "ac0.58" : {
@@ -3188,7 +3188,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Spirometry result - reversibility test (bronchodilator)",
+            "text" : "Dynamic spirometry after bronchodilator",
             "description" : "Pulmonary function test results using a spirometer or peak flow meter."
           },
           "ac0.50" : {
@@ -7924,7 +7924,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Spirometry result - Bronchial challenge test",
+            "text" : "Provocation test",
             "description" : "Pulmonary function test results using a spirometer or peak flow meter."
           },
           "ac0.35" : {
