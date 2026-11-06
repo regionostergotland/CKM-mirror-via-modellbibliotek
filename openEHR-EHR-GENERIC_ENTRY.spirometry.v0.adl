@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"eb1e1a4da7a9f6401ace29318fa912d3">
+		["MD5-CAM-1.0.1"] = <"499c2e19ae4c15808d66520e391b926b">
 		["build_uid"] = <"e892c07d-0481-37cc-a556-6aac6dfee7bd">
 	>
 
@@ -467,6 +467,345 @@ definition
 							}
 						}
 					}
+					ELEMENT[at0066] occurrences matches {0..1} matches {    -- Dynamisk spirometri - Kvalitetsklass FEV1 ATS 2019
+						value matches {
+							DV_ORDINAL matches {*}
+						}
+					}
+					ELEMENT[at0067] occurrences matches {0..1} matches {    -- Dynamisk spirometri - Kvalitetsklass FVC ATS 2019
+						value matches {
+							DV_ORDINAL matches {*}
+						}
+					}
+					ELEMENT[at0068] occurrences matches {0..1} matches {    -- Dynamisk spirometri - FIV1/VC MAX-kvot
+						value matches {
+							DV_PROPORTION matches {*}
+						}
+					}
+					ELEMENT[at0069] occurrences matches {0..1} matches {    -- Dynamisk spirometri - Differens mellan de två högsta FEV1
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0070] occurrences matches {0..1} matches {    -- Dynamisk spirometri - Differens mellan de två högsta VC MAX
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0071] occurrences matches {0..1} matches {    -- Dynamisk spirometri - Differens mellan de två högsta FVC
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0073] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Kvalitetsklass FEV1 ATS 2019
+						value matches {
+							DV_ORDINAL matches {*}
+						}
+					}
+					ELEMENT[at0074] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Kvalitetsklass FVC ATS 2019
+						value matches {
+							DV_ORDINAL matches {*}
+						}
+					}
+					ELEMENT[at0075] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Differens FEV1 jämfört före bronkdilaterande
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
+						}
+					}
+					ELEMENT[at0076] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Differens FEV1 jämfört före bronkdilaterande
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"mL">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0077] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Differens VC MAX jämfört före bronkdilaterande
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
+						}
+					}
+					ELEMENT[at0078] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Differens VC MAX jämfört före bronkdilaterande
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"mL">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0079] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Differens FVC jämfört före bronkdilaterande
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
+						}
+					}
+					ELEMENT[at0072] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - FIV1/VC MAX-kvot
+						value matches {
+							DV_PROPORTION matches {*}
+						}
+					}
+					ELEMENT[at0081] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Differens mellan de två högsta FEV1
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0082] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Differens mellan de två högsta VC MAX
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0083] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Differens mellan de två högsta FVC
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0084] occurrences matches {0..1} matches {    -- Provokationstest - Differens FEV1 mellan lägsta värde efter provokation och före provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0085] occurrences matches {0..1} matches {    -- Provokationstest - Differens VC MAX mellan lägsta värde efter provokation och före provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0087] occurrences matches {0..1} matches {    -- Provokationstest - Differens FVC mellan lägsta värde efter provokation och före provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0088] occurrences matches {0..1} matches {    -- Provokationstest - Differens R5Hz mellan högsta värde efter provokation och före provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0089] occurrences matches {0..1} matches {    -- Provokationstest - Differens R20Hz mellan högsta värde efter provokation och före provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0090] occurrences matches {0..1} matches {    -- Provokationstest - Differens AX mellan högsta värde efter provokation och före provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0091] occurrences matches {0..1} matches {    -- Provokationstest - Differens Fres mellan högsta värde efter provokation och före provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0092] occurrences matches {0..1} matches {    -- Provokationstest - Differens Fres mellan högsta värde efter provokation och före provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0093] occurrences matches {0..1} matches {    -- Provokationstest - Differens FEV1 mellan värde efter bronkdilaterande och 15 min efter provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0094] occurrences matches {0..1} matches {    -- Provokationstest - Differens VC MAXmellan värde efter bronkdilaterande och 15 min efter provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0095] occurrences matches {0..1} matches {    -- Provokationstest - Differens FVC mellan värde efter bronkdilaterande och 15 min efter provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0096] occurrences matches {0..1} matches {    -- Provokationstest - Differens R5Hz mellan värde efter bronkdilaterande och 15 min efter provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0097] occurrences matches {0..1} matches {    -- Provokationstest - Differens R20Hz mellan värde efter bronkdilaterande och 15 min efter provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0098] occurrences matches {0..1} matches {    -- Provokationstest - Differens AX mellan värde efter bronkdilaterande och 15 min efter provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0099] occurrences matches {0..1} matches {    -- Provokationstest - Differens Fres mellan värde efter bronkdilaterande och 15 min efter provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0080] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Differens FVC jämfört före bronkdilaterande
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"mL">
+									>
+								>
+							>
+						}
+					}
 				}
 			}
 		}
@@ -718,6 +1057,138 @@ ontology
 				>
 				["at0064"] = <
 					text = <"Kvävgasutsköljning MBW - Variationskoefficient för LCI 2,5%">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"Dynamisk spirometri - Kvalitetsklass FEV1 ATS 2019">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"Dynamisk spirometri - Kvalitetsklass FVC ATS 2019">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"Dynamisk spirometri - FIV1/VC MAX-kvot">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"Dynamisk spirometri - Differens mellan de två högsta FEV1">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"Dynamisk spirometri - Differens mellan de två högsta VC MAX">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"Dynamisk spirometri - Differens mellan de två högsta FVC">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"Dynamisk spirometri efter bronkdilaterande - FIV1/VC MAX-kvot">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Dynamisk spirometri efter bronkdilaterande - Kvalitetsklass FEV1 ATS 2019">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"Dynamisk spirometri efter bronkdilaterande - Kvalitetsklass FVC ATS 2019">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"Dynamisk spirometri efter bronkdilaterande - Differens FEV1 jämfört före bronkdilaterande">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"Dynamisk spirometri efter bronkdilaterande - Differens FEV1 jämfört före bronkdilaterande">
+					description = <"">
+				>
+				["at0077"] = <
+					text = <"Dynamisk spirometri efter bronkdilaterande - Differens VC MAX jämfört före bronkdilaterande">
+					description = <"">
+				>
+				["at0078"] = <
+					text = <"Dynamisk spirometri efter bronkdilaterande - Differens VC MAX jämfört före bronkdilaterande">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"Dynamisk spirometri efter bronkdilaterande - Differens FVC jämfört före bronkdilaterande">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"Dynamisk spirometri efter bronkdilaterande - Differens FVC jämfört före bronkdilaterande">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"Dynamisk spirometri efter bronkdilaterande - Differens mellan de två högsta FEV1">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"Dynamisk spirometri efter bronkdilaterande - Differens mellan de två högsta VC MAX">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"Dynamisk spirometri efter bronkdilaterande - Differens mellan de två högsta FVC">
+					description = <"">
+				>
+				["at0084"] = <
+					text = <"Provokationstest - Differens FEV1 mellan lägsta värde efter provokation och före provokation">
+					description = <"">
+				>
+				["at0085"] = <
+					text = <"Provokationstest - Differens VC MAX mellan lägsta värde efter provokation och före provokation">
+					description = <"">
+				>
+				["at0087"] = <
+					text = <"Provokationstest - Differens FVC mellan lägsta värde efter provokation och före provokation">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"Provokationstest - Differens R5Hz mellan högsta värde efter provokation och före provokation">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"Provokationstest - Differens R20Hz mellan högsta värde efter provokation och före provokation">
+					description = <"">
+				>
+				["at0090"] = <
+					text = <"Provokationstest - Differens AX mellan högsta värde efter provokation och före provokation">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"Provokationstest - Differens Fres mellan högsta värde efter provokation och före provokation">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"Provokationstest - Differens Fres mellan högsta värde efter provokation och före provokation">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"Provokationstest - Differens FEV1 mellan värde efter bronkdilaterande och 15 min efter provokation">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"Provokationstest - Differens VC MAXmellan värde efter bronkdilaterande och 15 min efter provokation">
+					description = <"">
+				>
+				["at0095"] = <
+					text = <"Provokationstest - Differens FVC mellan värde efter bronkdilaterande och 15 min efter provokation">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"Provokationstest - Differens R5Hz mellan värde efter bronkdilaterande och 15 min efter provokation">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"Provokationstest - Differens R20Hz mellan värde efter bronkdilaterande och 15 min efter provokation">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"Provokationstest - Differens AX mellan värde efter bronkdilaterande och 15 min efter provokation">
+					description = <"">
+				>
+				["at0099"] = <
+					text = <"Provokationstest - Differens Fres mellan värde efter bronkdilaterande och 15 min efter provokation">
 					description = <"">
 				>
 			>
