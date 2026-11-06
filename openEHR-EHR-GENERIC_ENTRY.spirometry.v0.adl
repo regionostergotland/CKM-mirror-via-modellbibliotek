@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"cd8bbcb5226b2ba62ef0c7e9000d93ee">
+		["MD5-CAM-1.0.1"] = <"eb1e1a4da7a9f6401ace29318fa912d3">
 		["build_uid"] = <"e892c07d-0481-37cc-a556-6aac6dfee7bd">
 	>
 
@@ -35,6 +35,436 @@ definition
 					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Total lungkapacitet
 						value matches {
 							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Vitalkapacitet
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Intrathorakal gasvolym
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Kroppspletysmografi - ITGV/TLC
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
+						}
+					}
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Expiratorisk reservvolym
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Residualvolym
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Kroppspletysmografi - RV/TLC
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
+						}
+					}
+					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Diffusionskapacitet för kolmonoxid
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Diffusionskapacitet för kolmonoxid korrigerat för Hb
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Hemoglobinvärde
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Koncentrationsförändringen av kolmonoxid (diffusionskapacitet för kolmonoxid korrigerad för alveolarvolym)
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Koncentrationsförändringen av kolmonoxid (diffusionskapacitet för kolmonoxid korrigerad för alveolarvolym) korrigerat för Hb
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0016] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Alveolarvolym
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Inspirerad volym
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0018] occurrences matches {0..1} matches {    -- Diffusionskapacitet - VIN/VC MAX-kvot
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
+						}
+					}
+					ELEMENT[at0019] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Förkastad volym
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0020] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Samplingsvolym
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0021] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Kvalitetsklass
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Andhållningstid
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::128]>
+								list = <
+									["1"] = <
+										units = <"s">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Impulsoscillometri - Resistans vid 5 Hertz
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Impulsoscillometri - Resistans vid 20 Hertz
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0025] occurrences matches {0..1} matches {    -- Impulsoscillometri - Differens mellan R5Hz och R20Hz
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0026] occurrences matches {0..1} matches {    -- Impulsoscillometri - Reaktans vid 5 Hertz
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0027] occurrences matches {0..1} matches {    -- Impulsoscillometri - Reaktansarea
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0028] occurrences matches {0..1} matches {    -- Impulsoscillometri - Resonansfrekvens
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::382]>
+								list = <
+									["1"] = <
+										units = <"Hz">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Resistans vid 5 Hertz
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0030] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Resistans vid 20 Hertz
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0031] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Differens mellan R5Hz och R20Hz
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0032] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Reaktans vid 5 Hertz
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Reaktansarea
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Resonansfrekvens
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::382]>
+								list = <
+									["1"] = <
+										units = <"Hz">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0035] occurrences matches {0..1} matches {    -- Kvävgasutsköljning SBW - S_III-fas
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0036] occurrences matches {0..1} matches {    -- Kvävgasutsköljning SBW - Closing volume
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0037] occurrences matches {0..1} matches {    -- Kvävgasutsköljning SBW - Vitalkapacitet
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0038] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Funktionell residualvolym
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0039] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Lung clearance index 2,5%
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
+						}
+					}
+					ELEMENT[at0040] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Specifika indikatorer på ojämn gasfördelning i konduktiva luftvägar
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0041] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Specifika indikatorer på ojämn gasfördelning i acinära (gasutbytande) luftvägar
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0042] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Varningar
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0043] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Kommentarer
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0044] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Inspiratorisk kapacitet
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0045] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Luftvägsresistans
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0046] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Specifik luftvägsresistans
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0047] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Variation i sparade ITGV ((högsta värde-lägsta värde)/median))
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0048] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Differens mellan högsta och lägsta sparade DLCO SB
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0049] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Differens mellan högsta och lägsta sparade DLCOc SB
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0051] occurrences matches {0..1} matches {    -- Impulsoscillometri - Impedans vid 5 Hertz
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0052] occurrences matches {0..1} matches {    -- Impulsoscillometri - Elastisk impedans vid 5 Hertz
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0053] occurrences matches {0..1} matches {    -- Impulsoscillometri - Elastisk impedans vid 20 Hertz
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0054] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Impedans vid 5 Hertz
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0055] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Elastisk impedans vid 5 Hertz
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0056] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Elastisk impedans vid 20 Hertz
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0058] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Lung clearance index 5%
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
+						}
+					}
+					ELEMENT[at0059] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Respiratorisk kvot
+						value matches {
+							DV_PROPORTION matches {*}
+						}
+					}
+					ELEMENT[at0060] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Tidalvolym
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"mL">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0061] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Kumulativ expirerad volym
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0062] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Dead space ventilation för koldioxid enligt Fowler
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"mL">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0063] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Variationskoefficient för FRC
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
+						}
+					}
+					ELEMENT[at0064] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Variationskoefficient för LCI 2,5%
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
 						}
 					}
 				}
@@ -57,6 +487,238 @@ ontology
 				["at0004"] = <
 					text = <"Kroppspletysmografi - Total lungkapacitet">
 					description = <"TLC (l)">
+				>
+				["at0005"] = <
+					text = <"Kroppspletysmografi - Vitalkapacitet">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Kroppspletysmografi - Intrathorakal gasvolym">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Kroppspletysmografi - ITGV/TLC">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Kroppspletysmografi - Expiratorisk reservvolym">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Kroppspletysmografi - Residualvolym">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Kroppspletysmografi - RV/TLC">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Diffusionskapacitet - Diffusionskapacitet för kolmonoxid">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Diffusionskapacitet - Diffusionskapacitet för kolmonoxid korrigerat för Hb">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Diffusionskapacitet - Hemoglobinvärde">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Diffusionskapacitet - Koncentrationsförändringen av kolmonoxid (diffusionskapacitet för kolmonoxid korrigerad för alveolarvolym)">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Diffusionskapacitet - Koncentrationsförändringen av kolmonoxid (diffusionskapacitet för kolmonoxid korrigerad för alveolarvolym) korrigerat för Hb">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Diffusionskapacitet - Alveolarvolym">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Diffusionskapacitet - Inspirerad volym">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Diffusionskapacitet - VIN/VC MAX-kvot">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Diffusionskapacitet - Förkastad volym">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Diffusionskapacitet - Samplingsvolym">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Diffusionskapacitet - Kvalitetsklass">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Diffusionskapacitet - Andhållningstid">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Impulsoscillometri - Resistans vid 5 Hertz">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Impulsoscillometri - Resistans vid 20 Hertz">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Impulsoscillometri - Differens mellan R5Hz och R20Hz">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Impulsoscillometri - Reaktans vid 5 Hertz">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Impulsoscillometri - Reaktansarea">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Impulsoscillometri - Resonansfrekvens">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Impulsoscillometri efter bronkdilaterande - Resistans vid 5 Hertz">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Impulsoscillometri efter bronkdilaterande - Resistans vid 20 Hertz">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Impulsoscillometri efter bronkdilaterande - Differens mellan R5Hz och R20Hz">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Impulsoscillometri efter bronkdilaterande - Reaktans vid 5 Hertz">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Impulsoscillometri efter bronkdilaterande - Reaktansarea">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Impulsoscillometri efter bronkdilaterande - Resonansfrekvens">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Kvävgasutsköljning SBW - S_III-fas">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Kvävgasutsköljning SBW - Closing volume">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Kvävgasutsköljning SBW - Vitalkapacitet">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Kvävgasutsköljning MBW - Funktionell residualvolym">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Kvävgasutsköljning MBW - Lung clearance index 2,5%">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Kvävgasutsköljning MBW - Specifika indikatorer på ojämn gasfördelning i konduktiva luftvägar">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Kvävgasutsköljning MBW - Specifika indikatorer på ojämn gasfördelning i acinära (gasutbytande) luftvägar">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Kvävgasutsköljning MBW - Varningar">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Kvävgasutsköljning MBW - Kommentarer">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"Kroppspletysmografi - Inspiratorisk kapacitet">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"Kroppspletysmografi - Luftvägsresistans">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Kroppspletysmografi - Specifik luftvägsresistans">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Kroppspletysmografi - Variation i sparade ITGV ((högsta värde-lägsta värde)/median))">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Diffusionskapacitet - Differens mellan högsta och lägsta sparade DLCO SB">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Diffusionskapacitet - Differens mellan högsta och lägsta sparade DLCOc SB">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"Impulsoscillometri - Impedans vid 5 Hertz">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"Impulsoscillometri - Elastisk impedans vid 5 Hertz">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"Impulsoscillometri - Elastisk impedans vid 20 Hertz">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Impulsoscillometri efter bronkdilaterande - Impedans vid 5 Hertz">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Impulsoscillometri efter bronkdilaterande - Elastisk impedans vid 5 Hertz">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Impulsoscillometri efter bronkdilaterande - Elastisk impedans vid 20 Hertz">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Kvävgasutsköljning MBW - Lung clearance index 5%">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"Kvävgasutsköljning MBW - Respiratorisk kvot">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Kvävgasutsköljning MBW - Tidalvolym">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Kvävgasutsköljning MBW - Kumulativ expirerad volym">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"Kvävgasutsköljning MBW - Dead space ventilation för koldioxid enligt Fowler">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"Kvävgasutsköljning MBW - Variationskoefficient för FRC">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"Kvävgasutsköljning MBW - Variationskoefficient för LCI 2,5%">
+					description = <"">
 				>
 			>
 		>
