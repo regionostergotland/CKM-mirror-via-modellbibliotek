@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"499c2e19ae4c15808d66520e391b926b">
+		["MD5-CAM-1.0.1"] = <"30622ef2a8e3ab94d73bfa7ec6ad2865">
 		["build_uid"] = <"e892c07d-0481-37cc-a556-6aac6dfee7bd">
 	>
 
@@ -407,9 +407,14 @@ definition
 					}
 					ELEMENT[at0058] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Lung clearance index 5%
 						value matches {
-							DV_PROPORTION matches {
-								type matches {2}
-							}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0059] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Respiratorisk kvot
@@ -455,16 +460,26 @@ definition
 					}
 					ELEMENT[at0063] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Variationskoefficient för FRC
 						value matches {
-							DV_PROPORTION matches {
-								type matches {2}
-							}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0064] occurrences matches {0..1} matches {    -- Kvävgasutsköljning MBW - Variationskoefficient för LCI 2,5%
 						value matches {
-							DV_PROPORTION matches {
-								type matches {2}
-							}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0066] occurrences matches {0..1} matches {    -- Dynamisk spirometri - Kvalitetsklass FEV1 ATS 2019
