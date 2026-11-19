@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"99a2594faf263d59f295a27e477400da">
+		["MD5-CAM-1.0.1"] = <"187d7ae7df96d263b06f274662ef2c27">
 		["build_uid"] = <"e892c07d-0481-37cc-a556-6aac6dfee7bd">
 	>
 
@@ -850,6 +850,173 @@ definition
 							>
 						}
 					}
+					ELEMENT[at0100] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 5 Hertz (kPa/(l/s))
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0101] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 20 Hertz (kPa/(l/s))
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0102] occurrences matches {0..1} matches {    -- Provokationstest - Reaktansarea (kPa/l)
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0103] occurrences matches {0..1} matches {    -- Provokationstest - Resonansfrekvens
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::382]>
+								list = <
+									["1"] = <
+										units = <"Hz">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0104] occurrences matches {0..1} matches {    -- Provokationstest - Kommentarer
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0117] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 5 Hertz 0-2 min efter provokation (kPa/(l/s))
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0118] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 20 Hertz 0-2 min efter provokation (kPa/(l/s))
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0119] occurrences matches {0..1} matches {    -- Provokationstest - Reaktansarea 0-2 min efter provokation (kPa/l)
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0120] occurrences matches {0..1} matches {    -- Provokationstest - Resonansfrekvens 0-2 min efter provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::382]>
+								list = <
+									["1"] = <
+										units = <"Hz">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0121] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 5 Hertz 5 min efter provokation (kPa/(l/s))
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0122] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 20 Hertz 5 min efter provokation (kPa/(l/s))
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0123] occurrences matches {0..1} matches {    -- Provokationstest - Reaktansarea 5 min efter provokation (kPa/l)
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0124] occurrences matches {0..1} matches {    -- Provokationstest - Resonansfrekvens 5 min efter provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::382]>
+								list = <
+									["1"] = <
+										units = <"Hz">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0125] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 5 Hertz 10 min efter provokation (kPa/(l/s))
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0126] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 20 Hertz 10 min efter provokation (kPa/(l/s))
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0127] occurrences matches {0..1} matches {    -- Provokationstest - Reaktansarea 10 min efter provokation (kPa/l)
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0128] occurrences matches {0..1} matches {    -- Provokationstest - Resonansfrekvens 10 min efter provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::382]>
+								list = <
+									["1"] = <
+										units = <"Hz">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0129] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 5 Hertz 15 min efter provokation (kPa/(l/s))
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0130] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 20 Hertz 15 min efter provokation (kPa/(l/s))
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0131] occurrences matches {0..1} matches {    -- Provokationstest - Reaktansarea 15 min efter provokation (kPa/l)
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0132] occurrences matches {0..1} matches {    -- Provokationstest - Resonansfrekvens 15 min efter provokation
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::382]>
+								list = <
+									["1"] = <
+										units = <"Hz">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0133] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 5 Hertz efter bronkdilaterande (kPa/(l/s))
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0134] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 20 Hertz efter bronkdilaterande (kPa/(l/s))
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0135] occurrences matches {0..1} matches {    -- Provokationstest - Reaktansarea efter bronkdilaterande (kPa/l)
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0136] occurrences matches {0..1} matches {    -- Provokationstest - Resonansfrekvens efter bronkdilaterande
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::382]>
+								list = <
+									["1"] = <
+										units = <"Hz">
+									>
+								>
+							>
+						}
+					}
 				}
 			}
 		}
@@ -1233,6 +1400,106 @@ ontology
 				>
 				["at0099"] = <
 					text = <"Provokationstest - Differens Fres mellan värde efter bronkdilaterande och 15 min efter provokation">
+					description = <"">
+				>
+				["at0100"] = <
+					text = <"Provokationstest - Resistans vid 5 Hertz (kPa/(l/s))">
+					description = <"">
+				>
+				["at0101"] = <
+					text = <"Provokationstest - Resistans vid 20 Hertz (kPa/(l/s))">
+					description = <"">
+				>
+				["at0102"] = <
+					text = <"Provokationstest - Reaktansarea (kPa/l)">
+					description = <"">
+				>
+				["at0103"] = <
+					text = <"Provokationstest - Resonansfrekvens">
+					description = <"">
+				>
+				["at0104"] = <
+					text = <"Provokationstest - Kommentarer">
+					description = <"">
+				>
+				["at0117"] = <
+					text = <"Provokationstest - Resistans vid 5 Hertz 0-2 min efter provokation (kPa/(l/s))">
+					description = <"">
+				>
+				["at0118"] = <
+					text = <"Provokationstest - Resistans vid 20 Hertz 0-2 min efter provokation (kPa/(l/s))">
+					description = <"">
+				>
+				["at0119"] = <
+					text = <"Provokationstest - Reaktansarea 0-2 min efter provokation (kPa/l)">
+					description = <"">
+				>
+				["at0120"] = <
+					text = <"Provokationstest - Resonansfrekvens 0-2 min efter provokation">
+					description = <"">
+				>
+				["at0121"] = <
+					text = <"Provokationstest - Resistans vid 5 Hertz 5 min efter provokation (kPa/(l/s))">
+					description = <"">
+				>
+				["at0122"] = <
+					text = <"Provokationstest - Resistans vid 20 Hertz 5 min efter provokation (kPa/(l/s))">
+					description = <"">
+				>
+				["at0123"] = <
+					text = <"Provokationstest - Reaktansarea 5 min efter provokation (kPa/l)">
+					description = <"">
+				>
+				["at0124"] = <
+					text = <"Provokationstest - Resonansfrekvens 5 min efter provokation">
+					description = <"">
+				>
+				["at0125"] = <
+					text = <"Provokationstest - Resistans vid 5 Hertz 10 min efter provokation (kPa/(l/s))">
+					description = <"">
+				>
+				["at0126"] = <
+					text = <"Provokationstest - Resistans vid 20 Hertz 10 min efter provokation (kPa/(l/s))">
+					description = <"">
+				>
+				["at0127"] = <
+					text = <"Provokationstest - Reaktansarea 10 min efter provokation (kPa/l)">
+					description = <"">
+				>
+				["at0128"] = <
+					text = <"Provokationstest - Resonansfrekvens 10 min efter provokation">
+					description = <"">
+				>
+				["at0129"] = <
+					text = <"Provokationstest - Resistans vid 5 Hertz 15 min efter provokation (kPa/(l/s))">
+					description = <"">
+				>
+				["at0130"] = <
+					text = <"Provokationstest - Resistans vid 20 Hertz 15 min efter provokation (kPa/(l/s))">
+					description = <"">
+				>
+				["at0131"] = <
+					text = <"Provokationstest - Reaktansarea 15 min efter provokation (kPa/l)">
+					description = <"">
+				>
+				["at0132"] = <
+					text = <"Provokationstest - Resonansfrekvens 15 min efter provokation">
+					description = <"">
+				>
+				["at0133"] = <
+					text = <"Provokationstest - Resistans vid 5 Hertz efter bronkdilaterande (kPa/(l/s))">
+					description = <"">
+				>
+				["at0134"] = <
+					text = <"Provokationstest - Resistans vid 20 Hertz efter bronkdilaterande (kPa/(l/s))">
+					description = <"">
+				>
+				["at0135"] = <
+					text = <"Provokationstest - Reaktansarea efter bronkdilaterande (kPa/l)">
+					description = <"">
+				>
+				["at0136"] = <
+					text = <"Provokationstest - Resonansfrekvens efter bronkdilaterande">
 					description = <"">
 				>
 			>
