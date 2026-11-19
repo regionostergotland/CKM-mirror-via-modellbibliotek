@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"30622ef2a8e3ab94d73bfa7ec6ad2865">
+		["MD5-CAM-1.0.1"] = <"99a2594faf263d59f295a27e477400da">
 		["build_uid"] = <"e892c07d-0481-37cc-a556-6aac6dfee7bd">
 	>
 
@@ -99,27 +99,34 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Diffusionskapacitet för kolmonoxid
+					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Diffusionskapacitet för kolmonoxid (mmol/(min*kPa))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
-					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Diffusionskapacitet för kolmonoxid korrigerat för Hb
+					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Diffusionskapacitet för kolmonoxid korrigerat för Hb (mmol/(min*kPa))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
 					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Hemoglobinvärde
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::119]>
+								list = <
+									["1"] = <
+										units = <"g/L">
+									>
+								>
+							>
 						}
 					}
-					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Koncentrationsförändringen av kolmonoxid (diffusionskapacitet för kolmonoxid korrigerad för alveolarvolym)
+					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Koncentrationsförändringen av kolmonoxid (diffusionskapacitet för kolmonoxid korrigerad för alveolarvolym) (mmol/(min*kPa*l))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
-					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Koncentrationsförändringen av kolmonoxid (diffusionskapacitet för kolmonoxid korrigerad för alveolarvolym) korrigerat för Hb
+					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Koncentrationsförändringen av kolmonoxid (diffusionskapacitet för kolmonoxid korrigerad för alveolarvolym) korrigerat för Hb (mmol/(min*kPa*l))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
@@ -196,27 +203,27 @@ definition
 							>
 						}
 					}
-					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Impulsoscillometri - Resistans vid 5 Hertz
+					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Impulsoscillometri - Resistans vid 5 Hertz (kPa/(l/s))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
-					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Impulsoscillometri - Resistans vid 20 Hertz
+					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Impulsoscillometri - Resistans vid 20 Hertz (kPa/(l/s))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
-					ELEMENT[at0025] occurrences matches {0..1} matches {    -- Impulsoscillometri - Differens mellan R5Hz och R20Hz
+					ELEMENT[at0025] occurrences matches {0..1} matches {    -- Impulsoscillometri - Differens mellan R5Hz och R20Hz (kPa/(l/s))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
-					ELEMENT[at0026] occurrences matches {0..1} matches {    -- Impulsoscillometri - Reaktans vid 5 Hertz
+					ELEMENT[at0026] occurrences matches {0..1} matches {    -- Impulsoscillometri - Reaktans vid 5 Hertz (kPa/(l/s))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
-					ELEMENT[at0027] occurrences matches {0..1} matches {    -- Impulsoscillometri - Reaktansarea
+					ELEMENT[at0027] occurrences matches {0..1} matches {    -- Impulsoscillometri - Reaktansarea (kPa/l)
 						value matches {
 							DV_QUANTITY matches {*}
 						}
@@ -233,27 +240,27 @@ definition
 							>
 						}
 					}
-					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Resistans vid 5 Hertz
+					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Resistans vid 5 Hertz (kPa/(l/s))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
-					ELEMENT[at0030] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Resistans vid 20 Hertz
+					ELEMENT[at0030] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Resistans vid 20 Hertz (kPa/(l/s))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
-					ELEMENT[at0031] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Differens mellan R5Hz och R20Hz
+					ELEMENT[at0031] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Differens mellan R5Hz och R20Hz (kPa/(l/s))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
-					ELEMENT[at0032] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Reaktans vid 5 Hertz
+					ELEMENT[at0032] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Reaktans vid 5 Hertz (kPa/(l/s))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
-					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Reaktansarea
+					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Reaktansarea (kPa/l)
 						value matches {
 							DV_QUANTITY matches {*}
 						}
@@ -270,7 +277,7 @@ definition
 							>
 						}
 					}
-					ELEMENT[at0035] occurrences matches {0..1} matches {    -- Kvävgasutsköljning SBW - S_III-fas
+					ELEMENT[at0035] occurrences matches {0..1} matches {    -- Kvävgasutsköljning SBW - S_III-fas (%/N2/l)
 						value matches {
 							DV_QUANTITY matches {*}
 						}
@@ -350,32 +357,39 @@ definition
 							>
 						}
 					}
-					ELEMENT[at0045] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Luftvägsresistans
+					ELEMENT[at0045] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Luftvägsresistans (kPa/(l/s))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
-					ELEMENT[at0046] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Specifik luftvägsresistans
+					ELEMENT[at0046] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Specifik luftvägsresistans (kPa*s)
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
 					ELEMENT[at0047] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Variation i sparade ITGV ((högsta värde-lägsta värde)/median))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::129]>
+								list = <
+									["1"] = <
+										units = <"L">
+									>
+								>
+							>
 						}
 					}
-					ELEMENT[at0048] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Differens mellan högsta och lägsta sparade DLCO SB
+					ELEMENT[at0048] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Differens mellan högsta och lägsta sparade DLCO SB (mmol/(min*kPa))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
-					ELEMENT[at0049] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Differens mellan högsta och lägsta sparade DLCOc SB
+					ELEMENT[at0049] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Differens mellan högsta och lägsta sparade DLCOc SB (mmol/(min*kPa))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
-					ELEMENT[at0051] occurrences matches {0..1} matches {    -- Impulsoscillometri - Impedans vid 5 Hertz
+					ELEMENT[at0051] occurrences matches {0..1} matches {    -- Impulsoscillometri - Impedans vid 5 Hertz (kPa/(l/s))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
@@ -390,7 +404,7 @@ definition
 							DV_QUANTITY matches {*}
 						}
 					}
-					ELEMENT[at0054] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Impedans vid 5 Hertz
+					ELEMENT[at0054] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Impedans vid 5 Hertz (kPa/(l/s))
 						value matches {
 							DV_QUANTITY matches {*}
 						}
@@ -545,9 +559,14 @@ definition
 					}
 					ELEMENT[at0075] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Differens FEV1 jämfört före bronkdilaterande
 						value matches {
-							DV_PROPORTION matches {
-								type matches {2}
-							}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0076] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Differens FEV1 jämfört före bronkdilaterande
@@ -564,9 +583,14 @@ definition
 					}
 					ELEMENT[at0077] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Differens VC MAX jämfört före bronkdilaterande
 						value matches {
-							DV_PROPORTION matches {
-								type matches {2}
-							}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0078] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Differens VC MAX jämfört före bronkdilaterande
@@ -583,9 +607,14 @@ definition
 					}
 					ELEMENT[at0079] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - Differens FVC jämfört före bronkdilaterande
 						value matches {
-							DV_PROPORTION matches {
-								type matches {2}
-							}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"%">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0072] occurrences matches {0..1} matches {    -- Dynamisk spirometri efter bronkdilaterande - FIV1/VC MAX-kvot
@@ -867,11 +896,11 @@ ontology
 					description = <"">
 				>
 				["at0011"] = <
-					text = <"Diffusionskapacitet - Diffusionskapacitet för kolmonoxid">
+					text = <"Diffusionskapacitet - Diffusionskapacitet för kolmonoxid (mmol/(min*kPa))">
 					description = <"">
 				>
 				["at0012"] = <
-					text = <"Diffusionskapacitet - Diffusionskapacitet för kolmonoxid korrigerat för Hb">
+					text = <"Diffusionskapacitet - Diffusionskapacitet för kolmonoxid korrigerat för Hb (mmol/(min*kPa))">
 					description = <"">
 				>
 				["at0013"] = <
@@ -879,11 +908,11 @@ ontology
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"Diffusionskapacitet - Koncentrationsförändringen av kolmonoxid (diffusionskapacitet för kolmonoxid korrigerad för alveolarvolym)">
+					text = <"Diffusionskapacitet - Koncentrationsförändringen av kolmonoxid (diffusionskapacitet för kolmonoxid korrigerad för alveolarvolym) (mmol/(min*kPa*l))">
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"Diffusionskapacitet - Koncentrationsförändringen av kolmonoxid (diffusionskapacitet för kolmonoxid korrigerad för alveolarvolym) korrigerat för Hb">
+					text = <"Diffusionskapacitet - Koncentrationsförändringen av kolmonoxid (diffusionskapacitet för kolmonoxid korrigerad för alveolarvolym) korrigerat för Hb (mmol/(min*kPa*l))">
 					description = <"">
 				>
 				["at0016"] = <
@@ -915,23 +944,23 @@ ontology
 					description = <"">
 				>
 				["at0023"] = <
-					text = <"Impulsoscillometri - Resistans vid 5 Hertz">
+					text = <"Impulsoscillometri - Resistans vid 5 Hertz (kPa/(l/s))">
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"Impulsoscillometri - Resistans vid 20 Hertz">
+					text = <"Impulsoscillometri - Resistans vid 20 Hertz (kPa/(l/s))">
 					description = <"">
 				>
 				["at0025"] = <
-					text = <"Impulsoscillometri - Differens mellan R5Hz och R20Hz">
+					text = <"Impulsoscillometri - Differens mellan R5Hz och R20Hz (kPa/(l/s))">
 					description = <"">
 				>
 				["at0026"] = <
-					text = <"Impulsoscillometri - Reaktans vid 5 Hertz">
+					text = <"Impulsoscillometri - Reaktans vid 5 Hertz (kPa/(l/s))">
 					description = <"">
 				>
 				["at0027"] = <
-					text = <"Impulsoscillometri - Reaktansarea">
+					text = <"Impulsoscillometri - Reaktansarea (kPa/l)">
 					description = <"">
 				>
 				["at0028"] = <
@@ -939,23 +968,23 @@ ontology
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"Impulsoscillometri efter bronkdilaterande - Resistans vid 5 Hertz">
+					text = <"Impulsoscillometri efter bronkdilaterande - Resistans vid 5 Hertz (kPa/(l/s))">
 					description = <"">
 				>
 				["at0030"] = <
-					text = <"Impulsoscillometri efter bronkdilaterande - Resistans vid 20 Hertz">
+					text = <"Impulsoscillometri efter bronkdilaterande - Resistans vid 20 Hertz (kPa/(l/s))">
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"Impulsoscillometri efter bronkdilaterande - Differens mellan R5Hz och R20Hz">
+					text = <"Impulsoscillometri efter bronkdilaterande - Differens mellan R5Hz och R20Hz (kPa/(l/s))">
 					description = <"">
 				>
 				["at0032"] = <
-					text = <"Impulsoscillometri efter bronkdilaterande - Reaktans vid 5 Hertz">
+					text = <"Impulsoscillometri efter bronkdilaterande - Reaktans vid 5 Hertz (kPa/(l/s))">
 					description = <"">
 				>
 				["at0033"] = <
-					text = <"Impulsoscillometri efter bronkdilaterande - Reaktansarea">
+					text = <"Impulsoscillometri efter bronkdilaterande - Reaktansarea (kPa/l)">
 					description = <"">
 				>
 				["at0034"] = <
@@ -963,7 +992,7 @@ ontology
 					description = <"">
 				>
 				["at0035"] = <
-					text = <"Kvävgasutsköljning SBW - S_III-fas">
+					text = <"Kvävgasutsköljning SBW - S_III-fas (%/N2/l)">
 					description = <"">
 				>
 				["at0036"] = <
@@ -1003,11 +1032,11 @@ ontology
 					description = <"">
 				>
 				["at0045"] = <
-					text = <"Kroppspletysmografi - Luftvägsresistans">
+					text = <"Kroppspletysmografi - Luftvägsresistans (kPa/(l/s))">
 					description = <"">
 				>
 				["at0046"] = <
-					text = <"Kroppspletysmografi - Specifik luftvägsresistans">
+					text = <"Kroppspletysmografi - Specifik luftvägsresistans (kPa*s)">
 					description = <"">
 				>
 				["at0047"] = <
@@ -1015,15 +1044,15 @@ ontology
 					description = <"">
 				>
 				["at0048"] = <
-					text = <"Diffusionskapacitet - Differens mellan högsta och lägsta sparade DLCO SB">
+					text = <"Diffusionskapacitet - Differens mellan högsta och lägsta sparade DLCO SB (mmol/(min*kPa))">
 					description = <"">
 				>
 				["at0049"] = <
-					text = <"Diffusionskapacitet - Differens mellan högsta och lägsta sparade DLCOc SB">
+					text = <"Diffusionskapacitet - Differens mellan högsta och lägsta sparade DLCOc SB (mmol/(min*kPa))">
 					description = <"">
 				>
 				["at0051"] = <
-					text = <"Impulsoscillometri - Impedans vid 5 Hertz">
+					text = <"Impulsoscillometri - Impedans vid 5 Hertz (kPa/(l/s))">
 					description = <"">
 				>
 				["at0052"] = <
@@ -1035,7 +1064,7 @@ ontology
 					description = <"">
 				>
 				["at0054"] = <
-					text = <"Impulsoscillometri efter bronkdilaterande - Impedans vid 5 Hertz">
+					text = <"Impulsoscillometri efter bronkdilaterande - Impedans vid 5 Hertz (kPa/(l/s))">
 					description = <"">
 				>
 				["at0055"] = <
