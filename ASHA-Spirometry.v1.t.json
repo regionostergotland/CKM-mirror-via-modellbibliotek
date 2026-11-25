@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "1.0.0-alpha.11",
       "build_uid" : "2df03d28-6823-4d6b-9041-046d78af93a2",
-      "MD5-CAM-1.0.1" : "5c6306394e69a59267c075c280fea36d",
+      "MD5-CAM-1.0.1" : "18a1a3d963742acf14325891ba426736",
       "PARENT:MD5-CAM-1.0.1" : "BCC9F9AF2C01FAF0258B8743D079C8E7"
     },
     "details" : {
@@ -271,6 +271,13 @@
                 "rmTypeName" : "ELEMENT",
                 "occurrences" : "0..0",
                 "nodeId" : "at0005.0.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0007.0.1",
                 "attributes" : [ ],
                 "attributeTuples" : [ ]
               } ]
@@ -532,6 +539,13 @@
           "text" : "Statut",
           "description" : "Statut de l'ensemble du rapport. Remarque : il ne s'agit pas du statut d'un des composants du rapport.",
           "comment" : "Plusieurs instances sont autorisées à représenter différents aspects ou catégories d'état."
+        },
+        "at0007.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0007.0.1",
+          "text" : "Commentaire",
+          "description" : "Un texte descriptif concernant le rapport de diagnostic dans son ensemble.",
+          "comment" : "Par exemple : justification d’un changement ou d’une annulation, délai recommandé pour agir ou recommandation de répéter l’examen."
         }
       }
     },
