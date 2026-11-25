@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"299a3ba5dbce395d9cf1bbc137e2755e">
+		["MD5-CAM-1.0.1"] = <"d97c72ac380933fea7f26e736651c6d8">
 		["build_uid"] = <"8a9981d2-a295-3271-b115-1211a4afe293">
 	>
 
@@ -101,12 +101,26 @@ definition
 					}
 					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Diffusionskapacitet för kolmonoxid (mmol/(min*kPa))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Diffusionskapacitet för kolmonoxid korrigerat för Hb (mmol/(min*kPa))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Hemoglobinvärde
@@ -123,12 +137,26 @@ definition
 					}
 					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Koncentrationsförändringen av kolmonoxid (diffusionskapacitet för kolmonoxid korrigerad för alveolarvolym) (mmol/(min*kPa*l))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Koncentrationsförändringen av kolmonoxid (diffusionskapacitet för kolmonoxid korrigerad för alveolarvolym) korrigerat för Hb (mmol/(min*kPa*l))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Alveolarvolym
@@ -205,27 +233,62 @@ definition
 					}
 					ELEMENT[at0021] occurrences matches {0..1} matches {    -- Impulsoscillometri - Resistans vid 5 Hertz (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Impulsoscillometri - Resistans vid 20 Hertz (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Impulsoscillometri - Differens mellan R5Hz och R20Hz (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Impulsoscillometri - Reaktans vid 5 Hertz (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0025] occurrences matches {0..1} matches {    -- Impulsoscillometri - Reaktansarea (kPa/l)
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0026] occurrences matches {0..1} matches {    -- Impulsoscillometri - Resonansfrekvens
@@ -242,27 +305,62 @@ definition
 					}
 					ELEMENT[at0027] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Resistans vid 5 Hertz (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0028] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Resistans vid 20 Hertz (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Differens mellan R5Hz och R20Hz (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0030] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Reaktans vid 5 Hertz (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0031] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Reaktansarea (kPa/l)
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0032] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Resonansfrekvens
@@ -279,7 +377,14 @@ definition
 					}
 					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Kvävgasutsköljning SBW - S_III-fas (%/N2/l)
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Kvävgasutsköljning SBW - Closing volume
@@ -359,12 +464,26 @@ definition
 					}
 					ELEMENT[at0043] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Luftvägsresistans (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0044] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Specifik luftvägsresistans (kPa*s)
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0045] occurrences matches {0..1} matches {    -- Kroppspletysmografi - Variation i sparade ITGV ((högsta värde-lägsta värde)/median))
@@ -381,17 +500,38 @@ definition
 					}
 					ELEMENT[at0046] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Differens mellan högsta och lägsta sparade DLCO SB (mmol/(min*kPa))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0047] occurrences matches {0..1} matches {    -- Diffusionskapacitet - Differens mellan högsta och lägsta sparade DLCOc SB (mmol/(min*kPa))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0048] occurrences matches {0..1} matches {    -- Impulsoscillometri - Impedans vid 5 Hertz (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0049] occurrences matches {0..1} matches {    -- Impulsoscillometri - Elastisk impedans vid 5 Hertz
@@ -406,7 +546,14 @@ definition
 					}
 					ELEMENT[at0051] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Impedans vid 5 Hertz (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0052] occurrences matches {0..1} matches {    -- Impulsoscillometri efter bronkdilaterande - Elastisk impedans vid 5 Hertz
@@ -852,17 +999,38 @@ definition
 					}
 					ELEMENT[at0094] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 5 Hertz (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0095] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 20 Hertz (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0096] occurrences matches {0..1} matches {    -- Provokationstest - Reaktansarea (kPa/l)
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0097] occurrences matches {0..1} matches {    -- Provokationstest - Resonansfrekvens
@@ -884,17 +1052,38 @@ definition
 					}
 					ELEMENT[at0099] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 5 Hertz 0-2 min efter provokation (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0100] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 20 Hertz 0-2 min efter provokation (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0101] occurrences matches {0..1} matches {    -- Provokationstest - Reaktansarea 0-2 min efter provokation (kPa/l)
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0102] occurrences matches {0..1} matches {    -- Provokationstest - Resonansfrekvens 0-2 min efter provokation
@@ -911,17 +1100,38 @@ definition
 					}
 					ELEMENT[at0103] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 5 Hertz 5 min efter provokation (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0104] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 20 Hertz 5 min efter provokation (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0105] occurrences matches {0..1} matches {    -- Provokationstest - Reaktansarea 5 min efter provokation (kPa/l)
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0106] occurrences matches {0..1} matches {    -- Provokationstest - Resonansfrekvens 5 min efter provokation
@@ -938,17 +1148,38 @@ definition
 					}
 					ELEMENT[at0107] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 5 Hertz 10 min efter provokation (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0108] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 20 Hertz 10 min efter provokation (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0109] occurrences matches {0..1} matches {    -- Provokationstest - Reaktansarea 10 min efter provokation (kPa/l)
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0110] occurrences matches {0..1} matches {    -- Provokationstest - Resonansfrekvens 10 min efter provokation
@@ -965,17 +1196,38 @@ definition
 					}
 					ELEMENT[at0111] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 5 Hertz 15 min efter provokation (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0112] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 20 Hertz 15 min efter provokation (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0113] occurrences matches {0..1} matches {    -- Provokationstest - Reaktansarea 15 min efter provokation (kPa/l)
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0114] occurrences matches {0..1} matches {    -- Provokationstest - Resonansfrekvens 15 min efter provokation
@@ -992,17 +1244,38 @@ definition
 					}
 					ELEMENT[at0115] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 5 Hertz efter bronkdilaterande (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0116] occurrences matches {0..1} matches {    -- Provokationstest - Resistans vid 20 Hertz efter bronkdilaterande (kPa/(l/s))
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0117] occurrences matches {0..1} matches {    -- Provokationstest - Reaktansarea efter bronkdilaterande (kPa/l)
 						value matches {
-							DV_QUANTITY matches {*}
+							C_DV_QUANTITY <
+								property = <[openehr::380]>
+								list = <
+									["1"] = <
+										units = <"1">
+									>
+								>
+							>
 						}
 					}
 					ELEMENT[at0118] occurrences matches {0..1} matches {    -- Provokationstest - Resonansfrekvens efter bronkdilaterande
