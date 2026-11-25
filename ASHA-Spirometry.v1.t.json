@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0-alpha.10",
-      "build_uid" : "b8da5102-c6ce-413c-8489-27bbae7c93ce",
-      "MD5-CAM-1.0.1" : "e2f32984c181ab8a1d9b14458aa18327",
-      "PARENT:MD5-CAM-1.0.1" : "E6D7C2B61BD261C40AFF4E8D445F9FC6"
+      "sem_ver" : "1.0.0-alpha.11",
+      "build_uid" : "2df03d28-6823-4d6b-9041-046d78af93a2",
+      "MD5-CAM-1.0.1" : "5c6306394e69a59267c075c280fea36d",
+      "PARENT:MD5-CAM-1.0.1" : "BCC9F9AF2C01FAF0258B8743D079C8E7"
     },
     "details" : {
       "de" : {
@@ -216,6 +216,20 @@
         "keywords" : [ ],
         "originalResourceUri" : { },
         "otherDetails" : { }
+      },
+      "fr" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fr"
+        },
+        "purpose" : "Archétype container générique destiné à contenir des informations devant être partagées avec des tiers.",
+        "keywords" : [ "rapport" ],
+        "use" : "À utiliser comme archétype générique pour contenir des informations devant être partagées avec des tiers, lorsqu’il n’existe pas d’archétype spécialisé pour un type de rapport spécifique.\r\n\r\nLes cas d’utilisation courants sont les suivants : documenter une réponse à une demande d’informations ; les résultats d’examens ; les activités qui ont été réalisées ; ou les événements qui se sont produits.\r\n\r\nLe composant principal « Sections/Contenu » a été délibérément laissé sans contrainte. Cela permettra de le remplir avec n’importe quel archétype de type SECTION ou ENTRY adapté à l’objectif clinique au sein du template.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
       }
     }
   },
@@ -302,6 +316,15 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-spirometry_result-003.v2",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "GENERIC_ENTRY",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.0.10",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-GENERIC_ENTRY.ovl-spirometry_rest-001.v0",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -390,19 +413,6 @@
           "text" : "ASHA-Spirometry.v1",
           "description" : "Dokument för att kommunicera information till andra om resultatet av ett test eller bedömning."
         },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Status",
-          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Tilläggsinformation",
-          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
-          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
-        },
         "at0005.0.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0005.0.1",
@@ -451,48 +461,77 @@
         }
       },
       "es" : {
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Informe",
-          "description" : "Documento para comunicar información con otros, generalmente en respuesta a una solicitud de otra parte."
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "Identificación del informe",
-          "description" : "Información identificativa sobre el informe."
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Estado",
-          "description" : "Estado del informe completo. Nota: Este no es el estado de cualquiera de los componentes del informe."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Extensión",
-          "description" : "Información adicional requerida para capturar contexto local o alinearse con algún modelo de referencia o formalismo.",
-          "comment" : "Por ejemplo: requerimientos de información local o metadatos adicionales para alinearse con equivalentes FHIR o CIMI."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "ASHA-Spirometry.v1",
           "description" : "Documento para comunicar información a otras personas sobre el resultado de una prueba o evaluación."
         },
-        "at0002.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002.0.1",
-          "text" : "Identificación del informe",
-          "description" : "Información identificativa sobre el informe."
-        },
         "at0005.0.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0005.0.1",
           "text" : "Estado",
           "description" : "Estado del informe completo. Nota: Este no es el estado de cualquiera de los componentes del informe."
+        }
+      },
+      "fr" : {
+        "at0000.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapport",
+          "description" : "Document destiné à communiquer des informations à des tiers, généralement en réponse à une demande émanant de tiers."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapport",
+          "description" : "Document destiné à communiquer des informations à des tiers, généralement en réponse à une demande émanant de tiers."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapport",
+          "description" : "Document destiné à communiquer des informations à des tiers, généralement en réponse à une demande émanant de tiers."
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Identifiant du rapport",
+          "description" : "Informations d'identification relatives au rapport."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Statut",
+          "description" : "Statut de l'ensemble du rapport. Remarque : il ne s'agit pas du statut d'un des composants du rapport.",
+          "comment" : "Plusieurs instances sont autorisées à représenter différents aspects ou catégories d'état."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extension",
+          "description" : "Informations supplémentaires nécessaires pour représenter un contenu local ou pour assurer l’alignement avec d’autres modèles de référence ou formalismes.",
+          "comment" : "Par exemple: exigences d’information locales ou métadonnées supplémentaires permettant l’alignement avec des équivalents FHIR."
+        },
+        "at0007" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0007",
+          "text" : "Commentaire",
+          "description" : "Un texte descriptif concernant le rapport de diagnostic dans son ensemble.",
+          "comment" : "Par exemple : justification d’un changement ou d’une annulation, délai recommandé pour agir ou recommandation de répéter l’examen."
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Identifiant du rapport",
+          "description" : "Informations d'identification relatives au rapport."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Statut",
+          "description" : "Statut de l'ensemble du rapport. Remarque : il ne s'agit pas du statut d'un des composants du rapport.",
+          "comment" : "Plusieurs instances sont autorisées à représenter différents aspects ou catégories d'état."
         }
       }
     },
@@ -8093,6 +8132,57 @@
       },
       "otherDetails" : { }
     } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "e7887345-6b50-49c2-a420-dd32a5c4bfe9",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "d97c72ac380933fea7f26e736651c6d8"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-GENERIC_ENTRY.spirometry_rest.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-GENERIC_ENTRY.ovl-spirometry_rest-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "GENERIC_ENTRY",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "8a9981d2-a295-3271-b115-1211a4afe293",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
@@ -8249,6 +8339,20 @@
       "codeString" : "nl"
     },
     "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fr"
+    },
+    "author" : {
+      "name" : "Jonas Bucher",
+      "organisation" : "Cistec AG",
+      "email" : "jonas.bucher@cistec.com"
+    },
     "otherDetails" : { }
   } ]
 }
